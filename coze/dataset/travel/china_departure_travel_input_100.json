@@ -1,0 +1,902 @@
+[
+  {
+    "departure_city": "深圳",
+    "destination_city": "东京",
+    "departure_date": "2026-01-08",
+    "budget": 15036,
+    "traveler_count": 3,
+    "destination_country": "日本",
+    "return_date": "2026-01-18"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "杭州",
+    "departure_date": "2025-08-22",
+    "budget": 5304,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-09-03"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "曼谷",
+    "departure_date": "2025-11-13",
+    "budget": 6211,
+    "traveler_count": 1,
+    "destination_country": "泰国",
+    "return_date": "2025-11-20"
+  },
+  {
+    "departure_city": "杭州",
+    "destination_city": "北京",
+    "departure_date": "2025-10-31",
+    "budget": 6821,
+    "traveler_count": 1,
+    "destination_country": "中国",
+    "return_date": "2025-11-05"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "曼谷",
+    "departure_date": "2025-10-02",
+    "budget": 3659,
+    "traveler_count": 4,
+    "destination_country": "泰国",
+    "return_date": "2025-10-08"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "新加坡",
+    "departure_date": "2025-11-04",
+    "budget": 9848,
+    "traveler_count": 4,
+    "destination_country": "新加坡",
+    "return_date": "2025-11-11"
+  },
+  {
+    "departure_city": "深圳",
+    "destination_city": "纽约",
+    "departure_date": "2025-12-22",
+    "budget": 21303,
+    "traveler_count": 4,
+    "destination_country": "美国",
+    "return_date": "2025-12-24"
+  },
+  {
+    "departure_city": "广州",
+    "destination_city": "西安",
+    "departure_date": "2025-08-23",
+    "budget": 6660,
+    "traveler_count": 3,
+    "destination_country": "中国",
+    "return_date": "2025-08-27"
+  },
+  {
+    "departure_city": "杭州",
+    "destination_city": "西安",
+    "departure_date": "2025-10-16",
+    "budget": 3958,
+    "traveler_count": 5,
+    "destination_country": "中国",
+    "return_date": "2025-10-27"
+  },
+  {
+    "departure_city": "深圳",
+    "destination_city": "悉尼",
+    "departure_date": "2025-08-13",
+    "budget": 11367,
+    "traveler_count": 1,
+    "destination_country": "澳大利亚",
+    "return_date": "2025-08-26"
+  },
+  {
+    "departure_city": "上海",
+    "destination_city": "西安",
+    "departure_date": "2025-08-24",
+    "budget": 7578,
+    "traveler_count": 3,
+    "destination_country": "中国",
+    "return_date": "2025-08-29"
+  },
+  {
+    "departure_city": "重庆",
+    "destination_city": "洛杉矶",
+    "departure_date": "2025-11-09",
+    "budget": 25904,
+    "traveler_count": 5,
+    "destination_country": "美国",
+    "return_date": "2025-11-15"
+  },
+  {
+    "departure_city": "西安",
+    "destination_city": "巴黎",
+    "departure_date": "2025-11-01",
+    "budget": 20778,
+    "traveler_count": 5,
+    "destination_country": "法国",
+    "return_date": "2025-11-05"
+  },
+  {
+    "departure_city": "西安",
+    "destination_city": "上海",
+    "departure_date": "2025-10-27",
+    "budget": 4136,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-11-09"
+  },
+  {
+    "departure_city": "北京",
+    "destination_city": "重庆",
+    "departure_date": "2025-10-12",
+    "budget": 4713,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2025-10-20"
+  },
+  {
+    "departure_city": "北京",
+    "destination_city": "深圳",
+    "departure_date": "2025-12-09",
+    "budget": 7080,
+    "traveler_count": 5,
+    "destination_country": "中国",
+    "return_date": "2025-12-22"
+  },
+  {
+    "departure_city": "上海",
+    "destination_city": "墨尔本",
+    "departure_date": "2025-11-26",
+    "budget": 17035,
+    "traveler_count": 5,
+    "destination_country": "澳大利亚",
+    "return_date": "2025-11-28"
+  },
+  {
+    "departure_city": "重庆",
+    "destination_city": "墨尔本",
+    "departure_date": "2025-10-03",
+    "budget": 14925,
+    "traveler_count": 5,
+    "destination_country": "澳大利亚",
+    "return_date": "2025-10-09"
+  },
+  {
+    "departure_city": "北京",
+    "destination_city": "纽约",
+    "departure_date": "2025-08-09",
+    "budget": 28001,
+    "traveler_count": 5,
+    "destination_country": "美国",
+    "return_date": "2025-08-22"
+  },
+  {
+    "departure_city": "青岛",
+    "destination_city": "新加坡",
+    "departure_date": "2025-11-19",
+    "budget": 14483,
+    "traveler_count": 5,
+    "destination_country": "新加坡",
+    "return_date": "2025-12-02"
+  },
+  {
+    "departure_city": "上海",
+    "destination_city": "广州",
+    "departure_date": "2025-08-23",
+    "budget": 5852,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2025-09-02"
+  },
+  {
+    "departure_city": "北京",
+    "destination_city": "香港",
+    "departure_date": "2025-09-27",
+    "budget": 3253,
+    "traveler_count": 4,
+    "destination_country": "中国香港",
+    "return_date": "2025-09-29"
+  },
+  {
+    "departure_city": "重庆",
+    "destination_city": "上海",
+    "departure_date": "2025-10-17",
+    "budget": 6532,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-10-27"
+  },
+  {
+    "departure_city": "广州",
+    "destination_city": "新加坡",
+    "departure_date": "2025-10-07",
+    "budget": 15071,
+    "traveler_count": 2,
+    "destination_country": "新加坡",
+    "return_date": "2025-10-21"
+  },
+  {
+    "departure_city": "上海",
+    "destination_city": "南京",
+    "departure_date": "2025-12-17",
+    "budget": 5388,
+    "traveler_count": 1,
+    "destination_country": "中国",
+    "return_date": "2025-12-25"
+  },
+  {
+    "departure_city": "深圳",
+    "destination_city": "杭州",
+    "departure_date": "2025-12-09",
+    "budget": 4551,
+    "traveler_count": 5,
+    "destination_country": "中国",
+    "return_date": "2025-12-11"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "上海",
+    "departure_date": "2025-10-20",
+    "budget": 4522,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2025-10-31"
+  },
+  {
+    "departure_city": "北京",
+    "destination_city": "曼谷",
+    "departure_date": "2025-12-10",
+    "budget": 6712,
+    "traveler_count": 5,
+    "destination_country": "泰国",
+    "return_date": "2025-12-12"
+  },
+  {
+    "departure_city": "深圳",
+    "destination_city": "伦敦",
+    "departure_date": "2025-08-08",
+    "budget": 16914,
+    "traveler_count": 2,
+    "destination_country": "英国",
+    "return_date": "2025-08-13"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "大阪",
+    "departure_date": "2025-10-18",
+    "budget": 9767,
+    "traveler_count": 3,
+    "destination_country": "日本",
+    "return_date": "2025-10-26"
+  },
+  {
+    "departure_city": "青岛",
+    "destination_city": "深圳",
+    "departure_date": "2025-12-18",
+    "budget": 4412,
+    "traveler_count": 1,
+    "destination_country": "中国",
+    "return_date": "2025-12-21"
+  },
+  {
+    "departure_city": "重庆",
+    "destination_city": "深圳",
+    "departure_date": "2025-10-28",
+    "budget": 6280,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2025-11-05"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "杭州",
+    "departure_date": "2025-08-17",
+    "budget": 5469,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-08-19"
+  },
+  {
+    "departure_city": "上海",
+    "destination_city": "广州",
+    "departure_date": "2025-09-28",
+    "budget": 7776,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-09-30"
+  },
+  {
+    "departure_city": "上海",
+    "destination_city": "青岛",
+    "departure_date": "2025-10-10",
+    "budget": 4214,
+    "traveler_count": 5,
+    "destination_country": "中国",
+    "return_date": "2025-10-15"
+  },
+  {
+    "departure_city": "西安",
+    "destination_city": "大阪",
+    "departure_date": "2025-12-03",
+    "budget": 16215,
+    "traveler_count": 4,
+    "destination_country": "日本",
+    "return_date": "2025-12-12"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "东京",
+    "departure_date": "2025-08-25",
+    "budget": 7609,
+    "traveler_count": 1,
+    "destination_country": "日本",
+    "return_date": "2025-09-08"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "西安",
+    "departure_date": "2025-08-10",
+    "budget": 4878,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2025-08-20"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "杭州",
+    "departure_date": "2025-09-19",
+    "budget": 7146,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2025-09-27"
+  },
+  {
+    "departure_city": "上海",
+    "destination_city": "伦敦",
+    "departure_date": "2025-11-05",
+    "budget": 27722,
+    "traveler_count": 2,
+    "destination_country": "英国",
+    "return_date": "2025-11-07"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "吉隆坡",
+    "departure_date": "2025-09-20",
+    "budget": 5916,
+    "traveler_count": 4,
+    "destination_country": "马来西亚",
+    "return_date": "2025-10-04"
+  },
+  {
+    "departure_city": "深圳",
+    "destination_city": "香港",
+    "departure_date": "2025-12-01",
+    "budget": 4366,
+    "traveler_count": 5,
+    "destination_country": "中国香港",
+    "return_date": "2025-12-06"
+  },
+  {
+    "departure_city": "广州",
+    "destination_city": "巴黎",
+    "departure_date": "2025-12-22",
+    "budget": 33633,
+    "traveler_count": 5,
+    "destination_country": "法国",
+    "return_date": "2025-12-30"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "新加坡",
+    "departure_date": "2025-08-22",
+    "budget": 7063,
+    "traveler_count": 3,
+    "destination_country": "新加坡",
+    "return_date": "2025-08-29"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "上海",
+    "departure_date": "2025-11-27",
+    "budget": 3516,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2025-12-02"
+  },
+  {
+    "departure_city": "广州",
+    "destination_city": "西安",
+    "departure_date": "2025-11-01",
+    "budget": 3557,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-11-13"
+  },
+  {
+    "departure_city": "深圳",
+    "destination_city": "洛杉矶",
+    "departure_date": "2026-01-11",
+    "budget": 20470,
+    "traveler_count": 4,
+    "destination_country": "美国",
+    "return_date": "2026-01-22"
+  },
+  {
+    "departure_city": "西安",
+    "destination_city": "重庆",
+    "departure_date": "2025-12-30",
+    "budget": 5568,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2026-01-13"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "北京",
+    "departure_date": "2025-11-23",
+    "budget": 4934,
+    "traveler_count": 3,
+    "destination_country": "中国",
+    "return_date": "2025-11-29"
+  },
+  {
+    "departure_city": "深圳",
+    "destination_city": "香港",
+    "departure_date": "2025-11-04",
+    "budget": 5032,
+    "traveler_count": 3,
+    "destination_country": "中国香港",
+    "return_date": "2025-11-14"
+  },
+  {
+    "departure_city": "重庆",
+    "destination_city": "上海",
+    "departure_date": "2025-12-19",
+    "budget": 5888,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2026-01-01"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "巴黎",
+    "departure_date": "2025-11-05",
+    "budget": 23032,
+    "traveler_count": 3,
+    "destination_country": "法国",
+    "return_date": "2025-11-18"
+  },
+  {
+    "departure_city": "北京",
+    "destination_city": "杭州",
+    "departure_date": "2025-09-03",
+    "budget": 3894,
+    "traveler_count": 1,
+    "destination_country": "中国",
+    "return_date": "2025-09-09"
+  },
+  {
+    "departure_city": "北京",
+    "destination_city": "墨尔本",
+    "departure_date": "2025-08-23",
+    "budget": 12444,
+    "traveler_count": 1,
+    "destination_country": "澳大利亚",
+    "return_date": "2025-08-30"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "大阪",
+    "departure_date": "2025-09-26",
+    "budget": 15843,
+    "traveler_count": 1,
+    "destination_country": "日本",
+    "return_date": "2025-10-01"
+  },
+  {
+    "departure_city": "杭州",
+    "destination_city": "青岛",
+    "departure_date": "2025-09-27",
+    "budget": 4251,
+    "traveler_count": 3,
+    "destination_country": "中国",
+    "return_date": "2025-10-06"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "南京",
+    "departure_date": "2025-09-07",
+    "budget": 6520,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-09-15"
+  },
+  {
+    "departure_city": "青岛",
+    "destination_city": "纽约",
+    "departure_date": "2025-12-07",
+    "budget": 32669,
+    "traveler_count": 4,
+    "destination_country": "美国",
+    "return_date": "2025-12-10"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "伦敦",
+    "departure_date": "2025-11-29",
+    "budget": 12685,
+    "traveler_count": 3,
+    "destination_country": "英国",
+    "return_date": "2025-12-12"
+  },
+  {
+    "departure_city": "北京",
+    "destination_city": "青岛",
+    "departure_date": "2025-08-27",
+    "budget": 4741,
+    "traveler_count": 5,
+    "destination_country": "中国",
+    "return_date": "2025-08-31"
+  },
+  {
+    "departure_city": "北京",
+    "destination_city": "东京",
+    "departure_date": "2025-12-14",
+    "budget": 12534,
+    "traveler_count": 4,
+    "destination_country": "日本",
+    "return_date": "2025-12-19"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "香港",
+    "departure_date": "2026-01-05",
+    "budget": 5538,
+    "traveler_count": 1,
+    "destination_country": "中国香港",
+    "return_date": "2026-01-17"
+  },
+  {
+    "departure_city": "广州",
+    "destination_city": "西安",
+    "departure_date": "2025-12-06",
+    "budget": 3643,
+    "traveler_count": 1,
+    "destination_country": "中国",
+    "return_date": "2025-12-18"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "深圳",
+    "departure_date": "2025-10-28",
+    "budget": 6681,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2025-11-05"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "杭州",
+    "departure_date": "2025-12-16",
+    "budget": 4180,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2025-12-30"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "新加坡",
+    "departure_date": "2025-10-05",
+    "budget": 8834,
+    "traveler_count": 5,
+    "destination_country": "新加坡",
+    "return_date": "2025-10-18"
+  },
+  {
+    "departure_city": "青岛",
+    "destination_city": "上海",
+    "departure_date": "2025-08-10",
+    "budget": 4242,
+    "traveler_count": 1,
+    "destination_country": "中国",
+    "return_date": "2025-08-16"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "巴黎",
+    "departure_date": "2025-09-26",
+    "budget": 28234,
+    "traveler_count": 5,
+    "destination_country": "法国",
+    "return_date": "2025-10-01"
+  },
+  {
+    "departure_city": "青岛",
+    "destination_city": "墨尔本",
+    "departure_date": "2025-11-10",
+    "budget": 8828,
+    "traveler_count": 2,
+    "destination_country": "澳大利亚",
+    "return_date": "2025-11-14"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "伦敦",
+    "departure_date": "2025-12-12",
+    "budget": 34171,
+    "traveler_count": 1,
+    "destination_country": "英国",
+    "return_date": "2025-12-16"
+  },
+  {
+    "departure_city": "西安",
+    "destination_city": "纽约",
+    "departure_date": "2025-08-27",
+    "budget": 30841,
+    "traveler_count": 4,
+    "destination_country": "美国",
+    "return_date": "2025-09-06"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "北京",
+    "departure_date": "2025-10-30",
+    "budget": 5138,
+    "traveler_count": 3,
+    "destination_country": "中国",
+    "return_date": "2025-11-07"
+  },
+  {
+    "departure_city": "重庆",
+    "destination_city": "北京",
+    "departure_date": "2025-10-11",
+    "budget": 5073,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-10-17"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "重庆",
+    "departure_date": "2025-07-25",
+    "budget": 6995,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-08-05"
+  },
+  {
+    "departure_city": "深圳",
+    "destination_city": "悉尼",
+    "departure_date": "2025-10-13",
+    "budget": 14477,
+    "traveler_count": 3,
+    "destination_country": "澳大利亚",
+    "return_date": "2025-10-22"
+  },
+  {
+    "departure_city": "重庆",
+    "destination_city": "首尔",
+    "departure_date": "2025-12-26",
+    "budget": 12672,
+    "traveler_count": 3,
+    "destination_country": "韩国",
+    "return_date": "2025-12-30"
+  },
+  {
+    "departure_city": "青岛",
+    "destination_city": "大阪",
+    "departure_date": "2025-12-19",
+    "budget": 7901,
+    "traveler_count": 2,
+    "destination_country": "日本",
+    "return_date": "2025-12-21"
+  },
+  {
+    "departure_city": "西安",
+    "destination_city": "首尔",
+    "departure_date": "2025-12-08",
+    "budget": 16377,
+    "traveler_count": 1,
+    "destination_country": "韩国",
+    "return_date": "2025-12-16"
+  },
+  {
+    "departure_city": "上海",
+    "destination_city": "深圳",
+    "departure_date": "2025-12-11",
+    "budget": 4754,
+    "traveler_count": 3,
+    "destination_country": "中国",
+    "return_date": "2025-12-22"
+  },
+  {
+    "departure_city": "西安",
+    "destination_city": "曼谷",
+    "departure_date": "2025-10-12",
+    "budget": 4187,
+    "traveler_count": 4,
+    "destination_country": "泰国",
+    "return_date": "2025-10-17"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "新加坡",
+    "departure_date": "2025-08-01",
+    "budget": 11698,
+    "traveler_count": 5,
+    "destination_country": "新加坡",
+    "return_date": "2025-08-12"
+  },
+  {
+    "departure_city": "杭州",
+    "destination_city": "深圳",
+    "departure_date": "2025-12-30",
+    "budget": 5253,
+    "traveler_count": 5,
+    "destination_country": "中国",
+    "return_date": "2026-01-06"
+  },
+  {
+    "departure_city": "深圳",
+    "destination_city": "巴黎",
+    "departure_date": "2025-08-05",
+    "budget": 16614,
+    "traveler_count": 2,
+    "destination_country": "法国",
+    "return_date": "2025-08-16"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "成都",
+    "departure_date": "2026-01-03",
+    "budget": 4473,
+    "traveler_count": 2,
+    "destination_country": "中国",
+    "return_date": "2026-01-17"
+  },
+  {
+    "departure_city": "青岛",
+    "destination_city": "杭州",
+    "departure_date": "2026-01-06",
+    "budget": 3087,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2026-01-10"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "伦敦",
+    "departure_date": "2025-11-30",
+    "budget": 16051,
+    "traveler_count": 4,
+    "destination_country": "英国",
+    "return_date": "2025-12-02"
+  },
+  {
+    "departure_city": "香港",
+    "destination_city": "上海",
+    "departure_date": "2025-12-15",
+    "budget": 3635,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-12-29"
+  },
+  {
+    "departure_city": "青岛",
+    "destination_city": "东京",
+    "departure_date": "2025-09-02",
+    "budget": 16198,
+    "traveler_count": 3,
+    "destination_country": "日本",
+    "return_date": "2025-09-12"
+  },
+  {
+    "departure_city": "上海",
+    "destination_city": "纽约",
+    "departure_date": "2026-01-01",
+    "budget": 17071,
+    "traveler_count": 3,
+    "destination_country": "美国",
+    "return_date": "2026-01-05"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "大阪",
+    "departure_date": "2025-12-29",
+    "budget": 9335,
+    "traveler_count": 4,
+    "destination_country": "日本",
+    "return_date": "2026-01-04"
+  },
+  {
+    "departure_city": "重庆",
+    "destination_city": "洛杉矶",
+    "departure_date": "2025-09-27",
+    "budget": 34975,
+    "traveler_count": 1,
+    "destination_country": "美国",
+    "return_date": "2025-10-04"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "香港",
+    "departure_date": "2025-12-06",
+    "budget": 4226,
+    "traveler_count": 1,
+    "destination_country": "中国香港",
+    "return_date": "2025-12-17"
+  },
+  {
+    "departure_city": "广州",
+    "destination_city": "香港",
+    "departure_date": "2025-11-13",
+    "budget": 4205,
+    "traveler_count": 5,
+    "destination_country": "中国香港",
+    "return_date": "2025-11-23"
+  },
+  {
+    "departure_city": "成都",
+    "destination_city": "北京",
+    "departure_date": "2025-07-23",
+    "budget": 7867,
+    "traveler_count": 3,
+    "destination_country": "中国",
+    "return_date": "2025-07-26"
+  },
+  {
+    "departure_city": "青岛",
+    "destination_city": "曼谷",
+    "departure_date": "2025-09-06",
+    "budget": 3570,
+    "traveler_count": 3,
+    "destination_country": "泰国",
+    "return_date": "2025-09-08"
+  },
+  {
+    "departure_city": "杭州",
+    "destination_city": "纽约",
+    "departure_date": "2025-10-21",
+    "budget": 25262,
+    "traveler_count": 5,
+    "destination_country": "美国",
+    "return_date": "2025-10-26"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "重庆",
+    "departure_date": "2026-01-09",
+    "budget": 7223,
+    "traveler_count": 3,
+    "destination_country": "中国",
+    "return_date": "2026-01-23"
+  },
+  {
+    "departure_city": "南京",
+    "destination_city": "北京",
+    "departure_date": "2025-08-19",
+    "budget": 3451,
+    "traveler_count": 4,
+    "destination_country": "中国",
+    "return_date": "2025-09-02"
+  },
+  {
+    "departure_city": "重庆",
+    "destination_city": "伦敦",
+    "departure_date": "2025-09-09",
+    "budget": 17784,
+    "traveler_count": 2,
+    "destination_country": "英国",
+    "return_date": "2025-09-11"
+  },
+  {
+    "departure_city": "西安",
+    "destination_city": "曼谷",
+    "departure_date": "2025-08-26",
+    "budget": 6019,
+    "traveler_count": 4,
+    "destination_country": "泰国",
+    "return_date": "2025-09-08"
+  }
+]

@@ -1,0 +1,581 @@
+[
+  {
+    "traj": {
+      "5f82dbb5-9f4f-4f18-9855-073597fea89d": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"5f82dbb5-9f4f-4f18-9855-073597fea89d\", \"sys.query\": \"How do I reset my smart lock if I forget the password?\", \"sys.conversation_id\": \"9d4c5b10-1b31-4be7-be08-949d1d399ce8\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"5f82dbb5-9f4f-4f18-9855-073597fea89d\", \"sys.query\": \"How do I reset my smart lock if I forget the password?\", \"sys.conversation_id\": \"9d4c5b10-1b31-4be7-be08-949d1d399ce8\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"How do I reset my smart lock if I forget the password?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 742, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.000371\", \"completion_tokens\": 49, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0000735\", \"total_tokens\": 791, \"total_price\": \"0.0004445\", \"currency\": \"USD\", \"latency\": 6.77, \"time_to_first_token\": 6.197, \"time_to_generate\": 0.574}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"How do I reset my smart lock if I forget the password?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"To reset your smart lock if you forget the password, the steps generally include:\\n\\n1. Locate the reset button: Most smart locks have a small reset button on the interior side or inside the battery compartment.\\n2. Press and hold the reset button: Use a pin or paperclip to press and hold the reset button for about 10-15 seconds until you see a light flash or hear a beep.\\n3. Release the button: This usually resets the lock to factory settings.\\n4. Reconfigure the lock: After reset, you will need to set up your lock again, including creating a new password.\\n\\nSince the exact process can vary by brand and model, I recommend checking the user manual or the manufacturer\\u2019s website for detailed instructions specific to your smart lock. If you provide the brand and model, I can give more precise guidance.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 107, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0000535\", \"completion_tokens\": 169, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0002535\", \"total_tokens\": 276, \"total_price\": \"0.000307\", \"currency\": \"USD\", \"latency\": 11.898, \"time_to_first_token\": 3.376, \"time_to_generate\": 8.522}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"To reset your smart lock if you forget the password, the steps generally include:\\n\\n1. Locate the reset button: Most smart locks have a small reset button on the interior side or inside the battery compartment.\\n2. Press and hold the reset button: Use a pin or paperclip to press and hold the reset button for about 10-15 seconds until you see a light flash or hear a beep.\\n3. Release the button: This usually resets the lock to factory settings.\\n4. Reconfigure the lock: After reset, you will need to set up your lock again, including creating a new password.\\n\\nSince the exact process can vary by brand and model, I recommend checking the user manual or the manufacturer\\u2019s website for detailed instructions specific to your smart lock. If you provide the brand and model, I can give more precise guidance.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.2",
+      "ErrorOriginLocation": "Knowledge Retrieval Node (ID: 1711528770201)",
+      "Confidence": 0.92
+    }
+  },
+  {
+    "traj": {
+      "1336a876-bf76-4835-8c97-9a7039528b11": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"1336a876-bf76-4835-8c97-9a7039528b11\", \"sys.query\": \"How do I reset my smart lock if I forget the password?\", \"sys.conversation_id\": \"1f90f785-a791-4190-a3de-7908b81a1dfe\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"1336a876-bf76-4835-8c97-9a7039528b11\", \"sys.query\": \"How do I reset my smart lock if I forget the password?\", \"sys.conversation_id\": \"1f90f785-a791-4190-a3de-7908b81a1dfe\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"How do I reset my smart lock if I forget the password?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 742, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.000371\", \"completion_tokens\": 47, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0000705\", \"total_tokens\": 789, \"total_price\": \"0.0004415\", \"currency\": \"USD\", \"latency\": 12.908, \"time_to_first_token\": 9.459, \"time_to_generate\": 3.449}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"How do I reset my smart lock if I forget the password?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"To reset your smart lock if you've forgotten the password, the steps can vary depending on the brand and model of your lock. Generally, the process involves:\\n\\n1. **Locate the Reset Button:** This is often found on the interior side of the lock or inside the battery compartment.\\n2. **Press and Hold the Reset Button:** Use a pointed object to press and hold the button for about 10-30 seconds until the lock indicates a reset (usually via a sound or blinking light).\\n3. **Reprogram the Lock:** After resetting, you'll need to set up a new master code and user codes as per the lock's instructions.\\n\\nIf you provide the brand and model of your smart lock, I can give you more specific instructions. Alternatively, consult the user manual or the manufacturer's website for detailed reset procedures.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 107, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0000535\", \"completion_tokens\": 164, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000246\", \"total_tokens\": 271, \"total_price\": \"0.0002995\", \"currency\": \"USD\", \"latency\": 6.217, \"time_to_first_token\": 1.971, \"time_to_generate\": 4.246}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"To reset your smart lock if you've forgotten the password, the steps can vary depending on the brand and model of your lock. Generally, the process involves:\\n\\n1. **Locate the Reset Button:** This is often found on the interior side of the lock or inside the battery compartment.\\n2. **Press and Hold the Reset Button:** Use a pointed object to press and hold the button for about 10-30 seconds until the lock indicates a reset (usually via a sound or blinking light).\\n3. **Reprogram the Lock:** After resetting, you'll need to set up a new master code and user codes as per the lock's instructions.\\n\\nIf you provide the brand and model of your smart lock, I can give you more specific instructions. Alternatively, consult the user manual or the manufacturer's website for detailed reset procedures.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.2",
+      "ErrorOriginLocation": "Knowledge Retrieval Node (ID: 1711528770201)",
+      "Confidence": 0.92
+    }
+  },
+  {
+    "traj": {
+      "0727fce1-8769-48db-a80c-7b433ff8e798": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"0727fce1-8769-48db-a80c-7b433ff8e798\", \"sys.query\": \"How do I switch languages on the smart speaker?\", \"sys.conversation_id\": \"a14f701e-ef39-434a-9bf8-f8a06d0e7083\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"0727fce1-8769-48db-a80c-7b433ff8e798\", \"sys.query\": \"How do I switch languages on the smart speaker?\", \"sys.conversation_id\": \"a14f701e-ef39-434a-9bf8-f8a06d0e7083\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"How do I switch languages on the smart speaker?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 739, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0003695\", \"completion_tokens\": 44, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000066\", \"total_tokens\": 783, \"total_price\": \"0.0004355\", \"currency\": \"USD\", \"latency\": 2.858, \"time_to_first_token\": 2.702, \"time_to_generate\": 0.156}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"How do I switch languages on the smart speaker?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"To switch languages on your smart speaker, you typically need to go into the device's companion app on your smartphone or tablet. Look for language settings or preferences, then select the desired language from the list. After saving the changes, your smart speaker should respond in the new language. If you tell me the brand or model of your smart speaker, I can provide more specific instructions.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 104, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.000052\", \"completion_tokens\": 77, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0001155\", \"total_tokens\": 181, \"total_price\": \"0.0001675\", \"currency\": \"USD\", \"latency\": 3.348, \"time_to_first_token\": 3.175, \"time_to_generate\": 0.173}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"To switch languages on your smart speaker, you typically need to go into the device's companion app on your smartphone or tablet. Look for language settings or preferences, then select the desired language from the list. After saving the changes, your smart speaker should respond in the new language. If you tell me the brand or model of your smart speaker, I can provide more specific instructions.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.3",
+      "ErrorOriginLocation": "Knowledge Retrieval Node (ID: 1711528770201)",
+      "Confidence": 0.92
+    }
+  },
+  {
+    "traj": {
+      "2443762b-9430-4131-86c5-bd1c4dacfb21": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"2443762b-9430-4131-86c5-bd1c4dacfb21\", \"sys.query\": \"Is the fitness band waterproof?\", \"sys.conversation_id\": \"759ee45a-dbb5-4c1a-836b-f3f54368d713\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"2443762b-9430-4131-86c5-bd1c4dacfb21\", \"sys.query\": \"Is the fitness band waterproof?\", \"sys.conversation_id\": \"759ee45a-dbb5-4c1a-836b-f3f54368d713\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"Is the fitness band waterproof?\"}",
+            "outputs": "{\"class_name\": \"Other questions\", \"class_id\": \"1711528737066\", \"usage\": {\"prompt_tokens\": 735, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0003675\", \"completion_tokens\": 40, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.00006\", \"total_tokens\": 775, \"total_price\": \"0.0004275\", \"currency\": \"USD\", \"latency\": 1.703, \"time_to_first_token\": 1.545, \"time_to_generate\": 0.158}}"
+          }
+        },
+        {
+          "1711528775142": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"Sorry, I can't help you with these questions. \", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.3",
+      "ErrorOriginLocation": "Question Classifier",
+      "Confidence": 0.9
+    }
+  },
+  {
+    "traj": {
+      "72ada69d-cb3f-4bd1-8e90-010817bf57e1": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"72ada69d-cb3f-4bd1-8e90-010817bf57e1\", \"sys.query\": \"How do I calibrate the screen of my tablet?\", \"sys.conversation_id\": \"0596405c-b7df-4b74-95c1-189c6036833e\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"72ada69d-cb3f-4bd1-8e90-010817bf57e1\", \"sys.query\": \"How do I calibrate the screen of my tablet?\", \"sys.conversation_id\": \"0596405c-b7df-4b74-95c1-189c6036833e\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"How do I calibrate the screen of my tablet?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 740, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.00037\", \"completion_tokens\": 41, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0000615\", \"total_tokens\": 781, \"total_price\": \"0.0004315\", \"currency\": \"USD\", \"latency\": 4.852, \"time_to_first_token\": 4.691, \"time_to_generate\": 0.161}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"How do I calibrate the screen of my tablet?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"To calibrate the screen of your tablet, you can follow these general steps:\\n\\n1. **Check for Built-in Calibration Options:**\\n   - Go to your tablet's **Settings**.\\n   - Look for options like **Display**, **Touchscreen**, or **Calibration**.\\n   - Some tablets have a touch calibration tool under these settings.\\n\\n2. **Use a Calibration App:**\\n   - If your tablet doesn't have a built-in calibration feature, you can download a touchscreen calibration app from your device\\u2019s app store (Google Play Store for Android, App Store for iPad).\\n   - Follow the app's instructions to calibrate the screen.\\n\\n3. **Perform a Touchscreen Test:**\\n   - Many tablets allow you to enter a diagnostic mode by entering a specific code in the phone dialer or via settings.\\n   - In this mode, you can test and sometimes calibrate the touchscreen.\\n\\n4. **Reboot or Update:**\\n   - Sometimes, touchscreen issues can be fixed by restarting the device or updating the software.\\n\\nIf you specify the brand and model of your tablet, I can provide more tailored instructions.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 105, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0000525\", \"completion_tokens\": 227, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0003405\", \"total_tokens\": 332, \"total_price\": \"0.000393\", \"currency\": \"USD\", \"latency\": 3.831, \"time_to_first_token\": 1.952, \"time_to_generate\": 1.879}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"To calibrate the screen of your tablet, you can follow these general steps:\\n\\n1. **Check for Built-in Calibration Options:**\\n   - Go to your tablet's **Settings**.\\n   - Look for options like **Display**, **Touchscreen**, or **Calibration**.\\n   - Some tablets have a touch calibration tool under these settings.\\n\\n2. **Use a Calibration App:**\\n   - If your tablet doesn't have a built-in calibration feature, you can download a touchscreen calibration app from your device\\u2019s app store (Google Play Store for Android, App Store for iPad).\\n   - Follow the app's instructions to calibrate the screen.\\n\\n3. **Perform a Touchscreen Test:**\\n   - Many tablets allow you to enter a diagnostic mode by entering a specific code in the phone dialer or via settings.\\n   - In this mode, you can test and sometimes calibrate the touchscreen.\\n\\n4. **Reboot or Update:**\\n   - Sometimes, touchscreen issues can be fixed by restarting the device or updating the software.\\n\\nIf you specify the brand and model of your tablet, I can provide more tailored instructions.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.3",
+      "ErrorOriginLocation": "Knowledge Retrieval Node",
+      "Confidence": 0.9
+    }
+  },
+  {
+    "traj": {
+      "cb2cbbbf-6ad0-46d1-8c7a-a02cd8db440c": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"cb2cbbbf-6ad0-46d1-8c7a-a02cd8db440c\", \"sys.query\": \"What is the recommended charging time for the electric scooter?\", \"sys.conversation_id\": \"c6bef027-0cd5-4ce0-aa8e-861f11f71ad6\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"cb2cbbbf-6ad0-46d1-8c7a-a02cd8db440c\", \"sys.query\": \"What is the recommended charging time for the electric scooter?\", \"sys.conversation_id\": \"c6bef027-0cd5-4ce0-aa8e-861f11f71ad6\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"What is the recommended charging time for the electric scooter?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 740, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.00037\", \"completion_tokens\": 46, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000069\", \"total_tokens\": 786, \"total_price\": \"0.000439\", \"currency\": \"USD\", \"latency\": 2.369, \"time_to_first_token\": 2.048, \"time_to_generate\": 0.321}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"What is the recommended charging time for the electric scooter?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"The recommended charging time for an electric scooter typically ranges from 3 to 8 hours, depending on the battery capacity and charger specifications. For the most accurate information, please refer to the user manual of your specific scooter model.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 105, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0000525\", \"completion_tokens\": 46, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000069\", \"total_tokens\": 151, \"total_price\": \"0.0001215\", \"currency\": \"USD\", \"latency\": 1.57, \"time_to_first_token\": 1.196, \"time_to_generate\": 0.374}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"The recommended charging time for an electric scooter typically ranges from 3 to 8 hours, depending on the battery capacity and charger specifications. For the most accurate information, please refer to the user manual of your specific scooter model.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.3",
+      "ErrorOriginLocation": "Knowledge Retrieval Node (ID: 1711528770201)",
+      "Confidence": 0.92
+    }
+  },
+  {
+    "traj": {
+      "5db19c91-20b8-40c2-9744-949188c8343c": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"5db19c91-20b8-40c2-9744-949188c8343c\", \"sys.query\": \"How do I reset my smart lock if I forget the password?\", \"sys.conversation_id\": \"036f40d0-b5d4-4bfd-a012-5cda0616d7fa\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"5db19c91-20b8-40c2-9744-949188c8343c\", \"sys.query\": \"How do I reset my smart lock if I forget the password?\", \"sys.conversation_id\": \"036f40d0-b5d4-4bfd-a012-5cda0616d7fa\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"How do I reset my smart lock if I forget the password?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 742, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.000371\", \"completion_tokens\": 42, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000063\", \"total_tokens\": 784, \"total_price\": \"0.000434\", \"currency\": \"USD\", \"latency\": 5.702, \"time_to_first_token\": 5.481, \"time_to_generate\": 0.221}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"How do I reset my smart lock if I forget the password?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"To reset your smart lock if you forget the password, the process can vary depending on the brand and model of the lock. Generally, you can try the following steps:\\n\\n1. **Check the user manual:** Look for a reset procedure specific to your lock model.\\n2. **Locate the reset button:** Many smart locks have a small reset button, often inside the battery compartment or on the back of the lock.\\n3. **Perform a reset:** Press and hold the reset button for about 10-30 seconds until you see an indicator light or hear a beep, which signals the lock has been reset to factory settings.\\n4. **Reconfigure the lock:** After reset, you will need to set up the lock again, including creating a new password.\\n\\nIf you don't have the manual, you can usually find it on the manufacturer's website by searching your lock model. If these steps don't work or you need more specific instructions, please tell me the brand and model of your smart lock.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 107, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0000535\", \"completion_tokens\": 199, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0002985\", \"total_tokens\": 306, \"total_price\": \"0.000352\", \"currency\": \"USD\", \"latency\": 3.827, \"time_to_first_token\": 1.525, \"time_to_generate\": 2.302}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"To reset your smart lock if you forget the password, the process can vary depending on the brand and model of the lock. Generally, you can try the following steps:\\n\\n1. **Check the user manual:** Look for a reset procedure specific to your lock model.\\n2. **Locate the reset button:** Many smart locks have a small reset button, often inside the battery compartment or on the back of the lock.\\n3. **Perform a reset:** Press and hold the reset button for about 10-30 seconds until you see an indicator light or hear a beep, which signals the lock has been reset to factory settings.\\n4. **Reconfigure the lock:** After reset, you will need to set up the lock again, including creating a new password.\\n\\nIf you don't have the manual, you can usually find it on the manufacturer's website by searching your lock model. If these steps don't work or you need more specific instructions, please tell me the brand and model of your smart lock.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.4",
+      "ErrorOriginLocation": "Knowledge Retrieval Node (ID: 1711528770201)",
+      "Confidence": 0.92
+    }
+  },
+  {
+    "traj": {
+      "1effbda2-0429-4f14-aec8-4b2366783746": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"1effbda2-0429-4f14-aec8-4b2366783746\", \"sys.query\": \"How do I reset my smart lock if I forget the password?\", \"sys.conversation_id\": \"fc86864d-f4a3-4dc0-9f79-c3c01f0f260b\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"1effbda2-0429-4f14-aec8-4b2366783746\", \"sys.query\": \"How do I reset my smart lock if I forget the password?\", \"sys.conversation_id\": \"fc86864d-f4a3-4dc0-9f79-c3c01f0f260b\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"How do I reset my smart lock if I forget the password?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 742, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.000371\", \"completion_tokens\": 47, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0000705\", \"total_tokens\": 789, \"total_price\": \"0.0004415\", \"currency\": \"USD\", \"latency\": 2.051, \"time_to_first_token\": 1.834, \"time_to_generate\": 0.218}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"How do I reset my smart lock if I forget the password?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"To reset your smart lock if you forget the password, the process generally involves these steps:\\n\\n1. Locate the reset button on your smart lock. This is often inside the battery compartment or on the back of the lock.\\n2. Press and hold the reset button for about 10-15 seconds until you see a light indicator or hear a beep, signaling the lock is resetting.\\n3. Release the button and wait for the lock to restart.\\n4. Once reset, the smart lock will usually revert to factory default settings, including the default password or PIN, which should be in the user manual.\\n5. Use the default password to access the lock and then set a new password.\\n\\nIf your smart lock requires a specific procedure or you don\\u2019t find a reset button, refer to the user manual or the manufacturer\\u2019s website for detailed instructions tailored to your model.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 107, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0000535\", \"completion_tokens\": 173, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0002595\", \"total_tokens\": 280, \"total_price\": \"0.000313\", \"currency\": \"USD\", \"latency\": 13.735, \"time_to_first_token\": 4.69, \"time_to_generate\": 9.045}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"To reset your smart lock if you forget the password, the process generally involves these steps:\\n\\n1. Locate the reset button on your smart lock. This is often inside the battery compartment or on the back of the lock.\\n2. Press and hold the reset button for about 10-15 seconds until you see a light indicator or hear a beep, signaling the lock is resetting.\\n3. Release the button and wait for the lock to restart.\\n4. Once reset, the smart lock will usually revert to factory default settings, including the default password or PIN, which should be in the user manual.\\n5. Use the default password to access the lock and then set a new password.\\n\\nIf your smart lock requires a specific procedure or you don\\u2019t find a reset button, refer to the user manual or the manufacturer\\u2019s website for detailed instructions tailored to your model.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.4",
+      "ErrorOriginLocation": "1711528770201",
+      "Confidence": 0.92
+    }
+  },
+  {
+    "traj": {
+      "bc395eb5-b1b0-4d6d-a489-ea108944d8a6": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"bc395eb5-b1b0-4d6d-a489-ea108944d8a6\", \"sys.query\": \"Is the fitness band waterproof?\", \"sys.conversation_id\": \"6aa13cb0-0d11-4700-8030-814fd8d17dff\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"bc395eb5-b1b0-4d6d-a489-ea108944d8a6\", \"sys.query\": \"Is the fitness band waterproof?\", \"sys.conversation_id\": \"6aa13cb0-0d11-4700-8030-814fd8d17dff\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"Is the fitness band waterproof?\"}",
+            "outputs": "{\"class_name\": \"Other questions\", \"class_id\": \"1711528737066\", \"usage\": {\"prompt_tokens\": 735, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0003675\", \"completion_tokens\": 40, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.00006\", \"total_tokens\": 775, \"total_price\": \"0.0004275\", \"currency\": \"USD\", \"latency\": 3.713, \"time_to_first_token\": 3.097, \"time_to_generate\": 0.616}}"
+          }
+        },
+        {
+          "1711528775142": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"Sorry, I can't help you with these questions. \", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.4",
+      "ErrorOriginLocation": "Question Classifier",
+      "Confidence": 0.92
+    }
+  },
+  {
+    "traj": {
+      "46c58a73-159b-4628-99ee-40d53fdfa271": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"46c58a73-159b-4628-99ee-40d53fdfa271\", \"sys.query\": \"How do I reset my smart lock if I forget the password?\", \"sys.conversation_id\": \"d9c065e2-7fcb-41a8-895b-ba8796025f00\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"46c58a73-159b-4628-99ee-40d53fdfa271\", \"sys.query\": \"How do I reset my smart lock if I forget the password?\", \"sys.conversation_id\": \"d9c065e2-7fcb-41a8-895b-ba8796025f00\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"How do I reset my smart lock if I forget the password?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 742, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.000371\", \"completion_tokens\": 48, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000072\", \"total_tokens\": 790, \"total_price\": \"0.000443\", \"currency\": \"USD\", \"latency\": 5.807, \"time_to_first_token\": 4.997, \"time_to_generate\": 0.81}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"How do I reset my smart lock if I forget the password?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"To reset your smart lock if you forget the password, the steps can vary depending on the brand and model of your lock. Generally, you can try the following:\\n\\n1. Look for a physical reset button on the lock, often located inside the battery compartment or on the side of the device.\\n2. Press and hold the reset button for about 10-30 seconds until the lock indicates it is resetting (usually with a beep or blinking light).\\n3. After reset, the lock will return to its factory default settings, and you can set a new password.\\n\\nIf your smart lock is connected to an app, you might also be able to reset or override the password through the app, provided you have access to the account.\\n\\nIf these steps don't work, please provide the brand and model of your smart lock for more specific instructions.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 107, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0000535\", \"completion_tokens\": 168, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000252\", \"total_tokens\": 275, \"total_price\": \"0.0003055\", \"currency\": \"USD\", \"latency\": 8.152, \"time_to_first_token\": 6.052, \"time_to_generate\": 2.1}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"To reset your smart lock if you forget the password, the steps can vary depending on the brand and model of your lock. Generally, you can try the following:\\n\\n1. Look for a physical reset button on the lock, often located inside the battery compartment or on the side of the device.\\n2. Press and hold the reset button for about 10-30 seconds until the lock indicates it is resetting (usually with a beep or blinking light).\\n3. After reset, the lock will return to its factory default settings, and you can set a new password.\\n\\nIf your smart lock is connected to an app, you might also be able to reset or override the password through the app, provided you have access to the account.\\n\\nIf these steps don't work, please provide the brand and model of your smart lock for more specific instructions.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.4",
+      "ErrorOriginLocation": "Knowledge Retrieval Node (ID: 1711528770201)",
+      "Confidence": 0.9
+    }
+  },
+  {
+    "traj": {
+      "455b2834-74da-4247-a59e-e69433109615": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"455b2834-74da-4247-a59e-e69433109615\", \"sys.query\": \"What is the recommended charging time for the electric scooter?\", \"sys.conversation_id\": \"c88f9dcd-023d-4c74-a721-ddace65d431f\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"455b2834-74da-4247-a59e-e69433109615\", \"sys.query\": \"What is the recommended charging time for the electric scooter?\", \"sys.conversation_id\": \"c88f9dcd-023d-4c74-a721-ddace65d431f\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"What is the recommended charging time for the electric scooter?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 740, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.00037\", \"completion_tokens\": 40, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.00006\", \"total_tokens\": 780, \"total_price\": \"0.00043\", \"currency\": \"USD\", \"latency\": 1.511, \"time_to_first_token\": 1.356, \"time_to_generate\": 0.155}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"What is the recommended charging time for the electric scooter?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"The recommended charging time for an electric scooter typically ranges from 3 to 8 hours, depending on the model and battery capacity. For the most accurate information, please refer to your scooter's user manual.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 105, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0000525\", \"completion_tokens\": 42, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000063\", \"total_tokens\": 147, \"total_price\": \"0.0001155\", \"currency\": \"USD\", \"latency\": 1.537, \"time_to_first_token\": 1.315, \"time_to_generate\": 0.222}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"The recommended charging time for an electric scooter typically ranges from 3 to 8 hours, depending on the model and battery capacity. For the most accurate information, please refer to your scooter's user manual.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.5",
+      "ErrorOriginLocation": "1711528770201",
+      "Confidence": 0.86
+    }
+  },
+  {
+    "traj": {
+      "6efe293f-eb44-4726-98f6-0849123839a3": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"6efe293f-eb44-4726-98f6-0849123839a3\", \"sys.query\": \"Is the fitness band waterproof?\", \"sys.conversation_id\": \"3414bb6d-3218-4700-8a01-338465350702\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"6efe293f-eb44-4726-98f6-0849123839a3\", \"sys.query\": \"Is the fitness band waterproof?\", \"sys.conversation_id\": \"3414bb6d-3218-4700-8a01-338465350702\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"Is the fitness band waterproof?\"}",
+            "outputs": "{\"class_name\": \"Other questions\", \"class_id\": \"1711528737066\", \"usage\": {\"prompt_tokens\": 735, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0003675\", \"completion_tokens\": 40, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.00006\", \"total_tokens\": 775, \"total_price\": \"0.0004275\", \"currency\": \"USD\", \"latency\": 5.528, \"time_to_first_token\": 4.825, \"time_to_generate\": 0.703}}"
+          }
+        },
+        {
+          "1711528775142": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"Sorry, I can't help you with these questions. \", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.5",
+      "ErrorOriginLocation": "Question Classifier",
+      "Confidence": 0.92
+    }
+  },
+  {
+    "traj": {
+      "49ce3f6a-2d24-4d4b-a1e6-84d85b86bb51": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"49ce3f6a-2d24-4d4b-a1e6-84d85b86bb51\", \"sys.query\": \"How do I calibrate the screen of my tablet?\", \"sys.conversation_id\": \"bd3c68b8-80c5-4c9f-bac6-201d60a3b4bb\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"49ce3f6a-2d24-4d4b-a1e6-84d85b86bb51\", \"sys.query\": \"How do I calibrate the screen of my tablet?\", \"sys.conversation_id\": \"bd3c68b8-80c5-4c9f-bac6-201d60a3b4bb\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"How do I calibrate the screen of my tablet?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 740, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.00037\", \"completion_tokens\": 47, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0000705\", \"total_tokens\": 787, \"total_price\": \"0.0004405\", \"currency\": \"USD\", \"latency\": 1.718, \"time_to_first_token\": 1.553, \"time_to_generate\": 0.165}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"How do I calibrate the screen of my tablet?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"To calibrate the screen of your tablet, you can try the following general steps:\\n\\n1. **Check for Built-in Calibration Tool:** Some tablets have a built-in touchscreen calibration option in the settings. Look for it under Settings > Display or Settings > Advanced settings.\\n\\n2. **Use a Calibration App:** If your tablet doesn\\u2019t have a built-in tool, you can download a touchscreen calibration app from your device\\u2019s app store (Google Play Store for Android, App Store for iPad).\\n\\n3. **Restart Your Device:** Sometimes a simple restart can fix minor touchscreen responsiveness issues.\\n\\n4. **Clean the Screen:** Make sure your screen is clean and free of any dirt or oils that might interfere with touch sensitivity.\\n\\n5. **Update Software:** Ensure your tablet\\u2019s operating system and apps are up to date, as updates can improve touchscreen performance.\\n\\n6. **Factory Reset (Last Resort):** If calibration issues persist, you may consider performing a factory reset after backing up your data.\\n\\nIf you tell me your tablet's brand and model, I can provide more specific instructions.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 105, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0000525\", \"completion_tokens\": 216, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000324\", \"total_tokens\": 321, \"total_price\": \"0.0003765\", \"currency\": \"USD\", \"latency\": 3.706, \"time_to_first_token\": 1.229, \"time_to_generate\": 2.477}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"To calibrate the screen of your tablet, you can try the following general steps:\\n\\n1. **Check for Built-in Calibration Tool:** Some tablets have a built-in touchscreen calibration option in the settings. Look for it under Settings > Display or Settings > Advanced settings.\\n\\n2. **Use a Calibration App:** If your tablet doesn\\u2019t have a built-in tool, you can download a touchscreen calibration app from your device\\u2019s app store (Google Play Store for Android, App Store for iPad).\\n\\n3. **Restart Your Device:** Sometimes a simple restart can fix minor touchscreen responsiveness issues.\\n\\n4. **Clean the Screen:** Make sure your screen is clean and free of any dirt or oils that might interfere with touch sensitivity.\\n\\n5. **Update Software:** Ensure your tablet\\u2019s operating system and apps are up to date, as updates can improve touchscreen performance.\\n\\n6. **Factory Reset (Last Resort):** If calibration issues persist, you may consider performing a factory reset after backing up your data.\\n\\nIf you tell me your tablet's brand and model, I can provide more specific instructions.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "2.1",
+      "ErrorOriginLocation": "1711528770201",
+      "Confidence": 0.9
+    }
+  },
+  {
+    "traj": {
+      "15941d3f-5304-4537-bfff-62a49b962418": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"15941d3f-5304-4537-bfff-62a49b962418\", \"sys.query\": \"What is the recommended charging time for the electric scooter?\", \"sys.conversation_id\": \"34066bf4-ad06-408e-af44-0c40427bf0fc\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"15941d3f-5304-4537-bfff-62a49b962418\", \"sys.query\": \"What is the recommended charging time for the electric scooter?\", \"sys.conversation_id\": \"34066bf4-ad06-408e-af44-0c40427bf0fc\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"What is the recommended charging time for the electric scooter?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 740, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.00037\", \"completion_tokens\": 40, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.00006\", \"total_tokens\": 780, \"total_price\": \"0.00043\", \"currency\": \"USD\", \"latency\": 3.478, \"time_to_first_token\": 3.208, \"time_to_generate\": 0.27}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"What is the recommended charging time for the electric scooter?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"The recommended charging time for an electric scooter typically ranges from 3 to 8 hours, depending on the battery capacity and charger specifications. For the best results and to maintain battery health, it's advisable to refer to the specific scooter's user manual for exact charging times. If you provide the model of your electric scooter, I can give a more precise answer.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 105, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0000525\", \"completion_tokens\": 72, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000108\", \"total_tokens\": 177, \"total_price\": \"0.0001605\", \"currency\": \"USD\", \"latency\": 1.986, \"time_to_first_token\": 1.26, \"time_to_generate\": 0.726}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"The recommended charging time for an electric scooter typically ranges from 3 to 8 hours, depending on the battery capacity and charger specifications. For the best results and to maintain battery health, it's advisable to refer to the specific scooter's user manual for exact charging times. If you provide the model of your electric scooter, I can give a more precise answer.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "2.1",
+      "ErrorOriginLocation": "1711528770201",
+      "Confidence": 0.86
+    }
+  },
+  {
+    "traj": {
+      "83534211-b067-4fc8-bd82-7ea806f75754": [
+        {
+          "1711528708197": {
+            "inputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"83534211-b067-4fc8-bd82-7ea806f75754\", \"sys.query\": \"How do I switch languages on the smart speaker?\", \"sys.conversation_id\": \"dc3b0fd7-e0d3-46d9-811b-6c13738ddfc7\", \"sys.dialogue_count\": 1}",
+            "outputs": "{\"sys.files\": [], \"sys.user_id\": \"abc-123\", \"sys.app_id\": \"f7b31ad5-bf04-4c93-b033-4aca2b273401\", \"sys.workflow_id\": \"9ff7ed19-5359-46d9-87f7-29491c67e029\", \"sys.workflow_run_id\": \"83534211-b067-4fc8-bd82-7ea806f75754\", \"sys.query\": \"How do I switch languages on the smart speaker?\", \"sys.conversation_id\": \"dc3b0fd7-e0d3-46d9-811b-6c13738ddfc7\", \"sys.dialogue_count\": 1}"
+          }
+        },
+        {
+          "1711528709608": {
+            "inputs": "{\"query\": \"How do I switch languages on the smart speaker?\"}",
+            "outputs": "{\"class_name\": \"Questions about how to use products\", \"class_id\": \"1711528736549\", \"usage\": {\"prompt_tokens\": 739, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.0003695\", \"completion_tokens\": 39, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.0000585\", \"total_tokens\": 778, \"total_price\": \"0.000428\", \"currency\": \"USD\", \"latency\": 5.45, \"time_to_first_token\": 4.534, \"time_to_generate\": 0.916}}"
+          }
+        },
+        {
+          "1711528770201": {
+            "inputs": "{\"query\": \"How do I switch languages on the smart speaker?\"}",
+            "outputs": "{\"result\": []}"
+          }
+        },
+        {
+          "1711528815414": {
+            "inputs": "{}",
+            "outputs": "{\"text\": \"To switch languages on your smart speaker, you typically need to go into the device's companion app on your smartphone or tablet. Look for language settings under the device or general settings menu. From there, you can select your preferred language. If you tell me the brand or model of your smart speaker, I can provide more specific instructions.\", \"reasoning_content\": \"\", \"usage\": {\"prompt_tokens\": 104, \"prompt_unit_price\": \"0.0005\", \"prompt_price_unit\": \"0.001\", \"prompt_price\": \"0.000052\", \"completion_tokens\": 68, \"completion_unit_price\": \"0.0015\", \"completion_price_unit\": \"0.001\", \"completion_price\": \"0.000102\", \"total_tokens\": 172, \"total_price\": \"0.000154\", \"currency\": \"USD\", \"latency\": 2.534, \"time_to_first_token\": 1.802, \"time_to_generate\": 0.731}, \"finish_reason\": \"stop\"}"
+          }
+        },
+        {
+          "1711528835179": {
+            "inputs": "{}",
+            "outputs": "{\"answer\": \"To switch languages on your smart speaker, you typically need to go into the device's companion app on your smartphone or tablet. Look for language settings under the device or general settings menu. From there, you can select your preferred language. If you tell me the brand or model of your smart speaker, I can provide more specific instructions.\", \"files\": []}"
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "RootCauseCategory": "1.6",
+      "ErrorOriginLocation": "1711528770201",
+      "Confidence": 0.92
+    }
+  }
+]

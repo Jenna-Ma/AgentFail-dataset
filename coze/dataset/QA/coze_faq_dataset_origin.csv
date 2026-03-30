@@ -1,0 +1,54 @@
+"购买企业版之后，个人版里的内容如何迁移；
+企业版如何迁移bot
+从个人版往专业版迁移，有操作方式吗？",开通扣子专业版之后，如需使用扣子基础版中已经搭建的 Bot、工作流、知识库等，可以手动将基础版账号中的资源一次性批量复制到专业版账号中。复制基础版资源到专业版的使用说明可参考https://www.coze.cn/docs/guides/copy_to_pro
+"知识库收费政策
+知识库如何收费
+知识库超过10gb收费吗",每个主账号在使用扣子专业版时享有 10GB 的免费知识库存储空间。一旦存储空间使用量达到上限，将无法上传更多数据。如果需要更多空间，你可以选择按年或按月购买额外的存储容量。若购买的存储空间到期后未续费，扣子专业版将对超出 10GB 的部分按小时计费。 详细说明可参考专业版文档 https://www.volcengine.com/docs/84458/1288966
+coze专业版是否不支持复制工作流商店上的工作流？,需求已在开发中，请耐心等待
+"子用户的花费算在主账号上吗
+子用户的消耗谁承担
+子用户由主账号付费吗",扣子专业版子用户产生的任何费用均被计入扣子专业版主账号的账单中，由主账号统一支付费用。
+bot资源包可以抵扣方舟模型的费用吗,不能，bot资源包目前可抵扣的范围仅包括bot调用次数和知识库超额使用费。详细说明可参考专业版文档  https://www.volcengine.com/docs/84458/1288960
+专业版扣子如何接入通义千问的模型,专业版扣子暂时只支持接入火山方舟内的模型，目前方舟内不包含通义千问模型。
+账号中有token，为什么还会欠费,扣子专业版除了 方舟的token费用之外，还会收取 Bot 调用、知识库空间等费用。如果账号中余额不足以支付 Bot 调用产生的费用，账号会转为欠费状态。详细说明可参考专业版文档  https://www.volcengine.com/docs/84458/1288960、https://www.volcengine.com/docs/84458/1288958
+是否支持自定义的大模型接口,暂不支持自定义的大模型接口。专业版中支持的大模型取决于火山方舟支持的模型范围。
+支持接入其他模型的 API 吗,暂不支持。你可以开通扣子专业版，使用火山方舟提供的模型接入点。
+Coze是否在海外市场提供销售服务？,关于扣子的海外版本为 Coze，已在部分国家和地区上线，产品功能上与国内版本有部分差异。Coze海外版本的官方地址为 https://www.coze.com
+"机器人无法分享
+发布到豆包后不能分享智能体",可能是由于你的智能体使用了 GPT 模型。由于国内的安全合规考虑，使用 GPT 模型的智能体在 Bot Studio（bots.bytedance.net）发布后是不允许分享的。如果你想分享，可以切换到海外版 Bot Studio（bots.byteintl.net），发布到 Cici（海外版豆包）可以分享。
+是否支持飞书文档导入,知识库支持导入飞书表格或飞书文档
+是否有node sdk,暂时只有 Web SDK，没有 node.js SDK 目前支持的SDK列表可以参考 https://www.coze.cn/docs/developer_guides/coze_api_overview
+是否有go sdk,暂时只有 Web SDK，没有go SDK。目前支持的SDK列表可以参考 https://www.coze.cn/docs/developer_guides/coze_api_overview
+如何分享bot给其他人,对于已经发布到各个渠道中的bot，你可以在渠道中找到这些 Bot，并将链接分享给其他人，邀请其他用户使用你的 Bot。对于未发布的 Bot，你可以将其迁移到团队空间下，团队中其他成员可以在调试页面体验这个bot效果。
+其他人可以编辑我的知识库吗,知识库暂不支持协同编辑，同一个团队空间中的其他用户可以查看空间中的知识库内容、使用其他人的知识库，但不能编辑其他用户的知识库
+自定义插件应该怎么发布？,创建自定义插件的流程可参考https://www.coze.cn/docs/guides/plugin_example
+workflow的LLM节点，入参的文本太长,是的，LLM节点在处理输入文本时，如果输入的文本长度超过模型的最大上下文长度（通常为2048个token），就会出现错误。你可以尝试将输入的文本进行裁剪，使其长度不超过模型的最大上下文长度。
+workflow的使用方式只能通过Prompt里面来定义吗,你可以通过工作流模式、multi-agent模式、工作流嵌套工作流节点、在prompt中指定工作流等方式使用工作流。
+kwonledge 知识库 可以支持飞书文档吗,扣子支持上传飞书文档和飞书表格，但必须是对外公开可见的文档。详细说明可以参考https://www.coze.cn/docs/guides/knowledge
+如何获取botid,进入 Bot 的开发页面，开发页面 URL 中 bot 参数后的数字就是 Bot ID。例如https://www.coze.cn/space/341****/bot/73428668*****，bot ID 为73428668*****。
+"请问我已经开通了飞书机器人读取文档的权限，为什么还是无法读取
+为什么看不到我要导入的飞书文档
+怎么导入飞书文档",请确认待导入知识库的文档是否已开启了公共读的权限，并允许所有人访问。
+发布到Cici后，消息发布出去，显示AI智能体角色设定审核中，请稍后再试。 这是啥意思,可能原因是此 Bot 正在审核中。
+"
+Variable 被 Reset 以后又会重新被记录",可能是上下文的问题，建议reset后清除一下上下文
+SDK 支持自定义参数吗？,SDK 暂不支持通过自定义参数传入变量值。例如前端采集的cookie等变量，暂不支持传入 SDK，并在bot中使用。
+接口文档在哪里看？专业版/基础版的 API 有文档吗？,扣子 API 接口定义在专业版和基础版上无差异，只在免费额度上有差异。API接口文档可参考https://www.coze.cn/docs/developer_guides/coze_api_overview
+service not available in your country,"这个报错代表触发了地域的封禁，请按以下步骤进行排查：
+1、检查自己的网络是否开启了VPN
+2、如果无法解决请提oncall"
+workflow 里引用了 plugin，然后 plugin 的 output 新增了一个字段，但是 workflow 里的 plugin 节点看不到新增的字段,修改了插件之后，需要在工作流界面重新拖节点，重新拖节点之后就可以看到新的结构
+input size exceeded: [real:xxxx] >= [limit:xxx],代码节点输入的数据量大小超出限制
+"blocked by record, block_type=UserLimitation",这个报错是触发了Chat Engine的频控，请直接给Bot提Oncall
+"blocked by record, block_type=UserLimitation","SQL解析错误都是用户拼接的SQL语句不符合SQL语法规范，毕竟常见的问题如下，可以挨个排查一下，如果检查不出来可以提Oncall
+1、INSERT INTO VALUES、Where等语法的后面添加的输入的引用{{xxx}}，如果是字符串类型建议补充单引号，这样才符合语法，否则空字符串就无法解析"
+为什么节点的输出里会多出来errorBody/errorMessage/errorCode,检查节点的右上角是否开启了异常忽略，目前只有插件、大模型、代码、工作流、图像流支持异常忽略
+扣子使用额度,"扣子使用额度规则：
+1.目前扣子有使用额度限制，当日额度用完后，可以尝试切换其他模型使用，或者等待第二天额度刷新。
+3.如果有更多额度需求，可以使用专业版，支持付费提升额度。
+扣子额度介绍：https://www.coze.cn/docs/guides/edition"
+Bot可以回复，但是“无法生成用户问题建议”,目前问题推荐走单独的模型和额度统计，每人每天100次使用额度，与Bot所使用的模型无关。额度用完后需要等待第二天额度刷新。
+提示词相关教程,"提示词相关教程
+Prompt engineering https://platform.openai.com/docs/guides/prompt-engineering
+扣子教程-编写提示词 https://www.coze.cn/docs/guides/prompt "
+找不到已收藏的Bot,在扣子主页，点击右上角“Bots”，即可以查看已收藏的Bot，对话框@相关bot还可以进行对话。
