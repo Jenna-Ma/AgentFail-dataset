@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-053",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T14:20:00Z",
+  "stoppedAt": "2026-07-23T14:20:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "a7157384-5433-4bba-b686-c8bda288af29",
+    "query_time": "03/17/2024, 17:01:16 PT",
+    "domain": "sports",
+    "question_type": "simple",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784816400000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-053",
+                      "chatInput": "can you carry less than the maximum number of clubs during a round of golf?",
+                      "interaction_id": "a7157384-5433-4bba-b686-c8bda288af29",
+                      "domain": "sports"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784816400028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 157,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "can you carry less than the maximum number of clubs during a round of golf?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784816400265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1001,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Rules: Choose your weapons wisely | Golf Digest",
+                                "page_url": "https://www.golfdigest.com/story/rulesquiz",
+                                "page_snippet": "9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry ...9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry more than 14 clubs in your bag provided the extra clubs aren't used during the round. 13. If your wedge creates too much glare, you can tape over the top of it during a round and still use the club. 14. To hit a drive over some trees, you may use a tee that is four inches long. 15. You carry only 13 clubs in your bag, so you may borrow your partner's gap wedge for a shot. An equipment rules quiz",
+                                "page_last_modified": " Mon, 18 Mar 2024 00:01:13 GMT"
+                              },
+                              {
+                                "page_name": "How many clubs can you have in your golf bag?",
+                                "page_url": "https://www.glenmuir.com/news/how-many-clubs-can-you-have-in-your-golf-bag",
+                                "page_snippet": "However, <strong>players are allowed to carry any variety of clubs they wish, so long as the total does not exceed 14.</strong> The rule is written into the regulations of all the major golfing authorities. The R&amp;A regulations state in their rules, for example, that: A player must not:If you are new to the game of golf, there's a lot to learn about this marvellous game. One key - yet often overlooked - factor regarding golf equipment is how many golf clubs you are allowed to carry in your golf bag. In this article, we have everything you are looking for, including how many clubs in a golf bag are allowed, the penalty for carrying too many clubs, when you are permitted to use your partner's clubs and much, much more. However, players are allowed to carry any variety of clubs they wish, so long as the total does not exceed 14. The rule is written into the regulations of all the major golfing authorities. The R&A regulations state in their rules, for example, that: A player must not: If you want to use your friend's golf club during a round, you can't do so because, due to the rules, a player must only use their own clubs in order to make a stroke that counts towards his score. You can practice with someone else's clubs, but when it comes to actual gameplay, it is considered a big no-no. You and your opponent are allowed to carry your clubs within the same golf bag instead of using separate golf bags, but each player's club must be identifiable as their own.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Rules: Choose your weapons wisely | Golf Digest",
+                                "page_url": "https://www.golfdigest.com/story/rulesquiz",
+                                "page_snippet": "9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry ...9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry more than 14 clubs in your bag provided the extra clubs aren't used during the round. 13. If your wedge creates too much glare, you can tape over the top of it during a round and still use the club. 14. To hit a drive over some trees, you may use a tee that is four inches long. 15. You carry only 13 clubs in your bag, so you may borrow your partner's gap wedge for a shot. An equipment rules quiz",
+                                "page_last_modified": " Mon, 18 Mar 2024 00:01:13 GMT"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Rules: Choose your weapons wisely | Golf Digest",
+                          "page_url": "https://www.golfdigest.com/story/rulesquiz",
+                          "page_snippet": "9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry ...9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry more than 14 clubs in your bag provided the extra clubs aren't used during the round. 13. If your wedge creates too much glare, you can tape over the top of it during a round and still use the club. 14. To hit a drive over some trees, you may use a tee that is four inches long. 15. You carry only 13 clubs in your bag, so you may borrow your partner's gap wedge for a shot. An equipment rules quiz",
+                          "page_last_modified": " Mon, 18 Mar 2024 00:01:13 GMT"
+                        },
+                        {
+                          "page_name": "How many clubs can you have in your golf bag?",
+                          "page_url": "https://www.glenmuir.com/news/how-many-clubs-can-you-have-in-your-golf-bag",
+                          "page_snippet": "However, <strong>players are allowed to carry any variety of clubs they wish, so long as the total does not exceed 14.</strong> The rule is written into the regulations of all the major golfing authorities. The R&amp;A regulations state in their rules, for example, that: A player must not:If you are new to the game of golf, there's a lot to learn about this marvellous game. One key - yet often overlooked - factor regarding golf equipment is how many golf clubs you are allowed to carry in your golf bag. In this article, we have everything you are looking for, including how many clubs in a golf bag are allowed, the penalty for carrying too many clubs, when you are permitted to use your partner's clubs and much, much more. However, players are allowed to carry any variety of clubs they wish, so long as the total does not exceed 14. The rule is written into the regulations of all the major golfing authorities. The R&A regulations state in their rules, for example, that: A player must not: If you want to use your friend's golf club during a round, you can't do so because, due to the rules, a player must only use their own clubs in order to make a stroke that counts towards his score. You can practice with someone else's clubs, but when it comes to actual gameplay, it is considered a big no-no. You and your opponent are allowed to carry your clubs within the same golf bag instead of using separate golf bags, but each player's club must be identifiable as their own.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Rules: Choose your weapons wisely | Golf Digest",
+                          "page_url": "https://www.golfdigest.com/story/rulesquiz",
+                          "page_snippet": "9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry ...9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry more than 14 clubs in your bag provided the extra clubs aren't used during the round. 13. If your wedge creates too much glare, you can tape over the top of it during a round and still use the club. 14. To hit a drive over some trees, you may use a tee that is four inches long. 15. You carry only 13 clubs in your bag, so you may borrow your partner's gap wedge for a shot. An equipment rules quiz",
+                          "page_last_modified": " Mon, 18 Mar 2024 00:01:13 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784816401412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1446,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "yes, you can carry fewer than the maximum 14 clubs in a match\n\n信息来源：\n1. Rules: Choose your weapons wisely | Golf Digest - https://www.golfdigest.com/story/rulesquiz\n2. How many clubs can you have in your golf bag? - https://www.glenmuir.com/news/how-many-clubs-can-you-have-in-your-golf-bag\n3. Rules: Choose your weapons wisely | Golf Digest - https://www.golfdigest.com/story/rulesquiz",
+                      "query": "can you carry less than the maximum number of clubs during a round of golf?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "can you carry less than the maximum number of clubs during a round of golf?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Rules: Choose your weapons wisely | Golf Digest",
+                          "page_url": "https://www.golfdigest.com/story/rulesquiz",
+                          "page_snippet": "9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry ...9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry more than 14 clubs in your bag provided the extra clubs aren't used during the round. 13. If your wedge creates too much glare, you can tape over the top of it during a round and still use the club. 14. To hit a drive over some trees, you may use a tee that is four inches long. 15. You carry only 13 clubs in your bag, so you may borrow your partner's gap wedge for a shot. An equipment rules quiz",
+                          "page_last_modified": " Mon, 18 Mar 2024 00:01:13 GMT"
+                        },
+                        {
+                          "page_name": "How many clubs can you have in your golf bag?",
+                          "page_url": "https://www.glenmuir.com/news/how-many-clubs-can-you-have-in-your-golf-bag",
+                          "page_snippet": "However, <strong>players are allowed to carry any variety of clubs they wish, so long as the total does not exceed 14.</strong> The rule is written into the regulations of all the major golfing authorities. The R&amp;A regulations state in their rules, for example, that: A player must not:If you are new to the game of golf, there's a lot to learn about this marvellous game. One key - yet often overlooked - factor regarding golf equipment is how many golf clubs you are allowed to carry in your golf bag. In this article, we have everything you are looking for, including how many clubs in a golf bag are allowed, the penalty for carrying too many clubs, when you are permitted to use your partner's clubs and much, much more. However, players are allowed to carry any variety of clubs they wish, so long as the total does not exceed 14. The rule is written into the regulations of all the major golfing authorities. The R&A regulations state in their rules, for example, that: A player must not: If you want to use your friend's golf club during a round, you can't do so because, due to the rules, a player must only use their own clubs in order to make a stroke that counts towards his score. You can practice with someone else's clubs, but when it comes to actual gameplay, it is considered a big no-no. You and your opponent are allowed to carry your clubs within the same golf bag instead of using separate golf bags, but each player's club must be identifiable as their own.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Rules: Choose your weapons wisely | Golf Digest",
+                          "page_url": "https://www.golfdigest.com/story/rulesquiz",
+                          "page_snippet": "9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry ...9. If you accidentally run over a golf club and damage it with your cart, you can replace it during the round. 10. For extra distance, you may use a 48-inch driver (the standard length is 45 inches). 11. During a tournament, you may remove a scuffed ball from play at any time. 12. You can carry more than 14 clubs in your bag provided the extra clubs aren't used during the round. 13. If your wedge creates too much glare, you can tape over the top of it during a round and still use the club. 14. To hit a drive over some trees, you may use a tee that is four inches long. 15. You carry only 13 clubs in your bag, so you may borrow your partner's gap wedge for a shot. An equipment rules quiz",
+                          "page_last_modified": " Mon, 18 Mar 2024 00:01:13 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-001",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T10:00:00Z",
+  "stoppedAt": "2026-07-23T10:00:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "2f3101f3-8852-435b-9d63-6286f07176e3",
+    "query_time": "02/28/2024, 08:36:23 PT",
+    "domain": "finance",
+    "question_type": "comparison",
+    "static_or_dynamic": "real-time"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784800800000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-001",
+                      "chatInput": "which company's market capitalization is higher, nwgl or mficl?",
+                      "interaction_id": "2f3101f3-8852-435b-9d63-6286f07176e3",
+                      "domain": "finance"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784800800028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 124,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "which company's market capitalization is higher, nwgl or mficl?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784800800265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 763,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Biggest Companies in the World by Market Cap",
+                                "page_url": "https://www.investopedia.com/biggest-companies-in-the-world-by-market-cap-5212784",
+                                "page_snippet": "",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Companies ranked by Market Cap - CompaniesMarketCap.com",
+                                "page_url": "https://companiesmarketcap.com/",
+                                "page_snippet": "",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Over 4,000 companies ranked by Market Cap",
+                                "page_url": "https://8marketcap.com/companies/",
+                                "page_snippet": "",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Biggest Companies in the World by Market Cap",
+                          "page_url": "https://www.investopedia.com/biggest-companies-in-the-world-by-market-cap-5212784",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Companies ranked by Market Cap - CompaniesMarketCap.com",
+                          "page_url": "https://companiesmarketcap.com/",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Over 4,000 companies ranked by Market Cap",
+                          "page_url": "https://8marketcap.com/companies/",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784800801412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1218,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "nwgl\n\n信息来源：\n1. Biggest Companies in the World by Market Cap - https://www.investopedia.com/biggest-companies-in-the-world-by-market-cap-5212784\n2. Companies ranked by Market Cap - CompaniesMarketCap.com - https://companiesmarketcap.com/\n3. Over 4,000 companies ranked by Market Cap - https://8marketcap.com/companies/",
+                      "query": "which company's market capitalization is higher, nwgl or mficl?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "which company's market capitalization is higher, nwgl or mficl?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Biggest Companies in the World by Market Cap",
+                          "page_url": "https://www.investopedia.com/biggest-companies-in-the-world-by-market-cap-5212784",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Companies ranked by Market Cap - CompaniesMarketCap.com",
+                          "page_url": "https://companiesmarketcap.com/",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Over 4,000 companies ranked by Market Cap",
+                          "page_url": "https://8marketcap.com/companies/",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

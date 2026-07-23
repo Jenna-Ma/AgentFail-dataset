@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-012",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T10:55:00Z",
+  "stoppedAt": "2026-07-23T10:55:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "3059ffe8-ea17-4f45-a479-aea408433a5a",
+    "query_time": "03/19/2024, 23:27:40 PT",
+    "domain": "movie",
+    "question_type": "simple",
+    "static_or_dynamic": "slow-changing"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784804100000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-012",
+                      "chatInput": "can you tell me the original language of raze?",
+                      "interaction_id": "3059ffe8-ea17-4f45-a479-aea408433a5a",
+                      "domain": "movie"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784804100028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 168,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "can you tell me the original language of raze?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784804100265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 831,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "“I loved Valorant’s Raze as a character, so I knew I’d have ...",
+                                "page_url": "https://www.sportskeeda.com/valorant/news-i-loved-valorant-s-raze-character-i-knew-i-d-fun-recording-her-carolina-ravassa",
+                                "page_snippet": "Raze, the popular and aggressive duelist agent, has been a part of the Valorant Protocol since its closed beta.I’d definitely try Raze. I also just know I’m really bad at it, so I’m fine staying away for a while. Q: You have been working as a voice actor for a long time and have experience in portraying video game characters as well. Can you put some light on the future of voice acting in video games? Any suggestions or messages to the aspiring ones? Carolina: If you absolutely love it, keep doing it! Q: Do you play Valorant often? If yes, what is your go-to agent? Is it Raze or any other Valorant agent? The Brazilian Valorant duelist is equipped with explosive abilities which helps her in mobility and causes damage to the enemies. Raze has been a go-to pick for players with aggressive playstyles in Valorant. Raze has been beautifully portrayed in Valorant by Carolina Ravassa, a Colombian actor and voice artist. Apart from Valorant, the voice actor has also been credited for lending her voice to video game characters from some of the most popular games like Sombra in Overwatch, Taliana Martinez in Grand Theft Auto V, and many more.",
+                                "page_last_modified": " Mon, 18 Mar 2024 20:44:49 GMT"
+                              },
+                              {
+                                "page_name": "Raze Definition & Meaning - Merriam-Webster",
+                                "page_url": "https://www.merriam-webster.com/dictionary/raze",
+                                "page_snippet": "The meaning of RAZE is to destroy to the ground : demolish. How to use raze in a sentence.to destroy to the ground : demolish; to scrape, cut, or shave off; erase… See the full definition 2024 The original mall was vacated and razed in 2020 to make way for the radical reimagining of the site. —Demetrius Simms, Robb Report, 14 Feb. 2024 Once the area was cleaned up, developers tried to raze the row and build a tower. —Adriane Quinlan, Curbed, 6 Feb. 2024 See More · These examples are programmatically compiled from various online sources to illustrate current usage of the word 'raze.' 2024 If razed, the resulting dirt lot at 101 Ash St. would be worth between $36 million and $42 million, a city consultant said. —Jeff McDonald, San Diego Union-Tribune, 7 Jan. 2024 Kate was there as 80 percent of Izyum was razed, as more than 1,000 of her neighbors were killed. —Kamila Hrabchuk, Washington Post, 7 Jan. 2024 The original mall was vacated and razed in 2020 to make way for the radical reimagining of the site. These examples are programmatically compiled from various online sources to illustrate current usage of the word 'raze.' Any opinions expressed in the examples do not represent those of Merriam-Webster or its editors. Send us feedback about these examples. ... “Raze.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/raze.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "r/VALORANT on Reddit: Agents language",
+                                "page_url": "https://www.reddit.com/r/VALORANT/comments/hnk7lw/agents_language/",
+                                "page_snippet": "Posted by u/Moustachelance - 100 votes and 31 commentsCorrect me if I'm wrong as I'm not Brazilian. I know that Portuguese and Spanish have lots of similarities, but a lot of Raze's quotes sound like they're straight up Spanish. I use her most times I play and love when she speaks! Beautiful accent some funny one liners. Raze has all kinds of little phrases in brazillian portugese. Source: am brazillian but I play the game in English. ... Correct me if I'm wrong as I'm not Brazilian. I know that Portuguese and Spanish have lots of similarities, but a lot of Raze's quotes sound like they're straight up Spanish. Source: am brazillian but I play the game in English. ... Correct me if I'm wrong as I'm not Brazilian. I know that Portuguese and Spanish have lots of similarities, but a lot of Raze's quotes sound like they're straight up Spanish. I use her most times I play and love when she speaks! I enjoy the accent, but again I'm not sure if that's how a Brazilian actually sounds. I really just like Phoenix and Raze's quotes tbh ... As I'm brazilian I can answer this: the accent in the english version is not brazilian at all, only the words are spoken correctly, because the colombian voice actress speaks portuguese, spanish and english. If you switch the game to portuguese the Raze VA is brazilian with a recognizable accent from Bahia, a northeastern state",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "“I loved Valorant’s Raze as a character, so I knew I’d have ...",
+                          "page_url": "https://www.sportskeeda.com/valorant/news-i-loved-valorant-s-raze-character-i-knew-i-d-fun-recording-her-carolina-ravassa",
+                          "page_snippet": "Raze, the popular and aggressive duelist agent, has been a part of the Valorant Protocol since its closed beta.I’d definitely try Raze. I also just know I’m really bad at it, so I’m fine staying away for a while. Q: You have been working as a voice actor for a long time and have experience in portraying video game characters as well. Can you put some light on the future of voice acting in video games? Any suggestions or messages to the aspiring ones? Carolina: If you absolutely love it, keep doing it! Q: Do you play Valorant often? If yes, what is your go-to agent? Is it Raze or any other Valorant agent? The Brazilian Valorant duelist is equipped with explosive abilities which helps her in mobility and causes damage to the enemies. Raze has been a go-to pick for players with aggressive playstyles in Valorant. Raze has been beautifully portrayed in Valorant by Carolina Ravassa, a Colombian actor and voice artist. Apart from Valorant, the voice actor has also been credited for lending her voice to video game characters from some of the most popular games like Sombra in Overwatch, Taliana Martinez in Grand Theft Auto V, and many more.",
+                          "page_last_modified": " Mon, 18 Mar 2024 20:44:49 GMT"
+                        },
+                        {
+                          "page_name": "Raze Definition & Meaning - Merriam-Webster",
+                          "page_url": "https://www.merriam-webster.com/dictionary/raze",
+                          "page_snippet": "The meaning of RAZE is to destroy to the ground : demolish. How to use raze in a sentence.to destroy to the ground : demolish; to scrape, cut, or shave off; erase… See the full definition 2024 The original mall was vacated and razed in 2020 to make way for the radical reimagining of the site. —Demetrius Simms, Robb Report, 14 Feb. 2024 Once the area was cleaned up, developers tried to raze the row and build a tower. —Adriane Quinlan, Curbed, 6 Feb. 2024 See More · These examples are programmatically compiled from various online sources to illustrate current usage of the word 'raze.' 2024 If razed, the resulting dirt lot at 101 Ash St. would be worth between $36 million and $42 million, a city consultant said. —Jeff McDonald, San Diego Union-Tribune, 7 Jan. 2024 Kate was there as 80 percent of Izyum was razed, as more than 1,000 of her neighbors were killed. —Kamila Hrabchuk, Washington Post, 7 Jan. 2024 The original mall was vacated and razed in 2020 to make way for the radical reimagining of the site. These examples are programmatically compiled from various online sources to illustrate current usage of the word 'raze.' Any opinions expressed in the examples do not represent those of Merriam-Webster or its editors. Send us feedback about these examples. ... “Raze.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/raze.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "r/VALORANT on Reddit: Agents language",
+                          "page_url": "https://www.reddit.com/r/VALORANT/comments/hnk7lw/agents_language/",
+                          "page_snippet": "Posted by u/Moustachelance - 100 votes and 31 commentsCorrect me if I'm wrong as I'm not Brazilian. I know that Portuguese and Spanish have lots of similarities, but a lot of Raze's quotes sound like they're straight up Spanish. I use her most times I play and love when she speaks! Beautiful accent some funny one liners. Raze has all kinds of little phrases in brazillian portugese. Source: am brazillian but I play the game in English. ... Correct me if I'm wrong as I'm not Brazilian. I know that Portuguese and Spanish have lots of similarities, but a lot of Raze's quotes sound like they're straight up Spanish. Source: am brazillian but I play the game in English. ... Correct me if I'm wrong as I'm not Brazilian. I know that Portuguese and Spanish have lots of similarities, but a lot of Raze's quotes sound like they're straight up Spanish. I use her most times I play and love when she speaks! I enjoy the accent, but again I'm not sure if that's how a Brazilian actually sounds. I really just like Phoenix and Raze's quotes tbh ... As I'm brazilian I can answer this: the accent in the english version is not brazilian at all, only the words are spoken correctly, because the colombian voice actress speaks portuguese, spanish and english. If you switch the game to portuguese the Raze VA is brazilian with a recognizable accent from Bahia, a northeastern state",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784804101412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1503,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "en\n\n信息来源：\n1. “I loved Valorant’s Raze as a character, so I knew I’d have ... - https://www.sportskeeda.com/valorant/news-i-loved-valorant-s-raze-character-i-knew-i-d-fun-recording-her-carolina-ravassa\n2. Raze Definition & Meaning - Merriam-Webster - https://www.merriam-webster.com/dictionary/raze\n3. r/VALORANT on Reddit: Agents language - https://www.reddit.com/r/VALORANT/comments/hnk7lw/agents_language/",
+                      "query": "can you tell me the original language of raze?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "can you tell me the original language of raze?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "“I loved Valorant’s Raze as a character, so I knew I’d have ...",
+                          "page_url": "https://www.sportskeeda.com/valorant/news-i-loved-valorant-s-raze-character-i-knew-i-d-fun-recording-her-carolina-ravassa",
+                          "page_snippet": "Raze, the popular and aggressive duelist agent, has been a part of the Valorant Protocol since its closed beta.I’d definitely try Raze. I also just know I’m really bad at it, so I’m fine staying away for a while. Q: You have been working as a voice actor for a long time and have experience in portraying video game characters as well. Can you put some light on the future of voice acting in video games? Any suggestions or messages to the aspiring ones? Carolina: If you absolutely love it, keep doing it! Q: Do you play Valorant often? If yes, what is your go-to agent? Is it Raze or any other Valorant agent? The Brazilian Valorant duelist is equipped with explosive abilities which helps her in mobility and causes damage to the enemies. Raze has been a go-to pick for players with aggressive playstyles in Valorant. Raze has been beautifully portrayed in Valorant by Carolina Ravassa, a Colombian actor and voice artist. Apart from Valorant, the voice actor has also been credited for lending her voice to video game characters from some of the most popular games like Sombra in Overwatch, Taliana Martinez in Grand Theft Auto V, and many more.",
+                          "page_last_modified": " Mon, 18 Mar 2024 20:44:49 GMT"
+                        },
+                        {
+                          "page_name": "Raze Definition & Meaning - Merriam-Webster",
+                          "page_url": "https://www.merriam-webster.com/dictionary/raze",
+                          "page_snippet": "The meaning of RAZE is to destroy to the ground : demolish. How to use raze in a sentence.to destroy to the ground : demolish; to scrape, cut, or shave off; erase… See the full definition 2024 The original mall was vacated and razed in 2020 to make way for the radical reimagining of the site. —Demetrius Simms, Robb Report, 14 Feb. 2024 Once the area was cleaned up, developers tried to raze the row and build a tower. —Adriane Quinlan, Curbed, 6 Feb. 2024 See More · These examples are programmatically compiled from various online sources to illustrate current usage of the word 'raze.' 2024 If razed, the resulting dirt lot at 101 Ash St. would be worth between $36 million and $42 million, a city consultant said. —Jeff McDonald, San Diego Union-Tribune, 7 Jan. 2024 Kate was there as 80 percent of Izyum was razed, as more than 1,000 of her neighbors were killed. —Kamila Hrabchuk, Washington Post, 7 Jan. 2024 The original mall was vacated and razed in 2020 to make way for the radical reimagining of the site. These examples are programmatically compiled from various online sources to illustrate current usage of the word 'raze.' Any opinions expressed in the examples do not represent those of Merriam-Webster or its editors. Send us feedback about these examples. ... “Raze.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/raze.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "r/VALORANT on Reddit: Agents language",
+                          "page_url": "https://www.reddit.com/r/VALORANT/comments/hnk7lw/agents_language/",
+                          "page_snippet": "Posted by u/Moustachelance - 100 votes and 31 commentsCorrect me if I'm wrong as I'm not Brazilian. I know that Portuguese and Spanish have lots of similarities, but a lot of Raze's quotes sound like they're straight up Spanish. I use her most times I play and love when she speaks! Beautiful accent some funny one liners. Raze has all kinds of little phrases in brazillian portugese. Source: am brazillian but I play the game in English. ... Correct me if I'm wrong as I'm not Brazilian. I know that Portuguese and Spanish have lots of similarities, but a lot of Raze's quotes sound like they're straight up Spanish. Source: am brazillian but I play the game in English. ... Correct me if I'm wrong as I'm not Brazilian. I know that Portuguese and Spanish have lots of similarities, but a lot of Raze's quotes sound like they're straight up Spanish. I use her most times I play and love when she speaks! I enjoy the accent, but again I'm not sure if that's how a Brazilian actually sounds. I really just like Phoenix and Raze's quotes tbh ... As I'm brazilian I can answer this: the accent in the english version is not brazilian at all, only the words are spoken correctly, because the colombian voice actress speaks portuguese, spanish and english. If you switch the game to portuguese the Raze VA is brazilian with a recognizable accent from Bahia, a northeastern state",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

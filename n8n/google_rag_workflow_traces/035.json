@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-035",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T12:50:00Z",
+  "stoppedAt": "2026-07-23T12:50:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "1f772c19-42f8-4df7-9e5a-1a880135ba7c",
+    "query_time": "03/17/2024, 16:37:52 PT",
+    "domain": "open",
+    "question_type": "simple_w_condition",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784811000000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-035",
+                      "chatInput": "what is chris evans net worth 2023?",
+                      "interaction_id": "1f772c19-42f8-4df7-9e5a-1a880135ba7c",
+                      "domain": "open"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784811000028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 190,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "what is chris evans net worth 2023?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784811000265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1001,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Chris Evans Net Worth 2023: Salary, Net Worth in Rupees (INR), ...",
+                                "page_url": "https://www.jagranjosh.com/general-knowledge/chris-evans-net-worth-1694433359-1",
+                                "page_snippet": "As of 2023, Chris Evans’ net worth today is <strong>$110 million</strong>. The majority of his net worth is derived from his portrayal of Steve Rogers in the MCU movies. Apart from his earnings from movies, he also has several endorsements from high-end brands such as Hyundai, Gucci, and Jinx which contribute ...As of 2023, Chris Evans’ net worth today is $110 million. The majority of his net worth is derived from his portrayal of Steve Rogers in the MCU movies. Apart from his earnings from movies, he also has several endorsements from high-end brands such as Hyundai, Gucci, and Jinx which contribute to this net worth.  · It is not publicly known just how many houses and real estate properties Chris Evans owns. Apart from this acting career, Evans is known for his philanthropic contributions. He is one of the kind-hearted souls in Hollywood. He is also one of the most loved and highest-paid actors in the world. Chris Evans’ net worth is $110 million, reportedly. Chris Evans's net worth is $110 million. Chris Evans is a Hollywood actor who has appeared in a plethora of blockbuster movies. He is most prominently known for his portrayal of Captain America or Steve Rogers in the Marvel Cinematic Universe (MCU). Besides the MCU, he has appeared in several other films and TV shows, including Scott Pilgrim vs. Apart from his earnings from movies, he also has several endorsements from high-end brands such as Hyundai, Gucci, and Jinx which contribute to this net worth.  · It is not publicly known just how many houses and real estate properties Chris Evans owns. The only information available to the public domain about this is the $3.5 million mansion on Torreyson Drive in Los Angeles",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Chris Evans Net Worth in 2024 - Alux Resource",
+                                "page_url": "https://www.alux.com/networth/chris-evans/",
+                                "page_snippet": "Chris Evans Net Worth: How rich is Chris Evans? &amp; How much money is Chris Evans worth? Time to find out! Chris Evans is an American actor and filmmaker and his current net worth is <strong>$50 million</strong>.Chris Evans Net Worth: How rich is Chris Evans? & How much money is Chris Evans worth? Time to find out! Chris Evans is an American actor and filmmaker and his current net worth is $50 million. Chris has a history with comic book movies, appearing in The Losers and Edgar Wright’s Scott Pilgrim vs. the World. Then went on to play the iconic role of Captain America, starting his career with his Marvel movies. He reprised his role in The Avengers in 2012 and in 2014 for his second feature Captain America the Winter Soldier. During the filming of Push, a SF thriller, Chris performed his own fight scenes.",
+                                "page_last_modified": " Sun, 17 Mar 2024 17:43:27 GMT"
+                              },
+                              {
+                                "page_name": "Chris Evans Net Worth- How Much Is Captain America Worth In 2023?",
+                                "page_url": "https://scpsmag.org/celebrity/chris-evans-net-worth/",
+                                "page_snippet": "Chris Evans, a well-known American actor and filmmaker, has a net worth of <strong>$110 million</strong>. The majority of his fortune has come from his roles in high-budget blockbuster films, cementing his place as one of the highest-paid actors in the industry. Evans typically made more than $30 million each ...Chris Evans, a dynamic actor best known for playing legendary superheroes, has wowed audiences with his talent and charisma. Evans has shown to be a force to be reckoned with in the entertainment world, from his debut role as Captain America in the Marvel Cinematic Universe to his varied range of performances in many genres. Chris Evans, a well-known American actor and filmmaker, has a net worth of $110 million. The majority of his fortune has come from his roles in high-budget blockbuster films, cementing his place as one of the highest-paid actors in the industry. Evans typically made more than $30 million each year while working on Marvel films. Between June 2018 and June 2019, he made an incredible $44 million from his many endeavors, putting him among the highest-paid actors in the world. Christopher Robert Evans was born on June 13, 1981, in Boston, Massachusetts. Chris Evans has been active in charity endeavors outside of his professional career. He’s utilized his position to advocate for and support a variety of causes, including children’s hospitals, veterans’ organizations, and environmental efforts. Evans has also spoken out on political problems and utilized his position to promote constructive social change. Related- Drake Milligan’s Impressive Net Worth: From TV Star to Financial Marvel! Related- Drake Milligan’s Impressive Net Worth: From TV Star to Financial Marvel! Evans’ breakthrough role came in 2011 when he was cast as Steve Rogers, also known as Captain America, in the Marvel Cinematic Universe. His portrayal of the patriotic superhero garnered widespread acclaim, earning him a dedicated fan base and establishing him as a household name.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Chris Evans Net Worth 2023: Salary, Net Worth in Rupees (INR), ...",
+                          "page_url": "https://www.jagranjosh.com/general-knowledge/chris-evans-net-worth-1694433359-1",
+                          "page_snippet": "As of 2023, Chris Evans’ net worth today is <strong>$110 million</strong>. The majority of his net worth is derived from his portrayal of Steve Rogers in the MCU movies. Apart from his earnings from movies, he also has several endorsements from high-end brands such as Hyundai, Gucci, and Jinx which contribute ...As of 2023, Chris Evans’ net worth today is $110 million. The majority of his net worth is derived from his portrayal of Steve Rogers in the MCU movies. Apart from his earnings from movies, he also has several endorsements from high-end brands such as Hyundai, Gucci, and Jinx which contribute to this net worth.  · It is not publicly known just how many houses and real estate properties Chris Evans owns. Apart from this acting career, Evans is known for his philanthropic contributions. He is one of the kind-hearted souls in Hollywood. He is also one of the most loved and highest-paid actors in the world. Chris Evans’ net worth is $110 million, reportedly. Chris Evans's net worth is $110 million. Chris Evans is a Hollywood actor who has appeared in a plethora of blockbuster movies. He is most prominently known for his portrayal of Captain America or Steve Rogers in the Marvel Cinematic Universe (MCU). Besides the MCU, he has appeared in several other films and TV shows, including Scott Pilgrim vs. Apart from his earnings from movies, he also has several endorsements from high-end brands such as Hyundai, Gucci, and Jinx which contribute to this net worth.  · It is not publicly known just how many houses and real estate properties Chris Evans owns. The only information available to the public domain about this is the $3.5 million mansion on Torreyson Drive in Los Angeles",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Chris Evans Net Worth in 2024 - Alux Resource",
+                          "page_url": "https://www.alux.com/networth/chris-evans/",
+                          "page_snippet": "Chris Evans Net Worth: How rich is Chris Evans? &amp; How much money is Chris Evans worth? Time to find out! Chris Evans is an American actor and filmmaker and his current net worth is <strong>$50 million</strong>.Chris Evans Net Worth: How rich is Chris Evans? & How much money is Chris Evans worth? Time to find out! Chris Evans is an American actor and filmmaker and his current net worth is $50 million. Chris has a history with comic book movies, appearing in The Losers and Edgar Wright’s Scott Pilgrim vs. the World. Then went on to play the iconic role of Captain America, starting his career with his Marvel movies. He reprised his role in The Avengers in 2012 and in 2014 for his second feature Captain America the Winter Soldier. During the filming of Push, a SF thriller, Chris performed his own fight scenes.",
+                          "page_last_modified": " Sun, 17 Mar 2024 17:43:27 GMT"
+                        },
+                        {
+                          "page_name": "Chris Evans Net Worth- How Much Is Captain America Worth In 2023?",
+                          "page_url": "https://scpsmag.org/celebrity/chris-evans-net-worth/",
+                          "page_snippet": "Chris Evans, a well-known American actor and filmmaker, has a net worth of <strong>$110 million</strong>. The majority of his fortune has come from his roles in high-budget blockbuster films, cementing his place as one of the highest-paid actors in the industry. Evans typically made more than $30 million each ...Chris Evans, a dynamic actor best known for playing legendary superheroes, has wowed audiences with his talent and charisma. Evans has shown to be a force to be reckoned with in the entertainment world, from his debut role as Captain America in the Marvel Cinematic Universe to his varied range of performances in many genres. Chris Evans, a well-known American actor and filmmaker, has a net worth of $110 million. The majority of his fortune has come from his roles in high-budget blockbuster films, cementing his place as one of the highest-paid actors in the industry. Evans typically made more than $30 million each year while working on Marvel films. Between June 2018 and June 2019, he made an incredible $44 million from his many endeavors, putting him among the highest-paid actors in the world. Christopher Robert Evans was born on June 13, 1981, in Boston, Massachusetts. Chris Evans has been active in charity endeavors outside of his professional career. He’s utilized his position to advocate for and support a variety of causes, including children’s hospitals, veterans’ organizations, and environmental efforts. Evans has also spoken out on political problems and utilized his position to promote constructive social change. Related- Drake Milligan’s Impressive Net Worth: From TV Star to Financial Marvel! Related- Drake Milligan’s Impressive Net Worth: From TV Star to Financial Marvel! Evans’ breakthrough role came in 2011 when he was cast as Steve Rogers, also known as Captain America, in the Marvel Cinematic Universe. His portrayal of the patriotic superhero garnered widespread acclaim, earning him a dedicated fan base and establishing him as a household name.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784811001412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1446,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "$110 million\n\n信息来源：\n1. Chris Evans Net Worth 2023: Salary, Net Worth in Rupees (INR), ... - https://www.jagranjosh.com/general-knowledge/chris-evans-net-worth-1694433359-1\n2. Chris Evans Net Worth in 2024 - Alux Resource - https://www.alux.com/networth/chris-evans/\n3. Chris Evans Net Worth- How Much Is Captain America Worth In 2023? - https://scpsmag.org/celebrity/chris-evans-net-worth/",
+                      "query": "what is chris evans net worth 2023?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "what is chris evans net worth 2023?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Chris Evans Net Worth 2023: Salary, Net Worth in Rupees (INR), ...",
+                          "page_url": "https://www.jagranjosh.com/general-knowledge/chris-evans-net-worth-1694433359-1",
+                          "page_snippet": "As of 2023, Chris Evans’ net worth today is <strong>$110 million</strong>. The majority of his net worth is derived from his portrayal of Steve Rogers in the MCU movies. Apart from his earnings from movies, he also has several endorsements from high-end brands such as Hyundai, Gucci, and Jinx which contribute ...As of 2023, Chris Evans’ net worth today is $110 million. The majority of his net worth is derived from his portrayal of Steve Rogers in the MCU movies. Apart from his earnings from movies, he also has several endorsements from high-end brands such as Hyundai, Gucci, and Jinx which contribute to this net worth.  · It is not publicly known just how many houses and real estate properties Chris Evans owns. Apart from this acting career, Evans is known for his philanthropic contributions. He is one of the kind-hearted souls in Hollywood. He is also one of the most loved and highest-paid actors in the world. Chris Evans’ net worth is $110 million, reportedly. Chris Evans's net worth is $110 million. Chris Evans is a Hollywood actor who has appeared in a plethora of blockbuster movies. He is most prominently known for his portrayal of Captain America or Steve Rogers in the Marvel Cinematic Universe (MCU). Besides the MCU, he has appeared in several other films and TV shows, including Scott Pilgrim vs. Apart from his earnings from movies, he also has several endorsements from high-end brands such as Hyundai, Gucci, and Jinx which contribute to this net worth.  · It is not publicly known just how many houses and real estate properties Chris Evans owns. The only information available to the public domain about this is the $3.5 million mansion on Torreyson Drive in Los Angeles",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Chris Evans Net Worth in 2024 - Alux Resource",
+                          "page_url": "https://www.alux.com/networth/chris-evans/",
+                          "page_snippet": "Chris Evans Net Worth: How rich is Chris Evans? &amp; How much money is Chris Evans worth? Time to find out! Chris Evans is an American actor and filmmaker and his current net worth is <strong>$50 million</strong>.Chris Evans Net Worth: How rich is Chris Evans? & How much money is Chris Evans worth? Time to find out! Chris Evans is an American actor and filmmaker and his current net worth is $50 million. Chris has a history with comic book movies, appearing in The Losers and Edgar Wright’s Scott Pilgrim vs. the World. Then went on to play the iconic role of Captain America, starting his career with his Marvel movies. He reprised his role in The Avengers in 2012 and in 2014 for his second feature Captain America the Winter Soldier. During the filming of Push, a SF thriller, Chris performed his own fight scenes.",
+                          "page_last_modified": " Sun, 17 Mar 2024 17:43:27 GMT"
+                        },
+                        {
+                          "page_name": "Chris Evans Net Worth- How Much Is Captain America Worth In 2023?",
+                          "page_url": "https://scpsmag.org/celebrity/chris-evans-net-worth/",
+                          "page_snippet": "Chris Evans, a well-known American actor and filmmaker, has a net worth of <strong>$110 million</strong>. The majority of his fortune has come from his roles in high-budget blockbuster films, cementing his place as one of the highest-paid actors in the industry. Evans typically made more than $30 million each ...Chris Evans, a dynamic actor best known for playing legendary superheroes, has wowed audiences with his talent and charisma. Evans has shown to be a force to be reckoned with in the entertainment world, from his debut role as Captain America in the Marvel Cinematic Universe to his varied range of performances in many genres. Chris Evans, a well-known American actor and filmmaker, has a net worth of $110 million. The majority of his fortune has come from his roles in high-budget blockbuster films, cementing his place as one of the highest-paid actors in the industry. Evans typically made more than $30 million each year while working on Marvel films. Between June 2018 and June 2019, he made an incredible $44 million from his many endeavors, putting him among the highest-paid actors in the world. Christopher Robert Evans was born on June 13, 1981, in Boston, Massachusetts. Chris Evans has been active in charity endeavors outside of his professional career. He’s utilized his position to advocate for and support a variety of causes, including children’s hospitals, veterans’ organizations, and environmental efforts. Evans has also spoken out on political problems and utilized his position to promote constructive social change. Related- Drake Milligan’s Impressive Net Worth: From TV Star to Financial Marvel! Related- Drake Milligan’s Impressive Net Worth: From TV Star to Financial Marvel! Evans’ breakthrough role came in 2011 when he was cast as Steve Rogers, also known as Captain America, in the Marvel Cinematic Universe. His portrayal of the patriotic superhero garnered widespread acclaim, earning him a dedicated fan base and establishing him as a household name.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

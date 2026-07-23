@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-038",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T13:05:00Z",
+  "stoppedAt": "2026-07-23T13:05:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "3fcd37bc-2a2d-4766-aba8-cb9708349c48",
+    "query_time": "03/10/2024, 22:50:13 PT",
+    "domain": "open",
+    "question_type": "simple_w_condition",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784811900000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-038",
+                      "chatInput": "who hosted the grammy awards in 2019?",
+                      "interaction_id": "3fcd37bc-2a2d-4766-aba8-cb9708349c48",
+                      "domain": "open"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784811900028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 146,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "who hosted the grammy awards in 2019?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784811900265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 797,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Who is the Grammys 2019 host and why wasn't James Corden asked back?",
+                                "page_url": "https://www.thesun.co.uk/tvandshowbiz/8347768/grammys-2019-host-james-corden/",
+                                "page_snippet": "<strong>Alicia Keys</strong> has won fifteen Grammy awards herself and is now set to host the music industry&#x27;s hottest night of the year... ... FIFTEEN-time Grammy winner <strong>Alicia Keys</strong> will be hosting the event this year.Alicia Keys has won fifteen Grammy awards herself and is now set to host the music industry's hottest night of the year... ... FIFTEEN-time Grammy winner Alicia Keys will be hosting the event this year. James Corden won't be hosting this year's Grammy Awards despite hosting the past two yearsCredit: Getty - Contributor · This year, singer and The Voice (US) judge Alicia Keys will be hosting. She'll be taking over from last year's host - James Corden - which saw him getting punched in the face on the New York subway in a carpool karaoke skit with Sting and Shaggy. He also hosted the 59th Annual Grammy Awards in 2017. Fifteen-time Grammy Award winner Alicia Keys will be hosting the 61st Annual Grammy AwardsCredit: Getty - Contributor · Despite having hosted the awards ceremony for the past two years, James will be handing over the honour to Alicia Keys for the 61st Annual Grammy Awards. Despite having hosted the awards ceremony for the past two years, James will be handing over the honour to Alicia Keys for the 61st Annual Grammy Awards. A CBS representative explained the reason behind the decision to Variety: \"“Due to James Corden’s ‘Cats’ production schedule (shooting in the UK) and the ‘Late Late Show’ hosting duties, he isn’t able to host the Grammy Awards in 2019.”",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Winners of Grammy Awards 2019: The full list - CNET",
+                                "page_url": "https://www.cnet.com/news/winners-of-grammy-awards-2019-the-full-list/",
+                                "page_snippet": "The 2019 awards show was hosted by <strong>Alicia Keys</strong>, who has won more than a dozen Grammys herself. This year&#x27;s Grammy Awards saw women winning most of the show&#x27;s biggest categories. Lady Gaga , H.E.R., Kacey Musgraves and several other leading ladies scored multiple awards.The Grammy Awards show is a massive concert featuring the world's best musicians, but lots of honors get doled out as well, which makes it one of the most anticipated nights of the year for musicians and entertainers. The 2019 awards show was hosted by Alicia Keys, who has won more than a dozen Grammys herself. The 2019 awards show was hosted by Alicia Keys, who has won more than a dozen Grammys herself. This year's Grammy Awards saw women winning most of the show's biggest categories. Lady Gaga , H.E.R., Kacey Musgraves and several other leading ladies scored multiple awards. Kacey Musgraves, Childish Gambino, Lady Gaga, H.E.R., Drake and Cardi B were some of the big winners. Shelby Brown Feb. 11, 2019 5:45 a.m. PT ... The Grammy Awards show is a massive concert featuring the world's best musicians, but lots of honors get doled out as well, which makes it one of the most anticipated nights of the year for musicians and entertainers.",
+                                "page_last_modified": " Sun, 10 Mar 2024 22:39:03 GMT"
+                              },
+                              {
+                                "page_name": "Alicia Keys to Return as Grammy Awards Host in 2020 ...",
+                                "page_url": "https://www.billboard.com/articles/news/awards/8543574/alicia-keys-return-grammys-host-2020",
+                                "page_snippet": "After making a well-received debut as host at the 61st annual Grammy Awards on Feb. 10, <strong>Alicia Keys</strong> will do the honors again for the 62nd annual Grammys, which are set to air Jan. 26. ... <strong>Alicia Keys</strong> speaks onstage during the 61st Annual Grammy Awards at Staples Center on Feb.After making a well-received debut as host at the 61st annual Grammy Awards on Feb. 10, Alicia Keys will do the honors again for the 62nd annual Grammys, which are set to air Jan. 26. ... Alicia Keys speaks onstage during the 61st Annual Grammy Awards at Staples Center on Feb. 10, 2019 in Los Angeles. Alicia Keys speaks onstage during the 61st Annual Grammy Awards at Staples Center on Feb. 10, 2019 in Los Angeles. Emma McIntyre/Getty Images for The Recording Academy · Alicia Keys will return as the host of the Grammy Awards in 2020. Deborah Dugan, the Recording Academy’s first-year president/CEO, added in a statement, “From Best New Artist recipient to Grammy Award host, Alicia Keys has been a beacon of artistry within the music community for more than two decades. Last year was a testament to her compelling creativity and we are thrilled that she will return to the Grammy stage as our host.” Alicia Keys will return as the host of the Grammy Awards in 2020. After making a well-received debut as host at the 61st annual Grammy Awards on Feb. 10, Keys will do the honors again for the 62nd annual Grammys, which are set to air Jan. 26.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Who is the Grammys 2019 host and why wasn't James Corden asked back?",
+                          "page_url": "https://www.thesun.co.uk/tvandshowbiz/8347768/grammys-2019-host-james-corden/",
+                          "page_snippet": "<strong>Alicia Keys</strong> has won fifteen Grammy awards herself and is now set to host the music industry&#x27;s hottest night of the year... ... FIFTEEN-time Grammy winner <strong>Alicia Keys</strong> will be hosting the event this year.Alicia Keys has won fifteen Grammy awards herself and is now set to host the music industry's hottest night of the year... ... FIFTEEN-time Grammy winner Alicia Keys will be hosting the event this year. James Corden won't be hosting this year's Grammy Awards despite hosting the past two yearsCredit: Getty - Contributor · This year, singer and The Voice (US) judge Alicia Keys will be hosting. She'll be taking over from last year's host - James Corden - which saw him getting punched in the face on the New York subway in a carpool karaoke skit with Sting and Shaggy. He also hosted the 59th Annual Grammy Awards in 2017. Fifteen-time Grammy Award winner Alicia Keys will be hosting the 61st Annual Grammy AwardsCredit: Getty - Contributor · Despite having hosted the awards ceremony for the past two years, James will be handing over the honour to Alicia Keys for the 61st Annual Grammy Awards. Despite having hosted the awards ceremony for the past two years, James will be handing over the honour to Alicia Keys for the 61st Annual Grammy Awards. A CBS representative explained the reason behind the decision to Variety: \"“Due to James Corden’s ‘Cats’ production schedule (shooting in the UK) and the ‘Late Late Show’ hosting duties, he isn’t able to host the Grammy Awards in 2019.”",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Winners of Grammy Awards 2019: The full list - CNET",
+                          "page_url": "https://www.cnet.com/news/winners-of-grammy-awards-2019-the-full-list/",
+                          "page_snippet": "The 2019 awards show was hosted by <strong>Alicia Keys</strong>, who has won more than a dozen Grammys herself. This year&#x27;s Grammy Awards saw women winning most of the show&#x27;s biggest categories. Lady Gaga , H.E.R., Kacey Musgraves and several other leading ladies scored multiple awards.The Grammy Awards show is a massive concert featuring the world's best musicians, but lots of honors get doled out as well, which makes it one of the most anticipated nights of the year for musicians and entertainers. The 2019 awards show was hosted by Alicia Keys, who has won more than a dozen Grammys herself. The 2019 awards show was hosted by Alicia Keys, who has won more than a dozen Grammys herself. This year's Grammy Awards saw women winning most of the show's biggest categories. Lady Gaga , H.E.R., Kacey Musgraves and several other leading ladies scored multiple awards. Kacey Musgraves, Childish Gambino, Lady Gaga, H.E.R., Drake and Cardi B were some of the big winners. Shelby Brown Feb. 11, 2019 5:45 a.m. PT ... The Grammy Awards show is a massive concert featuring the world's best musicians, but lots of honors get doled out as well, which makes it one of the most anticipated nights of the year for musicians and entertainers.",
+                          "page_last_modified": " Sun, 10 Mar 2024 22:39:03 GMT"
+                        },
+                        {
+                          "page_name": "Alicia Keys to Return as Grammy Awards Host in 2020 ...",
+                          "page_url": "https://www.billboard.com/articles/news/awards/8543574/alicia-keys-return-grammys-host-2020",
+                          "page_snippet": "After making a well-received debut as host at the 61st annual Grammy Awards on Feb. 10, <strong>Alicia Keys</strong> will do the honors again for the 62nd annual Grammys, which are set to air Jan. 26. ... <strong>Alicia Keys</strong> speaks onstage during the 61st Annual Grammy Awards at Staples Center on Feb.After making a well-received debut as host at the 61st annual Grammy Awards on Feb. 10, Alicia Keys will do the honors again for the 62nd annual Grammys, which are set to air Jan. 26. ... Alicia Keys speaks onstage during the 61st Annual Grammy Awards at Staples Center on Feb. 10, 2019 in Los Angeles. Alicia Keys speaks onstage during the 61st Annual Grammy Awards at Staples Center on Feb. 10, 2019 in Los Angeles. Emma McIntyre/Getty Images for The Recording Academy · Alicia Keys will return as the host of the Grammy Awards in 2020. Deborah Dugan, the Recording Academy’s first-year president/CEO, added in a statement, “From Best New Artist recipient to Grammy Award host, Alicia Keys has been a beacon of artistry within the music community for more than two decades. Last year was a testament to her compelling creativity and we are thrilled that she will return to the Grammy stage as our host.” Alicia Keys will return as the host of the Grammy Awards in 2020. After making a well-received debut as host at the 61st annual Grammy Awards on Feb. 10, Keys will do the honors again for the 62nd annual Grammys, which are set to air Jan. 26.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784811901412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1275,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "alicia keys\n\n信息来源：\n1. Who is the Grammys 2019 host and why wasn't James Corden asked back? - https://www.thesun.co.uk/tvandshowbiz/8347768/grammys-2019-host-james-corden/\n2. Winners of Grammy Awards 2019: The full list - CNET - https://www.cnet.com/news/winners-of-grammy-awards-2019-the-full-list/\n3. Alicia Keys to Return as Grammy Awards Host in 2020 ... - https://www.billboard.com/articles/news/awards/8543574/alicia-keys-return-grammys-host-2020",
+                      "query": "who hosted the grammy awards in 2019?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "who hosted the grammy awards in 2019?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Who is the Grammys 2019 host and why wasn't James Corden asked back?",
+                          "page_url": "https://www.thesun.co.uk/tvandshowbiz/8347768/grammys-2019-host-james-corden/",
+                          "page_snippet": "<strong>Alicia Keys</strong> has won fifteen Grammy awards herself and is now set to host the music industry&#x27;s hottest night of the year... ... FIFTEEN-time Grammy winner <strong>Alicia Keys</strong> will be hosting the event this year.Alicia Keys has won fifteen Grammy awards herself and is now set to host the music industry's hottest night of the year... ... FIFTEEN-time Grammy winner Alicia Keys will be hosting the event this year. James Corden won't be hosting this year's Grammy Awards despite hosting the past two yearsCredit: Getty - Contributor · This year, singer and The Voice (US) judge Alicia Keys will be hosting. She'll be taking over from last year's host - James Corden - which saw him getting punched in the face on the New York subway in a carpool karaoke skit with Sting and Shaggy. He also hosted the 59th Annual Grammy Awards in 2017. Fifteen-time Grammy Award winner Alicia Keys will be hosting the 61st Annual Grammy AwardsCredit: Getty - Contributor · Despite having hosted the awards ceremony for the past two years, James will be handing over the honour to Alicia Keys for the 61st Annual Grammy Awards. Despite having hosted the awards ceremony for the past two years, James will be handing over the honour to Alicia Keys for the 61st Annual Grammy Awards. A CBS representative explained the reason behind the decision to Variety: \"“Due to James Corden’s ‘Cats’ production schedule (shooting in the UK) and the ‘Late Late Show’ hosting duties, he isn’t able to host the Grammy Awards in 2019.”",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Winners of Grammy Awards 2019: The full list - CNET",
+                          "page_url": "https://www.cnet.com/news/winners-of-grammy-awards-2019-the-full-list/",
+                          "page_snippet": "The 2019 awards show was hosted by <strong>Alicia Keys</strong>, who has won more than a dozen Grammys herself. This year&#x27;s Grammy Awards saw women winning most of the show&#x27;s biggest categories. Lady Gaga , H.E.R., Kacey Musgraves and several other leading ladies scored multiple awards.The Grammy Awards show is a massive concert featuring the world's best musicians, but lots of honors get doled out as well, which makes it one of the most anticipated nights of the year for musicians and entertainers. The 2019 awards show was hosted by Alicia Keys, who has won more than a dozen Grammys herself. The 2019 awards show was hosted by Alicia Keys, who has won more than a dozen Grammys herself. This year's Grammy Awards saw women winning most of the show's biggest categories. Lady Gaga , H.E.R., Kacey Musgraves and several other leading ladies scored multiple awards. Kacey Musgraves, Childish Gambino, Lady Gaga, H.E.R., Drake and Cardi B were some of the big winners. Shelby Brown Feb. 11, 2019 5:45 a.m. PT ... The Grammy Awards show is a massive concert featuring the world's best musicians, but lots of honors get doled out as well, which makes it one of the most anticipated nights of the year for musicians and entertainers.",
+                          "page_last_modified": " Sun, 10 Mar 2024 22:39:03 GMT"
+                        },
+                        {
+                          "page_name": "Alicia Keys to Return as Grammy Awards Host in 2020 ...",
+                          "page_url": "https://www.billboard.com/articles/news/awards/8543574/alicia-keys-return-grammys-host-2020",
+                          "page_snippet": "After making a well-received debut as host at the 61st annual Grammy Awards on Feb. 10, <strong>Alicia Keys</strong> will do the honors again for the 62nd annual Grammys, which are set to air Jan. 26. ... <strong>Alicia Keys</strong> speaks onstage during the 61st Annual Grammy Awards at Staples Center on Feb.After making a well-received debut as host at the 61st annual Grammy Awards on Feb. 10, Alicia Keys will do the honors again for the 62nd annual Grammys, which are set to air Jan. 26. ... Alicia Keys speaks onstage during the 61st Annual Grammy Awards at Staples Center on Feb. 10, 2019 in Los Angeles. Alicia Keys speaks onstage during the 61st Annual Grammy Awards at Staples Center on Feb. 10, 2019 in Los Angeles. Emma McIntyre/Getty Images for The Recording Academy · Alicia Keys will return as the host of the Grammy Awards in 2020. Deborah Dugan, the Recording Academy’s first-year president/CEO, added in a statement, “From Best New Artist recipient to Grammy Award host, Alicia Keys has been a beacon of artistry within the music community for more than two decades. Last year was a testament to her compelling creativity and we are thrilled that she will return to the Grammy stage as our host.” Alicia Keys will return as the host of the Grammy Awards in 2020. After making a well-received debut as host at the 61st annual Grammy Awards on Feb. 10, Keys will do the honors again for the 62nd annual Grammys, which are set to air Jan. 26.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

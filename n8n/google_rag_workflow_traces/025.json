@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-025",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T12:00:00Z",
+  "stoppedAt": "2026-07-23T12:00:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "f85c8bbf-e588-4050-9498-c82bb263adce",
+    "query_time": "03/19/2024, 23:27:12 PT",
+    "domain": "movie",
+    "question_type": "simple",
+    "static_or_dynamic": "slow-changing"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784808000000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-025",
+                      "chatInput": "what is the other language georgetown came out in originally?",
+                      "interaction_id": "f85c8bbf-e588-4050-9498-c82bb263adce",
+                      "domain": "movie"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784808000028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 157,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "what is the other language georgetown came out in originally?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784808000265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 967,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "How to Get Into Georgetown: All You Need to Know",
+                                "page_url": "https://www.ivywise.com/blog/how-to-get-into-georgetown-all-you-need-to-know-2/",
+                                "page_snippet": "Want to know how to get into Georgetown? Here is all the information you need in order to get accepted.The first way to think about doing that is by strategically building your profile. Nearly a third of Georgetown students speak at least a second language fluently. Students come from all 50 states and 130 countries. Georgetown is the ultimate laboratory for cultural exchange and transnational learning in the nation’s capital. Nearly a third of Georgetown students speak at least a second language fluently. Students come from all 50 states and 130 countries. Georgetown is the ultimate laboratory for cultural exchange and transnational learning in the nation’s capital. Whether you come from small town America or an Asian metropolis, you will make a unique contribution to the extremely diverse cultural environment of a Georgetown classroom. The waitlist is made up of strong students the university wanted to admit but did not have the space to admit. Considering the high volume of applications Georgetown receives compared to the number of spots they have available for their first-year class, it makes sense they have to deny or waitlist very strong applicants. Georgetown does not report the GPAs of their enrolled students in their Common Data set. However, they do report the percentage of their class that was a part of the top 10% of their graduating class. Out of the first-year students admitted to Georgetown in the fall of 2022, 84% were in the top 10% of their high school class.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "College Language Requirement | Faculty of Languages and Linguistics ...",
+                                "page_url": "https://fll.georgetown.edu/requirements/",
+                                "page_snippet": "All students in the College must demonstrate proficiency in a foreign language (ancient or modern) through the intermediate level. During New Student Orientation, proctored placement exams are offered in most languages. Students who place above the intermediate level on a language placement ...All students in the College must demonstrate proficiency in a foreign language (ancient or modern) through the intermediate level. During New Student Orientation, proctored placement exams are offered in most languages. Students who place above the intermediate level on a language placement exam have fulfilled the foreign language requirement. During New Student Orientation, proctored placement exams are offered in most languages. Students who place above the intermediate level on a language placement exam have fulfilled the foreign language requirement. Students who do not place above the intermediate level on a language placement exam must complete language coursework through the intermediate level in order to fulfill the requirement. There are two language tracks, intensive and non-intensive. Some languages are offered only on the intensive track: Arabic, Chinese, Italian, Japanese, modern Greek, and Russian. Others (French, German, Spanish) are taught on both the intensive and non-intensive tracks. Languages taught on the intensive track require differing lengths of study to achieve intermediate mastery: students beginning French, German, Italian, modern Greek, Russian, or Spanish at Georgetown require one year of intensive study to complete the language requirement, whereas Arabic, Chinese, Japanese, or Korean require two years of intensive study to complete the language requirement.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Georgetown University - Wikipedia",
+                                "page_url": "https://en.wikipedia.org/wiki/Georgetown_University",
+                                "page_snippet": "The Georgetown Heckler is a humor ... releasing its first print issue in 2007. The university has a campus-wide television station, GUTV, which began broadcasting in 1999. The station hosts an annual student film festival in April for campus filmmakers. WGTB, Georgetown&#x27;s radio station, ...The Georgetown Heckler is a humor magazine founded on the Internet in 2003 by Georgetown students, releasing its first print issue in 2007. The university has a campus-wide television station, GUTV, which began broadcasting in 1999. The station hosts an annual student film festival in April for campus filmmakers. WGTB, Georgetown's radio station, is available as a webcast and on 92.3 FM in certain dormitories. Other political publications include the Georgetown Progressive, an online publication run by the Georgetown University College Democrats, and Counterpoint Magazine, a liberal monthly founded in the spring of 2011. The Fire This Time is Georgetown's minority newssource. The Georgetown Heckler is a humor magazine founded on the Internet in 2003 by Georgetown students, releasing its first print issue in 2007. Students in the School of Foreign Service can complete select certificates that complement the school's focus on foreign affairs and attain a minor in one of twelve languages but do not have access to the same minor selection as the other four schools. All courses are on a credit hour system. Georgetown offers many opportunities to study abroad, and about half of the undergraduate student body spends time at an institution overseas. Georgetown's campus in Qatar offers a Bachelor of Science in Foreign Service (BSFS) and three certificates. Apart from language courses, including Arabic and French, all courses in GU-Q are taught in English and the curriculum and course materials in the specified majors are identical to those offered at Georgetown's main campus in Washington D.C. The main facility for the McGhee Center for Eastern Mediterranean Studies was donated to Georgetown in 1989 by alumnus and former United States Ambassador to Turkey George C. McGhee. The school is in the town of Alanya, Turkey within the Seljuq-era Alanya Castle, on the Mediterranean. The center operates study abroad programs one semester each year, concentrating on Turkish language, architectural history, and Islamic studies.",
+                                "page_last_modified": " Wed, 20 Mar 2024 02:50:35 GMT"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "How to Get Into Georgetown: All You Need to Know",
+                          "page_url": "https://www.ivywise.com/blog/how-to-get-into-georgetown-all-you-need-to-know-2/",
+                          "page_snippet": "Want to know how to get into Georgetown? Here is all the information you need in order to get accepted.The first way to think about doing that is by strategically building your profile. Nearly a third of Georgetown students speak at least a second language fluently. Students come from all 50 states and 130 countries. Georgetown is the ultimate laboratory for cultural exchange and transnational learning in the nation’s capital. Nearly a third of Georgetown students speak at least a second language fluently. Students come from all 50 states and 130 countries. Georgetown is the ultimate laboratory for cultural exchange and transnational learning in the nation’s capital. Whether you come from small town America or an Asian metropolis, you will make a unique contribution to the extremely diverse cultural environment of a Georgetown classroom. The waitlist is made up of strong students the university wanted to admit but did not have the space to admit. Considering the high volume of applications Georgetown receives compared to the number of spots they have available for their first-year class, it makes sense they have to deny or waitlist very strong applicants. Georgetown does not report the GPAs of their enrolled students in their Common Data set. However, they do report the percentage of their class that was a part of the top 10% of their graduating class. Out of the first-year students admitted to Georgetown in the fall of 2022, 84% were in the top 10% of their high school class.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "College Language Requirement | Faculty of Languages and Linguistics ...",
+                          "page_url": "https://fll.georgetown.edu/requirements/",
+                          "page_snippet": "All students in the College must demonstrate proficiency in a foreign language (ancient or modern) through the intermediate level. During New Student Orientation, proctored placement exams are offered in most languages. Students who place above the intermediate level on a language placement ...All students in the College must demonstrate proficiency in a foreign language (ancient or modern) through the intermediate level. During New Student Orientation, proctored placement exams are offered in most languages. Students who place above the intermediate level on a language placement exam have fulfilled the foreign language requirement. During New Student Orientation, proctored placement exams are offered in most languages. Students who place above the intermediate level on a language placement exam have fulfilled the foreign language requirement. Students who do not place above the intermediate level on a language placement exam must complete language coursework through the intermediate level in order to fulfill the requirement. There are two language tracks, intensive and non-intensive. Some languages are offered only on the intensive track: Arabic, Chinese, Italian, Japanese, modern Greek, and Russian. Others (French, German, Spanish) are taught on both the intensive and non-intensive tracks. Languages taught on the intensive track require differing lengths of study to achieve intermediate mastery: students beginning French, German, Italian, modern Greek, Russian, or Spanish at Georgetown require one year of intensive study to complete the language requirement, whereas Arabic, Chinese, Japanese, or Korean require two years of intensive study to complete the language requirement.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Georgetown University - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/Georgetown_University",
+                          "page_snippet": "The Georgetown Heckler is a humor ... releasing its first print issue in 2007. The university has a campus-wide television station, GUTV, which began broadcasting in 1999. The station hosts an annual student film festival in April for campus filmmakers. WGTB, Georgetown&#x27;s radio station, ...The Georgetown Heckler is a humor magazine founded on the Internet in 2003 by Georgetown students, releasing its first print issue in 2007. The university has a campus-wide television station, GUTV, which began broadcasting in 1999. The station hosts an annual student film festival in April for campus filmmakers. WGTB, Georgetown's radio station, is available as a webcast and on 92.3 FM in certain dormitories. Other political publications include the Georgetown Progressive, an online publication run by the Georgetown University College Democrats, and Counterpoint Magazine, a liberal monthly founded in the spring of 2011. The Fire This Time is Georgetown's minority newssource. The Georgetown Heckler is a humor magazine founded on the Internet in 2003 by Georgetown students, releasing its first print issue in 2007. Students in the School of Foreign Service can complete select certificates that complement the school's focus on foreign affairs and attain a minor in one of twelve languages but do not have access to the same minor selection as the other four schools. All courses are on a credit hour system. Georgetown offers many opportunities to study abroad, and about half of the undergraduate student body spends time at an institution overseas. Georgetown's campus in Qatar offers a Bachelor of Science in Foreign Service (BSFS) and three certificates. Apart from language courses, including Arabic and French, all courses in GU-Q are taught in English and the curriculum and course materials in the specified majors are identical to those offered at Georgetown's main campus in Washington D.C. The main facility for the McGhee Center for Eastern Mediterranean Studies was donated to Georgetown in 1989 by alumnus and former United States Ambassador to Turkey George C. McGhee. The school is in the town of Alanya, Turkey within the Seljuq-era Alanya Castle, on the Mediterranean. The center operates study abroad programs one semester each year, concentrating on Turkish language, architectural history, and Islamic studies.",
+                          "page_last_modified": " Wed, 20 Mar 2024 02:50:35 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784808001412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1218,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "en\n\n信息来源：\n1. How to Get Into Georgetown: All You Need to Know - https://www.ivywise.com/blog/how-to-get-into-georgetown-all-you-need-to-know-2/\n2. College Language Requirement | Faculty of Languages and Linguistics ... - https://fll.georgetown.edu/requirements/\n3. Georgetown University - Wikipedia - https://en.wikipedia.org/wiki/Georgetown_University",
+                      "query": "what is the other language georgetown came out in originally?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "what is the other language georgetown came out in originally?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "How to Get Into Georgetown: All You Need to Know",
+                          "page_url": "https://www.ivywise.com/blog/how-to-get-into-georgetown-all-you-need-to-know-2/",
+                          "page_snippet": "Want to know how to get into Georgetown? Here is all the information you need in order to get accepted.The first way to think about doing that is by strategically building your profile. Nearly a third of Georgetown students speak at least a second language fluently. Students come from all 50 states and 130 countries. Georgetown is the ultimate laboratory for cultural exchange and transnational learning in the nation’s capital. Nearly a third of Georgetown students speak at least a second language fluently. Students come from all 50 states and 130 countries. Georgetown is the ultimate laboratory for cultural exchange and transnational learning in the nation’s capital. Whether you come from small town America or an Asian metropolis, you will make a unique contribution to the extremely diverse cultural environment of a Georgetown classroom. The waitlist is made up of strong students the university wanted to admit but did not have the space to admit. Considering the high volume of applications Georgetown receives compared to the number of spots they have available for their first-year class, it makes sense they have to deny or waitlist very strong applicants. Georgetown does not report the GPAs of their enrolled students in their Common Data set. However, they do report the percentage of their class that was a part of the top 10% of their graduating class. Out of the first-year students admitted to Georgetown in the fall of 2022, 84% were in the top 10% of their high school class.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "College Language Requirement | Faculty of Languages and Linguistics ...",
+                          "page_url": "https://fll.georgetown.edu/requirements/",
+                          "page_snippet": "All students in the College must demonstrate proficiency in a foreign language (ancient or modern) through the intermediate level. During New Student Orientation, proctored placement exams are offered in most languages. Students who place above the intermediate level on a language placement ...All students in the College must demonstrate proficiency in a foreign language (ancient or modern) through the intermediate level. During New Student Orientation, proctored placement exams are offered in most languages. Students who place above the intermediate level on a language placement exam have fulfilled the foreign language requirement. During New Student Orientation, proctored placement exams are offered in most languages. Students who place above the intermediate level on a language placement exam have fulfilled the foreign language requirement. Students who do not place above the intermediate level on a language placement exam must complete language coursework through the intermediate level in order to fulfill the requirement. There are two language tracks, intensive and non-intensive. Some languages are offered only on the intensive track: Arabic, Chinese, Italian, Japanese, modern Greek, and Russian. Others (French, German, Spanish) are taught on both the intensive and non-intensive tracks. Languages taught on the intensive track require differing lengths of study to achieve intermediate mastery: students beginning French, German, Italian, modern Greek, Russian, or Spanish at Georgetown require one year of intensive study to complete the language requirement, whereas Arabic, Chinese, Japanese, or Korean require two years of intensive study to complete the language requirement.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Georgetown University - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/Georgetown_University",
+                          "page_snippet": "The Georgetown Heckler is a humor ... releasing its first print issue in 2007. The university has a campus-wide television station, GUTV, which began broadcasting in 1999. The station hosts an annual student film festival in April for campus filmmakers. WGTB, Georgetown&#x27;s radio station, ...The Georgetown Heckler is a humor magazine founded on the Internet in 2003 by Georgetown students, releasing its first print issue in 2007. The university has a campus-wide television station, GUTV, which began broadcasting in 1999. The station hosts an annual student film festival in April for campus filmmakers. WGTB, Georgetown's radio station, is available as a webcast and on 92.3 FM in certain dormitories. Other political publications include the Georgetown Progressive, an online publication run by the Georgetown University College Democrats, and Counterpoint Magazine, a liberal monthly founded in the spring of 2011. The Fire This Time is Georgetown's minority newssource. The Georgetown Heckler is a humor magazine founded on the Internet in 2003 by Georgetown students, releasing its first print issue in 2007. Students in the School of Foreign Service can complete select certificates that complement the school's focus on foreign affairs and attain a minor in one of twelve languages but do not have access to the same minor selection as the other four schools. All courses are on a credit hour system. Georgetown offers many opportunities to study abroad, and about half of the undergraduate student body spends time at an institution overseas. Georgetown's campus in Qatar offers a Bachelor of Science in Foreign Service (BSFS) and three certificates. Apart from language courses, including Arabic and French, all courses in GU-Q are taught in English and the curriculum and course materials in the specified majors are identical to those offered at Georgetown's main campus in Washington D.C. The main facility for the McGhee Center for Eastern Mediterranean Studies was donated to Georgetown in 1989 by alumnus and former United States Ambassador to Turkey George C. McGhee. The school is in the town of Alanya, Turkey within the Seljuq-era Alanya Castle, on the Mediterranean. The center operates study abroad programs one semester each year, concentrating on Turkish language, architectural history, and Islamic studies.",
+                          "page_last_modified": " Wed, 20 Mar 2024 02:50:35 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

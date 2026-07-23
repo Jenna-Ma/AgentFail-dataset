@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-052",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T14:15:00Z",
+  "stoppedAt": "2026-07-23T14:15:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "89f6f1db-cc91-42a5-a901-d3d5cbf9256c",
+    "query_time": "03/15/2024, 16:51:39 PT",
+    "domain": "sports",
+    "question_type": "set",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784816100000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-052",
+                      "chatInput": "which teams managed to overcome golden state warriors and emerge victorious in their games played during 2022-12?",
+                      "interaction_id": "89f6f1db-cc91-42a5-a901-d3d5cbf9256c",
+                      "domain": "sports"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784816100028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 146,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "which teams managed to overcome golden state warriors and emerge victorious in their games played during 2022-12?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784816100265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 967,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Golden State Warriors Playoff History - RealGM",
+                                "page_url": "https://basketball.realgm.com/nba/teams/Golden-State-Warriors/9/Playoff-History",
+                                "page_snippet": "",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Golden State Warriors 2023-24 NBA Roster - ESPN",
+                                "page_url": "https://www.espn.com/nba/team/roster/_/name/gs/golden-state-warriors",
+                                "page_snippet": "Explore the 2023-24 Golden State Warriors NBA roster on ESPN. Includes full details on point guards, shooting guards, power forwards, small forwards and centers.— Jamal Murray scored 12 of his 26 points in the fourth quarter, and the Denver Nuggets rallied from 21 points down in the third quarter to beat the depleted Toronto Raptors 125-119 on Monday night.",
+                                "page_last_modified": " Fri, 15 Mar 2024 23:56:09 GMT"
+                              },
+                              {
+                                "page_name": "Golden State Warriors 2023-24 NBA Roster - ESPN",
+                                "page_url": "https://www.espn.com/nba/team/roster/_/name/gs/golden-state-warriors",
+                                "page_snippet": "Explore the 2023-24 Golden State Warriors NBA roster on ESPN. Includes full details on point guards, shooting guards, power forwards, small forwards and centers.— Jamal Murray scored 12 of his 26 points in the fourth quarter, and the Denver Nuggets rallied from 21 points down in the third quarter to beat the depleted Toronto Raptors 125-119 on Monday night.",
+                                "page_last_modified": " Fri, 15 Mar 2024 23:56:09 GMT"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Golden State Warriors Playoff History - RealGM",
+                          "page_url": "https://basketball.realgm.com/nba/teams/Golden-State-Warriors/9/Playoff-History",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Golden State Warriors 2023-24 NBA Roster - ESPN",
+                          "page_url": "https://www.espn.com/nba/team/roster/_/name/gs/golden-state-warriors",
+                          "page_snippet": "Explore the 2023-24 Golden State Warriors NBA roster on ESPN. Includes full details on point guards, shooting guards, power forwards, small forwards and centers.— Jamal Murray scored 12 of his 26 points in the fourth quarter, and the Denver Nuggets rallied from 21 points down in the third quarter to beat the depleted Toronto Raptors 125-119 on Monday night.",
+                          "page_last_modified": " Fri, 15 Mar 2024 23:56:09 GMT"
+                        },
+                        {
+                          "page_name": "Golden State Warriors 2023-24 NBA Roster - ESPN",
+                          "page_url": "https://www.espn.com/nba/team/roster/_/name/gs/golden-state-warriors",
+                          "page_snippet": "Explore the 2023-24 Golden State Warriors NBA roster on ESPN. Includes full details on point guards, shooting guards, power forwards, small forwards and centers.— Jamal Murray scored 12 of his 26 points in the fourth quarter, and the Denver Nuggets rallied from 21 points down in the third quarter to beat the depleted Toronto Raptors 125-119 on Monday night.",
+                          "page_last_modified": " Fri, 15 Mar 2024 23:56:09 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784816101412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1389,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "brooklyn nets, indiana pacers, milwaukee bucks, new york knicks, philadelphia 76ers, utah jazz\n\n信息来源：\n1. Golden State Warriors Playoff History - RealGM - https://basketball.realgm.com/nba/teams/Golden-State-Warriors/9/Playoff-History\n2. Golden State Warriors 2023-24 NBA Roster - ESPN - https://www.espn.com/nba/team/roster/_/name/gs/golden-state-warriors\n3. Golden State Warriors 2023-24 NBA Roster - ESPN - https://www.espn.com/nba/team/roster/_/name/gs/golden-state-warriors",
+                      "query": "which teams managed to overcome golden state warriors and emerge victorious in their games played during 2022-12?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "which teams managed to overcome golden state warriors and emerge victorious in their games played during 2022-12?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Golden State Warriors Playoff History - RealGM",
+                          "page_url": "https://basketball.realgm.com/nba/teams/Golden-State-Warriors/9/Playoff-History",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Golden State Warriors 2023-24 NBA Roster - ESPN",
+                          "page_url": "https://www.espn.com/nba/team/roster/_/name/gs/golden-state-warriors",
+                          "page_snippet": "Explore the 2023-24 Golden State Warriors NBA roster on ESPN. Includes full details on point guards, shooting guards, power forwards, small forwards and centers.— Jamal Murray scored 12 of his 26 points in the fourth quarter, and the Denver Nuggets rallied from 21 points down in the third quarter to beat the depleted Toronto Raptors 125-119 on Monday night.",
+                          "page_last_modified": " Fri, 15 Mar 2024 23:56:09 GMT"
+                        },
+                        {
+                          "page_name": "Golden State Warriors 2023-24 NBA Roster - ESPN",
+                          "page_url": "https://www.espn.com/nba/team/roster/_/name/gs/golden-state-warriors",
+                          "page_snippet": "Explore the 2023-24 Golden State Warriors NBA roster on ESPN. Includes full details on point guards, shooting guards, power forwards, small forwards and centers.— Jamal Murray scored 12 of his 26 points in the fourth quarter, and the Denver Nuggets rallied from 21 points down in the third quarter to beat the depleted Toronto Raptors 125-119 on Monday night.",
+                          "page_last_modified": " Fri, 15 Mar 2024 23:56:09 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

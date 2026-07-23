@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-036",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T12:55:00Z",
+  "stoppedAt": "2026-07-23T12:55:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "39760271-e915-4724-9c04-2dac182365dd",
+    "query_time": "03/11/2024, 05:23:50 PT",
+    "domain": "open",
+    "question_type": "set",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784811300000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-036",
+                      "chatInput": "what kind of tigers are extinct?",
+                      "interaction_id": "39760271-e915-4724-9c04-2dac182365dd",
+                      "domain": "open"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784811300028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 124,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "what kind of tigers are extinct?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784811300265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1035,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Tiger | Species | WWF",
+                                "page_url": "https://www.worldwildlife.org/species/tiger",
+                                "page_snippet": "These are popularly known as Sumatran tigers. The continental tigers currently include the Bengal, Malayan, Indochinese and Amur (Siberian) tiger populations, while the <strong>Caspian tiger</strong> is extinct in the wild. The South China tiger is believed to be functionally extinct.All remaining island tigers are found only in Sumatra, with tigers in Java and Bali now extinct. These are popularly known as Sumatran tigers. The continental tigers currently include the Bengal, Malayan, Indochinese and Amur (Siberian) tiger populations, while the Caspian tiger is extinct in the wild. These are popularly known as Sumatran tigers. The continental tigers currently include the Bengal, Malayan, Indochinese and Amur (Siberian) tiger populations, while the Caspian tiger is extinct in the wild. The South China tiger is believed to be functionally extinct. The South China tiger is believed to be functionally extinct. ... Under the USAID Saving Threatened Wildlife project, WWF supports Viet Nam’s efforts to reduce illegal wildlife trafficking by engaging with leaders in the Vietnamese government, private sector, and civil society. WWF-Viet Nam and its governmental and NGO partners have been advocating for and working towards stronger regulation and management of Viet Nam’s captive tiger facilities. After a century of decline, overall wild tiger numbers are starting to tick upward. Based on the best available information, tiger populations are stable or increasing in India, Nepal, Bhutan, Russia and China. About 5,574 tigers remain in the wild, according to the Global Tiger Forum, but much more work is needed to protect this species if we are to secure its future in the wild.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "The Most Endangered Tigers in the World | Reader's Digest",
+                                "page_url": "https://www.rd.com/list/endangered-tigers/",
+                                "page_snippet": "Of all tiger subspecies, the <strong>South China tiger</strong> may be at the greatest risk of extinction. The WWF estimates there are just 30 to 80 <strong>South China tiger</strong>s left in the world, all of which are in captivity; the <strong>South China tiger</strong> hasn’t been seen in the wild in over a quarter-century.Of the nine tiger species, three are already extinct, and the remaining six remain at risk of the same fate. Here's what you need to know. ... The tiger is one of four species within the “panther genus,” which is a member of the cat family Felidae, that includes cats of all sizes. Panthers include—in descending size order—tigers, lions, jaguars, and leopards; all share similar facial structure and are capable of roaring. Over the last century, tiger habitats have fallen by around 95 percent, and there are now fewer than 4,000 tigers alive in the wild, reports the World Wildlife Federation (WWF). Of the nine subspecies of tiger, three are already extinct; and the rest are considered endangered. ... Bali: Indigenous to western Bali, the Bali tiger has been extinct since the 1940s. Of all tiger subspecies, the South China tiger may be at the greatest risk of extinction. The WWF estimates there are just 30 to 80 South China tigers left in the world, all of which are in captivity; the South China tiger hasn’t been seen in the wild in over a quarter-century. Between 2000 and 2010, the Indochine tiger population declined by more than 70 percent, and it’s believed there are less than 650 in the world, although some sources put that number closer to 350. It’s difficult to get an exact number of Indo-Chinese tigers because they live in remote, hilly, and mountainous forests and tend to be solitary in nature. ... Of all tiger subspecies, the South China tiger may be at the greatest risk of extinction.",
+                                "page_last_modified": " Sat, 09 Mar 2024 11:57:13 GMT"
+                              },
+                              {
+                                "page_name": "Extinct Tigers – Crown Ridge Tiger Sanctuary",
+                                "page_url": "https://crownridgetigers.com/extinct-tigers",
+                                "page_snippet": "These three subspecies include <strong>Balinese tigers (Panthera tigris balica), Caspian tigers (Panthera tigris virgata), and Javan tigers (Panthera tigris sondaica).</strong>?? All three have been extinct for at least 3 decades.? Even though the beauty of these subspecies can no longer be enjoyed, they are ...These three subspecies include Balinese tigers (Panthera tigris balica), Caspian tigers (Panthera tigris virgata), and Javan tigers (Panthera tigris sondaica).?? All three have been extinct for at least 3 decades.? Even though the beauty of these subspecies can no longer be enjoyed, they are still appreciated by many. All three have been extinct for at least 3 decades.? Even though the beauty of these subspecies can no longer be enjoyed, they are still appreciated by many. ??????????? Balinese tigers once roamed Bali, as they were native to this small Indonesian island.? Also known as Bali tigers, these cats were the smallest of all 9 subspecies of tigers and some scientists argue that Bali tigers are actually a subspecies of the extinct Javan tigers.? Siberian/Amur tigers are the closest living relatives to Caspian tigers. ??????????? No exact date of extinction exists for this subspecies.? Military personnel and sportsmen hunted Caspian tigers, which aided in their extinction.? In addition to this, Caspian tigers also suffered from loss of habitat and loss of prey.? Also known as Bali tigers, these cats were the smallest of all 9 subspecies of tigers and some scientists argue that Bali tigers are actually a subspecies of the extinct Javan tigers.? Males typically weighed up to 220 pounds, while females weighed up to 180 pounds.?",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Tiger | Species | WWF",
+                          "page_url": "https://www.worldwildlife.org/species/tiger",
+                          "page_snippet": "These are popularly known as Sumatran tigers. The continental tigers currently include the Bengal, Malayan, Indochinese and Amur (Siberian) tiger populations, while the <strong>Caspian tiger</strong> is extinct in the wild. The South China tiger is believed to be functionally extinct.All remaining island tigers are found only in Sumatra, with tigers in Java and Bali now extinct. These are popularly known as Sumatran tigers. The continental tigers currently include the Bengal, Malayan, Indochinese and Amur (Siberian) tiger populations, while the Caspian tiger is extinct in the wild. These are popularly known as Sumatran tigers. The continental tigers currently include the Bengal, Malayan, Indochinese and Amur (Siberian) tiger populations, while the Caspian tiger is extinct in the wild. The South China tiger is believed to be functionally extinct. The South China tiger is believed to be functionally extinct. ... Under the USAID Saving Threatened Wildlife project, WWF supports Viet Nam’s efforts to reduce illegal wildlife trafficking by engaging with leaders in the Vietnamese government, private sector, and civil society. WWF-Viet Nam and its governmental and NGO partners have been advocating for and working towards stronger regulation and management of Viet Nam’s captive tiger facilities. After a century of decline, overall wild tiger numbers are starting to tick upward. Based on the best available information, tiger populations are stable or increasing in India, Nepal, Bhutan, Russia and China. About 5,574 tigers remain in the wild, according to the Global Tiger Forum, but much more work is needed to protect this species if we are to secure its future in the wild.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "The Most Endangered Tigers in the World | Reader's Digest",
+                          "page_url": "https://www.rd.com/list/endangered-tigers/",
+                          "page_snippet": "Of all tiger subspecies, the <strong>South China tiger</strong> may be at the greatest risk of extinction. The WWF estimates there are just 30 to 80 <strong>South China tiger</strong>s left in the world, all of which are in captivity; the <strong>South China tiger</strong> hasn’t been seen in the wild in over a quarter-century.Of the nine tiger species, three are already extinct, and the remaining six remain at risk of the same fate. Here's what you need to know. ... The tiger is one of four species within the “panther genus,” which is a member of the cat family Felidae, that includes cats of all sizes. Panthers include—in descending size order—tigers, lions, jaguars, and leopards; all share similar facial structure and are capable of roaring. Over the last century, tiger habitats have fallen by around 95 percent, and there are now fewer than 4,000 tigers alive in the wild, reports the World Wildlife Federation (WWF). Of the nine subspecies of tiger, three are already extinct; and the rest are considered endangered. ... Bali: Indigenous to western Bali, the Bali tiger has been extinct since the 1940s. Of all tiger subspecies, the South China tiger may be at the greatest risk of extinction. The WWF estimates there are just 30 to 80 South China tigers left in the world, all of which are in captivity; the South China tiger hasn’t been seen in the wild in over a quarter-century. Between 2000 and 2010, the Indochine tiger population declined by more than 70 percent, and it’s believed there are less than 650 in the world, although some sources put that number closer to 350. It’s difficult to get an exact number of Indo-Chinese tigers because they live in remote, hilly, and mountainous forests and tend to be solitary in nature. ... Of all tiger subspecies, the South China tiger may be at the greatest risk of extinction.",
+                          "page_last_modified": " Sat, 09 Mar 2024 11:57:13 GMT"
+                        },
+                        {
+                          "page_name": "Extinct Tigers – Crown Ridge Tiger Sanctuary",
+                          "page_url": "https://crownridgetigers.com/extinct-tigers",
+                          "page_snippet": "These three subspecies include <strong>Balinese tigers (Panthera tigris balica), Caspian tigers (Panthera tigris virgata), and Javan tigers (Panthera tigris sondaica).</strong>?? All three have been extinct for at least 3 decades.? Even though the beauty of these subspecies can no longer be enjoyed, they are ...These three subspecies include Balinese tigers (Panthera tigris balica), Caspian tigers (Panthera tigris virgata), and Javan tigers (Panthera tigris sondaica).?? All three have been extinct for at least 3 decades.? Even though the beauty of these subspecies can no longer be enjoyed, they are still appreciated by many. All three have been extinct for at least 3 decades.? Even though the beauty of these subspecies can no longer be enjoyed, they are still appreciated by many. ??????????? Balinese tigers once roamed Bali, as they were native to this small Indonesian island.? Also known as Bali tigers, these cats were the smallest of all 9 subspecies of tigers and some scientists argue that Bali tigers are actually a subspecies of the extinct Javan tigers.? Siberian/Amur tigers are the closest living relatives to Caspian tigers. ??????????? No exact date of extinction exists for this subspecies.? Military personnel and sportsmen hunted Caspian tigers, which aided in their extinction.? In addition to this, Caspian tigers also suffered from loss of habitat and loss of prey.? Also known as Bali tigers, these cats were the smallest of all 9 subspecies of tigers and some scientists argue that Bali tigers are actually a subspecies of the extinct Javan tigers.? Males typically weighed up to 220 pounds, while females weighed up to 180 pounds.?",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784811301412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1503,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "caspian, javan, and bali tigers.\n\n信息来源：\n1. Tiger | Species | WWF - https://www.worldwildlife.org/species/tiger\n2. The Most Endangered Tigers in the World | Reader's Digest - https://www.rd.com/list/endangered-tigers/\n3. Extinct Tigers – Crown Ridge Tiger Sanctuary - https://crownridgetigers.com/extinct-tigers",
+                      "query": "what kind of tigers are extinct?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "what kind of tigers are extinct?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Tiger | Species | WWF",
+                          "page_url": "https://www.worldwildlife.org/species/tiger",
+                          "page_snippet": "These are popularly known as Sumatran tigers. The continental tigers currently include the Bengal, Malayan, Indochinese and Amur (Siberian) tiger populations, while the <strong>Caspian tiger</strong> is extinct in the wild. The South China tiger is believed to be functionally extinct.All remaining island tigers are found only in Sumatra, with tigers in Java and Bali now extinct. These are popularly known as Sumatran tigers. The continental tigers currently include the Bengal, Malayan, Indochinese and Amur (Siberian) tiger populations, while the Caspian tiger is extinct in the wild. These are popularly known as Sumatran tigers. The continental tigers currently include the Bengal, Malayan, Indochinese and Amur (Siberian) tiger populations, while the Caspian tiger is extinct in the wild. The South China tiger is believed to be functionally extinct. The South China tiger is believed to be functionally extinct. ... Under the USAID Saving Threatened Wildlife project, WWF supports Viet Nam’s efforts to reduce illegal wildlife trafficking by engaging with leaders in the Vietnamese government, private sector, and civil society. WWF-Viet Nam and its governmental and NGO partners have been advocating for and working towards stronger regulation and management of Viet Nam’s captive tiger facilities. After a century of decline, overall wild tiger numbers are starting to tick upward. Based on the best available information, tiger populations are stable or increasing in India, Nepal, Bhutan, Russia and China. About 5,574 tigers remain in the wild, according to the Global Tiger Forum, but much more work is needed to protect this species if we are to secure its future in the wild.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "The Most Endangered Tigers in the World | Reader's Digest",
+                          "page_url": "https://www.rd.com/list/endangered-tigers/",
+                          "page_snippet": "Of all tiger subspecies, the <strong>South China tiger</strong> may be at the greatest risk of extinction. The WWF estimates there are just 30 to 80 <strong>South China tiger</strong>s left in the world, all of which are in captivity; the <strong>South China tiger</strong> hasn’t been seen in the wild in over a quarter-century.Of the nine tiger species, three are already extinct, and the remaining six remain at risk of the same fate. Here's what you need to know. ... The tiger is one of four species within the “panther genus,” which is a member of the cat family Felidae, that includes cats of all sizes. Panthers include—in descending size order—tigers, lions, jaguars, and leopards; all share similar facial structure and are capable of roaring. Over the last century, tiger habitats have fallen by around 95 percent, and there are now fewer than 4,000 tigers alive in the wild, reports the World Wildlife Federation (WWF). Of the nine subspecies of tiger, three are already extinct; and the rest are considered endangered. ... Bali: Indigenous to western Bali, the Bali tiger has been extinct since the 1940s. Of all tiger subspecies, the South China tiger may be at the greatest risk of extinction. The WWF estimates there are just 30 to 80 South China tigers left in the world, all of which are in captivity; the South China tiger hasn’t been seen in the wild in over a quarter-century. Between 2000 and 2010, the Indochine tiger population declined by more than 70 percent, and it’s believed there are less than 650 in the world, although some sources put that number closer to 350. It’s difficult to get an exact number of Indo-Chinese tigers because they live in remote, hilly, and mountainous forests and tend to be solitary in nature. ... Of all tiger subspecies, the South China tiger may be at the greatest risk of extinction.",
+                          "page_last_modified": " Sat, 09 Mar 2024 11:57:13 GMT"
+                        },
+                        {
+                          "page_name": "Extinct Tigers – Crown Ridge Tiger Sanctuary",
+                          "page_url": "https://crownridgetigers.com/extinct-tigers",
+                          "page_snippet": "These three subspecies include <strong>Balinese tigers (Panthera tigris balica), Caspian tigers (Panthera tigris virgata), and Javan tigers (Panthera tigris sondaica).</strong>?? All three have been extinct for at least 3 decades.? Even though the beauty of these subspecies can no longer be enjoyed, they are ...These three subspecies include Balinese tigers (Panthera tigris balica), Caspian tigers (Panthera tigris virgata), and Javan tigers (Panthera tigris sondaica).?? All three have been extinct for at least 3 decades.? Even though the beauty of these subspecies can no longer be enjoyed, they are still appreciated by many. All three have been extinct for at least 3 decades.? Even though the beauty of these subspecies can no longer be enjoyed, they are still appreciated by many. ??????????? Balinese tigers once roamed Bali, as they were native to this small Indonesian island.? Also known as Bali tigers, these cats were the smallest of all 9 subspecies of tigers and some scientists argue that Bali tigers are actually a subspecies of the extinct Javan tigers.? Siberian/Amur tigers are the closest living relatives to Caspian tigers. ??????????? No exact date of extinction exists for this subspecies.? Military personnel and sportsmen hunted Caspian tigers, which aided in their extinction.? In addition to this, Caspian tigers also suffered from loss of habitat and loss of prey.? Also known as Bali tigers, these cats were the smallest of all 9 subspecies of tigers and some scientists argue that Bali tigers are actually a subspecies of the extinct Javan tigers.? Males typically weighed up to 220 pounds, while females weighed up to 180 pounds.?",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

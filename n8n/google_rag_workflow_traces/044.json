@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-044",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T13:35:00Z",
+  "stoppedAt": "2026-07-23T13:35:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "14eabb9a-2070-4309-9536-7353378272a4",
+    "query_time": "03/10/2024, 23:13:48 PT",
+    "domain": "sports",
+    "question_type": "comparison",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784813700000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-044",
+                      "chatInput": "which is wider, a football field or a soccer pitch?",
+                      "interaction_id": "14eabb9a-2070-4309-9536-7353378272a4",
+                      "domain": "sports"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784813700028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 135,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "which is wider, a football field or a soccer pitch?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784813700265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1001,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "5.3 Pitch Dimensions and Surrounding Areas | FIFA Publications",
+                                "page_url": "https://publications.fifa.com/en/football-stadiums-guidelines/technical-guideline/stadium-guidelines/pitch-dimensions-and-surrounding-areas/",
+                                "page_snippet": "FIFA Stadiums Guidelines 2022. Pitch Dimensions and Surrounding AreasIn this section, we focus on the pitch and its surrounding area in terms of its intended use for football matches. Firstly, we consider the field of play and its dimensions, followed by the wider pitch area up until its demarcation with spectator areas. As well as identifying the items that need to be accommodated in this area, including warm-up areas, the players’ tunnel and advertising boards, we also consider the important interaction of the pitch perimeter and the spectator areas in terms of forward emergency evacuation. Firstly, we consider the field of play and its dimensions, followed by the wider pitch area up until its demarcation with spectator areas. As well as identifying the items that need to be accommodated in this area, including warm-up areas, the players’ tunnel and advertising boards, we also consider the important interaction of the pitch perimeter and the spectator areas in terms of forward emergency evacuation. Finally, we look at field of play equipment and benches required for teams and officials. Field of play equipment must comply with the latest version of Law 1 – The Field of Play in the Laws of the Game. Each stadium shall be equipped with two goals of suitable quality and safety, placed on the centre of each goal line equidistant from the corner posts. It is normal for stadiums regularly hosting professional football to have two identical substitute full-size goals of the same kind on standby, in case the original goals are damaged during the game. The FIFA Quality Programme for Football Goals also provides further guidance and is recommended especially to ensure safety. Goal nets should be provided according to local competition requirements. ... The field of play shall only be marked with corner flags.",
+                                "page_last_modified": " Thu, 26 Oct 2023 08:45:05 GMT"
+                              },
+                              {
+                                "page_name": "Football Pitch | Field Dimensions & Drawings | Dimensions.com",
+                                "page_url": "https://www.dimensions.com/element/football-soccer-pitch-field",
+                                "page_snippet": "Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ ...Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ | 7.32 m wide. Football fields, or football pitches, are the rectangular playing surfaces used for the sport of football (soccer). While grass is the typical playing surface, football can also be played on artificial turf or informally on dirt surfaces. The long length of the field, bounded by the touchlines, must be between 295’-394’ | 90-120 m, while the shorter width, defined by the goal lines, is between 148’-295’ | 45-90 m. Goals are located on the center of each opposing goal line and are 24’ | 7.32 m wide. The football pitch is split with a half-way line and a center circle with a radius of 30’ | 9.15 m. Other crucial areas of the football field include the goal area and the penalty area/marks. Inclusivity is another trend, with accessible seating and facilities for a wider range of athletes and spectators. ... Ball sports have become deeply intertwined with cultural and national identities, often symbolizing communal values and pride. Soccer, for instance, is a crucial part of many countries' identities, evoking strong nationalistic sentiments during international competitions. In the United States, sports like baseball and American football are ingrained in the cultural fabric, celebrated as pastimes and reflecting aspects of American society and history. Each soccer team is allowed to have a maximum of 11 players on the pitch at a single time. Teams are able to have a bench of additional players that ranges from 3 to 12 substitute players. ... England invented the modern game of football (soccer). Though there were similar types of football sports dating thousands of years in the past, the English were the first to create the uniform rule set for the sport that is played around the world today.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Football Pitch | Field Dimensions & Drawings | Dimensions.com",
+                                "page_url": "https://www.dimensions.com/element/football-soccer-pitch-field",
+                                "page_snippet": "Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ ...Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ | 7.32 m wide. Football fields, or football pitches, are the rectangular playing surfaces used for the sport of football (soccer). While grass is the typical playing surface, football can also be played on artificial turf or informally on dirt surfaces. The long length of the field, bounded by the touchlines, must be between 295’-394’ | 90-120 m, while the shorter width, defined by the goal lines, is between 148’-295’ | 45-90 m. Goals are located on the center of each opposing goal line and are 24’ | 7.32 m wide. The football pitch is split with a half-way line and a center circle with a radius of 30’ | 9.15 m. Other crucial areas of the football field include the goal area and the penalty area/marks. Inclusivity is another trend, with accessible seating and facilities for a wider range of athletes and spectators. ... Ball sports have become deeply intertwined with cultural and national identities, often symbolizing communal values and pride. Soccer, for instance, is a crucial part of many countries' identities, evoking strong nationalistic sentiments during international competitions. In the United States, sports like baseball and American football are ingrained in the cultural fabric, celebrated as pastimes and reflecting aspects of American society and history. Each soccer team is allowed to have a maximum of 11 players on the pitch at a single time. Teams are able to have a bench of additional players that ranges from 3 to 12 substitute players. ... England invented the modern game of football (soccer). Though there were similar types of football sports dating thousands of years in the past, the English were the first to create the uniform rule set for the sport that is played around the world today.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "5.3 Pitch Dimensions and Surrounding Areas | FIFA Publications",
+                          "page_url": "https://publications.fifa.com/en/football-stadiums-guidelines/technical-guideline/stadium-guidelines/pitch-dimensions-and-surrounding-areas/",
+                          "page_snippet": "FIFA Stadiums Guidelines 2022. Pitch Dimensions and Surrounding AreasIn this section, we focus on the pitch and its surrounding area in terms of its intended use for football matches. Firstly, we consider the field of play and its dimensions, followed by the wider pitch area up until its demarcation with spectator areas. As well as identifying the items that need to be accommodated in this area, including warm-up areas, the players’ tunnel and advertising boards, we also consider the important interaction of the pitch perimeter and the spectator areas in terms of forward emergency evacuation. Firstly, we consider the field of play and its dimensions, followed by the wider pitch area up until its demarcation with spectator areas. As well as identifying the items that need to be accommodated in this area, including warm-up areas, the players’ tunnel and advertising boards, we also consider the important interaction of the pitch perimeter and the spectator areas in terms of forward emergency evacuation. Finally, we look at field of play equipment and benches required for teams and officials. Field of play equipment must comply with the latest version of Law 1 – The Field of Play in the Laws of the Game. Each stadium shall be equipped with two goals of suitable quality and safety, placed on the centre of each goal line equidistant from the corner posts. It is normal for stadiums regularly hosting professional football to have two identical substitute full-size goals of the same kind on standby, in case the original goals are damaged during the game. The FIFA Quality Programme for Football Goals also provides further guidance and is recommended especially to ensure safety. Goal nets should be provided according to local competition requirements. ... The field of play shall only be marked with corner flags.",
+                          "page_last_modified": " Thu, 26 Oct 2023 08:45:05 GMT"
+                        },
+                        {
+                          "page_name": "Football Pitch | Field Dimensions & Drawings | Dimensions.com",
+                          "page_url": "https://www.dimensions.com/element/football-soccer-pitch-field",
+                          "page_snippet": "Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ ...Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ | 7.32 m wide. Football fields, or football pitches, are the rectangular playing surfaces used for the sport of football (soccer). While grass is the typical playing surface, football can also be played on artificial turf or informally on dirt surfaces. The long length of the field, bounded by the touchlines, must be between 295’-394’ | 90-120 m, while the shorter width, defined by the goal lines, is between 148’-295’ | 45-90 m. Goals are located on the center of each opposing goal line and are 24’ | 7.32 m wide. The football pitch is split with a half-way line and a center circle with a radius of 30’ | 9.15 m. Other crucial areas of the football field include the goal area and the penalty area/marks. Inclusivity is another trend, with accessible seating and facilities for a wider range of athletes and spectators. ... Ball sports have become deeply intertwined with cultural and national identities, often symbolizing communal values and pride. Soccer, for instance, is a crucial part of many countries' identities, evoking strong nationalistic sentiments during international competitions. In the United States, sports like baseball and American football are ingrained in the cultural fabric, celebrated as pastimes and reflecting aspects of American society and history. Each soccer team is allowed to have a maximum of 11 players on the pitch at a single time. Teams are able to have a bench of additional players that ranges from 3 to 12 substitute players. ... England invented the modern game of football (soccer). Though there were similar types of football sports dating thousands of years in the past, the English were the first to create the uniform rule set for the sport that is played around the world today.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Football Pitch | Field Dimensions & Drawings | Dimensions.com",
+                          "page_url": "https://www.dimensions.com/element/football-soccer-pitch-field",
+                          "page_snippet": "Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ ...Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ | 7.32 m wide. Football fields, or football pitches, are the rectangular playing surfaces used for the sport of football (soccer). While grass is the typical playing surface, football can also be played on artificial turf or informally on dirt surfaces. The long length of the field, bounded by the touchlines, must be between 295’-394’ | 90-120 m, while the shorter width, defined by the goal lines, is between 148’-295’ | 45-90 m. Goals are located on the center of each opposing goal line and are 24’ | 7.32 m wide. The football pitch is split with a half-way line and a center circle with a radius of 30’ | 9.15 m. Other crucial areas of the football field include the goal area and the penalty area/marks. Inclusivity is another trend, with accessible seating and facilities for a wider range of athletes and spectators. ... Ball sports have become deeply intertwined with cultural and national identities, often symbolizing communal values and pride. Soccer, for instance, is a crucial part of many countries' identities, evoking strong nationalistic sentiments during international competitions. In the United States, sports like baseball and American football are ingrained in the cultural fabric, celebrated as pastimes and reflecting aspects of American society and history. Each soccer team is allowed to have a maximum of 11 players on the pitch at a single time. Teams are able to have a bench of additional players that ranges from 3 to 12 substitute players. ... England invented the modern game of football (soccer). Though there were similar types of football sports dating thousands of years in the past, the English were the first to create the uniform rule set for the sport that is played around the world today.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784813701412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1275,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "soccer pitch\n\n信息来源：\n1. 5.3 Pitch Dimensions and Surrounding Areas | FIFA Publications - https://publications.fifa.com/en/football-stadiums-guidelines/technical-guideline/stadium-guidelines/pitch-dimensions-and-surrounding-areas/\n2. Football Pitch | Field Dimensions & Drawings | Dimensions.com - https://www.dimensions.com/element/football-soccer-pitch-field\n3. Football Pitch | Field Dimensions & Drawings | Dimensions.com - https://www.dimensions.com/element/football-soccer-pitch-field",
+                      "query": "which is wider, a football field or a soccer pitch?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "which is wider, a football field or a soccer pitch?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "5.3 Pitch Dimensions and Surrounding Areas | FIFA Publications",
+                          "page_url": "https://publications.fifa.com/en/football-stadiums-guidelines/technical-guideline/stadium-guidelines/pitch-dimensions-and-surrounding-areas/",
+                          "page_snippet": "FIFA Stadiums Guidelines 2022. Pitch Dimensions and Surrounding AreasIn this section, we focus on the pitch and its surrounding area in terms of its intended use for football matches. Firstly, we consider the field of play and its dimensions, followed by the wider pitch area up until its demarcation with spectator areas. As well as identifying the items that need to be accommodated in this area, including warm-up areas, the players’ tunnel and advertising boards, we also consider the important interaction of the pitch perimeter and the spectator areas in terms of forward emergency evacuation. Firstly, we consider the field of play and its dimensions, followed by the wider pitch area up until its demarcation with spectator areas. As well as identifying the items that need to be accommodated in this area, including warm-up areas, the players’ tunnel and advertising boards, we also consider the important interaction of the pitch perimeter and the spectator areas in terms of forward emergency evacuation. Finally, we look at field of play equipment and benches required for teams and officials. Field of play equipment must comply with the latest version of Law 1 – The Field of Play in the Laws of the Game. Each stadium shall be equipped with two goals of suitable quality and safety, placed on the centre of each goal line equidistant from the corner posts. It is normal for stadiums regularly hosting professional football to have two identical substitute full-size goals of the same kind on standby, in case the original goals are damaged during the game. The FIFA Quality Programme for Football Goals also provides further guidance and is recommended especially to ensure safety. Goal nets should be provided according to local competition requirements. ... The field of play shall only be marked with corner flags.",
+                          "page_last_modified": " Thu, 26 Oct 2023 08:45:05 GMT"
+                        },
+                        {
+                          "page_name": "Football Pitch | Field Dimensions & Drawings | Dimensions.com",
+                          "page_url": "https://www.dimensions.com/element/football-soccer-pitch-field",
+                          "page_snippet": "Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ ...Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ | 7.32 m wide. Football fields, or football pitches, are the rectangular playing surfaces used for the sport of football (soccer). While grass is the typical playing surface, football can also be played on artificial turf or informally on dirt surfaces. The long length of the field, bounded by the touchlines, must be between 295’-394’ | 90-120 m, while the shorter width, defined by the goal lines, is between 148’-295’ | 45-90 m. Goals are located on the center of each opposing goal line and are 24’ | 7.32 m wide. The football pitch is split with a half-way line and a center circle with a radius of 30’ | 9.15 m. Other crucial areas of the football field include the goal area and the penalty area/marks. Inclusivity is another trend, with accessible seating and facilities for a wider range of athletes and spectators. ... Ball sports have become deeply intertwined with cultural and national identities, often symbolizing communal values and pride. Soccer, for instance, is a crucial part of many countries' identities, evoking strong nationalistic sentiments during international competitions. In the United States, sports like baseball and American football are ingrained in the cultural fabric, celebrated as pastimes and reflecting aspects of American society and history. Each soccer team is allowed to have a maximum of 11 players on the pitch at a single time. Teams are able to have a bench of additional players that ranges from 3 to 12 substitute players. ... England invented the modern game of football (soccer). Though there were similar types of football sports dating thousands of years in the past, the English were the first to create the uniform rule set for the sport that is played around the world today.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Football Pitch | Field Dimensions & Drawings | Dimensions.com",
+                          "page_url": "https://www.dimensions.com/element/football-soccer-pitch-field",
+                          "page_snippet": "Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ ...Football fields, or pitches, are rectangular playing surfaces used for the sport of football (soccer). The long length of the field must be between 295’-394’ | 90-120 m, while the shorter width is between 148’-295’ | 45-90 m. Goals are located on each opposing goal line and are 24’ | 7.32 m wide. Football fields, or football pitches, are the rectangular playing surfaces used for the sport of football (soccer). While grass is the typical playing surface, football can also be played on artificial turf or informally on dirt surfaces. The long length of the field, bounded by the touchlines, must be between 295’-394’ | 90-120 m, while the shorter width, defined by the goal lines, is between 148’-295’ | 45-90 m. Goals are located on the center of each opposing goal line and are 24’ | 7.32 m wide. The football pitch is split with a half-way line and a center circle with a radius of 30’ | 9.15 m. Other crucial areas of the football field include the goal area and the penalty area/marks. Inclusivity is another trend, with accessible seating and facilities for a wider range of athletes and spectators. ... Ball sports have become deeply intertwined with cultural and national identities, often symbolizing communal values and pride. Soccer, for instance, is a crucial part of many countries' identities, evoking strong nationalistic sentiments during international competitions. In the United States, sports like baseball and American football are ingrained in the cultural fabric, celebrated as pastimes and reflecting aspects of American society and history. Each soccer team is allowed to have a maximum of 11 players on the pitch at a single time. Teams are able to have a bench of additional players that ranges from 3 to 12 substitute players. ... England invented the modern game of football (soccer). Though there were similar types of football sports dating thousands of years in the past, the English were the first to create the uniform rule set for the sport that is played around the world today.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

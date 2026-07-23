@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-009",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T10:40:00Z",
+  "stoppedAt": "2026-07-23T10:40:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "9b5dbd99-3dda-49bf-99fd-32546346e31a",
+    "query_time": "03/13/2024, 08:47:22 PT",
+    "domain": "finance",
+    "question_type": "simple_w_condition",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784803200000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-009",
+                      "chatInput": "what was the total value of all corporate bonds issued in the united states as of august 2020?",
+                      "interaction_id": "9b5dbd99-3dda-49bf-99fd-32546346e31a",
+                      "domain": "finance"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784803200028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 135,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "what was the total value of all corporate bonds issued in the united states as of august 2020?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784803200265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1035,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "US Corporate Bonds Statistics - SIFMA - US Corporate Bonds Statistics ...",
+                                "page_url": "https://www.sifma.org/resources/research/us-corporate-bond-issuance/",
+                                "page_snippet": "SIFMA Research tracks issuance, trading and outstanding data for the U.S. corporate bond market. Issuance data is broken out into investment grade/high yield, nonconvertible/convertible, callable/noncallable and fixed rate/floating rate. Trading volume data has investment grade/high yield, ...SIFMA Research tracks issuance, trading and outstanding data for the U.S. corporate bond market. Issuance data is broken out into investment grade/high yield, nonconvertible/convertible, callable/noncallable and fixed rate/floating rate. Trading volume data has investment grade/high yield, public/144A, nonconvertible/convertible, by rating and interdealer breakouts. SIFMA Research tracks issuance, trading, and outstanding data for the U.S. municipal bond market. Issuance data is broken out by… An immersive experience on fixed income markets, our interactive data visualization draws from deep cuts of data in both issuance and outstanding securities. ... A quarterly report containing brief commentary and statistics on total U.S. fixed income markets. A quarterly report containing brief commentary and statistics on total U.S. fixed income markets. ... Fixed income markets are an integral component to economic growth, providing efficient, long term and cost-effective funding. They are also one of the most heavily regulated areas of the U.S. capital markets. SIFMA Research tracks U.S. agency debt markets including issuance, trading and outstanding data.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Bond Market Size » ICMA",
+                                "page_url": "https://www.icmagroup.org/market-practice-and-regulatory-policy/secondary-markets/bond-market-size/",
+                                "page_snippet": "APAC G3 Corporate Bonds As of August 2020, ICMA estimates the notional value of the outstanding APAC G3 corporate bond market – defined as bonds issued by corporations incorporated in an APAC country and issued in USD, EUR, or GBP – as approximately $2.8tn, consisting of 9,708 ISINs. China, Australia, and Japan dominate in terms of country of risk, making up 71% of total ...APAC G3 Corporate Bonds As of August 2020, ICMA estimates the notional value of the outstanding APAC G3 corporate bond market – defined as bonds issued by corporations incorporated in an APAC country and issued in USD, EUR, or GBP – as approximately $2.8tn, consisting of 9,708 ISINs. China, Australia, and Japan dominate in terms of country of risk, making up 71% of total outstandings. China alone ($1.0tn) makes up 38% of APAC G3 outstandings. USD is the predominant currency of issuance (88%). ...  African SSA bond markets As of July 2020, ICMA estimates the notional value of the outstanding domestic African SSA bond market – defined as bonds issued by an African SSA entity issued in local currency – to be approximately $802.9bn, constituting 4,918 ISINs. Japan As of July 2020, ICMA estimates the notional value of the outstanding onshore Japan SSA market to be approximately $12.3tn, of which $11.0tn are sovereign bonds. It estimates the domestic Japan corporate bond market– defined as bonds issued by corporations incorporated in Japan and issued in JPY – to be approximately $826bn.  APAC G3 Corporate Bonds As of August 2020, ICMA estimates the notional value of the outstanding APAC G3 corporate bond market – defined as bonds issued by corporations incorporated in an APAC country and issued in USD, EUR, or GBP – as approximately $2.8tn, consisting of 9,708 ISINs. APAC (ex- Japan and China) As of July 2020, ICMA estimates the notional value of the outstanding APAC SSA market (excluding Japan and China) to be approximately $5.9tn, of which $4.3tn are government bonds. It estimates the APAC corporate bond market (excluding Japan and China) – defined as bonds issued by corporations incorporated in an APAC country (excluding Japan and China and issued in an APAC local currency (excluding JPY and CNY) – to be approximately $1.8tn. China As of July 2020, ICMA estimates the notional value of the outstanding onshore China SSA market to be approximately $19.4tn, of which $7.1tn are sovereign bonds. It estimates the onshore China corporate bond market– defined as bonds issued by corporations incorporated in China and issued in CNY – to be approximately $6.95tn.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Bond market - Wikipedia",
+                                "page_url": "https://en.wikipedia.org/wiki/Bond_market",
+                                "page_snippet": "In terms of number of bonds, there are over 500,000 unique corporate bonds in the US. The outstanding value of international bonds increased by 2% in 2011 to $30 trillion. The $1.2 trillion issued during the year was down by around a fifth on the previous year&#x27;s total. The first half of 2012 was off to a strong start with issuance of over $800 billion. The United ...In terms of number of bonds, there are over 500,000 unique corporate bonds in the US. The outstanding value of international bonds increased by 2% in 2011 to $30 trillion. The $1.2 trillion issued during the year was down by around a fifth on the previous year's total. The first half of 2012 was off to a strong start with issuance of over $800 billion. The United States was the leading center in terms of value outstanding with 24% of the total followed by the UK 13%. The bond market (also debt market or credit market) is a financial market where participants can issue new debt, known as the primary market, or buy and sell debt securities, known as the secondary market. This is usually in the form of bonds, but it may include notes, bills, and so on for public and private expenditures. The bond market has largely been dominated by the United States, which accounts for about 39% of the market. As of 2021, the size of the bond market (total debt outstanding) is estimated to be at $119 trillion worldwide and $46 trillion for the US market, according to the Securities Industry and Financial Markets Association (SIFMA). Investment companies allow individual investors the ability to participate in the bond markets through bond funds, closed-end funds and unit-investment trusts. In 2006 total bond fund net inflows increased 97% from $30.8 billion in 2005 to $60.8 billion in 2006. Exchange-traded funds (ETFs) are another alternative to trading or investing directly in a bond issue. Because of the specificity of individual bond issues, and the lack of liquidity in many smaller issues, the majority of outstanding bonds are held by institutions like pension funds, banks and mutual funds. In the United States, approximately 10% of the market is held by private individuals. Amounts outstanding on the global bond market increased by 2% in the twelve months to March 2012 to nearly $100 trillion. Domestic bonds accounted for 70% of the total and international bonds for the remainder. The first half of 2012 was off to a strong start with issuance of over $800 billion. The United States was the leading center in terms of value outstanding with 24% of the total followed by the UK 13%. According to the Securities Industry and Financial Markets Association (SIFMA), as of Q1 2017, the U.S. bond market size is (in billions):",
+                                "page_last_modified": " Mon, 11 Mar 2024 13:41:16 GMT"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "US Corporate Bonds Statistics - SIFMA - US Corporate Bonds Statistics ...",
+                          "page_url": "https://www.sifma.org/resources/research/us-corporate-bond-issuance/",
+                          "page_snippet": "SIFMA Research tracks issuance, trading and outstanding data for the U.S. corporate bond market. Issuance data is broken out into investment grade/high yield, nonconvertible/convertible, callable/noncallable and fixed rate/floating rate. Trading volume data has investment grade/high yield, ...SIFMA Research tracks issuance, trading and outstanding data for the U.S. corporate bond market. Issuance data is broken out into investment grade/high yield, nonconvertible/convertible, callable/noncallable and fixed rate/floating rate. Trading volume data has investment grade/high yield, public/144A, nonconvertible/convertible, by rating and interdealer breakouts. SIFMA Research tracks issuance, trading, and outstanding data for the U.S. municipal bond market. Issuance data is broken out by… An immersive experience on fixed income markets, our interactive data visualization draws from deep cuts of data in both issuance and outstanding securities. ... A quarterly report containing brief commentary and statistics on total U.S. fixed income markets. A quarterly report containing brief commentary and statistics on total U.S. fixed income markets. ... Fixed income markets are an integral component to economic growth, providing efficient, long term and cost-effective funding. They are also one of the most heavily regulated areas of the U.S. capital markets. SIFMA Research tracks U.S. agency debt markets including issuance, trading and outstanding data.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Bond Market Size » ICMA",
+                          "page_url": "https://www.icmagroup.org/market-practice-and-regulatory-policy/secondary-markets/bond-market-size/",
+                          "page_snippet": "APAC G3 Corporate Bonds As of August 2020, ICMA estimates the notional value of the outstanding APAC G3 corporate bond market – defined as bonds issued by corporations incorporated in an APAC country and issued in USD, EUR, or GBP – as approximately $2.8tn, consisting of 9,708 ISINs. China, Australia, and Japan dominate in terms of country of risk, making up 71% of total ...APAC G3 Corporate Bonds As of August 2020, ICMA estimates the notional value of the outstanding APAC G3 corporate bond market – defined as bonds issued by corporations incorporated in an APAC country and issued in USD, EUR, or GBP – as approximately $2.8tn, consisting of 9,708 ISINs. China, Australia, and Japan dominate in terms of country of risk, making up 71% of total outstandings. China alone ($1.0tn) makes up 38% of APAC G3 outstandings. USD is the predominant currency of issuance (88%). ...  African SSA bond markets As of July 2020, ICMA estimates the notional value of the outstanding domestic African SSA bond market – defined as bonds issued by an African SSA entity issued in local currency – to be approximately $802.9bn, constituting 4,918 ISINs. Japan As of July 2020, ICMA estimates the notional value of the outstanding onshore Japan SSA market to be approximately $12.3tn, of which $11.0tn are sovereign bonds. It estimates the domestic Japan corporate bond market– defined as bonds issued by corporations incorporated in Japan and issued in JPY – to be approximately $826bn.  APAC G3 Corporate Bonds As of August 2020, ICMA estimates the notional value of the outstanding APAC G3 corporate bond market – defined as bonds issued by corporations incorporated in an APAC country and issued in USD, EUR, or GBP – as approximately $2.8tn, consisting of 9,708 ISINs. APAC (ex- Japan and China) As of July 2020, ICMA estimates the notional value of the outstanding APAC SSA market (excluding Japan and China) to be approximately $5.9tn, of which $4.3tn are government bonds. It estimates the APAC corporate bond market (excluding Japan and China) – defined as bonds issued by corporations incorporated in an APAC country (excluding Japan and China and issued in an APAC local currency (excluding JPY and CNY) – to be approximately $1.8tn. China As of July 2020, ICMA estimates the notional value of the outstanding onshore China SSA market to be approximately $19.4tn, of which $7.1tn are sovereign bonds. It estimates the onshore China corporate bond market– defined as bonds issued by corporations incorporated in China and issued in CNY – to be approximately $6.95tn.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Bond market - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/Bond_market",
+                          "page_snippet": "In terms of number of bonds, there are over 500,000 unique corporate bonds in the US. The outstanding value of international bonds increased by 2% in 2011 to $30 trillion. The $1.2 trillion issued during the year was down by around a fifth on the previous year&#x27;s total. The first half of 2012 was off to a strong start with issuance of over $800 billion. The United ...In terms of number of bonds, there are over 500,000 unique corporate bonds in the US. The outstanding value of international bonds increased by 2% in 2011 to $30 trillion. The $1.2 trillion issued during the year was down by around a fifth on the previous year's total. The first half of 2012 was off to a strong start with issuance of over $800 billion. The United States was the leading center in terms of value outstanding with 24% of the total followed by the UK 13%. The bond market (also debt market or credit market) is a financial market where participants can issue new debt, known as the primary market, or buy and sell debt securities, known as the secondary market. This is usually in the form of bonds, but it may include notes, bills, and so on for public and private expenditures. The bond market has largely been dominated by the United States, which accounts for about 39% of the market. As of 2021, the size of the bond market (total debt outstanding) is estimated to be at $119 trillion worldwide and $46 trillion for the US market, according to the Securities Industry and Financial Markets Association (SIFMA). Investment companies allow individual investors the ability to participate in the bond markets through bond funds, closed-end funds and unit-investment trusts. In 2006 total bond fund net inflows increased 97% from $30.8 billion in 2005 to $60.8 billion in 2006. Exchange-traded funds (ETFs) are another alternative to trading or investing directly in a bond issue. Because of the specificity of individual bond issues, and the lack of liquidity in many smaller issues, the majority of outstanding bonds are held by institutions like pension funds, banks and mutual funds. In the United States, approximately 10% of the market is held by private individuals. Amounts outstanding on the global bond market increased by 2% in the twelve months to March 2012 to nearly $100 trillion. Domestic bonds accounted for 70% of the total and international bonds for the remainder. The first half of 2012 was off to a strong start with issuance of over $800 billion. The United States was the leading center in terms of value outstanding with 24% of the total followed by the UK 13%. According to the Securities Industry and Financial Markets Association (SIFMA), as of Q1 2017, the U.S. bond market size is (in billions):",
+                          "page_last_modified": " Mon, 11 Mar 2024 13:41:16 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784803201412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1332,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "the total value of all corporate bonds issued in the united states was $10.9 trillion as of august 2020.\n\n信息来源：\n1. US Corporate Bonds Statistics - SIFMA - US Corporate Bonds Statistics ... - https://www.sifma.org/resources/research/us-corporate-bond-issuance/\n2. Bond Market Size » ICMA - https://www.icmagroup.org/market-practice-and-regulatory-policy/secondary-markets/bond-market-size/\n3. Bond market - Wikipedia - https://en.wikipedia.org/wiki/Bond_market",
+                      "query": "what was the total value of all corporate bonds issued in the united states as of august 2020?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "what was the total value of all corporate bonds issued in the united states as of august 2020?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "US Corporate Bonds Statistics - SIFMA - US Corporate Bonds Statistics ...",
+                          "page_url": "https://www.sifma.org/resources/research/us-corporate-bond-issuance/",
+                          "page_snippet": "SIFMA Research tracks issuance, trading and outstanding data for the U.S. corporate bond market. Issuance data is broken out into investment grade/high yield, nonconvertible/convertible, callable/noncallable and fixed rate/floating rate. Trading volume data has investment grade/high yield, ...SIFMA Research tracks issuance, trading and outstanding data for the U.S. corporate bond market. Issuance data is broken out into investment grade/high yield, nonconvertible/convertible, callable/noncallable and fixed rate/floating rate. Trading volume data has investment grade/high yield, public/144A, nonconvertible/convertible, by rating and interdealer breakouts. SIFMA Research tracks issuance, trading, and outstanding data for the U.S. municipal bond market. Issuance data is broken out by… An immersive experience on fixed income markets, our interactive data visualization draws from deep cuts of data in both issuance and outstanding securities. ... A quarterly report containing brief commentary and statistics on total U.S. fixed income markets. A quarterly report containing brief commentary and statistics on total U.S. fixed income markets. ... Fixed income markets are an integral component to economic growth, providing efficient, long term and cost-effective funding. They are also one of the most heavily regulated areas of the U.S. capital markets. SIFMA Research tracks U.S. agency debt markets including issuance, trading and outstanding data.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Bond Market Size » ICMA",
+                          "page_url": "https://www.icmagroup.org/market-practice-and-regulatory-policy/secondary-markets/bond-market-size/",
+                          "page_snippet": "APAC G3 Corporate Bonds As of August 2020, ICMA estimates the notional value of the outstanding APAC G3 corporate bond market – defined as bonds issued by corporations incorporated in an APAC country and issued in USD, EUR, or GBP – as approximately $2.8tn, consisting of 9,708 ISINs. China, Australia, and Japan dominate in terms of country of risk, making up 71% of total ...APAC G3 Corporate Bonds As of August 2020, ICMA estimates the notional value of the outstanding APAC G3 corporate bond market – defined as bonds issued by corporations incorporated in an APAC country and issued in USD, EUR, or GBP – as approximately $2.8tn, consisting of 9,708 ISINs. China, Australia, and Japan dominate in terms of country of risk, making up 71% of total outstandings. China alone ($1.0tn) makes up 38% of APAC G3 outstandings. USD is the predominant currency of issuance (88%). ...  African SSA bond markets As of July 2020, ICMA estimates the notional value of the outstanding domestic African SSA bond market – defined as bonds issued by an African SSA entity issued in local currency – to be approximately $802.9bn, constituting 4,918 ISINs. Japan As of July 2020, ICMA estimates the notional value of the outstanding onshore Japan SSA market to be approximately $12.3tn, of which $11.0tn are sovereign bonds. It estimates the domestic Japan corporate bond market– defined as bonds issued by corporations incorporated in Japan and issued in JPY – to be approximately $826bn.  APAC G3 Corporate Bonds As of August 2020, ICMA estimates the notional value of the outstanding APAC G3 corporate bond market – defined as bonds issued by corporations incorporated in an APAC country and issued in USD, EUR, or GBP – as approximately $2.8tn, consisting of 9,708 ISINs. APAC (ex- Japan and China) As of July 2020, ICMA estimates the notional value of the outstanding APAC SSA market (excluding Japan and China) to be approximately $5.9tn, of which $4.3tn are government bonds. It estimates the APAC corporate bond market (excluding Japan and China) – defined as bonds issued by corporations incorporated in an APAC country (excluding Japan and China and issued in an APAC local currency (excluding JPY and CNY) – to be approximately $1.8tn. China As of July 2020, ICMA estimates the notional value of the outstanding onshore China SSA market to be approximately $19.4tn, of which $7.1tn are sovereign bonds. It estimates the onshore China corporate bond market– defined as bonds issued by corporations incorporated in China and issued in CNY – to be approximately $6.95tn.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Bond market - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/Bond_market",
+                          "page_snippet": "In terms of number of bonds, there are over 500,000 unique corporate bonds in the US. The outstanding value of international bonds increased by 2% in 2011 to $30 trillion. The $1.2 trillion issued during the year was down by around a fifth on the previous year&#x27;s total. The first half of 2012 was off to a strong start with issuance of over $800 billion. The United ...In terms of number of bonds, there are over 500,000 unique corporate bonds in the US. The outstanding value of international bonds increased by 2% in 2011 to $30 trillion. The $1.2 trillion issued during the year was down by around a fifth on the previous year's total. The first half of 2012 was off to a strong start with issuance of over $800 billion. The United States was the leading center in terms of value outstanding with 24% of the total followed by the UK 13%. The bond market (also debt market or credit market) is a financial market where participants can issue new debt, known as the primary market, or buy and sell debt securities, known as the secondary market. This is usually in the form of bonds, but it may include notes, bills, and so on for public and private expenditures. The bond market has largely been dominated by the United States, which accounts for about 39% of the market. As of 2021, the size of the bond market (total debt outstanding) is estimated to be at $119 trillion worldwide and $46 trillion for the US market, according to the Securities Industry and Financial Markets Association (SIFMA). Investment companies allow individual investors the ability to participate in the bond markets through bond funds, closed-end funds and unit-investment trusts. In 2006 total bond fund net inflows increased 97% from $30.8 billion in 2005 to $60.8 billion in 2006. Exchange-traded funds (ETFs) are another alternative to trading or investing directly in a bond issue. Because of the specificity of individual bond issues, and the lack of liquidity in many smaller issues, the majority of outstanding bonds are held by institutions like pension funds, banks and mutual funds. In the United States, approximately 10% of the market is held by private individuals. Amounts outstanding on the global bond market increased by 2% in the twelve months to March 2012 to nearly $100 trillion. Domestic bonds accounted for 70% of the total and international bonds for the remainder. The first half of 2012 was off to a strong start with issuance of over $800 billion. The United States was the leading center in terms of value outstanding with 24% of the total followed by the UK 13%. According to the Securities Industry and Financial Markets Association (SIFMA), as of Q1 2017, the U.S. bond market size is (in billions):",
+                          "page_last_modified": " Mon, 11 Mar 2024 13:41:16 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

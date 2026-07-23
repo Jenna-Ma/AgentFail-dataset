@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-005",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T10:20:00Z",
+  "stoppedAt": "2026-07-23T10:20:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "725b1236-3426-43f8-9fa0-c162e4eae35b",
+    "query_time": "03/10/2024, 23:04:59 PT",
+    "domain": "finance",
+    "question_type": "aggregation",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784802000000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-005",
+                      "chatInput": "how much did toyota invest in tesla stock in may 2010?",
+                      "interaction_id": "725b1236-3426-43f8-9fa0-c162e4eae35b",
+                      "domain": "finance"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784802000028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 168,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "how much did toyota invest in tesla stock in may 2010?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784802000265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 899,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Toyota gets Tesla stake, Tesla gets Toyota factory | Reuters",
+                                "page_url": "https://www.reuters.com/article/us-tesla-toyota-idUSTRE64J70O20100521/",
+                                "page_snippet": "Toyota Motor Corp said it would take a $50 million stake in U.S. electric carmaker Tesla Motors, a move that gives the Japanese automaker a chance to repair its dented public image and vaults the California start-up on to the world stage.Separately, Tesla will take over a plant Toyota closed in the San Francisco area and build its upcoming all-electric Model S sedan at the site from 2012. The David-and-Goliath handshake highlights a changing dynamic in the auto industry, where newcomers such as Tesla and BYD Co of China are challenging established players in the uncharted field of mass-produced all-electric vehicles. At a joint news conference in California, Tesla Chief Executive Elon Musk described the investment as a \"gesture of support\" from Toyota Chief Executive Akio Toyoda, who approached him in a whirlwind corporate romance that included dinner at Musk's house and a test ride around Los Angeles in Tesla's pricey electric Roadster sport car over the last month. Toyota will take the stake in a private placement to close immediately after Tesla's much-anticipated initial public offering, and estimated the $50 million would amount to a stake of around 2.5 percent. Musk said that another Tesla investor, Germany's Daimler AG, approved of the Toyota stake. Tesla aims to tap Toyota's expertise in mass production while Toyota wants to win back public support hurt by its Prius hybrid recalls and San Francisco Bay Area protests against its decision to close the plant that Tesla is buying. \"Toyota gets to save face in California and give the impression that they're beefing up their electric vehicle strategy, which is seen as lagging Nissan Motor's and Mitsubishi Motors',\" said Tatsuo Yoshida, Tokyo-based auto analyst at UBS Securities. \"An investment of $50 million is not much for Toyota, and it seems like a win-win for everyone involved,\" he said. Musk said that another Tesla investor, Germany's Daimler AG, approved of the Toyota stake. Toyota shares fell 1.9 percent to close at 3,355 yen in Tokyo on Friday, compared with a 2.5 percent drop in the benchmark Nikkei 225 index. The sudden interest in Tesla signals a shift in Toyota's hitherto skeptical view of battery-run electric vehicles as a viable alternative to today's internal combustion engine cars.",
+                                "page_last_modified": " Mon, 11 Mar 2024 06:04:57 GMT"
+                              },
+                              {
+                                "page_name": "Toyota Sells Stake in Tesla | IndustryWeek",
+                                "page_url": "https://www.industryweek.com/finance/article/22018589/toyota-sells-stake-in-tesla",
+                                "page_snippet": "In 2010, Toyota acquired a $50 million stake in Tesla and then the companies started to jointly develop RAV4 electric vehicles in Canada in 2011 and later sold about 2,500 units...In 2010, Toyota acquired a $50 million stake in Tesla and then the companies started to jointly develop RAV4 electric vehicles in Canada in 2011 and later sold about 2,500 units over three years amid culture clashes and recalls. In 2016 Toyota formed its own unit to develop electric cars. In May 2010, as the emerging alliance took shape, Elon Musk called the partnership “historic” and said Toyota was a company he had long admired. In describing his test drive of the Tesla Roadster about a month earlier, Akio Toyoda, president of Toyota said he felt “the wind of the future.” In 2010, Toyota acquired a $50 million stake in Tesla as automakers were competing to introduce less-polluting vehicles in the U.S. and sold a shuttered California factory to Tesla for $42 million. The two companies then started to jointly develop RAV4 electric vehicles in Canada in 2011 and later sold about 2,500 units over three years amid culture clashes and recalls. Toyota formed its own unit to develop electric cars in November 2016 and aimed to introduce electric cars soon. In May 2010, as the emerging alliance took shape, Elon Musk called the partnership “historic” and said Toyota was a company he had long admired. Toyota held 1.43% in Tesla as of July 2016, according to data compiled by Bloomberg. In 2010, Toyota acquired a $50 million stake in Tesla as automakers were competing to introduce less-polluting vehicles in the U.S. and sold a shuttered California factory to Tesla for $42 million.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Toyota sells stake in Tesla as partnership dies",
+                                "page_url": "https://www.ft.com/content/130a937a-48fd-11e7-919a-1e14ce4af89b",
+                                "page_snippet": "",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Toyota gets Tesla stake, Tesla gets Toyota factory | Reuters",
+                          "page_url": "https://www.reuters.com/article/us-tesla-toyota-idUSTRE64J70O20100521/",
+                          "page_snippet": "Toyota Motor Corp said it would take a $50 million stake in U.S. electric carmaker Tesla Motors, a move that gives the Japanese automaker a chance to repair its dented public image and vaults the California start-up on to the world stage.Separately, Tesla will take over a plant Toyota closed in the San Francisco area and build its upcoming all-electric Model S sedan at the site from 2012. The David-and-Goliath handshake highlights a changing dynamic in the auto industry, where newcomers such as Tesla and BYD Co of China are challenging established players in the uncharted field of mass-produced all-electric vehicles. At a joint news conference in California, Tesla Chief Executive Elon Musk described the investment as a \"gesture of support\" from Toyota Chief Executive Akio Toyoda, who approached him in a whirlwind corporate romance that included dinner at Musk's house and a test ride around Los Angeles in Tesla's pricey electric Roadster sport car over the last month. Toyota will take the stake in a private placement to close immediately after Tesla's much-anticipated initial public offering, and estimated the $50 million would amount to a stake of around 2.5 percent. Musk said that another Tesla investor, Germany's Daimler AG, approved of the Toyota stake. Tesla aims to tap Toyota's expertise in mass production while Toyota wants to win back public support hurt by its Prius hybrid recalls and San Francisco Bay Area protests against its decision to close the plant that Tesla is buying. \"Toyota gets to save face in California and give the impression that they're beefing up their electric vehicle strategy, which is seen as lagging Nissan Motor's and Mitsubishi Motors',\" said Tatsuo Yoshida, Tokyo-based auto analyst at UBS Securities. \"An investment of $50 million is not much for Toyota, and it seems like a win-win for everyone involved,\" he said. Musk said that another Tesla investor, Germany's Daimler AG, approved of the Toyota stake. Toyota shares fell 1.9 percent to close at 3,355 yen in Tokyo on Friday, compared with a 2.5 percent drop in the benchmark Nikkei 225 index. The sudden interest in Tesla signals a shift in Toyota's hitherto skeptical view of battery-run electric vehicles as a viable alternative to today's internal combustion engine cars.",
+                          "page_last_modified": " Mon, 11 Mar 2024 06:04:57 GMT"
+                        },
+                        {
+                          "page_name": "Toyota Sells Stake in Tesla | IndustryWeek",
+                          "page_url": "https://www.industryweek.com/finance/article/22018589/toyota-sells-stake-in-tesla",
+                          "page_snippet": "In 2010, Toyota acquired a $50 million stake in Tesla and then the companies started to jointly develop RAV4 electric vehicles in Canada in 2011 and later sold about 2,500 units...In 2010, Toyota acquired a $50 million stake in Tesla and then the companies started to jointly develop RAV4 electric vehicles in Canada in 2011 and later sold about 2,500 units over three years amid culture clashes and recalls. In 2016 Toyota formed its own unit to develop electric cars. In May 2010, as the emerging alliance took shape, Elon Musk called the partnership “historic” and said Toyota was a company he had long admired. In describing his test drive of the Tesla Roadster about a month earlier, Akio Toyoda, president of Toyota said he felt “the wind of the future.” In 2010, Toyota acquired a $50 million stake in Tesla as automakers were competing to introduce less-polluting vehicles in the U.S. and sold a shuttered California factory to Tesla for $42 million. The two companies then started to jointly develop RAV4 electric vehicles in Canada in 2011 and later sold about 2,500 units over three years amid culture clashes and recalls. Toyota formed its own unit to develop electric cars in November 2016 and aimed to introduce electric cars soon. In May 2010, as the emerging alliance took shape, Elon Musk called the partnership “historic” and said Toyota was a company he had long admired. Toyota held 1.43% in Tesla as of July 2016, according to data compiled by Bloomberg. In 2010, Toyota acquired a $50 million stake in Tesla as automakers were competing to introduce less-polluting vehicles in the U.S. and sold a shuttered California factory to Tesla for $42 million.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Toyota sells stake in Tesla as partnership dies",
+                          "page_url": "https://www.ft.com/content/130a937a-48fd-11e7-919a-1e14ce4af89b",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784802001412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1446,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "$50m\n\n信息来源：\n1. Toyota gets Tesla stake, Tesla gets Toyota factory | Reuters - https://www.reuters.com/article/us-tesla-toyota-idUSTRE64J70O20100521/\n2. Toyota Sells Stake in Tesla | IndustryWeek - https://www.industryweek.com/finance/article/22018589/toyota-sells-stake-in-tesla\n3. Toyota sells stake in Tesla as partnership dies - https://www.ft.com/content/130a937a-48fd-11e7-919a-1e14ce4af89b",
+                      "query": "how much did toyota invest in tesla stock in may 2010?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "how much did toyota invest in tesla stock in may 2010?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Toyota gets Tesla stake, Tesla gets Toyota factory | Reuters",
+                          "page_url": "https://www.reuters.com/article/us-tesla-toyota-idUSTRE64J70O20100521/",
+                          "page_snippet": "Toyota Motor Corp said it would take a $50 million stake in U.S. electric carmaker Tesla Motors, a move that gives the Japanese automaker a chance to repair its dented public image and vaults the California start-up on to the world stage.Separately, Tesla will take over a plant Toyota closed in the San Francisco area and build its upcoming all-electric Model S sedan at the site from 2012. The David-and-Goliath handshake highlights a changing dynamic in the auto industry, where newcomers such as Tesla and BYD Co of China are challenging established players in the uncharted field of mass-produced all-electric vehicles. At a joint news conference in California, Tesla Chief Executive Elon Musk described the investment as a \"gesture of support\" from Toyota Chief Executive Akio Toyoda, who approached him in a whirlwind corporate romance that included dinner at Musk's house and a test ride around Los Angeles in Tesla's pricey electric Roadster sport car over the last month. Toyota will take the stake in a private placement to close immediately after Tesla's much-anticipated initial public offering, and estimated the $50 million would amount to a stake of around 2.5 percent. Musk said that another Tesla investor, Germany's Daimler AG, approved of the Toyota stake. Tesla aims to tap Toyota's expertise in mass production while Toyota wants to win back public support hurt by its Prius hybrid recalls and San Francisco Bay Area protests against its decision to close the plant that Tesla is buying. \"Toyota gets to save face in California and give the impression that they're beefing up their electric vehicle strategy, which is seen as lagging Nissan Motor's and Mitsubishi Motors',\" said Tatsuo Yoshida, Tokyo-based auto analyst at UBS Securities. \"An investment of $50 million is not much for Toyota, and it seems like a win-win for everyone involved,\" he said. Musk said that another Tesla investor, Germany's Daimler AG, approved of the Toyota stake. Toyota shares fell 1.9 percent to close at 3,355 yen in Tokyo on Friday, compared with a 2.5 percent drop in the benchmark Nikkei 225 index. The sudden interest in Tesla signals a shift in Toyota's hitherto skeptical view of battery-run electric vehicles as a viable alternative to today's internal combustion engine cars.",
+                          "page_last_modified": " Mon, 11 Mar 2024 06:04:57 GMT"
+                        },
+                        {
+                          "page_name": "Toyota Sells Stake in Tesla | IndustryWeek",
+                          "page_url": "https://www.industryweek.com/finance/article/22018589/toyota-sells-stake-in-tesla",
+                          "page_snippet": "In 2010, Toyota acquired a $50 million stake in Tesla and then the companies started to jointly develop RAV4 electric vehicles in Canada in 2011 and later sold about 2,500 units...In 2010, Toyota acquired a $50 million stake in Tesla and then the companies started to jointly develop RAV4 electric vehicles in Canada in 2011 and later sold about 2,500 units over three years amid culture clashes and recalls. In 2016 Toyota formed its own unit to develop electric cars. In May 2010, as the emerging alliance took shape, Elon Musk called the partnership “historic” and said Toyota was a company he had long admired. In describing his test drive of the Tesla Roadster about a month earlier, Akio Toyoda, president of Toyota said he felt “the wind of the future.” In 2010, Toyota acquired a $50 million stake in Tesla as automakers were competing to introduce less-polluting vehicles in the U.S. and sold a shuttered California factory to Tesla for $42 million. The two companies then started to jointly develop RAV4 electric vehicles in Canada in 2011 and later sold about 2,500 units over three years amid culture clashes and recalls. Toyota formed its own unit to develop electric cars in November 2016 and aimed to introduce electric cars soon. In May 2010, as the emerging alliance took shape, Elon Musk called the partnership “historic” and said Toyota was a company he had long admired. Toyota held 1.43% in Tesla as of July 2016, according to data compiled by Bloomberg. In 2010, Toyota acquired a $50 million stake in Tesla as automakers were competing to introduce less-polluting vehicles in the U.S. and sold a shuttered California factory to Tesla for $42 million.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Toyota sells stake in Tesla as partnership dies",
+                          "page_url": "https://www.ft.com/content/130a937a-48fd-11e7-919a-1e14ce4af89b",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

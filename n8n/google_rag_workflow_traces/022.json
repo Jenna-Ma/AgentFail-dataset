@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-022",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T11:45:00Z",
+  "stoppedAt": "2026-07-23T11:45:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "b854fb95-0b09-4d38-9b67-20ac7f09da52",
+    "query_time": "03/12/2024, 12:26:27 PT",
+    "domain": "movie",
+    "question_type": "simple",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784807100000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-022",
+                      "chatInput": "what is the name of the high school in the movie \"mean girls\"?",
+                      "interaction_id": "b854fb95-0b09-4d38-9b67-20ac7f09da52",
+                      "domain": "movie"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784807100028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 124,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "what is the name of the high school in the movie \"mean girls\"?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784807100265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 865,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "19 Best High School Movies Like Mean Girls: Chick Flicks You Can't ...",
+                                "page_url": "https://reelrundown.com/movies/Movies-Like-Mean-Girls-",
+                                "page_snippet": "Are you looking for movies like Mean Girls? If yes, then you have defintely landed in a right place. I have come up with a list of some amazing movies you should watch if you loved Mean Girls.Nevertheless, it’s still a great movie to escape to. If you are looking for some great movies like Mean Girls, The Devil Wears Pradashould definitely be on your radar. The plot revolves around six high school seniors willing to do anything to get good grades. After reading the plot summary, you’d be forgiven for thinking that it’s a series movie. Make no mistake; it's going to make you laugh, a lot.. Anyone who has ever been subjected to rejection just because they didn’t coincide with someone else’s opinion, would be able to relate. The plot revolves around three popular girls of Reagan High School, who decide to prank the prom queen by kidnapping her. The plot revolves around three popular girls of Reagan High School, who decide to prank the prom queen by kidnapping her. They shove a jawbreaker into her mouth to keep her from shouting for help. Things go wrong when these girls accidentally kill her. And it only gets worse once Mayo, a geek from their school, finds out about it. It’s intriguing and funny the whole way through. Although, it’s inspired from several other movies of the same genre, there is enough originality to keep you on your toes throughout this movie. Odd One Out is one of the best movies like Mean Girls, but there is no comedy or drama. It’s more serious and realistic, which successfully shows the ugly side of high schools.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Mean Girls (2004) - Trivia - IMDb",
+                                "page_url": "https://www.imdb.com/title/tt0377092/trivia/",
+                                "page_snippet": "Mean Girls (2004) - Trivia on IMDb: Cameos, Mistakes, Spoilers and more...In the scene where Cady was asked if her \"muffin was buttered,\" the line was originally going to be, \"Is your cherry popped?\" The same went for the girl who \"made out with a hot dog\"; this was going to be \"masturbated with a hot dog.\" These were omitted in order for the film to gain a PG-13 rating instead of an R. Initially, Lindsay Lohan was cast as Regina, but she decided to play the \"nice girl\" (Cady Heron) so the public would not base her real personality on Regina's. Rachel McAdams was chosen to play \"mean girl\" Regina George because \"only nice girls can play mean girls,\" according to the producer.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Mean Girls (2004) - Trivia - IMDb",
+                                "page_url": "https://www.imdb.com/title/tt0377092/trivia/",
+                                "page_snippet": "Mean Girls (2004) - Trivia on IMDb: Cameos, Mistakes, Spoilers and more...In the scene where Cady was asked if her \"muffin was buttered,\" the line was originally going to be, \"Is your cherry popped?\" The same went for the girl who \"made out with a hot dog\"; this was going to be \"masturbated with a hot dog.\" These were omitted in order for the film to gain a PG-13 rating instead of an R. Initially, Lindsay Lohan was cast as Regina, but she decided to play the \"nice girl\" (Cady Heron) so the public would not base her real personality on Regina's. Rachel McAdams was chosen to play \"mean girl\" Regina George because \"only nice girls can play mean girls,\" according to the producer.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "19 Best High School Movies Like Mean Girls: Chick Flicks You Can't ...",
+                          "page_url": "https://reelrundown.com/movies/Movies-Like-Mean-Girls-",
+                          "page_snippet": "Are you looking for movies like Mean Girls? If yes, then you have defintely landed in a right place. I have come up with a list of some amazing movies you should watch if you loved Mean Girls.Nevertheless, it’s still a great movie to escape to. If you are looking for some great movies like Mean Girls, The Devil Wears Pradashould definitely be on your radar. The plot revolves around six high school seniors willing to do anything to get good grades. After reading the plot summary, you’d be forgiven for thinking that it’s a series movie. Make no mistake; it's going to make you laugh, a lot.. Anyone who has ever been subjected to rejection just because they didn’t coincide with someone else’s opinion, would be able to relate. The plot revolves around three popular girls of Reagan High School, who decide to prank the prom queen by kidnapping her. The plot revolves around three popular girls of Reagan High School, who decide to prank the prom queen by kidnapping her. They shove a jawbreaker into her mouth to keep her from shouting for help. Things go wrong when these girls accidentally kill her. And it only gets worse once Mayo, a geek from their school, finds out about it. It’s intriguing and funny the whole way through. Although, it’s inspired from several other movies of the same genre, there is enough originality to keep you on your toes throughout this movie. Odd One Out is one of the best movies like Mean Girls, but there is no comedy or drama. It’s more serious and realistic, which successfully shows the ugly side of high schools.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Mean Girls (2004) - Trivia - IMDb",
+                          "page_url": "https://www.imdb.com/title/tt0377092/trivia/",
+                          "page_snippet": "Mean Girls (2004) - Trivia on IMDb: Cameos, Mistakes, Spoilers and more...In the scene where Cady was asked if her \"muffin was buttered,\" the line was originally going to be, \"Is your cherry popped?\" The same went for the girl who \"made out with a hot dog\"; this was going to be \"masturbated with a hot dog.\" These were omitted in order for the film to gain a PG-13 rating instead of an R. Initially, Lindsay Lohan was cast as Regina, but she decided to play the \"nice girl\" (Cady Heron) so the public would not base her real personality on Regina's. Rachel McAdams was chosen to play \"mean girl\" Regina George because \"only nice girls can play mean girls,\" according to the producer.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Mean Girls (2004) - Trivia - IMDb",
+                          "page_url": "https://www.imdb.com/title/tt0377092/trivia/",
+                          "page_snippet": "Mean Girls (2004) - Trivia on IMDb: Cameos, Mistakes, Spoilers and more...In the scene where Cady was asked if her \"muffin was buttered,\" the line was originally going to be, \"Is your cherry popped?\" The same went for the girl who \"made out with a hot dog\"; this was going to be \"masturbated with a hot dog.\" These were omitted in order for the film to gain a PG-13 rating instead of an R. Initially, Lindsay Lohan was cast as Regina, but she decided to play the \"nice girl\" (Cady Heron) so the public would not base her real personality on Regina's. Rachel McAdams was chosen to play \"mean girl\" Regina George because \"only nice girls can play mean girls,\" according to the producer.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784807101412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1389,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "north shore high school\n\n信息来源：\n1. 19 Best High School Movies Like Mean Girls: Chick Flicks You Can't ... - https://reelrundown.com/movies/Movies-Like-Mean-Girls-\n2. Mean Girls (2004) - Trivia - IMDb - https://www.imdb.com/title/tt0377092/trivia/\n3. Mean Girls (2004) - Trivia - IMDb - https://www.imdb.com/title/tt0377092/trivia/",
+                      "query": "what is the name of the high school in the movie \"mean girls\"?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "what is the name of the high school in the movie \"mean girls\"?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "19 Best High School Movies Like Mean Girls: Chick Flicks You Can't ...",
+                          "page_url": "https://reelrundown.com/movies/Movies-Like-Mean-Girls-",
+                          "page_snippet": "Are you looking for movies like Mean Girls? If yes, then you have defintely landed in a right place. I have come up with a list of some amazing movies you should watch if you loved Mean Girls.Nevertheless, it’s still a great movie to escape to. If you are looking for some great movies like Mean Girls, The Devil Wears Pradashould definitely be on your radar. The plot revolves around six high school seniors willing to do anything to get good grades. After reading the plot summary, you’d be forgiven for thinking that it’s a series movie. Make no mistake; it's going to make you laugh, a lot.. Anyone who has ever been subjected to rejection just because they didn’t coincide with someone else’s opinion, would be able to relate. The plot revolves around three popular girls of Reagan High School, who decide to prank the prom queen by kidnapping her. The plot revolves around three popular girls of Reagan High School, who decide to prank the prom queen by kidnapping her. They shove a jawbreaker into her mouth to keep her from shouting for help. Things go wrong when these girls accidentally kill her. And it only gets worse once Mayo, a geek from their school, finds out about it. It’s intriguing and funny the whole way through. Although, it’s inspired from several other movies of the same genre, there is enough originality to keep you on your toes throughout this movie. Odd One Out is one of the best movies like Mean Girls, but there is no comedy or drama. It’s more serious and realistic, which successfully shows the ugly side of high schools.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Mean Girls (2004) - Trivia - IMDb",
+                          "page_url": "https://www.imdb.com/title/tt0377092/trivia/",
+                          "page_snippet": "Mean Girls (2004) - Trivia on IMDb: Cameos, Mistakes, Spoilers and more...In the scene where Cady was asked if her \"muffin was buttered,\" the line was originally going to be, \"Is your cherry popped?\" The same went for the girl who \"made out with a hot dog\"; this was going to be \"masturbated with a hot dog.\" These were omitted in order for the film to gain a PG-13 rating instead of an R. Initially, Lindsay Lohan was cast as Regina, but she decided to play the \"nice girl\" (Cady Heron) so the public would not base her real personality on Regina's. Rachel McAdams was chosen to play \"mean girl\" Regina George because \"only nice girls can play mean girls,\" according to the producer.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Mean Girls (2004) - Trivia - IMDb",
+                          "page_url": "https://www.imdb.com/title/tt0377092/trivia/",
+                          "page_snippet": "Mean Girls (2004) - Trivia on IMDb: Cameos, Mistakes, Spoilers and more...In the scene where Cady was asked if her \"muffin was buttered,\" the line was originally going to be, \"Is your cherry popped?\" The same went for the girl who \"made out with a hot dog\"; this was going to be \"masturbated with a hot dog.\" These were omitted in order for the film to gain a PG-13 rating instead of an R. Initially, Lindsay Lohan was cast as Regina, but she decided to play the \"nice girl\" (Cady Heron) so the public would not base her real personality on Regina's. Rachel McAdams was chosen to play \"mean girl\" Regina George because \"only nice girls can play mean girls,\" according to the producer.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

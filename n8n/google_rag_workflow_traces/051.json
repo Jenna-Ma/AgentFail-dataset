@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-051",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T14:10:00Z",
+  "stoppedAt": "2026-07-23T14:10:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "6f6452ef-7e3d-4e3b-b789-d8800b980687",
+    "query_time": "03/15/2024, 17:00:53 PT",
+    "domain": "sports",
+    "question_type": "comparison",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784815800000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-051",
+                      "chatInput": "who had more wins in 2022: detroit pistons or denver nuggets?",
+                      "interaction_id": "6f6452ef-7e3d-4e3b-b789-d8800b980687",
+                      "domain": "sports"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784815800028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 135,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "who had more wins in 2022: detroit pistons or denver nuggets?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784815800265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 933,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Denver Nuggets vs Detroit Pistons Head-to-Head Records",
+                                "page_url": "https://champsorchumps.us/team/nba/denver-nuggets/head-to-head/detroit-pistons",
+                                "page_snippet": "The Denver Nuggets and Detroit Pistons have never met in the NBA playoffs. The longest all-time winning streak that the Denver Nuggets have over the Pistons is 6 games, which started on Feb 26, 2010 with a 107-102 win and lasted until Dec 11, 2012. The Nuggets and Pistons have played a total of 2 games against each other in the 2022...The Denver Nuggets and Detroit Pistons have never met in the NBA playoffs. The longest all-time winning streak that the Denver Nuggets have over the Pistons is 6 games, which started on Feb 26, 2010 with a 107-102 win and lasted until Dec 11, 2012. The Nuggets and Pistons have played a total of 2 games against each other in the 2022-23 season, in which the Nuggets have an record of 1-1 (50%) against the Pistons. A full list of every game and series played between the Nuggets and Detroit Pistons in NBA history. National Basketball Association » Denver Nuggets » Head to HeadH2H » Detroit Pistons · The Nuggets and Pistons have played a total of 97 games against each other. The Nuggets have an overall record of 45-52 (46.4%) against the Pistons. The Denver Nuggets and Detroit Pistons have never met in the NBA playoffs.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Detroit Pistons vs Denver Nuggets Jan 23, 2022 Game Summary | NBA.com",
+                                "page_url": "https://www.nba.com/game/det-vs-den-0022100707",
+                                "page_snippet": "",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "2023-24 Team Comparison - Detroit Pistons vs. Denver Nuggets - ...",
+                                "page_url": "https://www.espn.com/nba/teams/comparison/_/team1/det/team2/den",
+                                "page_snippet": "",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Denver Nuggets vs Detroit Pistons Head-to-Head Records",
+                          "page_url": "https://champsorchumps.us/team/nba/denver-nuggets/head-to-head/detroit-pistons",
+                          "page_snippet": "The Denver Nuggets and Detroit Pistons have never met in the NBA playoffs. The longest all-time winning streak that the Denver Nuggets have over the Pistons is 6 games, which started on Feb 26, 2010 with a 107-102 win and lasted until Dec 11, 2012. The Nuggets and Pistons have played a total of 2 games against each other in the 2022...The Denver Nuggets and Detroit Pistons have never met in the NBA playoffs. The longest all-time winning streak that the Denver Nuggets have over the Pistons is 6 games, which started on Feb 26, 2010 with a 107-102 win and lasted until Dec 11, 2012. The Nuggets and Pistons have played a total of 2 games against each other in the 2022-23 season, in which the Nuggets have an record of 1-1 (50%) against the Pistons. A full list of every game and series played between the Nuggets and Detroit Pistons in NBA history. National Basketball Association » Denver Nuggets » Head to HeadH2H » Detroit Pistons · The Nuggets and Pistons have played a total of 97 games against each other. The Nuggets have an overall record of 45-52 (46.4%) against the Pistons. The Denver Nuggets and Detroit Pistons have never met in the NBA playoffs.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Detroit Pistons vs Denver Nuggets Jan 23, 2022 Game Summary | NBA.com",
+                          "page_url": "https://www.nba.com/game/det-vs-den-0022100707",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "2023-24 Team Comparison - Detroit Pistons vs. Denver Nuggets - ...",
+                          "page_url": "https://www.espn.com/nba/teams/comparison/_/team1/det/team2/den",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784815801412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1332,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "denver nuggets\n\n信息来源：\n1. Denver Nuggets vs Detroit Pistons Head-to-Head Records - https://champsorchumps.us/team/nba/denver-nuggets/head-to-head/detroit-pistons\n2. Detroit Pistons vs Denver Nuggets Jan 23, 2022 Game Summary | NBA.com - https://www.nba.com/game/det-vs-den-0022100707\n3. 2023-24 Team Comparison - Detroit Pistons vs. Denver Nuggets - ... - https://www.espn.com/nba/teams/comparison/_/team1/det/team2/den",
+                      "query": "who had more wins in 2022: detroit pistons or denver nuggets?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "who had more wins in 2022: detroit pistons or denver nuggets?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Denver Nuggets vs Detroit Pistons Head-to-Head Records",
+                          "page_url": "https://champsorchumps.us/team/nba/denver-nuggets/head-to-head/detroit-pistons",
+                          "page_snippet": "The Denver Nuggets and Detroit Pistons have never met in the NBA playoffs. The longest all-time winning streak that the Denver Nuggets have over the Pistons is 6 games, which started on Feb 26, 2010 with a 107-102 win and lasted until Dec 11, 2012. The Nuggets and Pistons have played a total of 2 games against each other in the 2022...The Denver Nuggets and Detroit Pistons have never met in the NBA playoffs. The longest all-time winning streak that the Denver Nuggets have over the Pistons is 6 games, which started on Feb 26, 2010 with a 107-102 win and lasted until Dec 11, 2012. The Nuggets and Pistons have played a total of 2 games against each other in the 2022-23 season, in which the Nuggets have an record of 1-1 (50%) against the Pistons. A full list of every game and series played between the Nuggets and Detroit Pistons in NBA history. National Basketball Association » Denver Nuggets » Head to HeadH2H » Detroit Pistons · The Nuggets and Pistons have played a total of 97 games against each other. The Nuggets have an overall record of 45-52 (46.4%) against the Pistons. The Denver Nuggets and Detroit Pistons have never met in the NBA playoffs.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Detroit Pistons vs Denver Nuggets Jan 23, 2022 Game Summary | NBA.com",
+                          "page_url": "https://www.nba.com/game/det-vs-den-0022100707",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "2023-24 Team Comparison - Detroit Pistons vs. Denver Nuggets - ...",
+                          "page_url": "https://www.espn.com/nba/teams/comparison/_/team1/det/team2/den",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

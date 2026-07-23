@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-029",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T12:20:00Z",
+  "stoppedAt": "2026-07-23T12:20:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "c94b089a-3007-4843-b113-89bfc27160cd",
+    "query_time": "03/17/2024, 17:06:07 PT",
+    "domain": "music",
+    "question_type": "aggregation",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784809200000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-029",
+                      "chatInput": "how many artist are in the \"we are the world\" song?",
+                      "interaction_id": "c94b089a-3007-4843-b113-89bfc27160cd",
+                      "domain": "music"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784809200028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 124,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "how many artist are in the \"we are the world\" song?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784809200265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 797,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "'We Are the World' at 30: 12 tales you might not know",
+                                "page_url": "https://www.usatoday.com/story/life/music/2015/01/27/we-are-the-world-30th-anniversary/22395455/",
+                                "page_snippet": "The all-star recording session for We Are the World, the biggest charity single of all time, took place 30 years ago Wednesday. On Jan. 28, 1985, at A&amp;M Recording Studios in Hollywood, following the American Music Awards, more than 40 artists gathered to record a song Lionel Richie and Michael ...The all-star recording session for We Are the World, the biggest charity single of all time, took place 30 years ago Wednesday. On Jan. 28, 1985, at A&M Recording Studios in Hollywood, following the American Music Awards, more than 40 artists gathered to record a song Lionel Richie and Michael Jackson had written to raise awareness of widespread, life-threatening poverty in Africa. We wanted people to feel like it was a familiar song. Once we got that — show business, man.\" The We Are the World recording session caused Richie to forget the American Music Awards. Maybe it was just sleep deprivation — after all, the session began at 9 p.m. and lasted 12 hours — but Richie claims to have no memory of hosting that night's American Music Awards ceremony and winning five awards, including favorite pop/rock male artist. Twelve things you may not have known about the biggest record of the 1980s. Inspired by the U.K. all-star charity single Do They Know it's Christmas?, released a few months earlier, We Are the World was released March 7, 1985, and went on to sell more than 20 million copies. The more than $75 million raised by non-profit organization USA for Africa helped to fight poverty on the continent. The song also won three Grammy Awards in 1986, including song and record of the year.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Ranking the 37 Contributors to 'We Are the World'",
+                                "page_url": "https://www.vulture.com/2015/03/37-we-are-the-world-performers-ranked.html",
+                                "page_snippet": "The lyrics are pretty puerile, but they’re simple enough for <strong>over 30</strong> of the biggest pop stars in the world to sing. As far as his performance goes, though his first chorus is lackluster, he and his velvet jacket with sweet gold embroidery own that breakdown, a.k.a. the song’s single most ...Jackson hardly needed the publicity or the extra commitment, but when Lionel Richie called, MJ packed his sequin glove and silver socks and committed not only to guesting on the song, but to writing it as well. The lyrics are pretty puerile, but they’re simple enough for over 30 of the biggest pop stars in the world to sing. As far as his performance goes, though his first chorus is lackluster, he and his velvet jacket with sweet gold embroidery own that breakdown, a.k.a. the song’s single most exciting moment. 1. Stevie Wonder It has to be Stevie. Stevie Wonder was the first artist asked by Richie and Rogers (after Belafonte asked them). The lyrics are pretty puerile, but they’re simple enough for over 30 of the biggest pop stars in the world to sing. As far as his performance goes, though his first chorus is lackluster, he and his velvet jacket with sweet gold embroidery own that breakdown, a.k.a. the song’s single most exciting moment. 1. Stevie Wonder It has to be Stevie. Stevie Wonder was the first artist asked by Richie and Rogers (after Belafonte asked them). The two Rs felt Wonder would instantly bring credibility to the project, and they were right. Cyndi Lauper and Lindsey Buckingham get extra points for having amazing hair. The release of Netflix’s ‘The Greatest Night in Pop’ is as good a reason as any to revisit — and rank — every performer in ‘We Are the World.’",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "The History of the We Are The World Song | TIME",
+                                "page_url": "https://time.com/6588802/netflix-doc-greatest-night-in-pop-we-are-the-world/",
+                                "page_snippet": "For example, Bob Dylan was struggling with his line, uncomfortable with how packed the room was. He called over <strong>Stevie Wonder</strong> to help him, and Wonder sat at the piano and sang it the way he thought Dylan should sing it, mimicking the indie artist’s folksy voice. Then Dylan went on to nail ...Richie co-wrote “We Are The World” with Michael Jackson, and Richie credits Jackson for writing the titular line, “We are the world.” But some of the featured singers also played a key role in producing the song during a hectic recording session. For example, Bob Dylan was struggling with his line, uncomfortable with how packed the room was. He called over Stevie Wonder to help him, and Wonder sat at the piano and sang it the way he thought Dylan should sing it, mimicking the indie artist’s folksy voice. Then Dylan went on to nail his section. The magazine argued that what’s most notable about the song is how “musicians from rival factions of the business are seen putting aside differences of style and temperament and coming together to share and spread a little decency.” The story even urged readers to buy it, writing, “The song is sappy and overextended, but go ahead and tell that to the teenagers who are buying five copies at a time at Tower Records, then giving them to their friends on condition they each go out and buy five more. Go ahead. Tell them. Then buy a record.” Most of the “We Are The World” proceeds went to USA for Africa—short for USA (United Support of Artists) for Africa—which was raising money to end poverty on the continent, while 10% was set aside for efforts to combat homelessness in the U.S., per Wonder’s request. Then buy a record.” Most of the “We Are The World” proceeds went to USA for Africa—short for USA (United Support of Artists) for Africa—which was raising money to end poverty on the continent, while 10% was set aside for efforts to combat homelessness in the U.S., per Wonder’s request.  · Could there be a 21st century version of “We Are The World”? Top Tik Tok influencers all in the same studio recording a video for charity? It remains to be seen, but Nguyen is optimistic. As he put it, “I do hope the film and the song inspire a younger generation to maybe try something like this.” A new Netflix documentary 'The Greatest Night in Pop' looks into how the single \"We Are The World\" came together.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "'We Are the World' at 30: 12 tales you might not know",
+                          "page_url": "https://www.usatoday.com/story/life/music/2015/01/27/we-are-the-world-30th-anniversary/22395455/",
+                          "page_snippet": "The all-star recording session for We Are the World, the biggest charity single of all time, took place 30 years ago Wednesday. On Jan. 28, 1985, at A&amp;M Recording Studios in Hollywood, following the American Music Awards, more than 40 artists gathered to record a song Lionel Richie and Michael ...The all-star recording session for We Are the World, the biggest charity single of all time, took place 30 years ago Wednesday. On Jan. 28, 1985, at A&M Recording Studios in Hollywood, following the American Music Awards, more than 40 artists gathered to record a song Lionel Richie and Michael Jackson had written to raise awareness of widespread, life-threatening poverty in Africa. We wanted people to feel like it was a familiar song. Once we got that — show business, man.\" The We Are the World recording session caused Richie to forget the American Music Awards. Maybe it was just sleep deprivation — after all, the session began at 9 p.m. and lasted 12 hours — but Richie claims to have no memory of hosting that night's American Music Awards ceremony and winning five awards, including favorite pop/rock male artist. Twelve things you may not have known about the biggest record of the 1980s. Inspired by the U.K. all-star charity single Do They Know it's Christmas?, released a few months earlier, We Are the World was released March 7, 1985, and went on to sell more than 20 million copies. The more than $75 million raised by non-profit organization USA for Africa helped to fight poverty on the continent. The song also won three Grammy Awards in 1986, including song and record of the year.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Ranking the 37 Contributors to 'We Are the World'",
+                          "page_url": "https://www.vulture.com/2015/03/37-we-are-the-world-performers-ranked.html",
+                          "page_snippet": "The lyrics are pretty puerile, but they’re simple enough for <strong>over 30</strong> of the biggest pop stars in the world to sing. As far as his performance goes, though his first chorus is lackluster, he and his velvet jacket with sweet gold embroidery own that breakdown, a.k.a. the song’s single most ...Jackson hardly needed the publicity or the extra commitment, but when Lionel Richie called, MJ packed his sequin glove and silver socks and committed not only to guesting on the song, but to writing it as well. The lyrics are pretty puerile, but they’re simple enough for over 30 of the biggest pop stars in the world to sing. As far as his performance goes, though his first chorus is lackluster, he and his velvet jacket with sweet gold embroidery own that breakdown, a.k.a. the song’s single most exciting moment. 1. Stevie Wonder It has to be Stevie. Stevie Wonder was the first artist asked by Richie and Rogers (after Belafonte asked them). The lyrics are pretty puerile, but they’re simple enough for over 30 of the biggest pop stars in the world to sing. As far as his performance goes, though his first chorus is lackluster, he and his velvet jacket with sweet gold embroidery own that breakdown, a.k.a. the song’s single most exciting moment. 1. Stevie Wonder It has to be Stevie. Stevie Wonder was the first artist asked by Richie and Rogers (after Belafonte asked them). The two Rs felt Wonder would instantly bring credibility to the project, and they were right. Cyndi Lauper and Lindsey Buckingham get extra points for having amazing hair. The release of Netflix’s ‘The Greatest Night in Pop’ is as good a reason as any to revisit — and rank — every performer in ‘We Are the World.’",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "The History of the We Are The World Song | TIME",
+                          "page_url": "https://time.com/6588802/netflix-doc-greatest-night-in-pop-we-are-the-world/",
+                          "page_snippet": "For example, Bob Dylan was struggling with his line, uncomfortable with how packed the room was. He called over <strong>Stevie Wonder</strong> to help him, and Wonder sat at the piano and sang it the way he thought Dylan should sing it, mimicking the indie artist’s folksy voice. Then Dylan went on to nail ...Richie co-wrote “We Are The World” with Michael Jackson, and Richie credits Jackson for writing the titular line, “We are the world.” But some of the featured singers also played a key role in producing the song during a hectic recording session. For example, Bob Dylan was struggling with his line, uncomfortable with how packed the room was. He called over Stevie Wonder to help him, and Wonder sat at the piano and sang it the way he thought Dylan should sing it, mimicking the indie artist’s folksy voice. Then Dylan went on to nail his section. The magazine argued that what’s most notable about the song is how “musicians from rival factions of the business are seen putting aside differences of style and temperament and coming together to share and spread a little decency.” The story even urged readers to buy it, writing, “The song is sappy and overextended, but go ahead and tell that to the teenagers who are buying five copies at a time at Tower Records, then giving them to their friends on condition they each go out and buy five more. Go ahead. Tell them. Then buy a record.” Most of the “We Are The World” proceeds went to USA for Africa—short for USA (United Support of Artists) for Africa—which was raising money to end poverty on the continent, while 10% was set aside for efforts to combat homelessness in the U.S., per Wonder’s request. Then buy a record.” Most of the “We Are The World” proceeds went to USA for Africa—short for USA (United Support of Artists) for Africa—which was raising money to end poverty on the continent, while 10% was set aside for efforts to combat homelessness in the U.S., per Wonder’s request.  · Could there be a 21st century version of “We Are The World”? Top Tik Tok influencers all in the same studio recording a video for charity? It remains to be seen, but Nguyen is optimistic. As he put it, “I do hope the film and the song inspire a younger generation to maybe try something like this.” A new Netflix documentary 'The Greatest Night in Pop' looks into how the single \"We Are The World\" came together.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784809201412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1446,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "46 vocalists\n\n信息来源：\n1. 'We Are the World' at 30: 12 tales you might not know - https://www.usatoday.com/story/life/music/2015/01/27/we-are-the-world-30th-anniversary/22395455/\n2. Ranking the 37 Contributors to 'We Are the World' - https://www.vulture.com/2015/03/37-we-are-the-world-performers-ranked.html\n3. The History of the We Are The World Song | TIME - https://time.com/6588802/netflix-doc-greatest-night-in-pop-we-are-the-world/",
+                      "query": "how many artist are in the \"we are the world\" song?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "how many artist are in the \"we are the world\" song?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "'We Are the World' at 30: 12 tales you might not know",
+                          "page_url": "https://www.usatoday.com/story/life/music/2015/01/27/we-are-the-world-30th-anniversary/22395455/",
+                          "page_snippet": "The all-star recording session for We Are the World, the biggest charity single of all time, took place 30 years ago Wednesday. On Jan. 28, 1985, at A&amp;M Recording Studios in Hollywood, following the American Music Awards, more than 40 artists gathered to record a song Lionel Richie and Michael ...The all-star recording session for We Are the World, the biggest charity single of all time, took place 30 years ago Wednesday. On Jan. 28, 1985, at A&M Recording Studios in Hollywood, following the American Music Awards, more than 40 artists gathered to record a song Lionel Richie and Michael Jackson had written to raise awareness of widespread, life-threatening poverty in Africa. We wanted people to feel like it was a familiar song. Once we got that — show business, man.\" The We Are the World recording session caused Richie to forget the American Music Awards. Maybe it was just sleep deprivation — after all, the session began at 9 p.m. and lasted 12 hours — but Richie claims to have no memory of hosting that night's American Music Awards ceremony and winning five awards, including favorite pop/rock male artist. Twelve things you may not have known about the biggest record of the 1980s. Inspired by the U.K. all-star charity single Do They Know it's Christmas?, released a few months earlier, We Are the World was released March 7, 1985, and went on to sell more than 20 million copies. The more than $75 million raised by non-profit organization USA for Africa helped to fight poverty on the continent. The song also won three Grammy Awards in 1986, including song and record of the year.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Ranking the 37 Contributors to 'We Are the World'",
+                          "page_url": "https://www.vulture.com/2015/03/37-we-are-the-world-performers-ranked.html",
+                          "page_snippet": "The lyrics are pretty puerile, but they’re simple enough for <strong>over 30</strong> of the biggest pop stars in the world to sing. As far as his performance goes, though his first chorus is lackluster, he and his velvet jacket with sweet gold embroidery own that breakdown, a.k.a. the song’s single most ...Jackson hardly needed the publicity or the extra commitment, but when Lionel Richie called, MJ packed his sequin glove and silver socks and committed not only to guesting on the song, but to writing it as well. The lyrics are pretty puerile, but they’re simple enough for over 30 of the biggest pop stars in the world to sing. As far as his performance goes, though his first chorus is lackluster, he and his velvet jacket with sweet gold embroidery own that breakdown, a.k.a. the song’s single most exciting moment. 1. Stevie Wonder It has to be Stevie. Stevie Wonder was the first artist asked by Richie and Rogers (after Belafonte asked them). The lyrics are pretty puerile, but they’re simple enough for over 30 of the biggest pop stars in the world to sing. As far as his performance goes, though his first chorus is lackluster, he and his velvet jacket with sweet gold embroidery own that breakdown, a.k.a. the song’s single most exciting moment. 1. Stevie Wonder It has to be Stevie. Stevie Wonder was the first artist asked by Richie and Rogers (after Belafonte asked them). The two Rs felt Wonder would instantly bring credibility to the project, and they were right. Cyndi Lauper and Lindsey Buckingham get extra points for having amazing hair. The release of Netflix’s ‘The Greatest Night in Pop’ is as good a reason as any to revisit — and rank — every performer in ‘We Are the World.’",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "The History of the We Are The World Song | TIME",
+                          "page_url": "https://time.com/6588802/netflix-doc-greatest-night-in-pop-we-are-the-world/",
+                          "page_snippet": "For example, Bob Dylan was struggling with his line, uncomfortable with how packed the room was. He called over <strong>Stevie Wonder</strong> to help him, and Wonder sat at the piano and sang it the way he thought Dylan should sing it, mimicking the indie artist’s folksy voice. Then Dylan went on to nail ...Richie co-wrote “We Are The World” with Michael Jackson, and Richie credits Jackson for writing the titular line, “We are the world.” But some of the featured singers also played a key role in producing the song during a hectic recording session. For example, Bob Dylan was struggling with his line, uncomfortable with how packed the room was. He called over Stevie Wonder to help him, and Wonder sat at the piano and sang it the way he thought Dylan should sing it, mimicking the indie artist’s folksy voice. Then Dylan went on to nail his section. The magazine argued that what’s most notable about the song is how “musicians from rival factions of the business are seen putting aside differences of style and temperament and coming together to share and spread a little decency.” The story even urged readers to buy it, writing, “The song is sappy and overextended, but go ahead and tell that to the teenagers who are buying five copies at a time at Tower Records, then giving them to their friends on condition they each go out and buy five more. Go ahead. Tell them. Then buy a record.” Most of the “We Are The World” proceeds went to USA for Africa—short for USA (United Support of Artists) for Africa—which was raising money to end poverty on the continent, while 10% was set aside for efforts to combat homelessness in the U.S., per Wonder’s request. Then buy a record.” Most of the “We Are The World” proceeds went to USA for Africa—short for USA (United Support of Artists) for Africa—which was raising money to end poverty on the continent, while 10% was set aside for efforts to combat homelessness in the U.S., per Wonder’s request.  · Could there be a 21st century version of “We Are The World”? Top Tik Tok influencers all in the same studio recording a video for charity? It remains to be seen, but Nguyen is optimistic. As he put it, “I do hope the film and the song inspire a younger generation to maybe try something like this.” A new Netflix documentary 'The Greatest Night in Pop' looks into how the single \"We Are The World\" came together.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

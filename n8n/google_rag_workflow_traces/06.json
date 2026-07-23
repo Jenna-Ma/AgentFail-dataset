@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-006",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T10:25:00Z",
+  "stoppedAt": "2026-07-23T10:25:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "79958b09-41ea-4bce-aac8-f066291ec06f",
+    "query_time": "03/17/2024, 16:49:06 PT",
+    "domain": "finance",
+    "question_type": "simple",
+    "static_or_dynamic": "fast-changing"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784802300000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-006",
+                      "chatInput": "how many times in a year does apple pay dividend to its investors?",
+                      "interaction_id": "79958b09-41ea-4bce-aac8-f066291ec06f",
+                      "domain": "finance"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784802300028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 179,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "how many times in a year does apple pay dividend to its investors?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784802300265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 933,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Apple (AAPL) Stock Dividend Date & History - TipRanks.com",
+                                "page_url": "https://www.tipranks.com/stocks/aapl/dividends",
+                                "page_snippet": "Apple (AAPL) last ex-dividend date was on Feb 09, 2024. Apple distributed $0.24 per share that represents a 0.56% dividend yield.My ExpertsTop AnalystsTop Financial BloggersTop-Performing Corporate InsidersTop Hedge Fund ManagersTop Research FirmsTop Individual Investors ... The table shows Apple’s dividend history, including amount per share, payout frequency, declaration, record, and payment dates.Show More Apple's previous ex-dividend date was on Feb 09, 2024. Apple shareholders who own AAPL stock before this date received Apple's last dividend payment of $0.24 per share on Feb 15, 2024. AAPL's next ex-dividend date has not been announced yet. Apple’s next quarterly payment date is on Feb 15, 2024, when Apple shareholders who owned AAPL shares before Feb 09, 2024 received a dividend payment of $0.24 per share. Add AAPL to your watchlist to be reminded of AAPL's next dividend payment. Yes, AAPL has paid a dividend within the past 12 months.",
+                                "page_last_modified": " Sun, 17 Mar 2024 23:05:59 GMT"
+                              },
+                              {
+                                "page_name": "Dividend History - Apple",
+                                "page_url": "https://investor.apple.com/dividend-history/default.aspx",
+                                "page_snippet": "",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "FAQ - Apple",
+                                "page_url": "https://investor.apple.com/faq/default.aspx",
+                                "page_snippet": "",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Apple (AAPL) Stock Dividend Date & History - TipRanks.com",
+                          "page_url": "https://www.tipranks.com/stocks/aapl/dividends",
+                          "page_snippet": "Apple (AAPL) last ex-dividend date was on Feb 09, 2024. Apple distributed $0.24 per share that represents a 0.56% dividend yield.My ExpertsTop AnalystsTop Financial BloggersTop-Performing Corporate InsidersTop Hedge Fund ManagersTop Research FirmsTop Individual Investors ... The table shows Apple’s dividend history, including amount per share, payout frequency, declaration, record, and payment dates.Show More Apple's previous ex-dividend date was on Feb 09, 2024. Apple shareholders who own AAPL stock before this date received Apple's last dividend payment of $0.24 per share on Feb 15, 2024. AAPL's next ex-dividend date has not been announced yet. Apple’s next quarterly payment date is on Feb 15, 2024, when Apple shareholders who owned AAPL shares before Feb 09, 2024 received a dividend payment of $0.24 per share. Add AAPL to your watchlist to be reminded of AAPL's next dividend payment. Yes, AAPL has paid a dividend within the past 12 months.",
+                          "page_last_modified": " Sun, 17 Mar 2024 23:05:59 GMT"
+                        },
+                        {
+                          "page_name": "Dividend History - Apple",
+                          "page_url": "https://investor.apple.com/dividend-history/default.aspx",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "FAQ - Apple",
+                          "page_url": "https://investor.apple.com/faq/default.aspx",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784802301412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1503,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "apple pays dividend to its investors each quarter that would be 4 times a year.\n\n信息来源：\n1. Apple (AAPL) Stock Dividend Date & History - TipRanks.com - https://www.tipranks.com/stocks/aapl/dividends\n2. Dividend History - Apple - https://investor.apple.com/dividend-history/default.aspx\n3. FAQ - Apple - https://investor.apple.com/faq/default.aspx",
+                      "query": "how many times in a year does apple pay dividend to its investors?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "how many times in a year does apple pay dividend to its investors?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Apple (AAPL) Stock Dividend Date & History - TipRanks.com",
+                          "page_url": "https://www.tipranks.com/stocks/aapl/dividends",
+                          "page_snippet": "Apple (AAPL) last ex-dividend date was on Feb 09, 2024. Apple distributed $0.24 per share that represents a 0.56% dividend yield.My ExpertsTop AnalystsTop Financial BloggersTop-Performing Corporate InsidersTop Hedge Fund ManagersTop Research FirmsTop Individual Investors ... The table shows Apple’s dividend history, including amount per share, payout frequency, declaration, record, and payment dates.Show More Apple's previous ex-dividend date was on Feb 09, 2024. Apple shareholders who own AAPL stock before this date received Apple's last dividend payment of $0.24 per share on Feb 15, 2024. AAPL's next ex-dividend date has not been announced yet. Apple’s next quarterly payment date is on Feb 15, 2024, when Apple shareholders who owned AAPL shares before Feb 09, 2024 received a dividend payment of $0.24 per share. Add AAPL to your watchlist to be reminded of AAPL's next dividend payment. Yes, AAPL has paid a dividend within the past 12 months.",
+                          "page_last_modified": " Sun, 17 Mar 2024 23:05:59 GMT"
+                        },
+                        {
+                          "page_name": "Dividend History - Apple",
+                          "page_url": "https://investor.apple.com/dividend-history/default.aspx",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "FAQ - Apple",
+                          "page_url": "https://investor.apple.com/faq/default.aspx",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

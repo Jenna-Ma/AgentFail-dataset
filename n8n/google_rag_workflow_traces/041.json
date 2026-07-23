@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-041",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T13:20:00Z",
+  "stoppedAt": "2026-07-23T13:20:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "d1ad249d-c021-4144-b3f9-28937b7ef64b",
+    "query_time": "03/13/2024, 08:22:22 PT",
+    "domain": "open",
+    "question_type": "aggregation",
+    "static_or_dynamic": "slow-changing"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784812800000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-041",
+                      "chatInput": "how many times has justin bieber won the american music award for artist of the year?",
+                      "interaction_id": "d1ad249d-c021-4144-b3f9-28937b7ef64b",
+                      "domain": "open"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784812800028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 179,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "how many times has justin bieber won the american music award for artist of the year?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784812800265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 899,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Justin Bieber wins artist of the year at American Music Awards ...",
+                                "page_url": "https://amp.theguardian.com/music/2012/nov/19/justin-bieber-american-music-awards",
+                                "page_snippet": "Singer a double winner, also carrying off the trophy for favourite pop/rock male artistJustin Bieber won artist of the year at the American Music Awards. Photograph: John Shearer/AP Justin Bieber · Singer a double winner, also carrying off the trophy for favourite pop/rock male artist ... Justin Bieber won the artist of the year award on Sunday – the top prize at the American Music Awards. Bieber also took home the trophy for favourite pop/rock male artist, while Carly Rae Jepsen won best new artist. Katy Perry was named best pop/rock female artist at the annual ceremony in Los Angeles. Bieber and Nicki Minaj performed together and separately at the awards. The 18-year-old Bieber said: \"I want to say this is for all the haters who thought I was just here for one or two years. I feel like I'm going to be here for a very long time,\" he said.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Justin Bieber - Wikipedia",
+                                "page_url": "https://en.wikipedia.org/wiki/Justin_Bieber",
+                                "page_snippet": "He is the recipient of numerous ... for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes&#x27; list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber ...He is the recipient of numerous accolades, including two Grammy Awards, one Latin Grammy Award, eight Juno Awards, two Brit Awards, 26 Billboard Music Awards, 18 American Music Awards, 22 MTV Europe Music Awards (the most wins for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes' list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber was born on March 1, 1994, at St. Bieber performed a medley of his singles \"U Smile\", \"Baby\", and \"Somebody to Love\", and briefly played the drums, at the 2010 MTV Video Music Awards on September 12, 2010. Bieber announced in October 2010 that he would be releasing an acoustic album, called My Worlds Acoustic. It was released on November 26, 2010, in the United States and featured acoustic versions of songs from his previous albums, and accompanied the release of a new song titled \"Pray\". In October 2010, Bieber released his first book, Justin Bieber: First Step 2 Forever: My Story, an autobiography with text from Bieber and photographs from Robert Caplin. On August 17, 2017, Bieber released the single \"Friends\" with American record producer and songwriter BloodPop. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Bieber did not attend the show to perform the nominated song, claiming that he would not make any award show appearances until his next album was finished. The third single from Purpose, \"Love Yourself\" also peaked at number one in the US, making Bieber the first male artist in almost a decade to have three number-ones from an album since Justin Timberlake, who did it previously with his second studio album, FutureSex/LoveSounds, in 2006–07. He also became the first solo artist to chart three solo songs in the top five of the Billboard Hot 100 simultaneously, and the first as a lead act since the Beatles in 1964. \"Love Yourself\" topped Billboard's Year-End Hot 100 chart in 2016, followed by \"Sorry\" at number two, and made Bieber only the third artist in history to hold the top-two positions of the Billboard Year-End Hot 100, after the Beatles in 1964 and Usher in 2004.",
+                                "page_last_modified": " Tue, 12 Mar 2024 06:04:31 GMT"
+                              },
+                              {
+                                "page_name": "Justin Bieber - Wikipedia",
+                                "page_url": "https://en.wikipedia.org/wiki/Justin_Bieber",
+                                "page_snippet": "He is the recipient of numerous ... for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes&#x27; list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber ...He is the recipient of numerous accolades, including two Grammy Awards, one Latin Grammy Award, eight Juno Awards, two Brit Awards, 26 Billboard Music Awards, 18 American Music Awards, 22 MTV Europe Music Awards (the most wins for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes' list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber was born on March 1, 1994, at St. Bieber performed a medley of his singles \"U Smile\", \"Baby\", and \"Somebody to Love\", and briefly played the drums, at the 2010 MTV Video Music Awards on September 12, 2010. Bieber announced in October 2010 that he would be releasing an acoustic album, called My Worlds Acoustic. It was released on November 26, 2010, in the United States and featured acoustic versions of songs from his previous albums, and accompanied the release of a new song titled \"Pray\". In October 2010, Bieber released his first book, Justin Bieber: First Step 2 Forever: My Story, an autobiography with text from Bieber and photographs from Robert Caplin. On August 17, 2017, Bieber released the single \"Friends\" with American record producer and songwriter BloodPop. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Bieber did not attend the show to perform the nominated song, claiming that he would not make any award show appearances until his next album was finished. The third single from Purpose, \"Love Yourself\" also peaked at number one in the US, making Bieber the first male artist in almost a decade to have three number-ones from an album since Justin Timberlake, who did it previously with his second studio album, FutureSex/LoveSounds, in 2006–07. He also became the first solo artist to chart three solo songs in the top five of the Billboard Hot 100 simultaneously, and the first as a lead act since the Beatles in 1964. \"Love Yourself\" topped Billboard's Year-End Hot 100 chart in 2016, followed by \"Sorry\" at number two, and made Bieber only the third artist in history to hold the top-two positions of the Billboard Year-End Hot 100, after the Beatles in 1964 and Usher in 2004.",
+                                "page_last_modified": " Tue, 12 Mar 2024 06:04:31 GMT"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Justin Bieber wins artist of the year at American Music Awards ...",
+                          "page_url": "https://amp.theguardian.com/music/2012/nov/19/justin-bieber-american-music-awards",
+                          "page_snippet": "Singer a double winner, also carrying off the trophy for favourite pop/rock male artistJustin Bieber won artist of the year at the American Music Awards. Photograph: John Shearer/AP Justin Bieber · Singer a double winner, also carrying off the trophy for favourite pop/rock male artist ... Justin Bieber won the artist of the year award on Sunday – the top prize at the American Music Awards. Bieber also took home the trophy for favourite pop/rock male artist, while Carly Rae Jepsen won best new artist. Katy Perry was named best pop/rock female artist at the annual ceremony in Los Angeles. Bieber and Nicki Minaj performed together and separately at the awards. The 18-year-old Bieber said: \"I want to say this is for all the haters who thought I was just here for one or two years. I feel like I'm going to be here for a very long time,\" he said.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Justin Bieber - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/Justin_Bieber",
+                          "page_snippet": "He is the recipient of numerous ... for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes&#x27; list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber ...He is the recipient of numerous accolades, including two Grammy Awards, one Latin Grammy Award, eight Juno Awards, two Brit Awards, 26 Billboard Music Awards, 18 American Music Awards, 22 MTV Europe Music Awards (the most wins for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes' list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber was born on March 1, 1994, at St. Bieber performed a medley of his singles \"U Smile\", \"Baby\", and \"Somebody to Love\", and briefly played the drums, at the 2010 MTV Video Music Awards on September 12, 2010. Bieber announced in October 2010 that he would be releasing an acoustic album, called My Worlds Acoustic. It was released on November 26, 2010, in the United States and featured acoustic versions of songs from his previous albums, and accompanied the release of a new song titled \"Pray\". In October 2010, Bieber released his first book, Justin Bieber: First Step 2 Forever: My Story, an autobiography with text from Bieber and photographs from Robert Caplin. On August 17, 2017, Bieber released the single \"Friends\" with American record producer and songwriter BloodPop. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Bieber did not attend the show to perform the nominated song, claiming that he would not make any award show appearances until his next album was finished. The third single from Purpose, \"Love Yourself\" also peaked at number one in the US, making Bieber the first male artist in almost a decade to have three number-ones from an album since Justin Timberlake, who did it previously with his second studio album, FutureSex/LoveSounds, in 2006–07. He also became the first solo artist to chart three solo songs in the top five of the Billboard Hot 100 simultaneously, and the first as a lead act since the Beatles in 1964. \"Love Yourself\" topped Billboard's Year-End Hot 100 chart in 2016, followed by \"Sorry\" at number two, and made Bieber only the third artist in history to hold the top-two positions of the Billboard Year-End Hot 100, after the Beatles in 1964 and Usher in 2004.",
+                          "page_last_modified": " Tue, 12 Mar 2024 06:04:31 GMT"
+                        },
+                        {
+                          "page_name": "Justin Bieber - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/Justin_Bieber",
+                          "page_snippet": "He is the recipient of numerous ... for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes&#x27; list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber ...He is the recipient of numerous accolades, including two Grammy Awards, one Latin Grammy Award, eight Juno Awards, two Brit Awards, 26 Billboard Music Awards, 18 American Music Awards, 22 MTV Europe Music Awards (the most wins for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes' list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber was born on March 1, 1994, at St. Bieber performed a medley of his singles \"U Smile\", \"Baby\", and \"Somebody to Love\", and briefly played the drums, at the 2010 MTV Video Music Awards on September 12, 2010. Bieber announced in October 2010 that he would be releasing an acoustic album, called My Worlds Acoustic. It was released on November 26, 2010, in the United States and featured acoustic versions of songs from his previous albums, and accompanied the release of a new song titled \"Pray\". In October 2010, Bieber released his first book, Justin Bieber: First Step 2 Forever: My Story, an autobiography with text from Bieber and photographs from Robert Caplin. On August 17, 2017, Bieber released the single \"Friends\" with American record producer and songwriter BloodPop. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Bieber did not attend the show to perform the nominated song, claiming that he would not make any award show appearances until his next album was finished. The third single from Purpose, \"Love Yourself\" also peaked at number one in the US, making Bieber the first male artist in almost a decade to have three number-ones from an album since Justin Timberlake, who did it previously with his second studio album, FutureSex/LoveSounds, in 2006–07. He also became the first solo artist to chart three solo songs in the top five of the Billboard Hot 100 simultaneously, and the first as a lead act since the Beatles in 1964. \"Love Yourself\" topped Billboard's Year-End Hot 100 chart in 2016, followed by \"Sorry\" at number two, and made Bieber only the third artist in history to hold the top-two positions of the Billboard Year-End Hot 100, after the Beatles in 1964 and Usher in 2004.",
+                          "page_last_modified": " Tue, 12 Mar 2024 06:04:31 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784812801412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1446,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "2\n\n信息来源：\n1. Justin Bieber wins artist of the year at American Music Awards ... - https://amp.theguardian.com/music/2012/nov/19/justin-bieber-american-music-awards\n2. Justin Bieber - Wikipedia - https://en.wikipedia.org/wiki/Justin_Bieber\n3. Justin Bieber - Wikipedia - https://en.wikipedia.org/wiki/Justin_Bieber",
+                      "query": "how many times has justin bieber won the american music award for artist of the year?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "how many times has justin bieber won the american music award for artist of the year?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Justin Bieber wins artist of the year at American Music Awards ...",
+                          "page_url": "https://amp.theguardian.com/music/2012/nov/19/justin-bieber-american-music-awards",
+                          "page_snippet": "Singer a double winner, also carrying off the trophy for favourite pop/rock male artistJustin Bieber won artist of the year at the American Music Awards. Photograph: John Shearer/AP Justin Bieber · Singer a double winner, also carrying off the trophy for favourite pop/rock male artist ... Justin Bieber won the artist of the year award on Sunday – the top prize at the American Music Awards. Bieber also took home the trophy for favourite pop/rock male artist, while Carly Rae Jepsen won best new artist. Katy Perry was named best pop/rock female artist at the annual ceremony in Los Angeles. Bieber and Nicki Minaj performed together and separately at the awards. The 18-year-old Bieber said: \"I want to say this is for all the haters who thought I was just here for one or two years. I feel like I'm going to be here for a very long time,\" he said.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Justin Bieber - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/Justin_Bieber",
+                          "page_snippet": "He is the recipient of numerous ... for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes&#x27; list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber ...He is the recipient of numerous accolades, including two Grammy Awards, one Latin Grammy Award, eight Juno Awards, two Brit Awards, 26 Billboard Music Awards, 18 American Music Awards, 22 MTV Europe Music Awards (the most wins for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes' list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber was born on March 1, 1994, at St. Bieber performed a medley of his singles \"U Smile\", \"Baby\", and \"Somebody to Love\", and briefly played the drums, at the 2010 MTV Video Music Awards on September 12, 2010. Bieber announced in October 2010 that he would be releasing an acoustic album, called My Worlds Acoustic. It was released on November 26, 2010, in the United States and featured acoustic versions of songs from his previous albums, and accompanied the release of a new song titled \"Pray\". In October 2010, Bieber released his first book, Justin Bieber: First Step 2 Forever: My Story, an autobiography with text from Bieber and photographs from Robert Caplin. On August 17, 2017, Bieber released the single \"Friends\" with American record producer and songwriter BloodPop. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Bieber did not attend the show to perform the nominated song, claiming that he would not make any award show appearances until his next album was finished. The third single from Purpose, \"Love Yourself\" also peaked at number one in the US, making Bieber the first male artist in almost a decade to have three number-ones from an album since Justin Timberlake, who did it previously with his second studio album, FutureSex/LoveSounds, in 2006–07. He also became the first solo artist to chart three solo songs in the top five of the Billboard Hot 100 simultaneously, and the first as a lead act since the Beatles in 1964. \"Love Yourself\" topped Billboard's Year-End Hot 100 chart in 2016, followed by \"Sorry\" at number two, and made Bieber only the third artist in history to hold the top-two positions of the Billboard Year-End Hot 100, after the Beatles in 1964 and Usher in 2004.",
+                          "page_last_modified": " Tue, 12 Mar 2024 06:04:31 GMT"
+                        },
+                        {
+                          "page_name": "Justin Bieber - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/Justin_Bieber",
+                          "page_snippet": "He is the recipient of numerous ... for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes&#x27; list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber ...He is the recipient of numerous accolades, including two Grammy Awards, one Latin Grammy Award, eight Juno Awards, two Brit Awards, 26 Billboard Music Awards, 18 American Music Awards, 22 MTV Europe Music Awards (the most wins for any artist), 23 Teen Choice Awards (the most wins for a male individual), and 33 Guinness World Records. Time named Bieber one of the 100 most influential people in the world in 2011, and he was included on Forbes' list of the top ten most powerful celebrities in 2011, 2012, and 2013. Justin Drew Bieber was born on March 1, 1994, at St. Bieber performed a medley of his singles \"U Smile\", \"Baby\", and \"Somebody to Love\", and briefly played the drums, at the 2010 MTV Video Music Awards on September 12, 2010. Bieber announced in October 2010 that he would be releasing an acoustic album, called My Worlds Acoustic. It was released on November 26, 2010, in the United States and featured acoustic versions of songs from his previous albums, and accompanied the release of a new song titled \"Pray\". In October 2010, Bieber released his first book, Justin Bieber: First Step 2 Forever: My Story, an autobiography with text from Bieber and photographs from Robert Caplin. On August 17, 2017, Bieber released the single \"Friends\" with American record producer and songwriter BloodPop. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Julia Michaels and Justin Tranter contributed as songwriters, having previously worked with him on \"Sorry\" in 2015. At the 60th Annual Grammy Awards, \"Despacito\" received three nominations for Record of the Year, Song of the Year, and Best Pop Duo/Group Performance respectively. Bieber did not attend the show to perform the nominated song, claiming that he would not make any award show appearances until his next album was finished. The third single from Purpose, \"Love Yourself\" also peaked at number one in the US, making Bieber the first male artist in almost a decade to have three number-ones from an album since Justin Timberlake, who did it previously with his second studio album, FutureSex/LoveSounds, in 2006–07. He also became the first solo artist to chart three solo songs in the top five of the Billboard Hot 100 simultaneously, and the first as a lead act since the Beatles in 1964. \"Love Yourself\" topped Billboard's Year-End Hot 100 chart in 2016, followed by \"Sorry\" at number two, and made Bieber only the third artist in history to hold the top-two positions of the Billboard Year-End Hot 100, after the Beatles in 1964 and Usher in 2004.",
+                          "page_last_modified": " Tue, 12 Mar 2024 06:04:31 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

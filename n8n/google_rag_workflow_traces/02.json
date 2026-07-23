@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-002",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T10:05:00Z",
+  "stoppedAt": "2026-07-23T10:05:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "38eb2591-663b-40cf-9114-22622baf57c1",
+    "query_time": "02/23/2024, 15:00:03 PT",
+    "domain": "finance",
+    "question_type": "false_premise",
+    "static_or_dynamic": "real-time"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784801100000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-002",
+                      "chatInput": "if i have a hundred dollars, how many shares of regeneron pharmaceuticals inc stock can i afford to buy?",
+                      "interaction_id": "38eb2591-663b-40cf-9114-22622baf57c1",
+                      "domain": "finance"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784801100028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 135,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "if i have a hundred dollars, how many shares of regeneron pharmaceuticals inc stock can i afford to buy?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784801100265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 797,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Investor FAQs | Regeneron Pharmaceuticals Inc.",
+                                "page_url": "https://investor.regeneron.com/investor-faqs",
+                                "page_snippet": "<strong>You can purchase stock in our company through a registered brokerage or stock purchase service provider of your choice</strong>. You cannot buy Regeneron stock directly from the company. You will need to contact the broker from whom you purchased your shares.You are now leaving Regeneron.com to visit another Regeneron pharmaceuticals website. The most up-to-date number of shares outstanding can be found on the front page of our most recent form 10-Q, which can be found at the Financial Information section on our Investor Relations website. You can purchase stock in our company through a registered brokerage or stock purchase service provider of your choice. You cannot buy Regeneron stock directly from the company. You can purchase stock in our company through a registered brokerage or stock purchase service provider of your choice. You cannot buy Regeneron stock directly from the company. You will need to contact the broker from whom you purchased your shares. Shares of our common stock are listed on The NASDAQ Global Select Market under the symbol REGN. The most up-to-date number of shares outstanding can be found on the front page of our most recent form 10-Q, which can be found at the Financial Information section on our Investor Relations website.",
+                                "page_last_modified": " Wed, 28 Feb 2024 14:59:02 GMT"
+                              },
+                              {
+                                "page_name": "Buy shares of Regeneron Pharmaceuticals Inc stock (REGN)",
+                                "page_url": "https://www.stash.com/investments/stocks/regeneron-pharmaceuticals-inc-regn/",
+                                "page_snippet": "You can buy Regeneron Pharmaceuticals Inc (REGN) stock and many other stocks or ETFs on Stash. Purchase fractional shares with any dollar amount.Regeneron Pharmaceuticals, Inc. is a biopharmaceutical company that discovers, invents, develops, manufactures and commercializes medicines for the treatment of serious medical conditions. ... Stash allows you to purchase smaller pieces of investments, called fractional shares, rather than having to pay the full price for a whole share.of Regeneron Pharmaceuticals Inc stock, you'll need to sign up for Stash and open a personal portfolio. Regeneron Pharmaceuticals, Inc. is a biopharmaceutical company that discovers, invents, develops, manufactures and commercializes medicines for the treatment of serious medical conditions. The Company commercializes medicines for eye diseases, high low-density lipoprotein (LDL) cholesterol, and an inflammatory condition and have product candidates in development in other areas, including rheumatoid arthritis, asthma, atopic dermatitis, pain, cancer, and infectious diseases. Regeneron Pharmaceuticals Inc’s share price is determined by its bid-ask spread, which is the difference between the price that buyers are willing to pay and the price that sellers are willing to accept. Regeneron Pharmaceuticals Inc’s price can fluctuate throughout the course of each trading day—when you buy Regeneron Pharmaceuticals Inc through Stash, we execute the market order during our next available trading window (we have two a day). Regeneron Pharmaceuticals Inc’s price can fluctuate throughout the course of each trading day—when you buy Regeneron Pharmaceuticals Inc through Stash, we execute the market order during our next available trading window (we have two a day). At Stash, we don’t recommend trying to predict the market when buying investments. We believe it can be a better strategy to buy quality investments you believe in, then hang onto them. Use our historic performance chart to see real-time Regeneron Pharmaceuticals Inc stock price and the Regeneron Pharmaceuticals Inc news feed to help further your research before investing in fractional shares with any dollar amount you choose.",
+                                "page_last_modified": " Wed, 28 Feb 2024 14:32:29 GMT"
+                              },
+                              {
+                                "page_name": "Regeneron Pharmaceuticals, Inc. Common Stock (REGN) Stock Price, ...",
+                                "page_url": "https://www.nasdaq.com/market-activity/stocks/regn",
+                                "page_snippet": "Discover real-time Regeneron Pharmaceuticals, Inc. Common Stock (REGN) stock prices, quotes, historical data, news, and Insights for informed trading and investment decisions. Stay ahead with Nasdaq.**Green highlights the top performing ETF by % change in the past 100 days.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Investor FAQs | Regeneron Pharmaceuticals Inc.",
+                          "page_url": "https://investor.regeneron.com/investor-faqs",
+                          "page_snippet": "<strong>You can purchase stock in our company through a registered brokerage or stock purchase service provider of your choice</strong>. You cannot buy Regeneron stock directly from the company. You will need to contact the broker from whom you purchased your shares.You are now leaving Regeneron.com to visit another Regeneron pharmaceuticals website. The most up-to-date number of shares outstanding can be found on the front page of our most recent form 10-Q, which can be found at the Financial Information section on our Investor Relations website. You can purchase stock in our company through a registered brokerage or stock purchase service provider of your choice. You cannot buy Regeneron stock directly from the company. You can purchase stock in our company through a registered brokerage or stock purchase service provider of your choice. You cannot buy Regeneron stock directly from the company. You will need to contact the broker from whom you purchased your shares. Shares of our common stock are listed on The NASDAQ Global Select Market under the symbol REGN. The most up-to-date number of shares outstanding can be found on the front page of our most recent form 10-Q, which can be found at the Financial Information section on our Investor Relations website.",
+                          "page_last_modified": " Wed, 28 Feb 2024 14:59:02 GMT"
+                        },
+                        {
+                          "page_name": "Buy shares of Regeneron Pharmaceuticals Inc stock (REGN)",
+                          "page_url": "https://www.stash.com/investments/stocks/regeneron-pharmaceuticals-inc-regn/",
+                          "page_snippet": "You can buy Regeneron Pharmaceuticals Inc (REGN) stock and many other stocks or ETFs on Stash. Purchase fractional shares with any dollar amount.Regeneron Pharmaceuticals, Inc. is a biopharmaceutical company that discovers, invents, develops, manufactures and commercializes medicines for the treatment of serious medical conditions. ... Stash allows you to purchase smaller pieces of investments, called fractional shares, rather than having to pay the full price for a whole share.of Regeneron Pharmaceuticals Inc stock, you'll need to sign up for Stash and open a personal portfolio. Regeneron Pharmaceuticals, Inc. is a biopharmaceutical company that discovers, invents, develops, manufactures and commercializes medicines for the treatment of serious medical conditions. The Company commercializes medicines for eye diseases, high low-density lipoprotein (LDL) cholesterol, and an inflammatory condition and have product candidates in development in other areas, including rheumatoid arthritis, asthma, atopic dermatitis, pain, cancer, and infectious diseases. Regeneron Pharmaceuticals Inc’s share price is determined by its bid-ask spread, which is the difference between the price that buyers are willing to pay and the price that sellers are willing to accept. Regeneron Pharmaceuticals Inc’s price can fluctuate throughout the course of each trading day—when you buy Regeneron Pharmaceuticals Inc through Stash, we execute the market order during our next available trading window (we have two a day). Regeneron Pharmaceuticals Inc’s price can fluctuate throughout the course of each trading day—when you buy Regeneron Pharmaceuticals Inc through Stash, we execute the market order during our next available trading window (we have two a day). At Stash, we don’t recommend trying to predict the market when buying investments. We believe it can be a better strategy to buy quality investments you believe in, then hang onto them. Use our historic performance chart to see real-time Regeneron Pharmaceuticals Inc stock price and the Regeneron Pharmaceuticals Inc news feed to help further your research before investing in fractional shares with any dollar amount you choose.",
+                          "page_last_modified": " Wed, 28 Feb 2024 14:32:29 GMT"
+                        },
+                        {
+                          "page_name": "Regeneron Pharmaceuticals, Inc. Common Stock (REGN) Stock Price, ...",
+                          "page_url": "https://www.nasdaq.com/market-activity/stocks/regn",
+                          "page_snippet": "Discover real-time Regeneron Pharmaceuticals, Inc. Common Stock (REGN) stock prices, quotes, historical data, news, and Insights for informed trading and investment decisions. Stay ahead with Nasdaq.**Green highlights the top performing ETF by % change in the past 100 days.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784801101412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1275,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "invalid question\n\n可接受替代答案：0\n\n信息来源：\n1. Investor FAQs | Regeneron Pharmaceuticals Inc. - https://investor.regeneron.com/investor-faqs\n2. Buy shares of Regeneron Pharmaceuticals Inc stock (REGN) - https://www.stash.com/investments/stocks/regeneron-pharmaceuticals-inc-regn/\n3. Regeneron Pharmaceuticals, Inc. Common Stock (REGN) Stock Price, ... - https://www.nasdaq.com/market-activity/stocks/regn",
+                      "query": "if i have a hundred dollars, how many shares of regeneron pharmaceuticals inc stock can i afford to buy?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "if i have a hundred dollars, how many shares of regeneron pharmaceuticals inc stock can i afford to buy?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Investor FAQs | Regeneron Pharmaceuticals Inc.",
+                          "page_url": "https://investor.regeneron.com/investor-faqs",
+                          "page_snippet": "<strong>You can purchase stock in our company through a registered brokerage or stock purchase service provider of your choice</strong>. You cannot buy Regeneron stock directly from the company. You will need to contact the broker from whom you purchased your shares.You are now leaving Regeneron.com to visit another Regeneron pharmaceuticals website. The most up-to-date number of shares outstanding can be found on the front page of our most recent form 10-Q, which can be found at the Financial Information section on our Investor Relations website. You can purchase stock in our company through a registered brokerage or stock purchase service provider of your choice. You cannot buy Regeneron stock directly from the company. You can purchase stock in our company through a registered brokerage or stock purchase service provider of your choice. You cannot buy Regeneron stock directly from the company. You will need to contact the broker from whom you purchased your shares. Shares of our common stock are listed on The NASDAQ Global Select Market under the symbol REGN. The most up-to-date number of shares outstanding can be found on the front page of our most recent form 10-Q, which can be found at the Financial Information section on our Investor Relations website.",
+                          "page_last_modified": " Wed, 28 Feb 2024 14:59:02 GMT"
+                        },
+                        {
+                          "page_name": "Buy shares of Regeneron Pharmaceuticals Inc stock (REGN)",
+                          "page_url": "https://www.stash.com/investments/stocks/regeneron-pharmaceuticals-inc-regn/",
+                          "page_snippet": "You can buy Regeneron Pharmaceuticals Inc (REGN) stock and many other stocks or ETFs on Stash. Purchase fractional shares with any dollar amount.Regeneron Pharmaceuticals, Inc. is a biopharmaceutical company that discovers, invents, develops, manufactures and commercializes medicines for the treatment of serious medical conditions. ... Stash allows you to purchase smaller pieces of investments, called fractional shares, rather than having to pay the full price for a whole share.of Regeneron Pharmaceuticals Inc stock, you'll need to sign up for Stash and open a personal portfolio. Regeneron Pharmaceuticals, Inc. is a biopharmaceutical company that discovers, invents, develops, manufactures and commercializes medicines for the treatment of serious medical conditions. The Company commercializes medicines for eye diseases, high low-density lipoprotein (LDL) cholesterol, and an inflammatory condition and have product candidates in development in other areas, including rheumatoid arthritis, asthma, atopic dermatitis, pain, cancer, and infectious diseases. Regeneron Pharmaceuticals Inc’s share price is determined by its bid-ask spread, which is the difference between the price that buyers are willing to pay and the price that sellers are willing to accept. Regeneron Pharmaceuticals Inc’s price can fluctuate throughout the course of each trading day—when you buy Regeneron Pharmaceuticals Inc through Stash, we execute the market order during our next available trading window (we have two a day). Regeneron Pharmaceuticals Inc’s price can fluctuate throughout the course of each trading day—when you buy Regeneron Pharmaceuticals Inc through Stash, we execute the market order during our next available trading window (we have two a day). At Stash, we don’t recommend trying to predict the market when buying investments. We believe it can be a better strategy to buy quality investments you believe in, then hang onto them. Use our historic performance chart to see real-time Regeneron Pharmaceuticals Inc stock price and the Regeneron Pharmaceuticals Inc news feed to help further your research before investing in fractional shares with any dollar amount you choose.",
+                          "page_last_modified": " Wed, 28 Feb 2024 14:32:29 GMT"
+                        },
+                        {
+                          "page_name": "Regeneron Pharmaceuticals, Inc. Common Stock (REGN) Stock Price, ...",
+                          "page_url": "https://www.nasdaq.com/market-activity/stocks/regn",
+                          "page_snippet": "Discover real-time Regeneron Pharmaceuticals, Inc. Common Stock (REGN) stock prices, quotes, historical data, news, and Insights for informed trading and investment decisions. Stay ahead with Nasdaq.**Green highlights the top performing ETF by % change in the past 100 days.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

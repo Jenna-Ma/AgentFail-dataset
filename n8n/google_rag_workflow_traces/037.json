@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-037",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T13:00:00Z",
+  "stoppedAt": "2026-07-23T13:00:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "3ea26b14-2eba-42ff-87e4-3fdefb82e6d2",
+    "query_time": "02/26/2024, 23:44:33 PT",
+    "domain": "open",
+    "question_type": "comparison",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784811600000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-037",
+                      "chatInput": "which has more protein, chicken or beef?",
+                      "interaction_id": "3ea26b14-2eba-42ff-87e4-3fdefb82e6d2",
+                      "domain": "open"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784811600028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 135,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "which has more protein, chicken or beef?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784811600265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 763,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Beef vs. Chicken meat — Health Impact and Nutrition Comparison",
+                                "page_url": "https://foodstruct.com/compare/beef-vs-chicken-meat",
+                                "page_snippet": "In this section, we will be comparing ... and have a glycemic index of 0. Beef is slightly higher in fats and contains more calories, whereas <strong>chicken is richer in protein</strong>....The meat of the cow is also classified depending on its location, like the chuck (shoulder), the brisket and shank (breast), the rib, the sirloin (hip), the short loin, the sorting plate, the flake, and the round (1). Each type of meat has different qualities; therefore, the preparation methods also change. In this section, we will be comparing roasted chicken meat and skin with broiled ground beef, consisting of 85% lean meat and 15% fat. Both chicken and beef, like most meats, do not contain a notable amount of carbohydrates and have a glycemic index of 0. Beef is slightly higher in fats and contains more calories, whereas chicken is richer in protein. Both chicken and beef, like most meats, do not contain a notable amount of carbohydrates and have a glycemic index of 0. Beef is slightly higher in fats and contains more calories, whereas chicken is richer in protein. Thus, chicken is the better option for people on low-calorie or low-fat diets. Chicken has a much higher concentration of polyunsaturated fatty acids and a lower concentration of saturated fatty acids. Beef has more monounsaturated fatty acids. Beef vs. Chicken meat · Nutrient e.g. Protein (Optional) ... In summary, beef contains more calories and fats, while chicken meat is higher in protein. The two types of meat are equal in cholesterol and do not contain carbohydrates. Beef is richer in most minerals, except sodium; however, chicken meat wins in the vitamin category, conceding only in vitamin B9 and vitamin B12. Beef vs. Chicken meat — Health Impact and Nutrition Comparison. Compare Beef to Chicken meat by vitamins and minerals using the only readable nutrition comparison tool.",
+                                "page_last_modified": " Mon, 26 Feb 2024 18:41:15 GMT"
+                              },
+                              {
+                                "page_name": "Beef vs. Chicken vs. Fish: Which Is the Best Protein? – The Amino ...",
+                                "page_url": "https://aminoco.com/blogs/nutrition/beef-vs-chicken-vs-fish",
+                                "page_snippet": "It’s fat profile, as long as you’re consuming white meat with the skin off, is more desirable than that of beef due to less saturated fat and more monounsaturated fat and omega-3s. Higher in protein than beef, <strong>white chicken meat</strong> is a great protein source for bulking up or slimming down ...Like beef, 100 grams of chicken exceeds your recommended daily intake for most of the essential amino acids, making it a top source of high-quality lean protein. It’s fat profile, as long as you’re consuming white meat with the skin off, is more desirable than that of beef due to less saturated fat and more monounsaturated fat and omega-3s. It's also low-calorie and won’t affect your appetite, so you can keep enjoying your favorite high-protein foods, including beef, chicken, and fish, while exceeding protein requirements. This type of healthy eating plan helps you more easily build and maintain muscle mass, increase mental and physical function, improve blood pressure, cholesterol levels, heart health, and liver health, and support your fitness and health goals. In addition to hearty helpings of beef, chicken, and fish, select your favorite flavors and amino acid profiles from Amino Co’s patented, premium product line. It’s fat profile, as long as you’re consuming white meat with the skin off, is more desirable than that of beef due to less saturated fat and more monounsaturated fat and omega-3s. Higher in protein than beef, white chicken meat is a great protein source for bulking up or slimming down and is considered a heart-healthy food. Meeting 51% of the daily value, fish may not have as much protein as chicken, but what it loses in protein it makes up for in omega-3 fatty acids, which most people do not get enough of. Omega-3 helps subdue chronic inflammation, improve cognitive function, and prevent heart disease, heart attack, and stroke. Looking at the nutrition facts above you can see that fish is higher in fat, but it’s the healthy fats that help balance out the body’s energy needs. Studies show it is also more filling than chicken or beef, so can support your weight-loss efforts.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Nutrition Comparison: Chicken Vs Beef",
+                                "page_url": "https://www.soupersage.com/compare-nutrition/chicken-vs-beef",
+                                "page_snippet": "Is beef or chicken better for protein? Both beef and chicken are high in protein. <strong>Beef has a little more protein ( 10%) than chicken by weight</strong> - beef has 25.4g of protein per 100 grams and chicken has 23.3g of protein. Does beef or chicken contain more potassium?Both beef and chicken are high in calories. Beef has 47% more calories than chicken - beef has 277 calories per 100 grams and chicken has 189 calories. For macronutrient ratios, beef is lighter in protein, heavier in fat and similar to chicken for carbs. Beef has a macronutrient ratio of 38:0:62 and for chicken, 49:0:51 for protein, carbohydrates and fat from calories. Does beef or chicken contain more calories in 100 grams? Both beef and chicken are high in calories. Beef has 50% more calories than chicken - beef has 277 calories in 100g and chicken has 189 calories. Is beef or chicken better for protein? Both beef and chicken are high in protein. Is beef or chicken better for protein? Both beef and chicken are high in protein. Beef has a little more protein ( 10%) than chicken by weight - beef has 25.4g of protein per 100 grams and chicken has 23.3g of protein. Does beef or chicken contain more potassium? Both beef and chicken are high in protein. Beef has a little more protein ( 10%) than chicken by weight - beef has 25.4g of protein per 100 grams and chicken has 23.3g of protein. Does beef or chicken contain more potassium? Both beef and chicken are high in potassium.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Beef vs. Chicken meat — Health Impact and Nutrition Comparison",
+                          "page_url": "https://foodstruct.com/compare/beef-vs-chicken-meat",
+                          "page_snippet": "In this section, we will be comparing ... and have a glycemic index of 0. Beef is slightly higher in fats and contains more calories, whereas <strong>chicken is richer in protein</strong>....The meat of the cow is also classified depending on its location, like the chuck (shoulder), the brisket and shank (breast), the rib, the sirloin (hip), the short loin, the sorting plate, the flake, and the round (1). Each type of meat has different qualities; therefore, the preparation methods also change. In this section, we will be comparing roasted chicken meat and skin with broiled ground beef, consisting of 85% lean meat and 15% fat. Both chicken and beef, like most meats, do not contain a notable amount of carbohydrates and have a glycemic index of 0. Beef is slightly higher in fats and contains more calories, whereas chicken is richer in protein. Both chicken and beef, like most meats, do not contain a notable amount of carbohydrates and have a glycemic index of 0. Beef is slightly higher in fats and contains more calories, whereas chicken is richer in protein. Thus, chicken is the better option for people on low-calorie or low-fat diets. Chicken has a much higher concentration of polyunsaturated fatty acids and a lower concentration of saturated fatty acids. Beef has more monounsaturated fatty acids. Beef vs. Chicken meat · Nutrient e.g. Protein (Optional) ... In summary, beef contains more calories and fats, while chicken meat is higher in protein. The two types of meat are equal in cholesterol and do not contain carbohydrates. Beef is richer in most minerals, except sodium; however, chicken meat wins in the vitamin category, conceding only in vitamin B9 and vitamin B12. Beef vs. Chicken meat — Health Impact and Nutrition Comparison. Compare Beef to Chicken meat by vitamins and minerals using the only readable nutrition comparison tool.",
+                          "page_last_modified": " Mon, 26 Feb 2024 18:41:15 GMT"
+                        },
+                        {
+                          "page_name": "Beef vs. Chicken vs. Fish: Which Is the Best Protein? – The Amino ...",
+                          "page_url": "https://aminoco.com/blogs/nutrition/beef-vs-chicken-vs-fish",
+                          "page_snippet": "It’s fat profile, as long as you’re consuming white meat with the skin off, is more desirable than that of beef due to less saturated fat and more monounsaturated fat and omega-3s. Higher in protein than beef, <strong>white chicken meat</strong> is a great protein source for bulking up or slimming down ...Like beef, 100 grams of chicken exceeds your recommended daily intake for most of the essential amino acids, making it a top source of high-quality lean protein. It’s fat profile, as long as you’re consuming white meat with the skin off, is more desirable than that of beef due to less saturated fat and more monounsaturated fat and omega-3s. It's also low-calorie and won’t affect your appetite, so you can keep enjoying your favorite high-protein foods, including beef, chicken, and fish, while exceeding protein requirements. This type of healthy eating plan helps you more easily build and maintain muscle mass, increase mental and physical function, improve blood pressure, cholesterol levels, heart health, and liver health, and support your fitness and health goals. In addition to hearty helpings of beef, chicken, and fish, select your favorite flavors and amino acid profiles from Amino Co’s patented, premium product line. It’s fat profile, as long as you’re consuming white meat with the skin off, is more desirable than that of beef due to less saturated fat and more monounsaturated fat and omega-3s. Higher in protein than beef, white chicken meat is a great protein source for bulking up or slimming down and is considered a heart-healthy food. Meeting 51% of the daily value, fish may not have as much protein as chicken, but what it loses in protein it makes up for in omega-3 fatty acids, which most people do not get enough of. Omega-3 helps subdue chronic inflammation, improve cognitive function, and prevent heart disease, heart attack, and stroke. Looking at the nutrition facts above you can see that fish is higher in fat, but it’s the healthy fats that help balance out the body’s energy needs. Studies show it is also more filling than chicken or beef, so can support your weight-loss efforts.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Nutrition Comparison: Chicken Vs Beef",
+                          "page_url": "https://www.soupersage.com/compare-nutrition/chicken-vs-beef",
+                          "page_snippet": "Is beef or chicken better for protein? Both beef and chicken are high in protein. <strong>Beef has a little more protein ( 10%) than chicken by weight</strong> - beef has 25.4g of protein per 100 grams and chicken has 23.3g of protein. Does beef or chicken contain more potassium?Both beef and chicken are high in calories. Beef has 47% more calories than chicken - beef has 277 calories per 100 grams and chicken has 189 calories. For macronutrient ratios, beef is lighter in protein, heavier in fat and similar to chicken for carbs. Beef has a macronutrient ratio of 38:0:62 and for chicken, 49:0:51 for protein, carbohydrates and fat from calories. Does beef or chicken contain more calories in 100 grams? Both beef and chicken are high in calories. Beef has 50% more calories than chicken - beef has 277 calories in 100g and chicken has 189 calories. Is beef or chicken better for protein? Both beef and chicken are high in protein. Is beef or chicken better for protein? Both beef and chicken are high in protein. Beef has a little more protein ( 10%) than chicken by weight - beef has 25.4g of protein per 100 grams and chicken has 23.3g of protein. Does beef or chicken contain more potassium? Both beef and chicken are high in protein. Beef has a little more protein ( 10%) than chicken by weight - beef has 25.4g of protein per 100 grams and chicken has 23.3g of protein. Does beef or chicken contain more potassium? Both beef and chicken are high in potassium.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784811601412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1218,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "chicken\n\n信息来源：\n1. Beef vs. Chicken meat — Health Impact and Nutrition Comparison - https://foodstruct.com/compare/beef-vs-chicken-meat\n2. Beef vs. Chicken vs. Fish: Which Is the Best Protein? – The Amino ... - https://aminoco.com/blogs/nutrition/beef-vs-chicken-vs-fish\n3. Nutrition Comparison: Chicken Vs Beef - https://www.soupersage.com/compare-nutrition/chicken-vs-beef",
+                      "query": "which has more protein, chicken or beef?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "which has more protein, chicken or beef?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Beef vs. Chicken meat — Health Impact and Nutrition Comparison",
+                          "page_url": "https://foodstruct.com/compare/beef-vs-chicken-meat",
+                          "page_snippet": "In this section, we will be comparing ... and have a glycemic index of 0. Beef is slightly higher in fats and contains more calories, whereas <strong>chicken is richer in protein</strong>....The meat of the cow is also classified depending on its location, like the chuck (shoulder), the brisket and shank (breast), the rib, the sirloin (hip), the short loin, the sorting plate, the flake, and the round (1). Each type of meat has different qualities; therefore, the preparation methods also change. In this section, we will be comparing roasted chicken meat and skin with broiled ground beef, consisting of 85% lean meat and 15% fat. Both chicken and beef, like most meats, do not contain a notable amount of carbohydrates and have a glycemic index of 0. Beef is slightly higher in fats and contains more calories, whereas chicken is richer in protein. Both chicken and beef, like most meats, do not contain a notable amount of carbohydrates and have a glycemic index of 0. Beef is slightly higher in fats and contains more calories, whereas chicken is richer in protein. Thus, chicken is the better option for people on low-calorie or low-fat diets. Chicken has a much higher concentration of polyunsaturated fatty acids and a lower concentration of saturated fatty acids. Beef has more monounsaturated fatty acids. Beef vs. Chicken meat · Nutrient e.g. Protein (Optional) ... In summary, beef contains more calories and fats, while chicken meat is higher in protein. The two types of meat are equal in cholesterol and do not contain carbohydrates. Beef is richer in most minerals, except sodium; however, chicken meat wins in the vitamin category, conceding only in vitamin B9 and vitamin B12. Beef vs. Chicken meat — Health Impact and Nutrition Comparison. Compare Beef to Chicken meat by vitamins and minerals using the only readable nutrition comparison tool.",
+                          "page_last_modified": " Mon, 26 Feb 2024 18:41:15 GMT"
+                        },
+                        {
+                          "page_name": "Beef vs. Chicken vs. Fish: Which Is the Best Protein? – The Amino ...",
+                          "page_url": "https://aminoco.com/blogs/nutrition/beef-vs-chicken-vs-fish",
+                          "page_snippet": "It’s fat profile, as long as you’re consuming white meat with the skin off, is more desirable than that of beef due to less saturated fat and more monounsaturated fat and omega-3s. Higher in protein than beef, <strong>white chicken meat</strong> is a great protein source for bulking up or slimming down ...Like beef, 100 grams of chicken exceeds your recommended daily intake for most of the essential amino acids, making it a top source of high-quality lean protein. It’s fat profile, as long as you’re consuming white meat with the skin off, is more desirable than that of beef due to less saturated fat and more monounsaturated fat and omega-3s. It's also low-calorie and won’t affect your appetite, so you can keep enjoying your favorite high-protein foods, including beef, chicken, and fish, while exceeding protein requirements. This type of healthy eating plan helps you more easily build and maintain muscle mass, increase mental and physical function, improve blood pressure, cholesterol levels, heart health, and liver health, and support your fitness and health goals. In addition to hearty helpings of beef, chicken, and fish, select your favorite flavors and amino acid profiles from Amino Co’s patented, premium product line. It’s fat profile, as long as you’re consuming white meat with the skin off, is more desirable than that of beef due to less saturated fat and more monounsaturated fat and omega-3s. Higher in protein than beef, white chicken meat is a great protein source for bulking up or slimming down and is considered a heart-healthy food. Meeting 51% of the daily value, fish may not have as much protein as chicken, but what it loses in protein it makes up for in omega-3 fatty acids, which most people do not get enough of. Omega-3 helps subdue chronic inflammation, improve cognitive function, and prevent heart disease, heart attack, and stroke. Looking at the nutrition facts above you can see that fish is higher in fat, but it’s the healthy fats that help balance out the body’s energy needs. Studies show it is also more filling than chicken or beef, so can support your weight-loss efforts.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Nutrition Comparison: Chicken Vs Beef",
+                          "page_url": "https://www.soupersage.com/compare-nutrition/chicken-vs-beef",
+                          "page_snippet": "Is beef or chicken better for protein? Both beef and chicken are high in protein. <strong>Beef has a little more protein ( 10%) than chicken by weight</strong> - beef has 25.4g of protein per 100 grams and chicken has 23.3g of protein. Does beef or chicken contain more potassium?Both beef and chicken are high in calories. Beef has 47% more calories than chicken - beef has 277 calories per 100 grams and chicken has 189 calories. For macronutrient ratios, beef is lighter in protein, heavier in fat and similar to chicken for carbs. Beef has a macronutrient ratio of 38:0:62 and for chicken, 49:0:51 for protein, carbohydrates and fat from calories. Does beef or chicken contain more calories in 100 grams? Both beef and chicken are high in calories. Beef has 50% more calories than chicken - beef has 277 calories in 100g and chicken has 189 calories. Is beef or chicken better for protein? Both beef and chicken are high in protein. Is beef or chicken better for protein? Both beef and chicken are high in protein. Beef has a little more protein ( 10%) than chicken by weight - beef has 25.4g of protein per 100 grams and chicken has 23.3g of protein. Does beef or chicken contain more potassium? Both beef and chicken are high in protein. Beef has a little more protein ( 10%) than chicken by weight - beef has 25.4g of protein per 100 grams and chicken has 23.3g of protein. Does beef or chicken contain more potassium? Both beef and chicken are high in potassium.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

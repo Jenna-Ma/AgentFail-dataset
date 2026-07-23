@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-020",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T11:35:00Z",
+  "stoppedAt": "2026-07-23T11:35:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "af5e9fc5-7db0-495e-96eb-8795107cf84f",
+    "query_time": "03/19/2024, 23:14:49 PT",
+    "domain": "movie",
+    "question_type": "multi-hop",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784806500000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-020",
+                      "chatInput": "what was dana ashbrook's age when he/she made an appearance in the aggression scale?",
+                      "interaction_id": "af5e9fc5-7db0-495e-96eb-8795107cf84f",
+                      "domain": "movie"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784806500028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 179,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "what was dana ashbrook's age when he/she made an appearance in the aggression scale?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784806500265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 797,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Amazon.com: The Aggression Scale : Ray Wise, Dana Ashbrook, Derek ...",
+                                "page_url": "https://www.amazon.com/Aggression-Scale-Ray-Wise/dp/B007CZ334Q",
+                                "page_snippet": "Amazon.com: The Aggression Scale : Ray Wise, Dana Ashbrook, Derek Mears, Steven C. Miller: Movies &amp; TVMovies & TV New Releases Best Sellers Deals Blu-ray 4K Ultra HD TV Shows Kids & Family Anime All Genres Prime Video Your Video Library ... Ray Wise (Actor), Dana Ashbrook (Actor), Steven C. Miller (Director) & 0 more Rated: Finally, the traps the kid sets don't all quite add up as to time and physics, perhaps...but it's all close enough to plausible to have fun with this one...you pschos. ... Michael A. Mccullough · 2.0 out of 5 stars Tarantino meets Home Alone Reviewed in the United States on March 6, 2013 ... If Tarantino did an R-rated spoof of Home Alone, it would most likely bear a passing resemblance to Steven C. Miller`s The Aggression Scale. You can't help root for the kid, the whole time you're watching him on screen. A awesome thriller with a unique edge to it. ... WER gnadenlose Action mit gnadenlos guten Darstellern wie z. B. Kultstars Ray Wise und Genreliebling Derek Mears sehen will, eine ständig gezückte Polaroidkamera, die die gerade erledigten Opfer in sich aufsaugt, eine mittelstarke Story, die mit megastarkem Sound untermalt wird,- WER dies alles haben möchte, DER ist in AGGRESSION SCALE gar nicht verkehrt. While a darker Home Alone with R-rated violence may seem like a promising prospect, The Aggression Scale seems stuck at \"insane hard as nails kid dishes out bloody vengeance.\" Although Miller opens his movie with a bravura opening sequence and manages to hold on to some semblance of tension, the thrills die down by giving Superboy all the power.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Dana Ashbrook - Wikipedia",
+                                "page_url": "https://en.wikipedia.org/wiki/Dana_Ashbrook",
+                                "page_snippet": "In 2010, he reunited with some of the cast of Twin Peaks on the comedy-tribute episode of Psych, titled &quot;Dual Spires&quot;. In 2012, Ashbrook starred alongside Ray Wise and Derek Mears in the Steven C. Miller psycho-thriller The Aggression Scale. In 2014, he appeared in the werewolf horror film ...In 2010, he reunited with some of the cast of Twin Peaks on the comedy-tribute episode of Psych, titled \"Dual Spires\". In 2012, Ashbrook starred alongside Ray Wise and Derek Mears in the Steven C. Miller psycho-thriller The Aggression Scale. In 2014, he appeared in the werewolf horror film Late Phases. In 2012, Ashbrook starred alongside Ray Wise and Derek Mears in the Steven C. Miller psycho-thriller The Aggression Scale. In 2014, he appeared in the werewolf horror film Late Phases. In 2017, Ashbrook reprised his role as Bobby Briggs in David Lynch's revival series Twin Peaks: The Return. Dana Vernon Ashbrook (born May 24, 1967) is an American actor, best known for playing Bobby Briggs on the television series Twin Peaks (1990–1991, 2017) and its 1992 prequel film Twin Peaks: Fire Walk with Me. Ashbrook was born in San Diego, California; his mother, D'Ann (née Paton) is a ... Ashbrook was born in San Diego, California; his mother, D'Ann (née Paton) is a teacher and his father, Vernon L. \"Buddy\" Ashbrook, was a director of the Palomar College drama department. He is the brother of writer Taylor Ashbrook and actress Daphne Ashbrook. In 1978, Ashbrook made his film debut in an uncredited role in Attack of the Killer Tomatoes! A decade later, after an acting hiatus, Ashbrook guest starred on the television series Cagney & Lacey, Knots Landing, and ABC Afterschool Special before starring as Tom Essex in the 1988 horror film Return of the Living Dead Part II.",
+                                "page_last_modified": " Mon, 18 Mar 2024 19:25:10 GMT"
+                              },
+                              {
+                                "page_name": "The Aggression Scale (2012) - Dana Ashbrook as Lloyd - IMDb",
+                                "page_url": "https://www.imdb.com/title/tt1816597/characters/nm0000796",
+                                "page_snippet": "",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Amazon.com: The Aggression Scale : Ray Wise, Dana Ashbrook, Derek ...",
+                          "page_url": "https://www.amazon.com/Aggression-Scale-Ray-Wise/dp/B007CZ334Q",
+                          "page_snippet": "Amazon.com: The Aggression Scale : Ray Wise, Dana Ashbrook, Derek Mears, Steven C. Miller: Movies &amp; TVMovies & TV New Releases Best Sellers Deals Blu-ray 4K Ultra HD TV Shows Kids & Family Anime All Genres Prime Video Your Video Library ... Ray Wise (Actor), Dana Ashbrook (Actor), Steven C. Miller (Director) & 0 more Rated: Finally, the traps the kid sets don't all quite add up as to time and physics, perhaps...but it's all close enough to plausible to have fun with this one...you pschos. ... Michael A. Mccullough · 2.0 out of 5 stars Tarantino meets Home Alone Reviewed in the United States on March 6, 2013 ... If Tarantino did an R-rated spoof of Home Alone, it would most likely bear a passing resemblance to Steven C. Miller`s The Aggression Scale. You can't help root for the kid, the whole time you're watching him on screen. A awesome thriller with a unique edge to it. ... WER gnadenlose Action mit gnadenlos guten Darstellern wie z. B. Kultstars Ray Wise und Genreliebling Derek Mears sehen will, eine ständig gezückte Polaroidkamera, die die gerade erledigten Opfer in sich aufsaugt, eine mittelstarke Story, die mit megastarkem Sound untermalt wird,- WER dies alles haben möchte, DER ist in AGGRESSION SCALE gar nicht verkehrt. While a darker Home Alone with R-rated violence may seem like a promising prospect, The Aggression Scale seems stuck at \"insane hard as nails kid dishes out bloody vengeance.\" Although Miller opens his movie with a bravura opening sequence and manages to hold on to some semblance of tension, the thrills die down by giving Superboy all the power.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Dana Ashbrook - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/Dana_Ashbrook",
+                          "page_snippet": "In 2010, he reunited with some of the cast of Twin Peaks on the comedy-tribute episode of Psych, titled &quot;Dual Spires&quot;. In 2012, Ashbrook starred alongside Ray Wise and Derek Mears in the Steven C. Miller psycho-thriller The Aggression Scale. In 2014, he appeared in the werewolf horror film ...In 2010, he reunited with some of the cast of Twin Peaks on the comedy-tribute episode of Psych, titled \"Dual Spires\". In 2012, Ashbrook starred alongside Ray Wise and Derek Mears in the Steven C. Miller psycho-thriller The Aggression Scale. In 2014, he appeared in the werewolf horror film Late Phases. In 2012, Ashbrook starred alongside Ray Wise and Derek Mears in the Steven C. Miller psycho-thriller The Aggression Scale. In 2014, he appeared in the werewolf horror film Late Phases. In 2017, Ashbrook reprised his role as Bobby Briggs in David Lynch's revival series Twin Peaks: The Return. Dana Vernon Ashbrook (born May 24, 1967) is an American actor, best known for playing Bobby Briggs on the television series Twin Peaks (1990–1991, 2017) and its 1992 prequel film Twin Peaks: Fire Walk with Me. Ashbrook was born in San Diego, California; his mother, D'Ann (née Paton) is a ... Ashbrook was born in San Diego, California; his mother, D'Ann (née Paton) is a teacher and his father, Vernon L. \"Buddy\" Ashbrook, was a director of the Palomar College drama department. He is the brother of writer Taylor Ashbrook and actress Daphne Ashbrook. In 1978, Ashbrook made his film debut in an uncredited role in Attack of the Killer Tomatoes! A decade later, after an acting hiatus, Ashbrook guest starred on the television series Cagney & Lacey, Knots Landing, and ABC Afterschool Special before starring as Tom Essex in the 1988 horror film Return of the Living Dead Part II.",
+                          "page_last_modified": " Mon, 18 Mar 2024 19:25:10 GMT"
+                        },
+                        {
+                          "page_name": "The Aggression Scale (2012) - Dana Ashbrook as Lloyd - IMDb",
+                          "page_url": "https://www.imdb.com/title/tt1816597/characters/nm0000796",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784806501412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1275,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "44\n\n信息来源：\n1. Amazon.com: The Aggression Scale : Ray Wise, Dana Ashbrook, Derek ... - https://www.amazon.com/Aggression-Scale-Ray-Wise/dp/B007CZ334Q\n2. Dana Ashbrook - Wikipedia - https://en.wikipedia.org/wiki/Dana_Ashbrook\n3. The Aggression Scale (2012) - Dana Ashbrook as Lloyd - IMDb - https://www.imdb.com/title/tt1816597/characters/nm0000796",
+                      "query": "what was dana ashbrook's age when he/she made an appearance in the aggression scale?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "what was dana ashbrook's age when he/she made an appearance in the aggression scale?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Amazon.com: The Aggression Scale : Ray Wise, Dana Ashbrook, Derek ...",
+                          "page_url": "https://www.amazon.com/Aggression-Scale-Ray-Wise/dp/B007CZ334Q",
+                          "page_snippet": "Amazon.com: The Aggression Scale : Ray Wise, Dana Ashbrook, Derek Mears, Steven C. Miller: Movies &amp; TVMovies & TV New Releases Best Sellers Deals Blu-ray 4K Ultra HD TV Shows Kids & Family Anime All Genres Prime Video Your Video Library ... Ray Wise (Actor), Dana Ashbrook (Actor), Steven C. Miller (Director) & 0 more Rated: Finally, the traps the kid sets don't all quite add up as to time and physics, perhaps...but it's all close enough to plausible to have fun with this one...you pschos. ... Michael A. Mccullough · 2.0 out of 5 stars Tarantino meets Home Alone Reviewed in the United States on March 6, 2013 ... If Tarantino did an R-rated spoof of Home Alone, it would most likely bear a passing resemblance to Steven C. Miller`s The Aggression Scale. You can't help root for the kid, the whole time you're watching him on screen. A awesome thriller with a unique edge to it. ... WER gnadenlose Action mit gnadenlos guten Darstellern wie z. B. Kultstars Ray Wise und Genreliebling Derek Mears sehen will, eine ständig gezückte Polaroidkamera, die die gerade erledigten Opfer in sich aufsaugt, eine mittelstarke Story, die mit megastarkem Sound untermalt wird,- WER dies alles haben möchte, DER ist in AGGRESSION SCALE gar nicht verkehrt. While a darker Home Alone with R-rated violence may seem like a promising prospect, The Aggression Scale seems stuck at \"insane hard as nails kid dishes out bloody vengeance.\" Although Miller opens his movie with a bravura opening sequence and manages to hold on to some semblance of tension, the thrills die down by giving Superboy all the power.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Dana Ashbrook - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/Dana_Ashbrook",
+                          "page_snippet": "In 2010, he reunited with some of the cast of Twin Peaks on the comedy-tribute episode of Psych, titled &quot;Dual Spires&quot;. In 2012, Ashbrook starred alongside Ray Wise and Derek Mears in the Steven C. Miller psycho-thriller The Aggression Scale. In 2014, he appeared in the werewolf horror film ...In 2010, he reunited with some of the cast of Twin Peaks on the comedy-tribute episode of Psych, titled \"Dual Spires\". In 2012, Ashbrook starred alongside Ray Wise and Derek Mears in the Steven C. Miller psycho-thriller The Aggression Scale. In 2014, he appeared in the werewolf horror film Late Phases. In 2012, Ashbrook starred alongside Ray Wise and Derek Mears in the Steven C. Miller psycho-thriller The Aggression Scale. In 2014, he appeared in the werewolf horror film Late Phases. In 2017, Ashbrook reprised his role as Bobby Briggs in David Lynch's revival series Twin Peaks: The Return. Dana Vernon Ashbrook (born May 24, 1967) is an American actor, best known for playing Bobby Briggs on the television series Twin Peaks (1990–1991, 2017) and its 1992 prequel film Twin Peaks: Fire Walk with Me. Ashbrook was born in San Diego, California; his mother, D'Ann (née Paton) is a ... Ashbrook was born in San Diego, California; his mother, D'Ann (née Paton) is a teacher and his father, Vernon L. \"Buddy\" Ashbrook, was a director of the Palomar College drama department. He is the brother of writer Taylor Ashbrook and actress Daphne Ashbrook. In 1978, Ashbrook made his film debut in an uncredited role in Attack of the Killer Tomatoes! A decade later, after an acting hiatus, Ashbrook guest starred on the television series Cagney & Lacey, Knots Landing, and ABC Afterschool Special before starring as Tom Essex in the 1988 horror film Return of the Living Dead Part II.",
+                          "page_last_modified": " Mon, 18 Mar 2024 19:25:10 GMT"
+                        },
+                        {
+                          "page_name": "The Aggression Scale (2012) - Dana Ashbrook as Lloyd - IMDb",
+                          "page_url": "https://www.imdb.com/title/tt1816597/characters/nm0000796",
+                          "page_snippet": "",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-007",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T10:30:00Z",
+  "stoppedAt": "2026-07-23T10:30:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "8a5c38ac-1715-4004-a0f5-370c9cf739e6",
+    "query_time": "02/28/2024, 07:59:30 PT",
+    "domain": "finance",
+    "question_type": "simple",
+    "static_or_dynamic": "real-time"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784802600000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-007",
+                      "chatInput": "can you tell me the opening stock price of tcbi on the last friday?",
+                      "interaction_id": "8a5c38ac-1715-4004-a0f5-370c9cf739e6",
+                      "domain": "finance"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784802600028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 190,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "can you tell me the opening stock price of tcbi on the last friday?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784802600265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 967,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Texas Capital Bancshares Stock Price Today (NASDAQ: TCBI) Quote, ...",
+                                "page_url": "https://www.wallstreetzen.com/stocks/us/nasdaq/tcbi",
+                                "page_snippet": "If you had invested in Texas Capital Bancshares stock at $12.50, your return over the last 19 years would have been 297.6%, for an annualized return of 7.53% (not including any dividends or dividend reinvestments). How much is Texas Capital Bancshares&#x27;s stock price per share? (NASDAQ: TCBI) Texas ...If you had invested in Texas Capital Bancshares stock at $12.50, your return over the last 19 years would have been 297.6%, for an annualized return of 7.53% (not including any dividends or dividend reinvestments). How much is Texas Capital Bancshares's stock price per share? (NASDAQ: TCBI) Texas Capital Bancshares stock price per share is $49.70 today (as of Mar 28, 2023). (NASDAQ: TCBI) Texas Capital Bancshares currently has 48,228,345 outstanding shares. With Texas Capital Bancshares stock trading at $49.70 per share, the total value of Texas Capital Bancshares stock (market capitalization) is $2.40B. Texas Capital Bancshares stock was originally listed at a price of $12.50 in Aug 14, 2003. If you had invested in Texas Capital Bancshares stock at $12.50, your return over the last 19 years would have been 297.6%, for an annualized return of 7.53% (not including any dividends or dividend reinvestments). TCBI ($49.70) is undervalued by 70.36% relative to our estimate of its Fair Value price of $167.67 based on Discounted Cash Flow (DCF) modelling, but does not have a significant margin of safety ... TCBI ($49.70) is significantly undervalued by 70.36% relative to our estimate of its Fair Value price of $167.67 based on Discounted Cash Flow (DCF) modelling, which includes a healthy margin of safety TCBI ($49.70) is significantly undervalued by 70.36% relative to our estimate of its Fair Value price of $167.67 based on Discounted Cash Flow (DCF) modelling, which includes a healthy margin of safety ... TCBI ($49.70) is trading below... subscribe to Premium to read more.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Texas Capital Bancshares Inc. (TCBI) Stock Price, News & Historical ...",
+                                "page_url": "https://www.thestreet.com/quote/TCBI",
+                                "page_snippet": "Get the latest Texas Capital Bancshares Inc. (TCBI) stock price, news, buy or sell recommendation, and investing advice from Wall Street professionals.Here are Friday's top research calls, including upgrades for Nvidia and Perrigo, a downgrade for Archer-Daniels and mixed reactions to Disney's most recent earnings results. ... Lower share prices might make these five bank stocks look attractive, but their charts tell another story.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "TCBI | Texas Capital Bancshares Inc. Stock Price & News - WSJ",
+                                "page_url": "https://quotes.wsj.com/TCBI",
+                                "page_snippet": "View the latest Texas Capital Bancshares Inc. (TCBI) stock price, news, historical charts, analyst ratings and financial information from WSJ.A company's dividend expressed as a percentage of its current stock price. ... TCBI is not currently paying a regular dividend. Commodities & Futures: Futures prices are delayed at least 10 minutes as per exchange requirements. Change value during the period between open outcry settle and the commencement of the next day's trading is calculated as the difference between the last trade and the prior day's settle. The Price to Earnings (P/E) ratio, a key valuation measure, is calculated by dividing the stock's most recent closing price by the sum of the diluted earnings per share from continuing operations for the trailing 12 month period. Reflects the total market value of a company. Market Cap is calculated by multiplying the number of shares outstanding by the stock's price. For companies with multiple common share classes, market capitalization includes both classes.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Texas Capital Bancshares Stock Price Today (NASDAQ: TCBI) Quote, ...",
+                          "page_url": "https://www.wallstreetzen.com/stocks/us/nasdaq/tcbi",
+                          "page_snippet": "If you had invested in Texas Capital Bancshares stock at $12.50, your return over the last 19 years would have been 297.6%, for an annualized return of 7.53% (not including any dividends or dividend reinvestments). How much is Texas Capital Bancshares&#x27;s stock price per share? (NASDAQ: TCBI) Texas ...If you had invested in Texas Capital Bancshares stock at $12.50, your return over the last 19 years would have been 297.6%, for an annualized return of 7.53% (not including any dividends or dividend reinvestments). How much is Texas Capital Bancshares's stock price per share? (NASDAQ: TCBI) Texas Capital Bancshares stock price per share is $49.70 today (as of Mar 28, 2023). (NASDAQ: TCBI) Texas Capital Bancshares currently has 48,228,345 outstanding shares. With Texas Capital Bancshares stock trading at $49.70 per share, the total value of Texas Capital Bancshares stock (market capitalization) is $2.40B. Texas Capital Bancshares stock was originally listed at a price of $12.50 in Aug 14, 2003. If you had invested in Texas Capital Bancshares stock at $12.50, your return over the last 19 years would have been 297.6%, for an annualized return of 7.53% (not including any dividends or dividend reinvestments). TCBI ($49.70) is undervalued by 70.36% relative to our estimate of its Fair Value price of $167.67 based on Discounted Cash Flow (DCF) modelling, but does not have a significant margin of safety ... TCBI ($49.70) is significantly undervalued by 70.36% relative to our estimate of its Fair Value price of $167.67 based on Discounted Cash Flow (DCF) modelling, which includes a healthy margin of safety TCBI ($49.70) is significantly undervalued by 70.36% relative to our estimate of its Fair Value price of $167.67 based on Discounted Cash Flow (DCF) modelling, which includes a healthy margin of safety ... TCBI ($49.70) is trading below... subscribe to Premium to read more.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Texas Capital Bancshares Inc. (TCBI) Stock Price, News & Historical ...",
+                          "page_url": "https://www.thestreet.com/quote/TCBI",
+                          "page_snippet": "Get the latest Texas Capital Bancshares Inc. (TCBI) stock price, news, buy or sell recommendation, and investing advice from Wall Street professionals.Here are Friday's top research calls, including upgrades for Nvidia and Perrigo, a downgrade for Archer-Daniels and mixed reactions to Disney's most recent earnings results. ... Lower share prices might make these five bank stocks look attractive, but their charts tell another story.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "TCBI | Texas Capital Bancshares Inc. Stock Price & News - WSJ",
+                          "page_url": "https://quotes.wsj.com/TCBI",
+                          "page_snippet": "View the latest Texas Capital Bancshares Inc. (TCBI) stock price, news, historical charts, analyst ratings and financial information from WSJ.A company's dividend expressed as a percentage of its current stock price. ... TCBI is not currently paying a regular dividend. Commodities & Futures: Futures prices are delayed at least 10 minutes as per exchange requirements. Change value during the period between open outcry settle and the commencement of the next day's trading is calculated as the difference between the last trade and the prior day's settle. The Price to Earnings (P/E) ratio, a key valuation measure, is calculated by dividing the stock's most recent closing price by the sum of the diluted earnings per share from continuing operations for the trailing 12 month period. Reflects the total market value of a company. Market Cap is calculated by multiplying the number of shares outstanding by the stock's price. For companies with multiple common share classes, market capitalization includes both classes.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784802601412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1218,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "$59.12\n\n信息来源：\n1. Texas Capital Bancshares Stock Price Today (NASDAQ: TCBI) Quote, ... - https://www.wallstreetzen.com/stocks/us/nasdaq/tcbi\n2. Texas Capital Bancshares Inc. (TCBI) Stock Price, News & Historical ... - https://www.thestreet.com/quote/TCBI\n3. TCBI | Texas Capital Bancshares Inc. Stock Price & News - WSJ - https://quotes.wsj.com/TCBI",
+                      "query": "can you tell me the opening stock price of tcbi on the last friday?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "can you tell me the opening stock price of tcbi on the last friday?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Texas Capital Bancshares Stock Price Today (NASDAQ: TCBI) Quote, ...",
+                          "page_url": "https://www.wallstreetzen.com/stocks/us/nasdaq/tcbi",
+                          "page_snippet": "If you had invested in Texas Capital Bancshares stock at $12.50, your return over the last 19 years would have been 297.6%, for an annualized return of 7.53% (not including any dividends or dividend reinvestments). How much is Texas Capital Bancshares&#x27;s stock price per share? (NASDAQ: TCBI) Texas ...If you had invested in Texas Capital Bancshares stock at $12.50, your return over the last 19 years would have been 297.6%, for an annualized return of 7.53% (not including any dividends or dividend reinvestments). How much is Texas Capital Bancshares's stock price per share? (NASDAQ: TCBI) Texas Capital Bancshares stock price per share is $49.70 today (as of Mar 28, 2023). (NASDAQ: TCBI) Texas Capital Bancshares currently has 48,228,345 outstanding shares. With Texas Capital Bancshares stock trading at $49.70 per share, the total value of Texas Capital Bancshares stock (market capitalization) is $2.40B. Texas Capital Bancshares stock was originally listed at a price of $12.50 in Aug 14, 2003. If you had invested in Texas Capital Bancshares stock at $12.50, your return over the last 19 years would have been 297.6%, for an annualized return of 7.53% (not including any dividends or dividend reinvestments). TCBI ($49.70) is undervalued by 70.36% relative to our estimate of its Fair Value price of $167.67 based on Discounted Cash Flow (DCF) modelling, but does not have a significant margin of safety ... TCBI ($49.70) is significantly undervalued by 70.36% relative to our estimate of its Fair Value price of $167.67 based on Discounted Cash Flow (DCF) modelling, which includes a healthy margin of safety TCBI ($49.70) is significantly undervalued by 70.36% relative to our estimate of its Fair Value price of $167.67 based on Discounted Cash Flow (DCF) modelling, which includes a healthy margin of safety ... TCBI ($49.70) is trading below... subscribe to Premium to read more.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Texas Capital Bancshares Inc. (TCBI) Stock Price, News & Historical ...",
+                          "page_url": "https://www.thestreet.com/quote/TCBI",
+                          "page_snippet": "Get the latest Texas Capital Bancshares Inc. (TCBI) stock price, news, buy or sell recommendation, and investing advice from Wall Street professionals.Here are Friday's top research calls, including upgrades for Nvidia and Perrigo, a downgrade for Archer-Daniels and mixed reactions to Disney's most recent earnings results. ... Lower share prices might make these five bank stocks look attractive, but their charts tell another story.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "TCBI | Texas Capital Bancshares Inc. Stock Price & News - WSJ",
+                          "page_url": "https://quotes.wsj.com/TCBI",
+                          "page_snippet": "View the latest Texas Capital Bancshares Inc. (TCBI) stock price, news, historical charts, analyst ratings and financial information from WSJ.A company's dividend expressed as a percentage of its current stock price. ... TCBI is not currently paying a regular dividend. Commodities & Futures: Futures prices are delayed at least 10 minutes as per exchange requirements. Change value during the period between open outcry settle and the commencement of the next day's trading is calculated as the difference between the last trade and the prior day's settle. The Price to Earnings (P/E) ratio, a key valuation measure, is calculated by dividing the stock's most recent closing price by the sum of the diluted earnings per share from continuing operations for the trailing 12 month period. Reflects the total market value of a company. Market Cap is calculated by multiplying the number of shares outstanding by the stock's price. For companies with multiple common share classes, market capitalization includes both classes.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

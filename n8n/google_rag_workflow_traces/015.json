@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-015",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T11:10:00Z",
+  "stoppedAt": "2026-07-23T11:10:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "4c630315-7b78-4a18-a219-64920851643d",
+    "query_time": "03/19/2024, 23:46:52 PT",
+    "domain": "movie",
+    "question_type": "simple",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784805000000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-015",
+                      "chatInput": "in 2012, who was praised for best actor at the oscars?",
+                      "interaction_id": "4c630315-7b78-4a18-a219-64920851643d",
+                      "domain": "movie"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784805000028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 124,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "in 2012, who was praised for best actor at the oscars?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784805000265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 933,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Academy Award for best actor | Years, Winners, List, & Facts | ...",
+                                "page_url": "https://www.britannica.com/art/Academy-Award-for-best-actor",
+                                "page_snippet": "Academy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’sAcademy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28. It was not until the seventh ceremony, in 1935, that only performances in movies released the previous year were eligible for consideration. The winning actors are given a gold-plated statuette known as an Oscar. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Below is a list of the winning actors and the films for which they won. The year is when the award was presented. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "85th Academy Awards - Wikipedia",
+                                "page_url": "https://en.wikipedia.org/wiki/85th_Academy_Awards",
+                                "page_snippet": "Actor Seth MacFarlane hosted the show for the first time. In related events, the Academy held its 4th annual Governors Awards ceremony at the Grand Ballroom of the Hollywood and Highland Center on December 1, 2012. On February 9, 2013, in a ceremony at The Beverly Hills Hotel in Beverly Hills, California, the Academy Awards for Technical Achievement were presented by hosts Chris Pine and Zoe Saldana. Argo won ...Actor Seth MacFarlane hosted the show for the first time. In related events, the Academy held its 4th annual Governors Awards ceremony at the Grand Ballroom of the Hollywood and Highland Center on December 1, 2012. On February 9, 2013, in a ceremony at The Beverly Hills Hotel in Beverly Hills, California, the Academy Awards for Technical Achievement were presented by hosts Chris Pine and Zoe Saldana. Argo won three awards, including Best Picture, the first film to win an Academy Award for Best Picture without its director nominated since Driving Miss Daisy. With newly elected Academy president Hawk Koch assuming leadership duties, the Academy hired Neil Meron and Craig Zadan in August 2012 to produce the ceremony. Two months later, the Academy announced that actor, director, animator, singer, and comedian Seth MacFarlane would host the telecast. MacFarlane expressed that it was truly an honor and a thrill to be asked to host Academy Awards commenting, \"It's truly an overwhelming privilege to be asked to host the Oscars. This marked the first time in Oscar history that all five nominees in an acting category (Best Supporting Actor) were all previous winners. Skyfall and Zero Dark Thirty's joint win in the Best Sound Editing category was the sixth occurrence of a tie in Oscar history. Winners are listed first, highlighted in boldface, and indicated with a double dagger (‡). The Academy held its 4th Annual Governors Awards ceremony on December 1, 2012, during which the following awards were presented. Reports surfaced that Academy then-president Tom Sherak approached television producer Lorne Michaels for producing duties with actor and comedian Jimmy Fallon as host. However, the telecast's broadcaster ABC objected to these selections, and both men declined afterward. With newly elected Academy president Hawk Koch assuming leadership duties, the Academy hired Neil Meron and Craig Zadan in August 2012 to produce the ceremony. The 85th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), honored the best films of 2012 and took place on February 24, 2013, at the Dolby Theatre in Hollywood, Los Angeles beginning at 5:30 p.m. Pacific Time Zone (PST) / 8:30 p.m. Eastern Time Zone (EST). The ceremony was the first in the Academy's 85-year history to adopt the phrase \"The Oscars\" as the ceremony's official name during the broadcast and marketing. During the ceremony, the Academy of Motion Picture Arts and Sciences presented Academy Awards (commonly referred to as Oscars) in 24 categories.",
+                                "page_last_modified": " Sun, 17 Mar 2024 05:38:16 GMT"
+                              },
+                              {
+                                "page_name": "Academy Award for best actor | Years, Winners, List, & Facts | ...",
+                                "page_url": "https://www.britannica.com/art/Academy-Award-for-best-actor",
+                                "page_snippet": "Academy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’sAcademy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28. It was not until the seventh ceremony, in 1935, that only performances in movies released the previous year were eligible for consideration. The winning actors are given a gold-plated statuette known as an Oscar. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Below is a list of the winning actors and the films for which they won. The year is when the award was presented. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Academy Award for best actor | Years, Winners, List, & Facts | ...",
+                          "page_url": "https://www.britannica.com/art/Academy-Award-for-best-actor",
+                          "page_snippet": "Academy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’sAcademy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28. It was not until the seventh ceremony, in 1935, that only performances in movies released the previous year were eligible for consideration. The winning actors are given a gold-plated statuette known as an Oscar. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Below is a list of the winning actors and the films for which they won. The year is when the award was presented. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "85th Academy Awards - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/85th_Academy_Awards",
+                          "page_snippet": "Actor Seth MacFarlane hosted the show for the first time. In related events, the Academy held its 4th annual Governors Awards ceremony at the Grand Ballroom of the Hollywood and Highland Center on December 1, 2012. On February 9, 2013, in a ceremony at The Beverly Hills Hotel in Beverly Hills, California, the Academy Awards for Technical Achievement were presented by hosts Chris Pine and Zoe Saldana. Argo won ...Actor Seth MacFarlane hosted the show for the first time. In related events, the Academy held its 4th annual Governors Awards ceremony at the Grand Ballroom of the Hollywood and Highland Center on December 1, 2012. On February 9, 2013, in a ceremony at The Beverly Hills Hotel in Beverly Hills, California, the Academy Awards for Technical Achievement were presented by hosts Chris Pine and Zoe Saldana. Argo won three awards, including Best Picture, the first film to win an Academy Award for Best Picture without its director nominated since Driving Miss Daisy. With newly elected Academy president Hawk Koch assuming leadership duties, the Academy hired Neil Meron and Craig Zadan in August 2012 to produce the ceremony. Two months later, the Academy announced that actor, director, animator, singer, and comedian Seth MacFarlane would host the telecast. MacFarlane expressed that it was truly an honor and a thrill to be asked to host Academy Awards commenting, \"It's truly an overwhelming privilege to be asked to host the Oscars. This marked the first time in Oscar history that all five nominees in an acting category (Best Supporting Actor) were all previous winners. Skyfall and Zero Dark Thirty's joint win in the Best Sound Editing category was the sixth occurrence of a tie in Oscar history. Winners are listed first, highlighted in boldface, and indicated with a double dagger (‡). The Academy held its 4th Annual Governors Awards ceremony on December 1, 2012, during which the following awards were presented. Reports surfaced that Academy then-president Tom Sherak approached television producer Lorne Michaels for producing duties with actor and comedian Jimmy Fallon as host. However, the telecast's broadcaster ABC objected to these selections, and both men declined afterward. With newly elected Academy president Hawk Koch assuming leadership duties, the Academy hired Neil Meron and Craig Zadan in August 2012 to produce the ceremony. The 85th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), honored the best films of 2012 and took place on February 24, 2013, at the Dolby Theatre in Hollywood, Los Angeles beginning at 5:30 p.m. Pacific Time Zone (PST) / 8:30 p.m. Eastern Time Zone (EST). The ceremony was the first in the Academy's 85-year history to adopt the phrase \"The Oscars\" as the ceremony's official name during the broadcast and marketing. During the ceremony, the Academy of Motion Picture Arts and Sciences presented Academy Awards (commonly referred to as Oscars) in 24 categories.",
+                          "page_last_modified": " Sun, 17 Mar 2024 05:38:16 GMT"
+                        },
+                        {
+                          "page_name": "Academy Award for best actor | Years, Winners, List, & Facts | ...",
+                          "page_url": "https://www.britannica.com/art/Academy-Award-for-best-actor",
+                          "page_snippet": "Academy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’sAcademy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28. It was not until the seventh ceremony, in 1935, that only performances in movies released the previous year were eligible for consideration. The winning actors are given a gold-plated statuette known as an Oscar. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Below is a list of the winning actors and the films for which they won. The year is when the award was presented. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784805001412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1332,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "jean dujardin\n\n信息来源：\n1. Academy Award for best actor | Years, Winners, List, & Facts | ... - https://www.britannica.com/art/Academy-Award-for-best-actor\n2. 85th Academy Awards - Wikipedia - https://en.wikipedia.org/wiki/85th_Academy_Awards\n3. Academy Award for best actor | Years, Winners, List, & Facts | ... - https://www.britannica.com/art/Academy-Award-for-best-actor",
+                      "query": "in 2012, who was praised for best actor at the oscars?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "in 2012, who was praised for best actor at the oscars?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Academy Award for best actor | Years, Winners, List, & Facts | ...",
+                          "page_url": "https://www.britannica.com/art/Academy-Award-for-best-actor",
+                          "page_snippet": "Academy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’sAcademy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28. It was not until the seventh ceremony, in 1935, that only performances in movies released the previous year were eligible for consideration. The winning actors are given a gold-plated statuette known as an Oscar. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Below is a list of the winning actors and the films for which they won. The year is when the award was presented. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "85th Academy Awards - Wikipedia",
+                          "page_url": "https://en.wikipedia.org/wiki/85th_Academy_Awards",
+                          "page_snippet": "Actor Seth MacFarlane hosted the show for the first time. In related events, the Academy held its 4th annual Governors Awards ceremony at the Grand Ballroom of the Hollywood and Highland Center on December 1, 2012. On February 9, 2013, in a ceremony at The Beverly Hills Hotel in Beverly Hills, California, the Academy Awards for Technical Achievement were presented by hosts Chris Pine and Zoe Saldana. Argo won ...Actor Seth MacFarlane hosted the show for the first time. In related events, the Academy held its 4th annual Governors Awards ceremony at the Grand Ballroom of the Hollywood and Highland Center on December 1, 2012. On February 9, 2013, in a ceremony at The Beverly Hills Hotel in Beverly Hills, California, the Academy Awards for Technical Achievement were presented by hosts Chris Pine and Zoe Saldana. Argo won three awards, including Best Picture, the first film to win an Academy Award for Best Picture without its director nominated since Driving Miss Daisy. With newly elected Academy president Hawk Koch assuming leadership duties, the Academy hired Neil Meron and Craig Zadan in August 2012 to produce the ceremony. Two months later, the Academy announced that actor, director, animator, singer, and comedian Seth MacFarlane would host the telecast. MacFarlane expressed that it was truly an honor and a thrill to be asked to host Academy Awards commenting, \"It's truly an overwhelming privilege to be asked to host the Oscars. This marked the first time in Oscar history that all five nominees in an acting category (Best Supporting Actor) were all previous winners. Skyfall and Zero Dark Thirty's joint win in the Best Sound Editing category was the sixth occurrence of a tie in Oscar history. Winners are listed first, highlighted in boldface, and indicated with a double dagger (‡). The Academy held its 4th Annual Governors Awards ceremony on December 1, 2012, during which the following awards were presented. Reports surfaced that Academy then-president Tom Sherak approached television producer Lorne Michaels for producing duties with actor and comedian Jimmy Fallon as host. However, the telecast's broadcaster ABC objected to these selections, and both men declined afterward. With newly elected Academy president Hawk Koch assuming leadership duties, the Academy hired Neil Meron and Craig Zadan in August 2012 to produce the ceremony. The 85th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), honored the best films of 2012 and took place on February 24, 2013, at the Dolby Theatre in Hollywood, Los Angeles beginning at 5:30 p.m. Pacific Time Zone (PST) / 8:30 p.m. Eastern Time Zone (EST). The ceremony was the first in the Academy's 85-year history to adopt the phrase \"The Oscars\" as the ceremony's official name during the broadcast and marketing. During the ceremony, the Academy of Motion Picture Arts and Sciences presented Academy Awards (commonly referred to as Oscars) in 24 categories.",
+                          "page_last_modified": " Sun, 17 Mar 2024 05:38:16 GMT"
+                        },
+                        {
+                          "page_name": "Academy Award for best actor | Years, Winners, List, & Facts | ...",
+                          "page_url": "https://www.britannica.com/art/Academy-Award-for-best-actor",
+                          "page_snippet": "Academy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’sAcademy Award for best actor, award presented annually by the Academy of Motion Picture Arts and Sciences, located in Beverly Hills, California. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28. It was not until the seventh ceremony, in 1935, that only performances in movies released the previous year were eligible for consideration. The winning actors are given a gold-plated statuette known as an Oscar. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Daniel Day-Lewis has won the most Academy Awards for best actor (three), and a number of actors have received two such Oscars, including Spencer Tracy and Tom Hanks, both of whom won in consecutive years. Below is a list of the winning actors and the films for which they won. The year is when the award was presented. It honours the male actor in a leading role who delivered the most outstanding performance in a movie of a given year, as determined by the academy’s voting members. The prize was presented in 1929 at the first Academy Awards ceremony, and it recognized work in films from 1927–28.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

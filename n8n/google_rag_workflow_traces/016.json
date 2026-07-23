@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-016",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T11:15:00Z",
+  "stoppedAt": "2026-07-23T11:15:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "5bf6b69e-04d0-42fb-9163-1e285ad59192",
+    "query_time": "03/19/2024, 23:07:48 PT",
+    "domain": "movie",
+    "question_type": "set",
+    "static_or_dynamic": "slow-changing"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784805300000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-016",
+                      "chatInput": "what are all the movies christopher r. mihm directed?",
+                      "interaction_id": "5bf6b69e-04d0-42fb-9163-1e285ad59192",
+                      "domain": "movie"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784805300028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 135,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "what are all the movies christopher r. mihm directed?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784805300265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 967,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "The Giant Spider (2013) ⭐ 5.3 | Horror, Sci-Fi",
+                                "page_url": "https://www.imdb.com/title/tt2716062/",
+                                "page_snippet": "The Giant Spider: Directed by Christopher R. Mihm. With Shannon McDonough, Daniel Sjerven, Billie Jo Konze, Michael Cook. When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it&#x27;s up to a trio of scientists, an Army general, and a newspaper reporter ...The Giant Spider: Directed by Christopher R. Mihm. With Shannon McDonough, Daniel Sjerven, Billie Jo Konze, Michael Cook. When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it's up to a trio of scientists, an Army general, and a newspaper reporter and his fiancée to figure out how to stop the hungry beast. Christopher R. Mihm ... Action/Horror Feature, First Place: 2013 Highway 61 Film Festival. ... Beginning just minutes into the movie and continuing throughout the movie sporadically, the dialogue does not match the closed captioning. ... The Giant Spider Theme Written by Josh Cruz & Richard C. Boyce Performed by The Night Hobs ... The is the 8th movie made my Christopher R. Mihm, all of which pay loving homage to those wonderful B 'monster' movies of the 1950's. Well, except one which is really a murder mystery. The is the 8th movie made my Christopher R. Mihm, all of which pay loving homage to those wonderful B 'monster' movies of the 1950's. Well, except one which is really a murder mystery. If you love watching Them or Robot Monster, seeing actors like John Agar and Richard Carlson on the screen, being amazed at the world of 50's style special effects (only better I think), you can't help but love Mr. Mihm's movies. Christopher R. Mihm ... Christopher R. Mihm",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Christopher R. Mihm - News - IMDb",
+                                "page_url": "https://www.imdb.com/name/nm2265115/news",
+                                "page_snippet": "Christopher R. Mihm on IMDb: Movies, Tv, Celebrities, and more...While I personally love modern horror films and all of their deliciously gory bells and whistles, my heart belongs to the old black and white horror/sci-fi flicks of the 50s and 60s. If you're in the same camp as I am, you'd better listen up. Below you'll find the first official trailer and artwork for writer/director Christopher R. Mihm's new tale of old terrors, The Late Night Double Feature... a 2-in-1 film if you will. If you're in the same camp as I am, you'd better listen up. Below you'll find the first official trailer and artwork for writer/director Christopher R. Mihm's new tale of old terrors, The Late Night Double Feature... a 2-in-1 film if you will. Shane Donahue, Cherie \"Rhuby\" Gallinati, Mark Haider, Elizabeth Kaiser, Michael Kaiser, Stephanie Mihm, Daniel R. Sjerven, J. Andrew Wilkins, Mike Cook, Catherine Hansen, Alice Mihm, Daniel Mihm, Elliott Mihm, James Norgard, and Douglas Sidney star. Below you'll find the first official trailer and artwork for writer/director Christopher R. Mihm's new tale of old terrors, The Late Night Double Feature... a 2-in-1 film if you will. Shane Donahue, Cherie \"Rhuby\" Gallinati, Mark Haider, Elizabeth Kaiser, Michael Kaiser, Stephanie Mihm, Daniel R. Sjerven, J. Andrew Wilkins, Mike Cook, Catherine Hansen, Alice Mihm, Daniel Mihm, Elliott Mihm, James Norgard, and Douglas Sidney star. The Late Night Double Feature was written, directed, and edited by Christopher R. Mihm with stop-motion animation by Norman Yeend. The film is available now so order your copy today! Synopsis: When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it's up to a trio of scientists, an Army general, a newspaper reporter, and his fiancée to figure out how to stop the hungry beast from devouring the entire county in writer/director Christopher R. Mihm's ode to the giant bug films of yesteryear!",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Amazon.com: The Giant Spider : Christopher R. Mihm: Movies & TV",
+                                "page_url": "https://www.amazon.com/Giant-Spider-Christopher-R-Mihm/dp/B00CZC9QZQ",
+                                "page_snippet": "Find The Giant Spider at Amazon.com Movies &amp; TV, home of thousands of titles on DVD and Blu-ray.SYNOPSIS When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it's up to a trio of scientists (Mike Cook, Billie Jo Konze and James Norgard), an Army general (Mark Haider), and a newspaper reporter (Daniel R. Sjerven) and his fiancée (Shannon McDonough) to figure out how to stop the hungry beast from devouring the entire county in writer/director Christopher R. Mihm's 2013 ode to the giant bug films of yesteryear. ... Director ‏ : ‎ Christopher R. Mihm Christopher R. Mihm (Director) Format: DVD I am in love with the works of Christopher Mihm, his family, and collective of associates. My father and I bonded over drive-in monster and horror movies that he enjoyed as a child (the first one he shared with me was the Thing from Another World). Perhaps these movies are not for everyone. Personally, I love the DIY film-making and total commitment to the world (or Mihmiverse) that the story creates. I sincerely appreciate Mihm making these films: like any body of work, some films stand out more than others, and while this wasn't my favorite of his films, it's still an amusing diversion when approached from the correct vantage point. If you are new to the Mihmverse, this isn't the place I'd start, but if you are a fan of the genre odds are you'll like it. ... 5.0 out of 5 stars Just as title promises. Process shots that should make Bert I Gordon jealous Reviewed in the United States 🇺🇸 on May 24, 2020 ... I am in love with the works of Christopher Mihm, his family, and collective of associates.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "The Giant Spider (2013) ⭐ 5.3 | Horror, Sci-Fi",
+                          "page_url": "https://www.imdb.com/title/tt2716062/",
+                          "page_snippet": "The Giant Spider: Directed by Christopher R. Mihm. With Shannon McDonough, Daniel Sjerven, Billie Jo Konze, Michael Cook. When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it&#x27;s up to a trio of scientists, an Army general, and a newspaper reporter ...The Giant Spider: Directed by Christopher R. Mihm. With Shannon McDonough, Daniel Sjerven, Billie Jo Konze, Michael Cook. When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it's up to a trio of scientists, an Army general, and a newspaper reporter and his fiancée to figure out how to stop the hungry beast. Christopher R. Mihm ... Action/Horror Feature, First Place: 2013 Highway 61 Film Festival. ... Beginning just minutes into the movie and continuing throughout the movie sporadically, the dialogue does not match the closed captioning. ... The Giant Spider Theme Written by Josh Cruz & Richard C. Boyce Performed by The Night Hobs ... The is the 8th movie made my Christopher R. Mihm, all of which pay loving homage to those wonderful B 'monster' movies of the 1950's. Well, except one which is really a murder mystery. The is the 8th movie made my Christopher R. Mihm, all of which pay loving homage to those wonderful B 'monster' movies of the 1950's. Well, except one which is really a murder mystery. If you love watching Them or Robot Monster, seeing actors like John Agar and Richard Carlson on the screen, being amazed at the world of 50's style special effects (only better I think), you can't help but love Mr. Mihm's movies. Christopher R. Mihm ... Christopher R. Mihm",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Christopher R. Mihm - News - IMDb",
+                          "page_url": "https://www.imdb.com/name/nm2265115/news",
+                          "page_snippet": "Christopher R. Mihm on IMDb: Movies, Tv, Celebrities, and more...While I personally love modern horror films and all of their deliciously gory bells and whistles, my heart belongs to the old black and white horror/sci-fi flicks of the 50s and 60s. If you're in the same camp as I am, you'd better listen up. Below you'll find the first official trailer and artwork for writer/director Christopher R. Mihm's new tale of old terrors, The Late Night Double Feature... a 2-in-1 film if you will. If you're in the same camp as I am, you'd better listen up. Below you'll find the first official trailer and artwork for writer/director Christopher R. Mihm's new tale of old terrors, The Late Night Double Feature... a 2-in-1 film if you will. Shane Donahue, Cherie \"Rhuby\" Gallinati, Mark Haider, Elizabeth Kaiser, Michael Kaiser, Stephanie Mihm, Daniel R. Sjerven, J. Andrew Wilkins, Mike Cook, Catherine Hansen, Alice Mihm, Daniel Mihm, Elliott Mihm, James Norgard, and Douglas Sidney star. Below you'll find the first official trailer and artwork for writer/director Christopher R. Mihm's new tale of old terrors, The Late Night Double Feature... a 2-in-1 film if you will. Shane Donahue, Cherie \"Rhuby\" Gallinati, Mark Haider, Elizabeth Kaiser, Michael Kaiser, Stephanie Mihm, Daniel R. Sjerven, J. Andrew Wilkins, Mike Cook, Catherine Hansen, Alice Mihm, Daniel Mihm, Elliott Mihm, James Norgard, and Douglas Sidney star. The Late Night Double Feature was written, directed, and edited by Christopher R. Mihm with stop-motion animation by Norman Yeend. The film is available now so order your copy today! Synopsis: When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it's up to a trio of scientists, an Army general, a newspaper reporter, and his fiancée to figure out how to stop the hungry beast from devouring the entire county in writer/director Christopher R. Mihm's ode to the giant bug films of yesteryear!",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Amazon.com: The Giant Spider : Christopher R. Mihm: Movies & TV",
+                          "page_url": "https://www.amazon.com/Giant-Spider-Christopher-R-Mihm/dp/B00CZC9QZQ",
+                          "page_snippet": "Find The Giant Spider at Amazon.com Movies &amp; TV, home of thousands of titles on DVD and Blu-ray.SYNOPSIS When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it's up to a trio of scientists (Mike Cook, Billie Jo Konze and James Norgard), an Army general (Mark Haider), and a newspaper reporter (Daniel R. Sjerven) and his fiancée (Shannon McDonough) to figure out how to stop the hungry beast from devouring the entire county in writer/director Christopher R. Mihm's 2013 ode to the giant bug films of yesteryear. ... Director ‏ : ‎ Christopher R. Mihm Christopher R. Mihm (Director) Format: DVD I am in love with the works of Christopher Mihm, his family, and collective of associates. My father and I bonded over drive-in monster and horror movies that he enjoyed as a child (the first one he shared with me was the Thing from Another World). Perhaps these movies are not for everyone. Personally, I love the DIY film-making and total commitment to the world (or Mihmiverse) that the story creates. I sincerely appreciate Mihm making these films: like any body of work, some films stand out more than others, and while this wasn't my favorite of his films, it's still an amusing diversion when approached from the correct vantage point. If you are new to the Mihmverse, this isn't the place I'd start, but if you are a fan of the genre odds are you'll like it. ... 5.0 out of 5 stars Just as title promises. Process shots that should make Bert I Gordon jealous Reviewed in the United States 🇺🇸 on May 24, 2020 ... I am in love with the works of Christopher Mihm, his family, and collective of associates.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784805301412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1389,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "destination: outer space, it came from another world!, attack of the moon zombies, the giant spider\n\n信息来源：\n1. The Giant Spider (2013) ⭐ 5.3 | Horror, Sci-Fi - https://www.imdb.com/title/tt2716062/\n2. Christopher R. Mihm - News - IMDb - https://www.imdb.com/name/nm2265115/news\n3. Amazon.com: The Giant Spider : Christopher R. Mihm: Movies & TV - https://www.amazon.com/Giant-Spider-Christopher-R-Mihm/dp/B00CZC9QZQ",
+                      "query": "what are all the movies christopher r. mihm directed?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "what are all the movies christopher r. mihm directed?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "The Giant Spider (2013) ⭐ 5.3 | Horror, Sci-Fi",
+                          "page_url": "https://www.imdb.com/title/tt2716062/",
+                          "page_snippet": "The Giant Spider: Directed by Christopher R. Mihm. With Shannon McDonough, Daniel Sjerven, Billie Jo Konze, Michael Cook. When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it&#x27;s up to a trio of scientists, an Army general, and a newspaper reporter ...The Giant Spider: Directed by Christopher R. Mihm. With Shannon McDonough, Daniel Sjerven, Billie Jo Konze, Michael Cook. When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it's up to a trio of scientists, an Army general, and a newspaper reporter and his fiancée to figure out how to stop the hungry beast. Christopher R. Mihm ... Action/Horror Feature, First Place: 2013 Highway 61 Film Festival. ... Beginning just minutes into the movie and continuing throughout the movie sporadically, the dialogue does not match the closed captioning. ... The Giant Spider Theme Written by Josh Cruz & Richard C. Boyce Performed by The Night Hobs ... The is the 8th movie made my Christopher R. Mihm, all of which pay loving homage to those wonderful B 'monster' movies of the 1950's. Well, except one which is really a murder mystery. The is the 8th movie made my Christopher R. Mihm, all of which pay loving homage to those wonderful B 'monster' movies of the 1950's. Well, except one which is really a murder mystery. If you love watching Them or Robot Monster, seeing actors like John Agar and Richard Carlson on the screen, being amazed at the world of 50's style special effects (only better I think), you can't help but love Mr. Mihm's movies. Christopher R. Mihm ... Christopher R. Mihm",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Christopher R. Mihm - News - IMDb",
+                          "page_url": "https://www.imdb.com/name/nm2265115/news",
+                          "page_snippet": "Christopher R. Mihm on IMDb: Movies, Tv, Celebrities, and more...While I personally love modern horror films and all of their deliciously gory bells and whistles, my heart belongs to the old black and white horror/sci-fi flicks of the 50s and 60s. If you're in the same camp as I am, you'd better listen up. Below you'll find the first official trailer and artwork for writer/director Christopher R. Mihm's new tale of old terrors, The Late Night Double Feature... a 2-in-1 film if you will. If you're in the same camp as I am, you'd better listen up. Below you'll find the first official trailer and artwork for writer/director Christopher R. Mihm's new tale of old terrors, The Late Night Double Feature... a 2-in-1 film if you will. Shane Donahue, Cherie \"Rhuby\" Gallinati, Mark Haider, Elizabeth Kaiser, Michael Kaiser, Stephanie Mihm, Daniel R. Sjerven, J. Andrew Wilkins, Mike Cook, Catherine Hansen, Alice Mihm, Daniel Mihm, Elliott Mihm, James Norgard, and Douglas Sidney star. Below you'll find the first official trailer and artwork for writer/director Christopher R. Mihm's new tale of old terrors, The Late Night Double Feature... a 2-in-1 film if you will. Shane Donahue, Cherie \"Rhuby\" Gallinati, Mark Haider, Elizabeth Kaiser, Michael Kaiser, Stephanie Mihm, Daniel R. Sjerven, J. Andrew Wilkins, Mike Cook, Catherine Hansen, Alice Mihm, Daniel Mihm, Elliott Mihm, James Norgard, and Douglas Sidney star. The Late Night Double Feature was written, directed, and edited by Christopher R. Mihm with stop-motion animation by Norman Yeend. The film is available now so order your copy today! Synopsis: When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it's up to a trio of scientists, an Army general, a newspaper reporter, and his fiancée to figure out how to stop the hungry beast from devouring the entire county in writer/director Christopher R. Mihm's ode to the giant bug films of yesteryear!",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Amazon.com: The Giant Spider : Christopher R. Mihm: Movies & TV",
+                          "page_url": "https://www.amazon.com/Giant-Spider-Christopher-R-Mihm/dp/B00CZC9QZQ",
+                          "page_snippet": "Find The Giant Spider at Amazon.com Movies &amp; TV, home of thousands of titles on DVD and Blu-ray.SYNOPSIS When radiation left behind by atomic weapons testing creates a gigantic killer mutant arachnid, it's up to a trio of scientists (Mike Cook, Billie Jo Konze and James Norgard), an Army general (Mark Haider), and a newspaper reporter (Daniel R. Sjerven) and his fiancée (Shannon McDonough) to figure out how to stop the hungry beast from devouring the entire county in writer/director Christopher R. Mihm's 2013 ode to the giant bug films of yesteryear. ... Director ‏ : ‎ Christopher R. Mihm Christopher R. Mihm (Director) Format: DVD I am in love with the works of Christopher Mihm, his family, and collective of associates. My father and I bonded over drive-in monster and horror movies that he enjoyed as a child (the first one he shared with me was the Thing from Another World). Perhaps these movies are not for everyone. Personally, I love the DIY film-making and total commitment to the world (or Mihmiverse) that the story creates. I sincerely appreciate Mihm making these films: like any body of work, some films stand out more than others, and while this wasn't my favorite of his films, it's still an amusing diversion when approached from the correct vantage point. If you are new to the Mihmverse, this isn't the place I'd start, but if you are a fan of the genre odds are you'll like it. ... 5.0 out of 5 stars Just as title promises. Process shots that should make Bert I Gordon jealous Reviewed in the United States 🇺🇸 on May 24, 2020 ... I am in love with the works of Christopher Mihm, his family, and collective of associates.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

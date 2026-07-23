@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-019",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T11:30:00Z",
+  "stoppedAt": "2026-07-23T11:30:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "9347955d-33af-4f51-a198-2187a1f7504b",
+    "query_time": "03/13/2024, 10:20:04 PT",
+    "domain": "movie",
+    "question_type": "simple_w_condition",
+    "static_or_dynamic": "slow-changing"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784806200000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-019",
+                      "chatInput": "what is the highest-grossing r-rated movie?",
+                      "interaction_id": "9347955d-33af-4f51-a198-2187a1f7504b",
+                      "domain": "movie"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784806200028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 168,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "what is the highest-grossing r-rated movie?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784806200265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 763,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "r/marvelstudios on Reddit: Will Deadpool 3 become the highest ...",
+                                "page_url": "https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/",
+                                "page_snippet": "As of right now, <strong>Joker (2019)</strong> currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker&#x27;s record? Perhaps make 1 billion and 300-500 ...As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? Perhaps make 1 billion and 300-500 million dollars or more? Thoughts… Share ... I highly doubt it. Getting genral audiences to go see movies has been a bit harder in recent years and marvel movies have been a big indication of that. But only 6 movies passed $1 billion, and a rated R movie is less likely to appeal to the masses. It can do very well. But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Which begs to my most interesting question. As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Wolverine is coming back, and ticket prices have gone up what like 12% since 2018? The movie does have to contend with a massive amount of fan apathy, and Joker was able to appeal to non-superhero fans by being a psychological social commentary first, and a Joker story second.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "r/marvelstudios on Reddit: Will Deadpool 3 become the highest ...",
+                                "page_url": "https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/",
+                                "page_snippet": "As of right now, <strong>Joker (2019)</strong> currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker&#x27;s record? Perhaps make 1 billion and 300-500 ...As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? Perhaps make 1 billion and 300-500 million dollars or more? Thoughts… Share ... I highly doubt it. Getting genral audiences to go see movies has been a bit harder in recent years and marvel movies have been a big indication of that. But only 6 movies passed $1 billion, and a rated R movie is less likely to appeal to the masses. It can do very well. But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Which begs to my most interesting question. As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Wolverine is coming back, and ticket prices have gone up what like 12% since 2018? The movie does have to contend with a massive amount of fan apathy, and Joker was able to appeal to non-superhero fans by being a psychological social commentary first, and a Joker story second.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "r/marvelstudios on Reddit: Will Deadpool 3 become the highest ...",
+                                "page_url": "https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/",
+                                "page_snippet": "As of right now, <strong>Joker (2019)</strong> currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker&#x27;s record? Perhaps make 1 billion and 300-500 ...As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? Perhaps make 1 billion and 300-500 million dollars or more? Thoughts… Share ... I highly doubt it. Getting genral audiences to go see movies has been a bit harder in recent years and marvel movies have been a big indication of that. But only 6 movies passed $1 billion, and a rated R movie is less likely to appeal to the masses. It can do very well. But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Which begs to my most interesting question. As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Wolverine is coming back, and ticket prices have gone up what like 12% since 2018? The movie does have to contend with a massive amount of fan apathy, and Joker was able to appeal to non-superhero fans by being a psychological social commentary first, and a Joker story second.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "r/marvelstudios on Reddit: Will Deadpool 3 become the highest ...",
+                          "page_url": "https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/",
+                          "page_snippet": "As of right now, <strong>Joker (2019)</strong> currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker&#x27;s record? Perhaps make 1 billion and 300-500 ...As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? Perhaps make 1 billion and 300-500 million dollars or more? Thoughts… Share ... I highly doubt it. Getting genral audiences to go see movies has been a bit harder in recent years and marvel movies have been a big indication of that. But only 6 movies passed $1 billion, and a rated R movie is less likely to appeal to the masses. It can do very well. But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Which begs to my most interesting question. As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Wolverine is coming back, and ticket prices have gone up what like 12% since 2018? The movie does have to contend with a massive amount of fan apathy, and Joker was able to appeal to non-superhero fans by being a psychological social commentary first, and a Joker story second.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "r/marvelstudios on Reddit: Will Deadpool 3 become the highest ...",
+                          "page_url": "https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/",
+                          "page_snippet": "As of right now, <strong>Joker (2019)</strong> currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker&#x27;s record? Perhaps make 1 billion and 300-500 ...As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? Perhaps make 1 billion and 300-500 million dollars or more? Thoughts… Share ... I highly doubt it. Getting genral audiences to go see movies has been a bit harder in recent years and marvel movies have been a big indication of that. But only 6 movies passed $1 billion, and a rated R movie is less likely to appeal to the masses. It can do very well. But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Which begs to my most interesting question. As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Wolverine is coming back, and ticket prices have gone up what like 12% since 2018? The movie does have to contend with a massive amount of fan apathy, and Joker was able to appeal to non-superhero fans by being a psychological social commentary first, and a Joker story second.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "r/marvelstudios on Reddit: Will Deadpool 3 become the highest ...",
+                          "page_url": "https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/",
+                          "page_snippet": "As of right now, <strong>Joker (2019)</strong> currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker&#x27;s record? Perhaps make 1 billion and 300-500 ...As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? Perhaps make 1 billion and 300-500 million dollars or more? Thoughts… Share ... I highly doubt it. Getting genral audiences to go see movies has been a bit harder in recent years and marvel movies have been a big indication of that. But only 6 movies passed $1 billion, and a rated R movie is less likely to appeal to the masses. It can do very well. But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Which begs to my most interesting question. As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Wolverine is coming back, and ticket prices have gone up what like 12% since 2018? The movie does have to contend with a massive amount of fan apathy, and Joker was able to appeal to non-superhero fans by being a psychological social commentary first, and a Joker story second.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784806201412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1218,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "joker.\n\n信息来源：\n1. r/marvelstudios on Reddit: Will Deadpool 3 become the highest ... - https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/\n2. r/marvelstudios on Reddit: Will Deadpool 3 become the highest ... - https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/\n3. r/marvelstudios on Reddit: Will Deadpool 3 become the highest ... - https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/",
+                      "query": "what is the highest-grossing r-rated movie?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "what is the highest-grossing r-rated movie?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "r/marvelstudios on Reddit: Will Deadpool 3 become the highest ...",
+                          "page_url": "https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/",
+                          "page_snippet": "As of right now, <strong>Joker (2019)</strong> currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker&#x27;s record? Perhaps make 1 billion and 300-500 ...As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? Perhaps make 1 billion and 300-500 million dollars or more? Thoughts… Share ... I highly doubt it. Getting genral audiences to go see movies has been a bit harder in recent years and marvel movies have been a big indication of that. But only 6 movies passed $1 billion, and a rated R movie is less likely to appeal to the masses. It can do very well. But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Which begs to my most interesting question. As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Wolverine is coming back, and ticket prices have gone up what like 12% since 2018? The movie does have to contend with a massive amount of fan apathy, and Joker was able to appeal to non-superhero fans by being a psychological social commentary first, and a Joker story second.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "r/marvelstudios on Reddit: Will Deadpool 3 become the highest ...",
+                          "page_url": "https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/",
+                          "page_snippet": "As of right now, <strong>Joker (2019)</strong> currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker&#x27;s record? Perhaps make 1 billion and 300-500 ...As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? Perhaps make 1 billion and 300-500 million dollars or more? Thoughts… Share ... I highly doubt it. Getting genral audiences to go see movies has been a bit harder in recent years and marvel movies have been a big indication of that. But only 6 movies passed $1 billion, and a rated R movie is less likely to appeal to the masses. It can do very well. But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Which begs to my most interesting question. As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Wolverine is coming back, and ticket prices have gone up what like 12% since 2018? The movie does have to contend with a massive amount of fan apathy, and Joker was able to appeal to non-superhero fans by being a psychological social commentary first, and a Joker story second.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "r/marvelstudios on Reddit: Will Deadpool 3 become the highest ...",
+                          "page_url": "https://www.reddit.com/r/marvelstudios/comments/1alal0y/will_deadpool_3_become_the_highest_grossing_r/",
+                          "page_snippet": "As of right now, <strong>Joker (2019)</strong> currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker&#x27;s record? Perhaps make 1 billion and 300-500 ...As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? Perhaps make 1 billion and 300-500 million dollars or more? Thoughts… Share ... I highly doubt it. Getting genral audiences to go see movies has been a bit harder in recent years and marvel movies have been a big indication of that. But only 6 movies passed $1 billion, and a rated R movie is less likely to appeal to the masses. It can do very well. But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Which begs to my most interesting question. As of right now, Joker (2019) currently has the record of being the highest grossing R Rated film ever. Making a billion dollars worldwide. And we know for certain Deadpool 3 will certainly make big banks once it comes out. But can it beat Joker's record? But reaching $1 billion post pandemic is a hard line to reach and there's not that much hype around this movie, at least currently. ... It'll probably be in the 800-900 million range. Both DP1 and DP2 grossed 780 million, the movie should be good since it's not MCU writers that have written it, it's the people who wrote the first two. Wolverine is coming back, and ticket prices have gone up what like 12% since 2018? The movie does have to contend with a massive amount of fan apathy, and Joker was able to appeal to non-superhero fans by being a psychological social commentary first, and a Joker story second.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

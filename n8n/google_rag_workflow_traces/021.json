@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-021",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T11:40:00Z",
+  "stoppedAt": "2026-07-23T11:40:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "b250bf2e-a9b4-409d-8543-8b70d20c66ec",
+    "query_time": "03/19/2024, 23:40:04 PT",
+    "domain": "movie",
+    "question_type": "simple",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784806800000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-021",
+                      "chatInput": "on a worldwide scale, what did abscond earn in box office sales?",
+                      "interaction_id": "b250bf2e-a9b4-409d-8543-8b70d20c66ec",
+                      "domain": "movie"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784806800028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 190,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "on a worldwide scale, what did abscond earn in box office sales?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784806800265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 831,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "'John Wick: Chapter 4' Passes $350 Million at Global Box Office",
+                                "page_url": "https://collider.com/john-wick-chapter-4-global-box-office-350-million/",
+                                "page_snippet": "John Wick: Chapter 4 continues to pull in significant numbers at the box office, passing $350 million globally.'John Wick 4' is the highest-grossing film of the series at the worldwide box office. After nearly a month in theaters, John Wick: Chapter 4 has passed the $350 million mark at the global box office, extending its lead over John Wick: Chapter 3 — Parabellum as the highest-grossing movie in the action franchise. It is currently the fifth highest-grossing film of 2023 worldwide, ahead of fellow March hit Creed III. John Wick 4 has grossed $160 million domestically, and nearly $190 million from overseas territories, for a global haul of exactly $350 million. It is currently the fifth highest-grossing film of 2023 worldwide, ahead of fellow March hit Creed III. John Wick 4 has grossed $160 million domestically, and nearly $190 million from overseas territories, for a global haul of exactly $350 million. This past weekend, the film overtook John Wick 3’s lifetime global haul of $327 million to become the series’ biggest film. The only major box office record left for it to break is the third film’s $171 million lifetime domestic haul, which it should pass by the end of its run. John Wick 4 made nearly $74 million in its domestic opening weekend, and despite a considerable 62% drop in weekend two, it went on to surpass the lifetime hauls of each of its predecessors. The first to fall was the first John Wick, of course. Released nearly a decade ago in 2014, the first film was a much leaner beast; it ended its run with $86 million worldwide against a reported budget of $20 million.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "‘John Wick: Chapter 4’ Shoots Past $245 Million at the Global ...",
+                                "page_url": "https://collider.com/john-wick-4-global-box-office-245-million/",
+                                "page_snippet": "After 10 days in play, the film ... box office, of which $122 million comes from over 3,800 domestic theaters and $123 million from 75 overseas territories. John Wick 4 set franchise records in its opening weekend, when it made $73.5 million domestically and $137 million worldwide. The film has already overtaken the $86 million that the relatively modest first John Wick made in its lifetime run, as well as John Wick: Chapter 2’s $171 million worldwide haul...After 10 days in play, the film has grossed a terrific $245 million at the worldwide box office, of which $122 million comes from over 3,800 domestic theaters and $123 million from 75 overseas territories. John Wick 4 set franchise records in its opening weekend, when it made $73.5 million domestically and $137 million worldwide. The film has already overtaken the $86 million that the relatively modest first John Wick made in its lifetime run, as well as John Wick: Chapter 2’s $171 million worldwide haul. In just 10 days, 'John Wick: Chapter 4' has already overtaken the first and second films at the global box office. John Wick: Chapter 4, which star Keanu Reeves and Laurence Fishburne, has crossed $245 million at the global box office. Despite a 62% second weekend drop at the domestic box office, Lionsgate’s John Wick: Chapter 4 is performing splendidly as it enters its second week of release. After 10 days in play, the film has grossed a terrific $245 million at the worldwide box office, of which $122 million comes from over 3,800 domestic theaters and $123 million from 75 overseas territories.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "'John Wick: Chapter 4' Racks Up $122.6 Million at Domestic Box Office",
+                                "page_url": "https://collider.com/john-wick-chapter-4-domestic-box-office-122-million/",
+                                "page_snippet": "John Wick: Chapter 4 has passed $122.6 million at the domestic box office, and is expected to pass $225 million worldwide this weekend.The film is expected to pass $225 million globally this weekend. The film generated $5.6 million during Thursday night previews, and another $15.3 million on Friday. It is expected to finish the weekend with a domestic total around $40 million. This is a better than expected haul for the film, and one that sets it up in pole position to wrestle with John Wick: Chapter 4 for box office dominance. Its $73.5 million opening was a new high for the studio at the post-pandemic box office, and the hitman's return to the cinema was also the largest haul of any R-rated film after COVID-19. In addition to its high performance in the United States and Canada, John Wick: Chapter 4 has similarly been playing very well across the seas. This helped the film generate a massive $137.5 million at the global box office during its first weekend. This helped the film generate a massive $137.5 million at the global box office during its first weekend. John Wick: Chapter 4 opened in 71 international markets, and there are more on the way, as the film is playing in 75 total markets this weekend. This has it tracking for another succesful weekend across the globe, and Lionsgate said it expects the film to exceed $225 million at the worldwide box office over these three days.",
+                                "page_last_modified": ""
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "'John Wick: Chapter 4' Passes $350 Million at Global Box Office",
+                          "page_url": "https://collider.com/john-wick-chapter-4-global-box-office-350-million/",
+                          "page_snippet": "John Wick: Chapter 4 continues to pull in significant numbers at the box office, passing $350 million globally.'John Wick 4' is the highest-grossing film of the series at the worldwide box office. After nearly a month in theaters, John Wick: Chapter 4 has passed the $350 million mark at the global box office, extending its lead over John Wick: Chapter 3 — Parabellum as the highest-grossing movie in the action franchise. It is currently the fifth highest-grossing film of 2023 worldwide, ahead of fellow March hit Creed III. John Wick 4 has grossed $160 million domestically, and nearly $190 million from overseas territories, for a global haul of exactly $350 million. It is currently the fifth highest-grossing film of 2023 worldwide, ahead of fellow March hit Creed III. John Wick 4 has grossed $160 million domestically, and nearly $190 million from overseas territories, for a global haul of exactly $350 million. This past weekend, the film overtook John Wick 3’s lifetime global haul of $327 million to become the series’ biggest film. The only major box office record left for it to break is the third film’s $171 million lifetime domestic haul, which it should pass by the end of its run. John Wick 4 made nearly $74 million in its domestic opening weekend, and despite a considerable 62% drop in weekend two, it went on to surpass the lifetime hauls of each of its predecessors. The first to fall was the first John Wick, of course. Released nearly a decade ago in 2014, the first film was a much leaner beast; it ended its run with $86 million worldwide against a reported budget of $20 million.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "‘John Wick: Chapter 4’ Shoots Past $245 Million at the Global ...",
+                          "page_url": "https://collider.com/john-wick-4-global-box-office-245-million/",
+                          "page_snippet": "After 10 days in play, the film ... box office, of which $122 million comes from over 3,800 domestic theaters and $123 million from 75 overseas territories. John Wick 4 set franchise records in its opening weekend, when it made $73.5 million domestically and $137 million worldwide. The film has already overtaken the $86 million that the relatively modest first John Wick made in its lifetime run, as well as John Wick: Chapter 2’s $171 million worldwide haul...After 10 days in play, the film has grossed a terrific $245 million at the worldwide box office, of which $122 million comes from over 3,800 domestic theaters and $123 million from 75 overseas territories. John Wick 4 set franchise records in its opening weekend, when it made $73.5 million domestically and $137 million worldwide. The film has already overtaken the $86 million that the relatively modest first John Wick made in its lifetime run, as well as John Wick: Chapter 2’s $171 million worldwide haul. In just 10 days, 'John Wick: Chapter 4' has already overtaken the first and second films at the global box office. John Wick: Chapter 4, which star Keanu Reeves and Laurence Fishburne, has crossed $245 million at the global box office. Despite a 62% second weekend drop at the domestic box office, Lionsgate’s John Wick: Chapter 4 is performing splendidly as it enters its second week of release. After 10 days in play, the film has grossed a terrific $245 million at the worldwide box office, of which $122 million comes from over 3,800 domestic theaters and $123 million from 75 overseas territories.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "'John Wick: Chapter 4' Racks Up $122.6 Million at Domestic Box Office",
+                          "page_url": "https://collider.com/john-wick-chapter-4-domestic-box-office-122-million/",
+                          "page_snippet": "John Wick: Chapter 4 has passed $122.6 million at the domestic box office, and is expected to pass $225 million worldwide this weekend.The film is expected to pass $225 million globally this weekend. The film generated $5.6 million during Thursday night previews, and another $15.3 million on Friday. It is expected to finish the weekend with a domestic total around $40 million. This is a better than expected haul for the film, and one that sets it up in pole position to wrestle with John Wick: Chapter 4 for box office dominance. Its $73.5 million opening was a new high for the studio at the post-pandemic box office, and the hitman's return to the cinema was also the largest haul of any R-rated film after COVID-19. In addition to its high performance in the United States and Canada, John Wick: Chapter 4 has similarly been playing very well across the seas. This helped the film generate a massive $137.5 million at the global box office during its first weekend. This helped the film generate a massive $137.5 million at the global box office during its first weekend. John Wick: Chapter 4 opened in 71 international markets, and there are more on the way, as the film is playing in 75 total markets this weekend. This has it tracking for another succesful weekend across the globe, and Lionsgate said it expects the film to exceed $225 million at the worldwide box office over these three days.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784806801412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1332,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "500\n\n信息来源：\n1. 'John Wick: Chapter 4' Passes $350 Million at Global Box Office - https://collider.com/john-wick-chapter-4-global-box-office-350-million/\n2. ‘John Wick: Chapter 4’ Shoots Past $245 Million at the Global ... - https://collider.com/john-wick-4-global-box-office-245-million/\n3. 'John Wick: Chapter 4' Racks Up $122.6 Million at Domestic Box Office - https://collider.com/john-wick-chapter-4-domestic-box-office-122-million/",
+                      "query": "on a worldwide scale, what did abscond earn in box office sales?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "on a worldwide scale, what did abscond earn in box office sales?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "'John Wick: Chapter 4' Passes $350 Million at Global Box Office",
+                          "page_url": "https://collider.com/john-wick-chapter-4-global-box-office-350-million/",
+                          "page_snippet": "John Wick: Chapter 4 continues to pull in significant numbers at the box office, passing $350 million globally.'John Wick 4' is the highest-grossing film of the series at the worldwide box office. After nearly a month in theaters, John Wick: Chapter 4 has passed the $350 million mark at the global box office, extending its lead over John Wick: Chapter 3 — Parabellum as the highest-grossing movie in the action franchise. It is currently the fifth highest-grossing film of 2023 worldwide, ahead of fellow March hit Creed III. John Wick 4 has grossed $160 million domestically, and nearly $190 million from overseas territories, for a global haul of exactly $350 million. It is currently the fifth highest-grossing film of 2023 worldwide, ahead of fellow March hit Creed III. John Wick 4 has grossed $160 million domestically, and nearly $190 million from overseas territories, for a global haul of exactly $350 million. This past weekend, the film overtook John Wick 3’s lifetime global haul of $327 million to become the series’ biggest film. The only major box office record left for it to break is the third film’s $171 million lifetime domestic haul, which it should pass by the end of its run. John Wick 4 made nearly $74 million in its domestic opening weekend, and despite a considerable 62% drop in weekend two, it went on to surpass the lifetime hauls of each of its predecessors. The first to fall was the first John Wick, of course. Released nearly a decade ago in 2014, the first film was a much leaner beast; it ended its run with $86 million worldwide against a reported budget of $20 million.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "‘John Wick: Chapter 4’ Shoots Past $245 Million at the Global ...",
+                          "page_url": "https://collider.com/john-wick-4-global-box-office-245-million/",
+                          "page_snippet": "After 10 days in play, the film ... box office, of which $122 million comes from over 3,800 domestic theaters and $123 million from 75 overseas territories. John Wick 4 set franchise records in its opening weekend, when it made $73.5 million domestically and $137 million worldwide. The film has already overtaken the $86 million that the relatively modest first John Wick made in its lifetime run, as well as John Wick: Chapter 2’s $171 million worldwide haul...After 10 days in play, the film has grossed a terrific $245 million at the worldwide box office, of which $122 million comes from over 3,800 domestic theaters and $123 million from 75 overseas territories. John Wick 4 set franchise records in its opening weekend, when it made $73.5 million domestically and $137 million worldwide. The film has already overtaken the $86 million that the relatively modest first John Wick made in its lifetime run, as well as John Wick: Chapter 2’s $171 million worldwide haul. In just 10 days, 'John Wick: Chapter 4' has already overtaken the first and second films at the global box office. John Wick: Chapter 4, which star Keanu Reeves and Laurence Fishburne, has crossed $245 million at the global box office. Despite a 62% second weekend drop at the domestic box office, Lionsgate’s John Wick: Chapter 4 is performing splendidly as it enters its second week of release. After 10 days in play, the film has grossed a terrific $245 million at the worldwide box office, of which $122 million comes from over 3,800 domestic theaters and $123 million from 75 overseas territories.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "'John Wick: Chapter 4' Racks Up $122.6 Million at Domestic Box Office",
+                          "page_url": "https://collider.com/john-wick-chapter-4-domestic-box-office-122-million/",
+                          "page_snippet": "John Wick: Chapter 4 has passed $122.6 million at the domestic box office, and is expected to pass $225 million worldwide this weekend.The film is expected to pass $225 million globally this weekend. The film generated $5.6 million during Thursday night previews, and another $15.3 million on Friday. It is expected to finish the weekend with a domestic total around $40 million. This is a better than expected haul for the film, and one that sets it up in pole position to wrestle with John Wick: Chapter 4 for box office dominance. Its $73.5 million opening was a new high for the studio at the post-pandemic box office, and the hitman's return to the cinema was also the largest haul of any R-rated film after COVID-19. In addition to its high performance in the United States and Canada, John Wick: Chapter 4 has similarly been playing very well across the seas. This helped the film generate a massive $137.5 million at the global box office during its first weekend. This helped the film generate a massive $137.5 million at the global box office during its first weekend. John Wick: Chapter 4 opened in 71 international markets, and there are more on the way, as the film is playing in 75 total markets this weekend. This has it tracking for another succesful weekend across the globe, and Lionsgate said it expects the film to exceed $225 million at the worldwide box office over these three days.",
+                          "page_last_modified": ""
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

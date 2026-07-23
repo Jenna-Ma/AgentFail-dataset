@@ -1,0 +1,210 @@
+{
+  "id": "crag-rag-exec-017",
+  "workflowName": "Google RAG Workflow with MCP",
+  "status": "success",
+  "startedAt": "2026-07-23T11:20:00Z",
+  "stoppedAt": "2026-07-23T11:20:02.670000Z",
+  "metadata": {
+    "sourceDataset": "CRAG dev v4",
+    "interaction_id": "602c6aec-f0ff-4b04-998c-299d4213fb6c",
+    "query_time": "03/19/2024, 23:06:48 PT",
+    "domain": "movie",
+    "question_type": "set",
+    "static_or_dynamic": "static"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When chat message received": [
+          {
+            "startTime": 1784805600000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "sessionId": "crag-session-017",
+                      "chatInput": "who were the actors and actresses featured in starry eyes?",
+                      "interaction_id": "602c6aec-f0ff-4b04-998c-299d4213fb6c",
+                      "domain": "movie"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Google Gemini Chat Model": [
+          {
+            "startTime": 1784805600028,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 146,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gemini-2.5-flash",
+                      "input": "who were the actors and actresses featured in starry eyes?",
+                      "systemMessage": "你是一个基于知识库(RAG)的智能助手。请严格依据知识库信息回答问题，确保内容真实可靠；回答时需注明信息来源。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "HTTP Request2": [
+          {
+            "startTime": 1784805600265,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1001,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "candidates": [
+                        {
+                          "content": {
+                            "parts": [
+                              {
+                                "text": "Retrieved relevant knowledge base passages for the user query."
+                              }
+                            ]
+                          },
+                          "groundingMetadata": {
+                            "sources": [
+                              {
+                                "page_name": "Starry Eyes: The Meaning of Astraeus Explained",
+                                "page_url": "https://screenrant.com/starry-eyes-movie-astraeus-picture-greek-mythology-connection/",
+                                "page_snippet": "Astraeus Pictures, the ominous production company at the center of the 2004 horror film Starry Eyes has a detailed meaning behind it.Astraeus Pictures, the ominous production company at the center of the 2004 horror film Starry Eyes has a detailed meaning behind it. Kevin Kölsch and Dennis Widmyer's horror film, Starry Eyes, is a bold and brutal satire of Hollywood that examines and exaggerates the type of sacrifices stars-to-be make in order to secure their place in the spotlight. Kevin Kölsch and Dennis Widmyer's horror film, Starry Eyes, is a bold and brutal satire of Hollywood that examines and exaggerates the type of sacrifices stars-to-be make in order to secure their place in the spotlight. Released in 2014 the film stood out within the genre as gory, glorified look at film industry culture and competition. The successful product of a Kickstarter campaign, Starry Eyes was praised for the aesthetic nightmare it brings forth through the journey of its protagonist, Sarah, as she pursues her dream of acting. The successful product of a Kickstarter campaign, Starry Eyes was praised for the aesthetic nightmare it brings forth through the journey of its protagonist, Sarah, as she pursues her dream of acting. A breakout performance for lead actress Alex Essoe, the character of Sarah feels eerily familiar, an innocent marred by the prospect of fame, her soft spoken passivity a guise for guttural determination. Sarah's path to stardom is muddled with making-it-in-Hollywood tropes, including competitive female friends and sexual harassment during auditions before her career takes a more gruesome turn. Wearing her gown, wig and a pentagram necklace Sarah stares into the mirror, admiring her new self as her green eyes begin to glow. According to Greek mythology, Astreaus was an astrological deity, his name directly translating to “starry”. Son of Titan gods Crius and Eurybia, Astreaus was associated with wind, dusk, and nightfall, and was married to Eos, the goddess of dawn. Astraeus and Eos, as night and day, are said to have made many offspring representing twilight. The members of Astraeus and their reborn, flawless stars are direct reference to this fact, their overnight burial acting as a satanic sort of gestation period.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Starry Eyes | Rotten Tomatoes",
+                                "page_url": "https://www.rottentomatoes.com/m/starry_eyes",
+                                "page_snippet": "A woman&#x27;s pursuit of Hollywood stardom puts her on a collision course with a satanic cult.Rent Starry Eyes on Amazon Prime Video, Vudu, Apple TV, or buy it on Amazon Prime Video, Vudu, Apple TV. ... Oof, that was Rotten. Meh, it passed the time. Starry Eyes pokes Hollywood's seedy underbelly to produce a refreshingly original horror story led by a breakout performance from Alex Essoe. Read critic reviews ... Rent Starry Eyes on Amazon Prime Video, Vudu, Apple TV, or buy it on Amazon Prime Video, Vudu, Apple TV. The former was good and the latter was really good. I think the physical transformation of Sarah Walker reminds me of Contracted and the psychological effects of her actions as her psyche starts to unravel remind me of Alyce Kills. With that said, however, I think this film does manage to stand out on its own with a surprisingly interesting story, and I don't say that because it's a horror movie, about the pressures struggling actresses face in order to achieve their dreams. Of course, this isn't particularly her fault as after she blows the producer of the film, that's when she starts acting strange and her health, both mental and physical, deteriorates greatly to the point that she pushes away all her friends who, for the most part, want her to succeed and to achiever her dreams.",
+                                "page_last_modified": ""
+                              },
+                              {
+                                "page_name": "Starry Eyes by The Weeknd - Songfacts",
+                                "page_url": "https://www.songfacts.com/facts/the-weeknd/starry-eyes",
+                                "page_snippet": "Starry Eyes by The Weeknd song meaning, lyric interpretation, video and chart positionTo be starry eyed means to be idealistically hopeful or enthusiastic. Here, The Weeknd remembers his younger days when he thought he would meet the girl of his dreams and they would live happily ever after. Now, he's older and more jaded about love, having been through his fair share of heartbreaking breakups. The in-depth discussion about the making of Jesus Christ Superstar with Ted Neeley, who played Jesus in the 1973 film. Rock Stars - especially those in the metal realm - are often enlisted for horror movies. See if you know can match the rocker to the role. Judas Priest's \"Evening Star\" is a Christmas carol that describes the journey of the Magi from a first person perspective. \"Tainted Love\" started as a 1964 soul song by Gloria Jones, became a huge hit when Soft Cell covered it in 1981, and was the basis for Rihanna's 2006 #1 \"S.O.S. (Rescue Me).\" The Garbage drummer/songwriter produced the Nirvana album Nevermind, and Smashing Pumpkins' Gish and Siamese Dream. Billie Jean, Delilah, Sara, Laura and Sharona - do you know who the girls in the songs really are? Bridesmaids, Reservoir Dogs, Willy Wonka - just a few of the flicks where characters discuss specific songs, sometimes as a prelude to murder.",
+                                "page_last_modified": " Wed, 20 Mar 2024 06:06:46 GMT"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "fileSearchResults": [
+                        {
+                          "page_name": "Starry Eyes: The Meaning of Astraeus Explained",
+                          "page_url": "https://screenrant.com/starry-eyes-movie-astraeus-picture-greek-mythology-connection/",
+                          "page_snippet": "Astraeus Pictures, the ominous production company at the center of the 2004 horror film Starry Eyes has a detailed meaning behind it.Astraeus Pictures, the ominous production company at the center of the 2004 horror film Starry Eyes has a detailed meaning behind it. Kevin Kölsch and Dennis Widmyer's horror film, Starry Eyes, is a bold and brutal satire of Hollywood that examines and exaggerates the type of sacrifices stars-to-be make in order to secure their place in the spotlight. Kevin Kölsch and Dennis Widmyer's horror film, Starry Eyes, is a bold and brutal satire of Hollywood that examines and exaggerates the type of sacrifices stars-to-be make in order to secure their place in the spotlight. Released in 2014 the film stood out within the genre as gory, glorified look at film industry culture and competition. The successful product of a Kickstarter campaign, Starry Eyes was praised for the aesthetic nightmare it brings forth through the journey of its protagonist, Sarah, as she pursues her dream of acting. The successful product of a Kickstarter campaign, Starry Eyes was praised for the aesthetic nightmare it brings forth through the journey of its protagonist, Sarah, as she pursues her dream of acting. A breakout performance for lead actress Alex Essoe, the character of Sarah feels eerily familiar, an innocent marred by the prospect of fame, her soft spoken passivity a guise for guttural determination. Sarah's path to stardom is muddled with making-it-in-Hollywood tropes, including competitive female friends and sexual harassment during auditions before her career takes a more gruesome turn. Wearing her gown, wig and a pentagram necklace Sarah stares into the mirror, admiring her new self as her green eyes begin to glow. According to Greek mythology, Astreaus was an astrological deity, his name directly translating to “starry”. Son of Titan gods Crius and Eurybia, Astreaus was associated with wind, dusk, and nightfall, and was married to Eos, the goddess of dawn. Astraeus and Eos, as night and day, are said to have made many offspring representing twilight. The members of Astraeus and their reborn, flawless stars are direct reference to this fact, their overnight burial acting as a satanic sort of gestation period.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Starry Eyes | Rotten Tomatoes",
+                          "page_url": "https://www.rottentomatoes.com/m/starry_eyes",
+                          "page_snippet": "A woman&#x27;s pursuit of Hollywood stardom puts her on a collision course with a satanic cult.Rent Starry Eyes on Amazon Prime Video, Vudu, Apple TV, or buy it on Amazon Prime Video, Vudu, Apple TV. ... Oof, that was Rotten. Meh, it passed the time. Starry Eyes pokes Hollywood's seedy underbelly to produce a refreshingly original horror story led by a breakout performance from Alex Essoe. Read critic reviews ... Rent Starry Eyes on Amazon Prime Video, Vudu, Apple TV, or buy it on Amazon Prime Video, Vudu, Apple TV. The former was good and the latter was really good. I think the physical transformation of Sarah Walker reminds me of Contracted and the psychological effects of her actions as her psyche starts to unravel remind me of Alyce Kills. With that said, however, I think this film does manage to stand out on its own with a surprisingly interesting story, and I don't say that because it's a horror movie, about the pressures struggling actresses face in order to achieve their dreams. Of course, this isn't particularly her fault as after she blows the producer of the film, that's when she starts acting strange and her health, both mental and physical, deteriorates greatly to the point that she pushes away all her friends who, for the most part, want her to succeed and to achiever her dreams.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Starry Eyes by The Weeknd - Songfacts",
+                          "page_url": "https://www.songfacts.com/facts/the-weeknd/starry-eyes",
+                          "page_snippet": "Starry Eyes by The Weeknd song meaning, lyric interpretation, video and chart positionTo be starry eyed means to be idealistically hopeful or enthusiastic. Here, The Weeknd remembers his younger days when he thought he would meet the girl of his dreams and they would live happily ever after. Now, he's older and more jaded about love, having been through his fair share of heartbreaking breakups. The in-depth discussion about the making of Jesus Christ Superstar with Ted Neeley, who played Jesus in the 1973 film. Rock Stars - especially those in the metal realm - are often enlisted for horror movies. See if you know can match the rocker to the role. Judas Priest's \"Evening Star\" is a Christmas carol that describes the journey of the Magi from a first person perspective. \"Tainted Love\" started as a 1964 soul song by Gloria Jones, became a huge hit when Soft Cell covered it in 1981, and was the basis for Rihanna's 2006 #1 \"S.O.S. (Rescue Me).\" The Garbage drummer/songwriter produced the Nirvana album Nevermind, and Smashing Pumpkins' Gish and Siamese Dream. Billie Jean, Delilah, Sara, Laura and Sharona - do you know who the girls in the songs really are? Bridesmaids, Reservoir Dogs, Willy Wonka - just a few of the flicks where characters discuss specific songs, sometimes as a prelude to murder.",
+                          "page_last_modified": " Wed, 20 Mar 2024 06:06:46 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": 1784805601412,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 1446,
+            "source": [
+              {
+                "previousNode": "When chat message received"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "alex essoe, amanda fuller, fabianne therese, noah segan, shane coffey, natalie castillo, nick simmons, pat healy, louis dezseran, maria olsen, marc senter, bridget colella, bradley hawkins, danny minnick, elissa dowling, trent haaga, akchtonin ramos, denis bolotski, emma jacobs, natalija ugrina, danika galindo\n\n信息来源：\n1. Starry Eyes: The Meaning of Astraeus Explained - https://screenrant.com/starry-eyes-movie-astraeus-picture-greek-mythology-connection/\n2. Starry Eyes | Rotten Tomatoes - https://www.rottentomatoes.com/m/starry_eyes\n3. Starry Eyes by The Weeknd - Songfacts - https://www.songfacts.com/facts/the-weeknd/starry-eyes",
+                      "query": "who were the actors and actresses featured in starry eyes?",
+                      "toolCalls": [
+                        {
+                          "toolName": "HTTP Request2",
+                          "arguments": {
+                            "query": "who were the actors and actresses featured in starry eyes?"
+                          }
+                        }
+                      ],
+                      "citations": [
+                        {
+                          "page_name": "Starry Eyes: The Meaning of Astraeus Explained",
+                          "page_url": "https://screenrant.com/starry-eyes-movie-astraeus-picture-greek-mythology-connection/",
+                          "page_snippet": "Astraeus Pictures, the ominous production company at the center of the 2004 horror film Starry Eyes has a detailed meaning behind it.Astraeus Pictures, the ominous production company at the center of the 2004 horror film Starry Eyes has a detailed meaning behind it. Kevin Kölsch and Dennis Widmyer's horror film, Starry Eyes, is a bold and brutal satire of Hollywood that examines and exaggerates the type of sacrifices stars-to-be make in order to secure their place in the spotlight. Kevin Kölsch and Dennis Widmyer's horror film, Starry Eyes, is a bold and brutal satire of Hollywood that examines and exaggerates the type of sacrifices stars-to-be make in order to secure their place in the spotlight. Released in 2014 the film stood out within the genre as gory, glorified look at film industry culture and competition. The successful product of a Kickstarter campaign, Starry Eyes was praised for the aesthetic nightmare it brings forth through the journey of its protagonist, Sarah, as she pursues her dream of acting. The successful product of a Kickstarter campaign, Starry Eyes was praised for the aesthetic nightmare it brings forth through the journey of its protagonist, Sarah, as she pursues her dream of acting. A breakout performance for lead actress Alex Essoe, the character of Sarah feels eerily familiar, an innocent marred by the prospect of fame, her soft spoken passivity a guise for guttural determination. Sarah's path to stardom is muddled with making-it-in-Hollywood tropes, including competitive female friends and sexual harassment during auditions before her career takes a more gruesome turn. Wearing her gown, wig and a pentagram necklace Sarah stares into the mirror, admiring her new self as her green eyes begin to glow. According to Greek mythology, Astreaus was an astrological deity, his name directly translating to “starry”. Son of Titan gods Crius and Eurybia, Astreaus was associated with wind, dusk, and nightfall, and was married to Eos, the goddess of dawn. Astraeus and Eos, as night and day, are said to have made many offspring representing twilight. The members of Astraeus and their reborn, flawless stars are direct reference to this fact, their overnight burial acting as a satanic sort of gestation period.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Starry Eyes | Rotten Tomatoes",
+                          "page_url": "https://www.rottentomatoes.com/m/starry_eyes",
+                          "page_snippet": "A woman&#x27;s pursuit of Hollywood stardom puts her on a collision course with a satanic cult.Rent Starry Eyes on Amazon Prime Video, Vudu, Apple TV, or buy it on Amazon Prime Video, Vudu, Apple TV. ... Oof, that was Rotten. Meh, it passed the time. Starry Eyes pokes Hollywood's seedy underbelly to produce a refreshingly original horror story led by a breakout performance from Alex Essoe. Read critic reviews ... Rent Starry Eyes on Amazon Prime Video, Vudu, Apple TV, or buy it on Amazon Prime Video, Vudu, Apple TV. The former was good and the latter was really good. I think the physical transformation of Sarah Walker reminds me of Contracted and the psychological effects of her actions as her psyche starts to unravel remind me of Alyce Kills. With that said, however, I think this film does manage to stand out on its own with a surprisingly interesting story, and I don't say that because it's a horror movie, about the pressures struggling actresses face in order to achieve their dreams. Of course, this isn't particularly her fault as after she blows the producer of the film, that's when she starts acting strange and her health, both mental and physical, deteriorates greatly to the point that she pushes away all her friends who, for the most part, want her to succeed and to achiever her dreams.",
+                          "page_last_modified": ""
+                        },
+                        {
+                          "page_name": "Starry Eyes by The Weeknd - Songfacts",
+                          "page_url": "https://www.songfacts.com/facts/the-weeknd/starry-eyes",
+                          "page_snippet": "Starry Eyes by The Weeknd song meaning, lyric interpretation, video and chart positionTo be starry eyed means to be idealistically hopeful or enthusiastic. Here, The Weeknd remembers his younger days when he thought he would meet the girl of his dreams and they would live happily ever after. Now, he's older and more jaded about love, having been through his fair share of heartbreaking breakups. The in-depth discussion about the making of Jesus Christ Superstar with Ted Neeley, who played Jesus in the 1973 film. Rock Stars - especially those in the metal realm - are often enlisted for horror movies. See if you know can match the rocker to the role. Judas Priest's \"Evening Star\" is a Christmas carol that describes the journey of the Magi from a first person perspective. \"Tainted Love\" started as a 1964 soul song by Gloria Jones, became a huge hit when Soft Cell covered it in 1981, and was the basis for Rihanna's 2006 #1 \"S.O.S. (Rescue Me).\" The Garbage drummer/songwriter produced the Nirvana album Nevermind, and Smashing Pumpkins' Gish and Siamese Dream. Billie Jean, Delilah, Sara, Laura and Sharona - do you know who the girls in the songs really are? Bridesmaids, Reservoir Dogs, Willy Wonka - just a few of the flicks where characters discuss specific songs, sometimes as a prelude to murder.",
+                          "page_last_modified": " Wed, 20 Mar 2024 06:06:46 GMT"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
