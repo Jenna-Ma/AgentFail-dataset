@@ -1,0 +1,226 @@
+{
+  "id": "mock-exec-026",
+  "workflowName": "海报生成器",
+  "status": "success",
+  "startedAt": "2026-07-23T11:55:00Z",
+  "stoppedAt": "2026-07-23T11:55:07.640000Z",
+  "data": {
+    "resultData": {
+      "runData": {
+        "On form submission": [
+          {
+            "startTime": 1784807700000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "主标题": "元宇宙音乐现场",
+                      "副标题": "虚拟舞台点亮真实热情",
+                      "辅助信息": "支持线上观演与数字周边领取",
+                      "海报风格": "赛博朋克风格",
+                      "submittedAt": "2026-07-23T11:55:00Z"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Switch1": [
+          {
+            "startTime": 1784807700014,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "On form submission"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                [],
+                [],
+                [
+                  {
+                    "json": {
+                      "主标题": "元宇宙音乐现场",
+                      "副标题": "虚拟舞台点亮真实热情",
+                      "辅助信息": "支持线上观演与数字周边领取",
+                      "海报风格": "赛博朋克风格"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "赛博朋克风格": [
+          {
+            "startTime": 1784807700025,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Switch1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "Prompt": "cyberpunk neon glow, futuristic city atmosphere, magenta and cyan contrast, dramatic perspective"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Aggregate1": [
+          {
+            "startTime": 1784807700037,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "赛博朋克风格"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": [
+                        {
+                          "Prompt": "cyberpunk neon glow, futuristic city atmosphere, magenta and cyan contrast, dramatic perspective"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Basic LLM Chain": [
+          {
+            "startTime": 1784807700118,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 1210,
+            "source": [
+              {
+                "previousNode": "Aggregate1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "text": "一张纵向海报画面，主视觉突出“元宇宙音乐现场”，副标题“虚拟舞台点亮真实热情”以清晰有层次的方式与主标题形成呼应，辅助信息“支持线上观演与数字周边领取”自然融入版面说明区域。整体视觉遵循 cyberpunk neon glow, futuristic city atmosphere, magenta and cyan contrast, dramatic perspective 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI": [
+          {
+            "startTime": 1784807701360,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 6060,
+            "source": [
+              {
+                "previousNode": "Basic LLM Chain"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "revisedPrompt": "一张纵向海报画面，主视觉突出“元宇宙音乐现场”，副标题“虚拟舞台点亮真实热情”以清晰有层次的方式与主标题形成呼应，辅助信息“支持线上观演与数字周边领取”自然融入版面说明区域。整体视觉遵循 cyberpunk neon glow, futuristic city atmosphere, magenta and cyan contrast, dramatic perspective 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "binary": {
+                      "data": {
+                        "mimeType": "image/png",
+                        "fileExtension": "png",
+                        "fileName": "元宇宙音乐现场-赛博朋克风格.png"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Read/Write Files from Disk": [
+          {
+            "startTime": 1784807707560,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 17,
+            "source": [
+              {
+                "previousNode": "OpenAI"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "filePath": "./n8ndata/元宇宙音乐现场-赛博朋克风格.png",
+                      "written": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

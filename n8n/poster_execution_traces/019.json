@@ -1,0 +1,226 @@
+{
+  "id": "mock-exec-019",
+  "workflowName": "海报生成器",
+  "status": "success",
+  "startedAt": "2026-07-23T11:06:00Z",
+  "stoppedAt": "2026-07-23T11:06:07.640000Z",
+  "data": {
+    "resultData": {
+      "runData": {
+        "On form submission": [
+          {
+            "startTime": 1784804760000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "主标题": "自由说唱开放麦",
+                      "副标题": "今晚把灵感喊出来",
+                      "辅助信息": "现场抽签顺序，欢迎即兴合作",
+                      "海报风格": "涂鸦风格",
+                      "submittedAt": "2026-07-23T11:06:00Z"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Switch1": [
+          {
+            "startTime": 1784804760014,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "On form submission"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                  {
+                    "json": {
+                      "主标题": "自由说唱开放麦",
+                      "副标题": "今晚把灵感喊出来",
+                      "辅助信息": "现场抽签顺序，欢迎即兴合作",
+                      "海报风格": "涂鸦风格"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                [],
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "涂鸦风格": [
+          {
+            "startTime": 1784804760025,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Switch1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "Prompt": "graffiti lettering, street art energy, paint splashes, bold irregular strokes, urban vibe"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Aggregate1": [
+          {
+            "startTime": 1784804760037,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "涂鸦风格"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": [
+                        {
+                          "Prompt": "graffiti lettering, street art energy, paint splashes, bold irregular strokes, urban vibe"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Basic LLM Chain": [
+          {
+            "startTime": 1784804760118,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 1429,
+            "source": [
+              {
+                "previousNode": "Aggregate1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "text": "一张纵向海报画面，主视觉突出“自由说唱开放麦”，副标题“今晚把灵感喊出来”以清晰有层次的方式与主标题形成呼应，辅助信息“现场抽签顺序，欢迎即兴合作”自然融入版面说明区域。整体视觉遵循 graffiti lettering, street art energy, paint splashes, bold irregular strokes, urban vibe 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI": [
+          {
+            "startTime": 1784804761360,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 6170,
+            "source": [
+              {
+                "previousNode": "Basic LLM Chain"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "revisedPrompt": "一张纵向海报画面，主视觉突出“自由说唱开放麦”，副标题“今晚把灵感喊出来”以清晰有层次的方式与主标题形成呼应，辅助信息“现场抽签顺序，欢迎即兴合作”自然融入版面说明区域。整体视觉遵循 graffiti lettering, street art energy, paint splashes, bold irregular strokes, urban vibe 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "binary": {
+                      "data": {
+                        "mimeType": "image/png",
+                        "fileExtension": "png",
+                        "fileName": "自由说唱开放麦-涂鸦风格.png"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Read/Write Files from Disk": [
+          {
+            "startTime": 1784804767560,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 16,
+            "source": [
+              {
+                "previousNode": "OpenAI"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "filePath": "./n8ndata/自由说唱开放麦-涂鸦风格.png",
+                      "written": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

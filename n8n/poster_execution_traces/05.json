@@ -1,0 +1,226 @@
+{
+  "id": "mock-exec-005",
+  "workflowName": "海报生成器",
+  "status": "success",
+  "startedAt": "2026-07-23T09:28:00Z",
+  "stoppedAt": "2026-07-23T09:28:07.640000Z",
+  "data": {
+    "resultData": {
+      "runData": {
+        "On form submission": [
+          {
+            "startTime": 1784798880000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "主标题": "黑胶主题派对",
+                      "副标题": "把老歌放回周末现场",
+                      "辅助信息": "复古着装可获限定饮品",
+                      "海报风格": "复古风格",
+                      "submittedAt": "2026-07-23T09:28:00Z"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Switch1": [
+          {
+            "startTime": 1784798880014,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "On form submission"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                [],
+                [],
+                [],
+                [
+                  {
+                    "json": {
+                      "主标题": "黑胶主题派对",
+                      "副标题": "把老歌放回周末现场",
+                      "辅助信息": "复古着装可获限定饮品",
+                      "海报风格": "复古风格"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "复古风格": [
+          {
+            "startTime": 1784798880025,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Switch1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "Prompt": "retro poster texture, aged paper, nostalgic tones, classic print composition, analog warmth"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Aggregate1": [
+          {
+            "startTime": 1784798880037,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "复古风格"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": [
+                        {
+                          "Prompt": "retro poster texture, aged paper, nostalgic tones, classic print composition, analog warmth"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Basic LLM Chain": [
+          {
+            "startTime": 1784798880118,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 1502,
+            "source": [
+              {
+                "previousNode": "Aggregate1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "text": "一张纵向海报画面，主视觉突出“黑胶主题派对”，副标题“把老歌放回周末现场”以清晰有层次的方式与主标题形成呼应，辅助信息“复古着装可获限定饮品”自然融入版面说明区域。整体视觉遵循 retro poster texture, aged paper, nostalgic tones, classic print composition, analog warmth 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI": [
+          {
+            "startTime": 1784798881360,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 5950,
+            "source": [
+              {
+                "previousNode": "Basic LLM Chain"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "revisedPrompt": "一张纵向海报画面，主视觉突出“黑胶主题派对”，副标题“把老歌放回周末现场”以清晰有层次的方式与主标题形成呼应，辅助信息“复古着装可获限定饮品”自然融入版面说明区域。整体视觉遵循 retro poster texture, aged paper, nostalgic tones, classic print composition, analog warmth 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "binary": {
+                      "data": {
+                        "mimeType": "image/png",
+                        "fileExtension": "png",
+                        "fileName": "黑胶主题派对-复古风格.png"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Read/Write Files from Disk": [
+          {
+            "startTime": 1784798887560,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 17,
+            "source": [
+              {
+                "previousNode": "OpenAI"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "filePath": "./n8ndata/黑胶主题派对-复古风格.png",
+                      "written": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

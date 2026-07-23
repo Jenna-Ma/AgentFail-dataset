@@ -1,0 +1,226 @@
+{
+  "id": "mock-exec-027",
+  "workflowName": "海报生成器",
+  "status": "success",
+  "startedAt": "2026-07-23T12:02:00Z",
+  "stoppedAt": "2026-07-23T12:02:07.640000Z",
+  "data": {
+    "resultData": {
+      "runData": {
+        "On form submission": [
+          {
+            "startTime": 1784808120000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "主标题": "老电影回顾月",
+                      "副标题": "在银幕颗粒里重温经典",
+                      "辅助信息": "每周五晚映后都有观众交流",
+                      "海报风格": "复古风格",
+                      "submittedAt": "2026-07-23T12:02:00Z"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Switch1": [
+          {
+            "startTime": 1784808120014,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "On form submission"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                [],
+                [],
+                [],
+                [
+                  {
+                    "json": {
+                      "主标题": "老电影回顾月",
+                      "副标题": "在银幕颗粒里重温经典",
+                      "辅助信息": "每周五晚映后都有观众交流",
+                      "海报风格": "复古风格"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "复古风格": [
+          {
+            "startTime": 1784808120025,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Switch1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "Prompt": "retro poster texture, aged paper, nostalgic tones, classic print composition, analog warmth"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Aggregate1": [
+          {
+            "startTime": 1784808120037,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "复古风格"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": [
+                        {
+                          "Prompt": "retro poster texture, aged paper, nostalgic tones, classic print composition, analog warmth"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Basic LLM Chain": [
+          {
+            "startTime": 1784808120118,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 1283,
+            "source": [
+              {
+                "previousNode": "Aggregate1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "text": "一张纵向海报画面，主视觉突出“老电影回顾月”，副标题“在银幕颗粒里重温经典”以清晰有层次的方式与主标题形成呼应，辅助信息“每周五晚映后都有观众交流”自然融入版面说明区域。整体视觉遵循 retro poster texture, aged paper, nostalgic tones, classic print composition, analog warmth 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI": [
+          {
+            "startTime": 1784808121360,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 6170,
+            "source": [
+              {
+                "previousNode": "Basic LLM Chain"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "revisedPrompt": "一张纵向海报画面，主视觉突出“老电影回顾月”，副标题“在银幕颗粒里重温经典”以清晰有层次的方式与主标题形成呼应，辅助信息“每周五晚映后都有观众交流”自然融入版面说明区域。整体视觉遵循 retro poster texture, aged paper, nostalgic tones, classic print composition, analog warmth 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "binary": {
+                      "data": {
+                        "mimeType": "image/png",
+                        "fileExtension": "png",
+                        "fileName": "老电影回顾月-复古风格.png"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Read/Write Files from Disk": [
+          {
+            "startTime": 1784808127560,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "OpenAI"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "filePath": "./n8ndata/老电影回顾月-复古风格.png",
+                      "written": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

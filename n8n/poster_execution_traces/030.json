@@ -1,0 +1,226 @@
+{
+  "id": "mock-exec-030",
+  "workflowName": "海报生成器",
+  "status": "success",
+  "startedAt": "2026-07-23T12:23:00Z",
+  "stoppedAt": "2026-07-23T12:23:07.640000Z",
+  "data": {
+    "resultData": {
+      "runData": {
+        "On form submission": [
+          {
+            "startTime": 1784809380000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "主标题": "青年滑板赛",
+                      "副标题": "速度、平衡与风格同场较量",
+                      "辅助信息": "冠军将获得品牌联名装备",
+                      "海报风格": "涂鸦风格",
+                      "submittedAt": "2026-07-23T12:23:00Z"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Switch1": [
+          {
+            "startTime": 1784809380014,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "On form submission"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                  {
+                    "json": {
+                      "主标题": "青年滑板赛",
+                      "副标题": "速度、平衡与风格同场较量",
+                      "辅助信息": "冠军将获得品牌联名装备",
+                      "海报风格": "涂鸦风格"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                [],
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "涂鸦风格": [
+          {
+            "startTime": 1784809380025,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Switch1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "Prompt": "graffiti lettering, street art energy, paint splashes, bold irregular strokes, urban vibe"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Aggregate1": [
+          {
+            "startTime": 1784809380037,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "涂鸦风格"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": [
+                        {
+                          "Prompt": "graffiti lettering, street art energy, paint splashes, bold irregular strokes, urban vibe"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Basic LLM Chain": [
+          {
+            "startTime": 1784809380118,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 1502,
+            "source": [
+              {
+                "previousNode": "Aggregate1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "text": "一张纵向海报画面，主视觉突出“青年滑板赛”，副标题“速度、平衡与风格同场较量”以清晰有层次的方式与主标题形成呼应，辅助信息“冠军将获得品牌联名装备”自然融入版面说明区域。整体视觉遵循 graffiti lettering, street art energy, paint splashes, bold irregular strokes, urban vibe 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI": [
+          {
+            "startTime": 1784809381360,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 6060,
+            "source": [
+              {
+                "previousNode": "Basic LLM Chain"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "revisedPrompt": "一张纵向海报画面，主视觉突出“青年滑板赛”，副标题“速度、平衡与风格同场较量”以清晰有层次的方式与主标题形成呼应，辅助信息“冠军将获得品牌联名装备”自然融入版面说明区域。整体视觉遵循 graffiti lettering, street art energy, paint splashes, bold irregular strokes, urban vibe 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "binary": {
+                      "data": {
+                        "mimeType": "image/png",
+                        "fileExtension": "png",
+                        "fileName": "青年滑板赛-涂鸦风格.png"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Read/Write Files from Disk": [
+          {
+            "startTime": 1784809387560,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "OpenAI"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "filePath": "./n8ndata/青年滑板赛-涂鸦风格.png",
+                      "written": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

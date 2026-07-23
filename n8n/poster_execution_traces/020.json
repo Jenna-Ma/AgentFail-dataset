@@ -1,0 +1,226 @@
+{
+  "id": "mock-exec-020",
+  "workflowName": "海报生成器",
+  "status": "success",
+  "startedAt": "2026-07-23T11:13:00Z",
+  "stoppedAt": "2026-07-23T11:13:07.640000Z",
+  "data": {
+    "resultData": {
+      "runData": {
+        "On form submission": [
+          {
+            "startTime": 1784805180000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "主标题": "有机农夫市集",
+                      "副标题": "从产地到餐桌的周末体验",
+                      "辅助信息": "新鲜蔬果与手工面包限量供应",
+                      "海报风格": "自然风格",
+                      "submittedAt": "2026-07-23T11:13:00Z"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Switch1": [
+          {
+            "startTime": 1784805180014,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "On form submission"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                  {
+                    "json": {
+                      "主标题": "有机农夫市集",
+                      "副标题": "从产地到餐桌的周末体验",
+                      "辅助信息": "新鲜蔬果与手工面包限量供应",
+                      "海报风格": "自然风格"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "自然风格": [
+          {
+            "startTime": 1784805180025,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Switch1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "Prompt": "natural materials, soft daylight, botanical details, organic textures, calm and breathable composition"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Aggregate1": [
+          {
+            "startTime": 1784805180037,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "自然风格"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": [
+                        {
+                          "Prompt": "natural materials, soft daylight, botanical details, organic textures, calm and breathable composition"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Basic LLM Chain": [
+          {
+            "startTime": 1784805180118,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 1502,
+            "source": [
+              {
+                "previousNode": "Aggregate1"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "text": "一张纵向海报画面，主视觉突出“有机农夫市集”，副标题“从产地到餐桌的周末体验”以清晰有层次的方式与主标题形成呼应，辅助信息“新鲜蔬果与手工面包限量供应”自然融入版面说明区域。整体视觉遵循 natural materials, soft daylight, botanical details, organic textures, calm and breathable composition 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI": [
+          {
+            "startTime": 1784805181360,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 6280,
+            "source": [
+              {
+                "previousNode": "Basic LLM Chain"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "revisedPrompt": "一张纵向海报画面，主视觉突出“有机农夫市集”，副标题“从产地到餐桌的周末体验”以清晰有层次的方式与主标题形成呼应，辅助信息“新鲜蔬果与手工面包限量供应”自然融入版面说明区域。整体视觉遵循 natural materials, soft daylight, botanical details, organic textures, calm and breathable composition 的要求，画面兼顾可读性、氛围感与传播性，适合用于活动宣传海报与社交媒体封面。"
+                    },
+                    "binary": {
+                      "data": {
+                        "mimeType": "image/png",
+                        "fileExtension": "png",
+                        "fileName": "有机农夫市集-自然风格.png"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Read/Write Files from Disk": [
+          {
+            "startTime": 1784805187560,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 17,
+            "source": [
+              {
+                "previousNode": "OpenAI"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "filePath": "./n8ndata/有机农夫市集-自然风格.png",
+                      "written": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
