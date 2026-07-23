@@ -1,0 +1,350 @@
+{
+  "id": "todoist-mailbox-exec-020",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "success",
+  "startedAt": "2026-07-23T09:54:00Z",
+  "stoppedAt": "2026-07-23T09:54:01.840000Z",
+  "metadata": {
+    "scenario": "sync_existing_ok",
+    "trigger": "When clicking ‘Test workflow’",
+    "emailSubject": "Partnership proposal feedback #20",
+    "sender": "ops@lighthouse.io",
+    "taskContent": null,
+    "issueType": null
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When clicking ‘Test workflow’": [
+          {
+            "startTime": 1784800440000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T09:54:00Z",
+                      "trigger": "When clicking ‘Test workflow’"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784800440010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "When clicking ‘Test workflow’"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784800440040,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Get Starred From Inbox": [
+          {
+            "startTime": 1784800440080,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 15,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-020",
+                      "threadId": "gmail-thread-020",
+                      "Subject": "Partnership proposal feedback #20",
+                      "From": "ops@lighthouse.io",
+                      "snippet": "Hello team,\n\nRegarding partnership proposal feedback #20, can you prepare a response for the client thread. The latest c",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Open Tasks": [
+          {
+            "startTime": 1784800440120,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 14,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-020",
+                      "content": "Partnership proposal feedback #20",
+                      "description": "Follow up on email thread about partnership proposal feedback #20",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/020",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge Starred and Unread Messages": [
+          {
+            "startTime": 1784800440360,
+            "executionIndex": 7,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              },
+              {
+                "previousNode": "Get Starred From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-020",
+                      "threadId": "gmail-thread-020",
+                      "Subject": "Partnership proposal feedback #20",
+                      "From": "ops@lighthouse.io",
+                      "snippet": "Hello team,\n\nRegarding partnership proposal feedback #20, can you prepare a response for the client thread. The latest c",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Emails With Tasks": [
+          {
+            "startTime": 1784800440520,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 11,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-020",
+                      "threadId": "gmail-thread-020",
+                      "Subject": "Partnership proposal feedback #20",
+                      "From": "ops@lighthouse.io",
+                      "snippet": "Hello team,\n\nRegarding partnership proposal feedback #20, can you prepare a response for the client thread. The latest c",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ],
+                      "content": "Partnership proposal feedback #20",
+                      "description": "Follow up on email thread about partnership proposal feedback #20",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/020",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Tasks with Emails": [
+          {
+            "startTime": 1784800440540,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 12,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-020",
+                      "content": "Partnership proposal feedback #20",
+                      "description": "Follow up on email thread about partnership proposal feedback #20",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/020",
+                      "isCompleted": false,
+                      "Subject": "Partnership proposal feedback #20",
+                      "From": "ops@lighthouse.io"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "If Task Not Exist": [
+          {
+            "startTime": 1784800440760,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Emails With Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-020",
+                      "threadId": "gmail-thread-020",
+                      "Subject": "Partnership proposal feedback #20",
+                      "From": "ops@lighthouse.io",
+                      "snippet": "Hello team,\n\nRegarding partnership proposal feedback #20, can you prepare a response for the client thread. The latest c",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ],
+                      "content": "Partnership proposal feedback #20",
+                      "description": "Follow up on email thread about partnership proposal feedback #20",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/020",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "If Email Unstarred (Not Exist)": [
+          {
+            "startTime": 1784800440780,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Tasks with Emails"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-020",
+                      "content": "Partnership proposal feedback #20",
+                      "description": "Follow up on email thread about partnership proposal feedback #20",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/020",
+                      "isCompleted": false,
+                      "Subject": "Partnership proposal feedback #20",
+                      "From": "ops@lighthouse.io"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

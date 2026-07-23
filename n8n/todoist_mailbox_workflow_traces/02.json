@@ -1,0 +1,350 @@
+{
+  "id": "todoist-mailbox-exec-002",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "success",
+  "startedAt": "2026-07-23T08:06:00Z",
+  "stoppedAt": "2026-07-23T08:06:01.840000Z",
+  "metadata": {
+    "scenario": "sync_existing_ok",
+    "trigger": "When clicking ‘Test workflow’",
+    "emailSubject": "Invoice follow-up for July campaign #2",
+    "sender": "ops@lighthouse.io",
+    "taskContent": null,
+    "issueType": null
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When clicking ‘Test workflow’": [
+          {
+            "startTime": 1784793960000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T08:06:00Z",
+                      "trigger": "When clicking ‘Test workflow’"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784793960010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "When clicking ‘Test workflow’"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784793960040,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Get Starred From Inbox": [
+          {
+            "startTime": 1784793960080,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 15,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-002",
+                      "threadId": "gmail-thread-002",
+                      "Subject": "Invoice follow-up for July campaign #2",
+                      "From": "ops@lighthouse.io",
+                      "snippet": "Hello team,\n\nRegarding invoice follow-up for july campaign #2, can you review the attached details and reply. The latest",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Open Tasks": [
+          {
+            "startTime": 1784793960120,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 14,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-002",
+                      "content": "Invoice follow-up for July campaign #2",
+                      "description": "Follow up on email thread about invoice follow-up for july campaign #2",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/002",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge Starred and Unread Messages": [
+          {
+            "startTime": 1784793960360,
+            "executionIndex": 7,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              },
+              {
+                "previousNode": "Get Starred From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-002",
+                      "threadId": "gmail-thread-002",
+                      "Subject": "Invoice follow-up for July campaign #2",
+                      "From": "ops@lighthouse.io",
+                      "snippet": "Hello team,\n\nRegarding invoice follow-up for july campaign #2, can you review the attached details and reply. The latest",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Emails With Tasks": [
+          {
+            "startTime": 1784793960520,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 11,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-002",
+                      "threadId": "gmail-thread-002",
+                      "Subject": "Invoice follow-up for July campaign #2",
+                      "From": "ops@lighthouse.io",
+                      "snippet": "Hello team,\n\nRegarding invoice follow-up for july campaign #2, can you review the attached details and reply. The latest",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ],
+                      "content": "Invoice follow-up for July campaign #2",
+                      "description": "Follow up on email thread about invoice follow-up for july campaign #2",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/002",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Tasks with Emails": [
+          {
+            "startTime": 1784793960540,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 12,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-002",
+                      "content": "Invoice follow-up for July campaign #2",
+                      "description": "Follow up on email thread about invoice follow-up for july campaign #2",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/002",
+                      "isCompleted": false,
+                      "Subject": "Invoice follow-up for July campaign #2",
+                      "From": "ops@lighthouse.io"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "If Task Not Exist": [
+          {
+            "startTime": 1784793960760,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Emails With Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-002",
+                      "threadId": "gmail-thread-002",
+                      "Subject": "Invoice follow-up for July campaign #2",
+                      "From": "ops@lighthouse.io",
+                      "snippet": "Hello team,\n\nRegarding invoice follow-up for july campaign #2, can you review the attached details and reply. The latest",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ],
+                      "content": "Invoice follow-up for July campaign #2",
+                      "description": "Follow up on email thread about invoice follow-up for july campaign #2",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/002",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "If Email Unstarred (Not Exist)": [
+          {
+            "startTime": 1784793960780,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Tasks with Emails"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-002",
+                      "content": "Invoice follow-up for July campaign #2",
+                      "description": "Follow up on email thread about invoice follow-up for july campaign #2",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/002",
+                      "isCompleted": false,
+                      "Subject": "Invoice follow-up for July campaign #2",
+                      "From": "ops@lighthouse.io"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

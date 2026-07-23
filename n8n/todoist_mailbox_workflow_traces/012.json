@@ -1,0 +1,299 @@
+{
+  "id": "todoist-mailbox-exec-012",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "success",
+  "startedAt": "2026-07-23T09:06:00Z",
+  "stoppedAt": "2026-07-23T09:06:01.840000Z",
+  "metadata": {
+    "scenario": "close_success",
+    "trigger": "Email Trigger (IMAP)",
+    "emailSubject": "Product launch checklist #12",
+    "sender": "maria@coastal.studio",
+    "taskContent": "Product launch checklist #12",
+    "issueType": null
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "Email Trigger (IMAP)": [
+          {
+            "startTime": 1784797560000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T09:06:00Z",
+                      "trigger": "Email Trigger (IMAP)",
+                      "messageId": "gmail-msg-012",
+                      "subject": "Product launch checklist #12"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784797560010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Email Trigger (IMAP)"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784797560040,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Get Starred From Inbox": [
+          {
+            "startTime": 1784797560080,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 15,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Get Open Tasks": [
+          {
+            "startTime": 1784797560120,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 14,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-012",
+                      "content": "Product launch checklist #12",
+                      "description": "Follow up on email thread about product launch checklist #12",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/012",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge Starred and Unread Messages": [
+          {
+            "startTime": 1784797560360,
+            "executionIndex": 7,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              },
+              {
+                "previousNode": "Get Starred From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Enrich Emails With Tasks": [
+          {
+            "startTime": 1784797560520,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 11,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Enrich Tasks with Emails": [
+          {
+            "startTime": 1784797560540,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 12,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-012",
+                      "content": "Product launch checklist #12",
+                      "description": "Follow up on email thread about product launch checklist #12",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/012",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "If Task Not Exist": [
+          {
+            "startTime": 1784797560760,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Enrich Emails With Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "If Email Unstarred (Not Exist)": [
+          {
+            "startTime": 1784797560780,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Tasks with Emails"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-012",
+                      "content": "Product launch checklist #12",
+                      "description": "Follow up on email thread about product launch checklist #12",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/012",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "Close Task": [
+          {
+            "startTime": 1784797561020,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 21,
+            "source": [
+              {
+                "previousNode": "If Email Unstarred (Not Exist)"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-012",
+                      "closed": true,
+                      "content": "Product launch checklist #12"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

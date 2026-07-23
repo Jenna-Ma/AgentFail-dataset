@@ -1,0 +1,482 @@
+{
+  "id": "todoist-mailbox-exec-015",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "error",
+  "startedAt": "2026-07-23T09:24:00Z",
+  "stoppedAt": "2026-07-23T09:24:01.840000Z",
+  "metadata": {
+    "scenario": "summarize_error",
+    "trigger": "Email Trigger (IMAP)",
+    "emailSubject": "Security audit evidence request #15",
+    "sender": "support@rivulet.app",
+    "taskContent": null,
+    "issueType": "summarize_error"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "Email Trigger (IMAP)": [
+          {
+            "startTime": 1784798640000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T09:24:00Z",
+                      "trigger": "Email Trigger (IMAP)",
+                      "messageId": "gmail-msg-015",
+                      "subject": "Security audit evidence request #15"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784798640010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Email Trigger (IMAP)"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784798640040,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-015",
+                      "threadId": "gmail-thread-015",
+                      "Subject": "Security audit evidence request #15",
+                      "From": "support@rivulet.app",
+                      "snippet": "Hello team,\n\nRegarding security audit evidence request #15, can you prepare a response for the client thread. The latest",
+                      "labelIds": [
+                        "INBOX",
+                        "UNREAD"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Starred From Inbox": [
+          {
+            "startTime": 1784798640080,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 15,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-015",
+                      "threadId": "gmail-thread-015",
+                      "Subject": "Security audit evidence request #15",
+                      "From": "support@rivulet.app",
+                      "snippet": "Hello team,\n\nRegarding security audit evidence request #15, can you prepare a response for the client thread. The latest",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Open Tasks": [
+          {
+            "startTime": 1784798640120,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 14,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Mark As Read": [
+          {
+            "startTime": 1784798640170,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 8,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-015",
+                      "markedRead": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Star": [
+          {
+            "startTime": 1784798640240,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 9,
+            "source": [
+              {
+                "previousNode": "Mark As Read"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-015",
+                      "starred": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge Starred and Unread Messages": [
+          {
+            "startTime": 1784798640360,
+            "executionIndex": 7,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              },
+              {
+                "previousNode": "Get Starred From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-015",
+                      "threadId": "gmail-thread-015",
+                      "Subject": "Security audit evidence request #15",
+                      "From": "support@rivulet.app",
+                      "snippet": "Hello team,\n\nRegarding security audit evidence request #15, can you prepare a response for the client thread. The latest",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Emails With Tasks": [
+          {
+            "startTime": 1784798640520,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 11,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-015",
+                      "threadId": "gmail-thread-015",
+                      "Subject": "Security audit evidence request #15",
+                      "From": "support@rivulet.app",
+                      "snippet": "Hello team,\n\nRegarding security audit evidence request #15, can you prepare a response for the client thread. The latest",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Tasks with Emails": [
+          {
+            "startTime": 1784798640540,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 12,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "If Task Not Exist": [
+          {
+            "startTime": 1784798640760,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Emails With Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-015",
+                      "threadId": "gmail-thread-015",
+                      "Subject": "Security audit evidence request #15",
+                      "From": "support@rivulet.app",
+                      "snippet": "Hello team,\n\nRegarding security audit evidence request #15, can you prepare a response for the client thread. The latest",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "If Email Unstarred (Not Exist)": [
+          {
+            "startTime": 1784798640780,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Enrich Tasks with Emails"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "Get Full Message": [
+          {
+            "startTime": 1784798641020,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 24,
+            "source": [
+              {
+                "previousNode": "If Task Not Exist"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-015",
+                      "threadId": "gmail-thread-015",
+                      "subject": "Security audit evidence request #15",
+                      "from": "support@rivulet.app",
+                      "html": "<html><body><h1>Security audit evidence request #15</h1><p>Hello team,</p><p></p><p>Regarding security audit evidence request #15, can you prepare a response for the client thread. The latest context is attached in the previous thread and we want to keep the timeline moving this week.</p><p></p><p>Please share a concise update and any blocking issues.</p><p></p><p>Best,</p><p>Support</p></body></html>"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI Chat Model": [
+          {
+            "startTime": 1784798641030,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 40,
+            "source": [
+              {
+                "previousNode": "Get Full Message"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gpt-4o-mini",
+                      "provider": "OpenAI"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Structure Output Todoist Ready": [
+          {
+            "startTime": 1784798641035,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Get Full Message"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "schema": [
+                        "content",
+                        "description",
+                        "actions",
+                        "answer"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Summarize Message": [
+          {
+            "startTime": 1784798641340,
+            "executionIndex": 11,
+            "executionStatus": "error",
+            "executionTime": 210,
+            "source": [
+              {
+                "previousNode": "Get Full Message"
+              }
+            ],
+            "error": {
+              "name": "NodeOperationError",
+              "message": "OpenAI rate limit exceeded",
+              "description": "The model request was throttled while trying to summarize the email thread.",
+              "node": {
+                "name": "Summarize Message"
+              },
+              "timestamp": "2026-07-23T00:00:00.000Z"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

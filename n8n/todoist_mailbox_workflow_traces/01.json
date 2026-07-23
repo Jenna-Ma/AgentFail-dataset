@@ -1,0 +1,552 @@
+{
+  "id": "todoist-mailbox-exec-001",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "success",
+  "startedAt": "2026-07-23T08:00:00Z",
+  "stoppedAt": "2026-07-23T08:00:01.840000Z",
+  "metadata": {
+    "scenario": "create_success",
+    "trigger": "Schedule Trigger",
+    "emailSubject": "Q3 onboarding deck review #1",
+    "sender": "alina@northstar.co",
+    "taskContent": null,
+    "issueType": null
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "Schedule Trigger": [
+          {
+            "startTime": 1784793600000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T08:00:00Z",
+                      "trigger": "Schedule Trigger"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784793600010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Schedule Trigger"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784793600040,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-001",
+                      "threadId": "gmail-thread-001",
+                      "Subject": "Q3 onboarding deck review #1",
+                      "From": "alina@northstar.co",
+                      "snippet": "Hello team,\n\nRegarding q3 onboarding deck review #1, please confirm the next step by Friday. The latest context is attac",
+                      "labelIds": [
+                        "INBOX",
+                        "UNREAD"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Starred From Inbox": [
+          {
+            "startTime": 1784793600080,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 15,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-001",
+                      "threadId": "gmail-thread-001",
+                      "Subject": "Q3 onboarding deck review #1",
+                      "From": "alina@northstar.co",
+                      "snippet": "Hello team,\n\nRegarding q3 onboarding deck review #1, please confirm the next step by Friday. The latest context is attac",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Open Tasks": [
+          {
+            "startTime": 1784793600120,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 14,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Mark As Read": [
+          {
+            "startTime": 1784793600170,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 8,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-001",
+                      "markedRead": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Star": [
+          {
+            "startTime": 1784793600240,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 9,
+            "source": [
+              {
+                "previousNode": "Mark As Read"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-001",
+                      "starred": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge Starred and Unread Messages": [
+          {
+            "startTime": 1784793600360,
+            "executionIndex": 7,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              },
+              {
+                "previousNode": "Get Starred From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-001",
+                      "threadId": "gmail-thread-001",
+                      "Subject": "Q3 onboarding deck review #1",
+                      "From": "alina@northstar.co",
+                      "snippet": "Hello team,\n\nRegarding q3 onboarding deck review #1, please confirm the next step by Friday. The latest context is attac",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Emails With Tasks": [
+          {
+            "startTime": 1784793600520,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 11,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-001",
+                      "threadId": "gmail-thread-001",
+                      "Subject": "Q3 onboarding deck review #1",
+                      "From": "alina@northstar.co",
+                      "snippet": "Hello team,\n\nRegarding q3 onboarding deck review #1, please confirm the next step by Friday. The latest context is attac",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Tasks with Emails": [
+          {
+            "startTime": 1784793600540,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 12,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "If Task Not Exist": [
+          {
+            "startTime": 1784793600760,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Emails With Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-001",
+                      "threadId": "gmail-thread-001",
+                      "Subject": "Q3 onboarding deck review #1",
+                      "From": "alina@northstar.co",
+                      "snippet": "Hello team,\n\nRegarding q3 onboarding deck review #1, please confirm the next step by Friday. The latest context is attac",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "If Email Unstarred (Not Exist)": [
+          {
+            "startTime": 1784793600780,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Enrich Tasks with Emails"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "Get Full Message": [
+          {
+            "startTime": 1784793601020,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 24,
+            "source": [
+              {
+                "previousNode": "If Task Not Exist"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-001",
+                      "threadId": "gmail-thread-001",
+                      "subject": "Q3 onboarding deck review #1",
+                      "from": "alina@northstar.co",
+                      "html": "<html><body><h1>Q3 onboarding deck review #1</h1><p>Hello team,</p><p></p><p>Regarding q3 onboarding deck review #1, please confirm the next step by Friday. The latest context is attached in the previous thread and we want to keep the timeline moving this week.</p><p></p><p>Please share a concise update and any blocking issues.</p><p></p><p>Best,</p><p>Alina</p></body></html>"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI Chat Model": [
+          {
+            "startTime": 1784793601030,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 40,
+            "source": [
+              {
+                "previousNode": "Get Full Message"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gpt-4o-mini",
+                      "provider": "OpenAI"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Structure Output Todoist Ready": [
+          {
+            "startTime": 1784793601035,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Get Full Message"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "schema": [
+                        "content",
+                        "description",
+                        "actions",
+                        "answer"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Summarize Message": [
+          {
+            "startTime": 1784793601340,
+            "executionIndex": 11,
+            "executionStatus": "success",
+            "executionTime": 210,
+            "source": [
+              {
+                "previousNode": "Get Full Message"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": {
+                        "content": "Q3 onboarding deck review #1",
+                        "description": "Thread about q3 onboarding deck review #1 with a request to review details, respond clearly, and unblock next steps.",
+                        "actions": "1. Review the requested materials.\n2. Confirm owner and deadline.\n3. Reply with decision or next action.",
+                        "answer": "Thanks for the update. I reviewed the thread and will confirm the owner, next milestone, and any blockers in the next reply."
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "If AI responded properly": [
+          {
+            "startTime": 1784793601650,
+            "executionIndex": 12,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Summarize Message"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": {
+                        "content": "Q3 onboarding deck review #1",
+                        "description": "Thread about q3 onboarding deck review #1 with a request to review details, respond clearly, and unblock next steps.",
+                        "actions": "1. Review the requested materials.\n2. Confirm owner and deadline.\n3. Reply with decision or next action.",
+                        "answer": "Thanks for the update. I reviewed the thread and will confirm the owner, next milestone, and any blockers in the next reply."
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Create Todoist Task": [
+          {
+            "startTime": 1784793601690,
+            "executionIndex": 13,
+            "executionStatus": "success",
+            "executionTime": 28,
+            "source": [
+              {
+                "previousNode": "If AI responded properly"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-001",
+                      "content": "Q3 onboarding deck review #1",
+                      "description": "Thread about q3 onboarding deck review #1 with a request to review details, respond clearly, and unblock next steps.\n\n**Proposed actions**\n\n1. Review the requested materials.\n2. Confirm owner and deadline.\n3. Reply with decision or next action.\n\n**Proposed answer**\n\nThanks for the update. I reviewed the thread and will confirm the owner, next milestone, and any blockers in the next reply.",
+                      "projectId": "2351998202"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

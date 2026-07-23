@@ -1,0 +1,95 @@
+{
+  "id": "todoist-mailbox-exec-018",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "error",
+  "startedAt": "2026-07-23T09:42:00Z",
+  "stoppedAt": "2026-07-23T09:42:01.840000Z",
+  "metadata": {
+    "scenario": "gmail_fetch_error",
+    "trigger": "Email Trigger (IMAP)",
+    "emailSubject": "Booth shipment confirmation #18",
+    "sender": "events@moonbase.media",
+    "taskContent": null,
+    "issueType": "gmail_fetch_error"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "Email Trigger (IMAP)": [
+          {
+            "startTime": 1784799720000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T09:42:00Z",
+                      "trigger": "Email Trigger (IMAP)",
+                      "messageId": "gmail-msg-018",
+                      "subject": "Booth shipment confirmation #18"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784799720010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Email Trigger (IMAP)"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784799720040,
+            "executionIndex": 2,
+            "executionStatus": "error",
+            "executionTime": 34,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "error": {
+              "name": "NodeOperationError",
+              "message": "Invalid credentials",
+              "description": "Gmail OAuth token expired while fetching unread inbox messages.",
+              "node": {
+                "name": "Get Unread From Inbox"
+              },
+              "timestamp": "2026-07-23T00:00:00.000Z"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

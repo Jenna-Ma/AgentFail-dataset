@@ -1,0 +1,299 @@
+{
+  "id": "todoist-mailbox-exec-003",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "success",
+  "startedAt": "2026-07-23T08:12:00Z",
+  "stoppedAt": "2026-07-23T08:12:01.840000Z",
+  "metadata": {
+    "scenario": "close_success",
+    "trigger": "Email Trigger (IMAP)",
+    "emailSubject": "Booth shipment confirmation #3",
+    "sender": "maria@coastal.studio",
+    "taskContent": "Booth shipment confirmation #3",
+    "issueType": null
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "Email Trigger (IMAP)": [
+          {
+            "startTime": 1784794320000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T08:12:00Z",
+                      "trigger": "Email Trigger (IMAP)",
+                      "messageId": "gmail-msg-003",
+                      "subject": "Booth shipment confirmation #3"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784794320010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Email Trigger (IMAP)"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784794320040,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Get Starred From Inbox": [
+          {
+            "startTime": 1784794320080,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 15,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Get Open Tasks": [
+          {
+            "startTime": 1784794320120,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 14,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-003",
+                      "content": "Booth shipment confirmation #3",
+                      "description": "Follow up on email thread about booth shipment confirmation #3",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/003",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge Starred and Unread Messages": [
+          {
+            "startTime": 1784794320360,
+            "executionIndex": 7,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              },
+              {
+                "previousNode": "Get Starred From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Enrich Emails With Tasks": [
+          {
+            "startTime": 1784794320520,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 11,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Enrich Tasks with Emails": [
+          {
+            "startTime": 1784794320540,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 12,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-003",
+                      "content": "Booth shipment confirmation #3",
+                      "description": "Follow up on email thread about booth shipment confirmation #3",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/003",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "If Task Not Exist": [
+          {
+            "startTime": 1784794320760,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Enrich Emails With Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "If Email Unstarred (Not Exist)": [
+          {
+            "startTime": 1784794320780,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Tasks with Emails"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-003",
+                      "content": "Booth shipment confirmation #3",
+                      "description": "Follow up on email thread about booth shipment confirmation #3",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/003",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "Close Task": [
+          {
+            "startTime": 1784794321020,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 21,
+            "source": [
+              {
+                "previousNode": "If Email Unstarred (Not Exist)"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-003",
+                      "closed": true,
+                      "content": "Booth shipment confirmation #3"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

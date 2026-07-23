@@ -1,0 +1,290 @@
+{
+  "id": "todoist-mailbox-exec-044",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "error",
+  "startedAt": "2026-07-23T12:18:00Z",
+  "stoppedAt": "2026-07-23T12:18:01.840000Z",
+  "metadata": {
+    "scenario": "close_error",
+    "trigger": "When clicking ‘Test workflow’",
+    "emailSubject": "Marketing asset revision #44",
+    "sender": "nick@fieldnotes.pro",
+    "taskContent": "Marketing asset revision #44",
+    "issueType": "close_error"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When clicking ‘Test workflow’": [
+          {
+            "startTime": 1784809080000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T12:18:00Z",
+                      "trigger": "When clicking ‘Test workflow’"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784809080010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "When clicking ‘Test workflow’"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784809080040,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Get Starred From Inbox": [
+          {
+            "startTime": 1784809080080,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 15,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Get Open Tasks": [
+          {
+            "startTime": 1784809080120,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 14,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-044",
+                      "content": "Marketing asset revision #44",
+                      "description": "Follow up on email thread about marketing asset revision #44",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/044",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge Starred and Unread Messages": [
+          {
+            "startTime": 1784809080360,
+            "executionIndex": 7,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              },
+              {
+                "previousNode": "Get Starred From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Enrich Emails With Tasks": [
+          {
+            "startTime": 1784809080520,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 11,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Enrich Tasks with Emails": [
+          {
+            "startTime": 1784809080540,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 12,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-044",
+                      "content": "Marketing asset revision #44",
+                      "description": "Follow up on email thread about marketing asset revision #44",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/044",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "If Task Not Exist": [
+          {
+            "startTime": 1784809080760,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Enrich Emails With Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "If Email Unstarred (Not Exist)": [
+          {
+            "startTime": 1784809080780,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Tasks with Emails"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "todoist-task-044",
+                      "content": "Marketing asset revision #44",
+                      "description": "Follow up on email thread about marketing asset revision #44",
+                      "projectId": "2351998202",
+                      "url": "https://app.todoist.com/app/task/044",
+                      "isCompleted": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "Close Task": [
+          {
+            "startTime": 1784809081020,
+            "executionIndex": 10,
+            "executionStatus": "error",
+            "executionTime": 17,
+            "source": [
+              {
+                "previousNode": "If Email Unstarred (Not Exist)"
+              }
+            ],
+            "error": {
+              "name": "NodeOperationError",
+              "message": "Task not found",
+              "description": "Todoist returned 404 while closing a task that was already completed or deleted.",
+              "node": {
+                "name": "Close Task"
+              },
+              "timestamp": "2026-07-23T00:00:00.000Z"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

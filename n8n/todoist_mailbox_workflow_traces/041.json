@@ -1,0 +1,389 @@
+{
+  "id": "todoist-mailbox-exec-041",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "error",
+  "startedAt": "2026-07-23T12:00:00Z",
+  "stoppedAt": "2026-07-23T12:00:01.840000Z",
+  "metadata": {
+    "scenario": "get_full_message_error",
+    "trigger": "When clicking ‘Test workflow’",
+    "emailSubject": "Travel reimbursement reminder #41",
+    "sender": "hello@craftgrid.ai",
+    "taskContent": null,
+    "issueType": "get_full_message_error"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When clicking ‘Test workflow’": [
+          {
+            "startTime": 1784808000000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T12:00:00Z",
+                      "trigger": "When clicking ‘Test workflow’"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784808000010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "When clicking ‘Test workflow’"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784808000040,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-041",
+                      "threadId": "gmail-thread-041",
+                      "Subject": "Travel reimbursement reminder #41",
+                      "From": "hello@craftgrid.ai",
+                      "snippet": "Hello team,\n\nRegarding travel reimbursement reminder #41, please confirm the next step by Friday. The latest context is ",
+                      "labelIds": [
+                        "INBOX",
+                        "UNREAD"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Starred From Inbox": [
+          {
+            "startTime": 1784808000080,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 15,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-041",
+                      "threadId": "gmail-thread-041",
+                      "Subject": "Travel reimbursement reminder #41",
+                      "From": "hello@craftgrid.ai",
+                      "snippet": "Hello team,\n\nRegarding travel reimbursement reminder #41, please confirm the next step by Friday. The latest context is ",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Open Tasks": [
+          {
+            "startTime": 1784808000120,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 14,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Mark As Read": [
+          {
+            "startTime": 1784808000170,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 8,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-041",
+                      "markedRead": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Star": [
+          {
+            "startTime": 1784808000240,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 9,
+            "source": [
+              {
+                "previousNode": "Mark As Read"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-041",
+                      "starred": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge Starred and Unread Messages": [
+          {
+            "startTime": 1784808000360,
+            "executionIndex": 7,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              },
+              {
+                "previousNode": "Get Starred From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-041",
+                      "threadId": "gmail-thread-041",
+                      "Subject": "Travel reimbursement reminder #41",
+                      "From": "hello@craftgrid.ai",
+                      "snippet": "Hello team,\n\nRegarding travel reimbursement reminder #41, please confirm the next step by Friday. The latest context is ",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Emails With Tasks": [
+          {
+            "startTime": 1784808000520,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 11,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-041",
+                      "threadId": "gmail-thread-041",
+                      "Subject": "Travel reimbursement reminder #41",
+                      "From": "hello@craftgrid.ai",
+                      "snippet": "Hello team,\n\nRegarding travel reimbursement reminder #41, please confirm the next step by Friday. The latest context is ",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Tasks with Emails": [
+          {
+            "startTime": 1784808000540,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 12,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "If Task Not Exist": [
+          {
+            "startTime": 1784808000760,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Emails With Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-041",
+                      "threadId": "gmail-thread-041",
+                      "Subject": "Travel reimbursement reminder #41",
+                      "From": "hello@craftgrid.ai",
+                      "snippet": "Hello team,\n\nRegarding travel reimbursement reminder #41, please confirm the next step by Friday. The latest context is ",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "If Email Unstarred (Not Exist)": [
+          {
+            "startTime": 1784808000780,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Enrich Tasks with Emails"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "Get Full Message": [
+          {
+            "startTime": 1784808001020,
+            "executionIndex": 10,
+            "executionStatus": "error",
+            "executionTime": 24,
+            "source": [
+              {
+                "previousNode": "If Task Not Exist"
+              }
+            ],
+            "error": {
+              "name": "NodeOperationError",
+              "message": "Message not found",
+              "description": "Gmail API returned 404 for the provided message ID during full message fetch.",
+              "node": {
+                "name": "Get Full Message"
+              },
+              "timestamp": "2026-07-23T00:00:00.000Z"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

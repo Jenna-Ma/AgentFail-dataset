@@ -1,0 +1,544 @@
+{
+  "id": "todoist-mailbox-exec-025",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "error",
+  "startedAt": "2026-07-23T10:24:00Z",
+  "stoppedAt": "2026-07-23T10:24:01.840000Z",
+  "metadata": {
+    "scenario": "create_todoist_error",
+    "trigger": "Schedule Trigger",
+    "emailSubject": "Beta user bug escalation #25",
+    "sender": "team@orbitworks.co",
+    "taskContent": null,
+    "issueType": "create_todoist_error"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "Schedule Trigger": [
+          {
+            "startTime": 1784802240000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T10:24:00Z",
+                      "trigger": "Schedule Trigger"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784802240010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "Schedule Trigger"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784802240040,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-025",
+                      "threadId": "gmail-thread-025",
+                      "Subject": "Beta user bug escalation #25",
+                      "From": "team@orbitworks.co",
+                      "snippet": "Hello team,\n\nRegarding beta user bug escalation #25, can you prepare a response for the client thread. The latest contex",
+                      "labelIds": [
+                        "INBOX",
+                        "UNREAD"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Starred From Inbox": [
+          {
+            "startTime": 1784802240080,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 15,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-025",
+                      "threadId": "gmail-thread-025",
+                      "Subject": "Beta user bug escalation #25",
+                      "From": "team@orbitworks.co",
+                      "snippet": "Hello team,\n\nRegarding beta user bug escalation #25, can you prepare a response for the client thread. The latest contex",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Open Tasks": [
+          {
+            "startTime": 1784802240120,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 14,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Mark As Read": [
+          {
+            "startTime": 1784802240170,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 8,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-025",
+                      "markedRead": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Star": [
+          {
+            "startTime": 1784802240240,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 9,
+            "source": [
+              {
+                "previousNode": "Mark As Read"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-025",
+                      "starred": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge Starred and Unread Messages": [
+          {
+            "startTime": 1784802240360,
+            "executionIndex": 7,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              },
+              {
+                "previousNode": "Get Starred From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-025",
+                      "threadId": "gmail-thread-025",
+                      "Subject": "Beta user bug escalation #25",
+                      "From": "team@orbitworks.co",
+                      "snippet": "Hello team,\n\nRegarding beta user bug escalation #25, can you prepare a response for the client thread. The latest contex",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Emails With Tasks": [
+          {
+            "startTime": 1784802240520,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 11,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-025",
+                      "threadId": "gmail-thread-025",
+                      "Subject": "Beta user bug escalation #25",
+                      "From": "team@orbitworks.co",
+                      "snippet": "Hello team,\n\nRegarding beta user bug escalation #25, can you prepare a response for the client thread. The latest contex",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Tasks with Emails": [
+          {
+            "startTime": 1784802240540,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 12,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "If Task Not Exist": [
+          {
+            "startTime": 1784802240760,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Emails With Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-025",
+                      "threadId": "gmail-thread-025",
+                      "Subject": "Beta user bug escalation #25",
+                      "From": "team@orbitworks.co",
+                      "snippet": "Hello team,\n\nRegarding beta user bug escalation #25, can you prepare a response for the client thread. The latest contex",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "If Email Unstarred (Not Exist)": [
+          {
+            "startTime": 1784802240780,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Enrich Tasks with Emails"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "Get Full Message": [
+          {
+            "startTime": 1784802241020,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 24,
+            "source": [
+              {
+                "previousNode": "If Task Not Exist"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-025",
+                      "threadId": "gmail-thread-025",
+                      "subject": "Beta user bug escalation #25",
+                      "from": "team@orbitworks.co",
+                      "html": "<html><body><h1>Beta user bug escalation #25</h1><p>Hello team,</p><p></p><p>Regarding beta user bug escalation #25, can you prepare a response for the client thread. The latest context is attached in the previous thread and we want to keep the timeline moving this week.</p><p></p><p>Please share a concise update and any blocking issues.</p><p></p><p>Best,</p><p>Team</p></body></html>"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI Chat Model": [
+          {
+            "startTime": 1784802241030,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 40,
+            "source": [
+              {
+                "previousNode": "Get Full Message"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "model": "gpt-4o-mini",
+                      "provider": "OpenAI"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Structure Output Todoist Ready": [
+          {
+            "startTime": 1784802241035,
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Get Full Message"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "schema": [
+                        "content",
+                        "description",
+                        "actions",
+                        "answer"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Summarize Message": [
+          {
+            "startTime": 1784802241340,
+            "executionIndex": 11,
+            "executionStatus": "success",
+            "executionTime": 210,
+            "source": [
+              {
+                "previousNode": "Get Full Message"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": {
+                        "content": "Beta user bug escalation #25",
+                        "description": "Thread about beta user bug escalation #25 with a request to review details, respond clearly, and unblock next steps.",
+                        "actions": "1. Review the requested materials.\n2. Confirm owner and deadline.\n3. Reply with decision or next action.",
+                        "answer": "Thanks for the update. I reviewed the thread and will confirm the owner, next milestone, and any blockers in the next reply."
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "If AI responded properly": [
+          {
+            "startTime": 1784802241650,
+            "executionIndex": 12,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Summarize Message"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": {
+                        "content": "Beta user bug escalation #25",
+                        "description": "Thread about beta user bug escalation #25 with a request to review details, respond clearly, and unblock next steps.",
+                        "actions": "1. Review the requested materials.\n2. Confirm owner and deadline.\n3. Reply with decision or next action.",
+                        "answer": "Thanks for the update. I reviewed the thread and will confirm the owner, next milestone, and any blockers in the next reply."
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Create Todoist Task": [
+          {
+            "startTime": 1784802241690,
+            "executionIndex": 13,
+            "executionStatus": "error",
+            "executionTime": 25,
+            "source": [
+              {
+                "previousNode": "If AI responded properly"
+              }
+            ],
+            "error": {
+              "name": "NodeOperationError",
+              "message": "Request failed with status code 409",
+              "description": "Todoist rejected the task because a task with identical content already exists in the target project.",
+              "node": {
+                "name": "Create Todoist Task"
+              },
+              "timestamp": "2026-07-23T00:00:00.000Z"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

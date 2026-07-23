@@ -1,0 +1,389 @@
+{
+  "id": "todoist-mailbox-exec-005",
+  "workflowName": "Email mailbox as Todoist tasks",
+  "status": "error",
+  "startedAt": "2026-07-23T08:24:00Z",
+  "stoppedAt": "2026-07-23T08:24:01.840000Z",
+  "metadata": {
+    "scenario": "get_full_message_error",
+    "trigger": "When clicking ‘Test workflow’",
+    "emailSubject": "Partnership proposal feedback #5",
+    "sender": "hello@craftgrid.ai",
+    "taskContent": null,
+    "issueType": "get_full_message_error"
+  },
+  "data": {
+    "resultData": {
+      "runData": {
+        "When clicking ‘Test workflow’": [
+          {
+            "startTime": 1784795040000,
+            "executionIndex": 0,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "timestamp": "2026-07-23T08:24:00Z",
+                      "trigger": "When clicking ‘Test workflow’"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "No Operation, do nothing": [
+          {
+            "startTime": 1784795040010,
+            "executionIndex": 1,
+            "executionStatus": "success",
+            "executionTime": 1,
+            "source": [
+              {
+                "previousNode": "When clicking ‘Test workflow’"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "noop": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Unread From Inbox": [
+          {
+            "startTime": 1784795040040,
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "executionTime": 18,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-005",
+                      "threadId": "gmail-thread-005",
+                      "Subject": "Partnership proposal feedback #5",
+                      "From": "hello@craftgrid.ai",
+                      "snippet": "Hello team,\n\nRegarding partnership proposal feedback #5, can you prepare a response for the client thread. The latest co",
+                      "labelIds": [
+                        "INBOX",
+                        "UNREAD"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Starred From Inbox": [
+          {
+            "startTime": 1784795040080,
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "executionTime": 15,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-005",
+                      "threadId": "gmail-thread-005",
+                      "Subject": "Partnership proposal feedback #5",
+                      "From": "hello@craftgrid.ai",
+                      "snippet": "Hello team,\n\nRegarding partnership proposal feedback #5, can you prepare a response for the client thread. The latest co",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Get Open Tasks": [
+          {
+            "startTime": 1784795040120,
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "executionTime": 14,
+            "source": [
+              {
+                "previousNode": "No Operation, do nothing"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Mark As Read": [
+          {
+            "startTime": 1784795040170,
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "executionTime": 8,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-005",
+                      "markedRead": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Star": [
+          {
+            "startTime": 1784795040240,
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "executionTime": 9,
+            "source": [
+              {
+                "previousNode": "Mark As Read"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-005",
+                      "starred": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge Starred and Unread Messages": [
+          {
+            "startTime": 1784795040360,
+            "executionIndex": 7,
+            "executionStatus": "success",
+            "executionTime": 5,
+            "source": [
+              {
+                "previousNode": "Get Unread From Inbox"
+              },
+              {
+                "previousNode": "Get Starred From Inbox"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-005",
+                      "threadId": "gmail-thread-005",
+                      "Subject": "Partnership proposal feedback #5",
+                      "From": "hello@craftgrid.ai",
+                      "snippet": "Hello team,\n\nRegarding partnership proposal feedback #5, can you prepare a response for the client thread. The latest co",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Emails With Tasks": [
+          {
+            "startTime": 1784795040520,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 11,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-005",
+                      "threadId": "gmail-thread-005",
+                      "Subject": "Partnership proposal feedback #5",
+                      "From": "hello@craftgrid.ai",
+                      "snippet": "Hello team,\n\nRegarding partnership proposal feedback #5, can you prepare a response for the client thread. The latest co",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Enrich Tasks with Emails": [
+          {
+            "startTime": 1784795040540,
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "executionTime": 12,
+            "source": [
+              {
+                "previousNode": "Merge Starred and Unread Messages"
+              },
+              {
+                "previousNode": "Get Open Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "If Task Not Exist": [
+          {
+            "startTime": 1784795040760,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 3,
+            "source": [
+              {
+                "previousNode": "Enrich Emails With Tasks"
+              }
+            ],
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "gmail-msg-005",
+                      "threadId": "gmail-thread-005",
+                      "Subject": "Partnership proposal feedback #5",
+                      "From": "hello@craftgrid.ai",
+                      "snippet": "Hello team,\n\nRegarding partnership proposal feedback #5, can you prepare a response for the client thread. The latest co",
+                      "labelIds": [
+                        "INBOX",
+                        "STARRED"
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "If Email Unstarred (Not Exist)": [
+          {
+            "startTime": 1784795040780,
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "executionTime": 2,
+            "source": [
+              {
+                "previousNode": "Enrich Tasks with Emails"
+              }
+            ],
+            "data": {
+              "main": [
+                [],
+                []
+              ]
+            }
+          }
+        ],
+        "Get Full Message": [
+          {
+            "startTime": 1784795041020,
+            "executionIndex": 10,
+            "executionStatus": "error",
+            "executionTime": 24,
+            "source": [
+              {
+                "previousNode": "If Task Not Exist"
+              }
+            ],
+            "error": {
+              "name": "NodeOperationError",
+              "message": "Message not found",
+              "description": "Gmail API returned 404 for the provided message ID during full message fetch.",
+              "node": {
+                "name": "Get Full Message"
+              },
+              "timestamp": "2026-07-23T00:00:00.000Z"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
